@@ -1,23 +1,58 @@
 ## Vapaa matikka MAA1 (Funktiot ja yhtälöt)
 
-> Osa Vapaa matikka -kirjasarjaa lukion matematiikkaan. Part of Vapaa matikka textbook series for high school mathematics.
+* Below in English
 
-> Kirjoitettu 28.9.2012 --> / Written Sept. 28th, 2012 -->
+* Osa Vapaa matikka -kirjasarjaa lukion matematiikkaan
 
-> Valmiiksi käännetyt pdf-versiot: / Precompiled pdf files: http://goo.gl/7OikD
+* Julkaisija: Avoimet oppimateriaalit ry
 
-> Ohjeet kirjoittajille ym.: ks. [wiki](https://github.com/avoimet-oppimateriaalit-ry/vapaa-matikka/wiki).
+* Kirjoitettu 28.9.2012 -->
 
-Tekniset yksityiskohdat: / Technical details:
-> Ladontajärjestelmä: / Typesetting: LaTeX
+* Valmiiksi käännetyt pdf-versiot: http://goo.gl/7OikD
 
-> Versionhallinta: / Version control: Git/GitHub
+* Ohjeet kirjoittajille [wikissä](https://github.com/avoimet-oppimateriaalit-ry/vapaa-matikka/wiki).
 
-> Virtuaalikone: / Virtual machine: VMware/Xubuntu (saatavilla pyynnöstä / available on request)
+Tekniset yksityiskohdat:
+* Ladontajärjestelmä: LaTeX
 
-Tärkeitä osoitteita: / Important addresses:
-> Git-versionhallinta: / Git version control: http://git-scm.com/
+* Versionhallinta: Git/GitHub
 
-> GitHubin oma Windows-client: / GitHub's own Windows client: http://windows.github.com/
+* Virtuaalikone: VMware/Xubuntu (saatavilla pyynnöstä)
 
-> GitHubin oma OS X -client: / GitHub's own OS X client: http://mac.github.com/
+Linkkejä:
+* Avoimet oppimateriaalit ry: http://avoimetoppimateriaalit.fi
+
+* Git-versionhallinta: http://git-scm.com/
+
+* GitHubin oma Windows-client: http://windows.github.com/
+
+* GitHubin oma OS X -client: http://mac.github.com/
+
+## In English
+
+* Part of Vapaa matikka textbook series for high school mathematics.
+
+* Published by Avoimet oppimateriaalit ry (Finnish OER association)
+
+* Written Sept. 28th, 2012 -->
+
+* Precompiled pdf files: http://goo.gl/7OikD
+
+* Technical notes etc. on [wiki](https://github.com/avoimet-oppimateriaalit-ry/vapaa-matikka/wiki).
+
+Technical details:
+
+* Typesetting: LaTeX
+
+* Version control: Git/GitHub
+
+* Virtual machine: VMware/Xubuntu (available upon request)
+
+Links:
+* Avoimet oppimateriaalit ry: http://avoimetoppimateriaalit.fi
+
+* Git version control: http://git-scm.com/
+
+* GitHub's own Windows client: http://windows.github.com/
+
+* GitHub's own OS X client: http://mac.github.com/
