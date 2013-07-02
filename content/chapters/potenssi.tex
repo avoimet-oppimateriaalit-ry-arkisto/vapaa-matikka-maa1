@@ -26,6 +26,12 @@ Sopimus on, että potenssit lasketaan ennen kerto- ja jakolaskuja. Sulut lasketa
         \end{alakohdat}
     \end{esimerkki}  
 
+Mikäli potensseja on monta päällekkäin (eli eksponenttina on potenssilauseke),
+laskeminen aloitetaan ylimmästä potenssista. Esimerkiksi
+\[2^{3^2}= 2^9 = 512, \]
+mutta
+\[(2^3)^2=8^2=64. \]
+
 \subsubsection*{Negativinen kantaluku}
 
 Jos kantaluku on negatiivinen, sen ympärille merkitään selkeyden vuoksi
@@ -101,28 +107,34 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
  
 \subsection*{Negatiivinen luku ja nolla eksponenttina}
 
-Oletetaan seuraavissa päättelyissä, että $a \neq 0$. Silloin voimme jakaa $a$:lla.
+Eksponenttimerkintää voidaan laajentaa myös tapauksiin, joissa eksponentti on negatiivinen tai nolla, kunhan määritellään järkevästi, mitä silla tarkoitetaan.
+
+Oletetaan seuraavissa päättelyissä, että $a \neq 0$. Silloin voimme jakaa luvulla $a$.
     
-    Sievennetään osamäärä $\frac{a^3}{a^5}$ kahdella eri tavalla. Supistamalla yhteiset tekijät lopputulos
+Sievennetään osamäärä $\frac{a^3}{a^5}$ kahdella eri tavalla. Supistamalla yhteiset tekijät saadaan lopputulos
     
     \begin{equation*}
         \frac{a^3}{a^5} =
         \frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{a\cdot a\cdot
         \cancel{a}\cdot \cancel{a}\cdot \cancel{a}} = 
-        \frac{1}{a\cdot a}=\boldsymbol{\frac{1}{a^2}}
+        \frac{1}{a\cdot a}=\boldsymbol{\frac{1}{a^2}}.
     \end{equation*}
     
-    on erinäköinen, kuin käyttämällä potenssien laskusääntöjä
+Potenssien laskusääntöjä käyttämällä saataisiin
     
     \begin{equation*}
         \frac{a^3}{a^5} = a^{3-5}= a^{-2}{.}
     \end{equation*}
     
-    Koska lähtötilanne on molemmissa tapauksissa sama, voidaan määritellä, että
+Samasta laskusta saatiin kaksi eri tuolosta, joten on johdonmukaista
+määritellä
     
     \begin{equation*}
-        a^{-2} = \frac{1}{a^2}
+        a^{-2} = \frac{1}{a^2}.
     \end{equation*}
+
+Sama ajatus yleistyy: koska potenssien laskusääntöjen halutaan pätevän myös negatiivisille
+eksponenteille, ne voi määritellä vain yhdellä tavalla:
   
     \laatikko{
         \textbf {Negatiivinen eksponentti} (kun $a\neq 0$)
@@ -160,13 +172,7 @@ ei ole määritelty.
 %    }
 %   
 
-\paragraph*{Huomautus laskujärjestyksestä}
 
-Mikäli potensseja on monta päällekkäin (eli eksponenttina on potenssilauseke),
-laskeminen aloitetaan ylimmästä potenssista. Esimerkiksi
-\[2^{3^2}= 2^9 = 512. \]
-Laskujärjestystä voidaan muuttaa suluilla:
-\[(2^3)^2=8^2=64. \]
 
 \begin{tehtavasivu}
 
