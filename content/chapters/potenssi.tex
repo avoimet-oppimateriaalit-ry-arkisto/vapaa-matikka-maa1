@@ -32,6 +32,17 @@ laskeminen aloitetaan ylimmästä potenssista. Esimerkiksi
 mutta
 \[(2^3)^2=8^2=64. \]
 
+   
+%    \laatikko{
+%        \begin{enumerate}
+%            \alakohta{Sulut}
+%            \alakohta{Potenssilaskut}
+%            \alakohta{Kerto- ja jakolaskut vasemmalta oikealle}
+%            \alakohta{Yhteen- ja jakolaskut vasemmalta oikealle}
+%        \end{alakohdat}
+%    }
+%  
+
 \subsubsection*{Negativinen kantaluku}
 
 Jos kantaluku on negatiivinen, sen ympärille merkitään selkeyden vuoksi
@@ -54,9 +65,10 @@ $-2^4=-16$. Kerralla laskettuna:
          \end{alakohdat}
     \end{esimerkki}
     
+    
 \subsection*{Potenssien laskusäännöt}
 
-Potenssilausekkeita voi usein siventää paljonkin, vaikka kantaluku
+Potenssilausekkeita voi usein sieventää paljonkin, vaikka kantaluku
 olisi tuntematon. Tässä esimerkkejä.    
     
     Samankantaisten potenssien kertolasku
@@ -143,12 +155,20 @@ eksponenteille, ne voi määritellä vain yhdellä tavalla:
         \end{equation*}
     }
     
-    Kun eksponenttina on nolla, on tuloksena aina luku $1$ kaikilla nollasta poikkeavilla kantaluvuilla. 
-    Esimerkiksi
+Vastaavasti potenssin $a^0$ voi määritellä vain yhdellä tavalla, jos halutaan
+potenssien laskusääntöjen pätevän sillekin. Lasketaan $\frac{a^3}{a^3}$
+kahdella eri tavalla:
+
     \[
-        \frac{a^3}{a^3}=\frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=1,
+        \frac{a^3}{a^3}=\frac{\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}
+        {\cancel{a}\cdot \cancel{a}\cdot \cancel{a}}=1,
     \]
-    mutta sama lasku voidaan laskea myös toisella tavalla: $\frac{a^3}{a^3}=a^{3-3}=a^0$.
+	toisaalta
+ \[ \frac{a^3}{a^3}=a^{3-3}=a^0. \]
+
+Siis $a^0=1$, kunhan $a\neq 0$.  Laskua $0^0$ ei ole määritelty, koska
+nollalla ei voi jakaa. 
+ 
   
     \laatikko{
         \textbf{Eksponenttina nolla} (kun $a\neq 0$)
@@ -157,20 +177,15 @@ eksponenteille, ne voi määritellä vain yhdellä tavalla:
         \end{equation*}
     }
 
-Emme voi päätellä näin, jos $a = 0$. Siksi merkintää $0^n$, missä $n \leq 0$,
-ei ole määritelty.   
-
-%    \subsection*{Laskujärjestys}
-%    
-%    \laatikko{
-%        \begin{enumerate}
-%            \alakohta{Sulut}
-%            \alakohta{Potenssilaskut}
-%            \alakohta{Kerto- ja jakolaskut vasemmalta oikealle}
-%            \alakohta{Yhteen- ja jakolaskut vasemmalta oikealle}
-%        \end{alakohdat}
-%    }
-%   
+    \begin{esimerkki}
+        Laske.
+        \begin{alakohdat}
+            \alakohta{$2^{-3}=\frac{1}{2^3} = \frac{1}{8}$}
+            \alakohta{$7^0=1$}
+            \alakohta{$(-556)^0=1$}
+            \alakohta{$(-2)^{-2}=\frac{1}{2^{-2}}=\frac{1}{4}$}
+         \end{alakohdat}
+    \end{esimerkki}  
 
 
 
