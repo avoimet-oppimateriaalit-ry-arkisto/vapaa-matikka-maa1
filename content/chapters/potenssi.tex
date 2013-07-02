@@ -1,27 +1,57 @@
 \section{Potenssi}
     
-    Jos $a$ on rationaaliluku ja $n$ on positiivinen kokonaisluku, potenssilla $a^n$ tarkoitetaan tuloa
-    \[
+    Jos $a$ on rationaaliluku ja $n$ on positiivinen kokonaisluku, potenssimerkintää $a^n$ käytetään lyhennysmerkintänä tulolle
+   
+\laatikko{    \[
         a^n = \underbrace{a\cdot \ldots \cdot a}_{n\text{ kpl}}. 
-    \]
-Lukua $a$ kutsutaan potenssin \emph{kantaluvuksi} ja lukua $n$ \emph{eksponentiksi}. Merkinnällä $2^4$ siis tarkoitetaan tuloa $2\cdot 2\cdot 2\cdot 2$. Siten
+    \]}
+    
+Lukua $a$ kutsutaan potenssin \emph{kantaluvuksi} ja lukua $n$ \emph{eksponentiksi}. Merkinnällä $2^4$ siis tarkoitetaan tuloa 
         \[
             2^4=2\cdot 2\cdot 2\cdot 2=16.
         \]
-Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \emph{neliöksi} ja kolmatta potenssia $a^3$ sen \emph{kuutioksi}. Luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, on $a^3$ kyseisen kuution tilavuus.  
+Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \emph{neliöksi} ja kolmatta potenssia $a^3$ sen \emph{kuutioksi}. Nimitysten taustalla on,
+että luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, on $a^3$ kyseisen kuution tilavuus.  
+
+\subsubsection*{Laskujärjestys}
+
+Sopimus on, että potenssit lasketaan ennen kerto- ja jakolaskuja. Sulut lasketaan ensin tavalliseen tapaan.
+
+    \begin{esimerkki}
+      Laskujärjestys
+        \begin{alakohdat}
+            \alakohta{$1+2\cdot 5^2 = 1+2\cdot 25 = 51$}
+            \alakohta{$1+3^2 = 1+3\cdot 3 = 10$}
+            \alakohta{$(1+3)^2=4^2=16.$}
+        \end{alakohdat}
+    \end{esimerkki}  
+
+\subsubsection*{Negativinen kantaluku}
+
+Jos kantaluku on negatiivinen, sen ympärille merkitään selkeyden vuoksi
+aina sulkeet. Esimerkiksi
+
+\[ (-2)^4 = -2 \cdot (-2)\cdot(-2)\cdot(-2) = 16. \]
+
+Merkinnässä $-2^4$ puolestaan potenssin kantaluku on 2. Koska $2^4 = 16$,
+$-2^4=-16$. Kerralla laskettuna:     
+
+\[ -2^4 =-(2^4)= -(2 \cdot 2\cdot 2 \cdot 2) = -16. \]          
             
     \begin{esimerkki}
-        Potenssien sieventäminen.
+        Negatiivinen kantaluku.
         \begin{alakohdat}
-            \alakohta{$(-2)^3 = (-2)\cdot (-2)\cdot (-2) = -8$}
-            \alakohta{$(-2)^4 = (-2)\cdot (-2)\cdot (-2)\cdot (-2) = 16$}
-            \alakohta{$-2^4   = -(2^4) = -(2\cdot 2\cdot 2\cdot 2) = -16$}
-            \alakohta{$2^2\cdot 2^3 = \underbrace{2\cdot 2}_{\text{$2$ kpl}}\cdot \underbrace{2\cdot 2\cdot 2}_{\text{$3$ kpl}} = \underbrace{2\cdot 2\cdot 2\cdot 2\cdot 2}_{\text{$5$ kpl}}=2^5 = 32$}
-            \alakohta{ $\displaystyle\frac{2^4\cdot 2^2}{2^3} = \frac{2\cdot 2\cdot 2\cdot \cancel{2} \cdot \cancel{2}\cdot \cancel{2}}{\cancel{2}\cdot \cancel{2}\cdot \cancel{2}} = 2^3 = 8$}
-        \end{alakohdat}
+            \alakohta{$(-5)^2 = -5\cdot (-5)= 25$}
+            \alakohta{$-5^2 = -5\cdot 5= -25$}
+            \alakohta{$10-5^2=10-25=-15$}
+            \alakohta{$10+(-5)^2 = 10 + 25 = 35$}
+         \end{alakohdat}
     \end{esimerkki}
     
 \subsection*{Potenssien laskusäännöt}
+
+Potenssilausekkeita voi usein siventää paljonkin, vaikka kantaluku
+olisi tuntematon. Tässä esimerkkejä.    
     
     Samankantaisten potenssien kertolasku
 	\[
@@ -33,7 +63,8 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
     	\]
     Potenssin potenssi
 	\[
-(a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=\underbrace{a\cdot a\cdot a\cdot a\cdot a\cdot a}_{2\cdot 3=6\text{ kpl}}=a^{\boldsymbol{{2\cdot 3}}}=a^6
+(a^2)^3=\underbrace{a^2\cdot a^2\cdot a^2}_{3\text{ kpl}}=
+\underbrace{(a\cdot a)\cdot (a\cdot a)\cdot (a\cdot a)}_{2\cdot 3=6\text{ kpl}}=a^{\boldsymbol{{2\cdot 3}}}=a^6
 \]
     Tulon potenssi
 	\[
@@ -41,16 +72,14 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
 	\]
      Osamäärän potenssi
 	\[
-	\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{a^{21}}
+	\left(\frac{a^9}{b^7}\right)^3=\frac{a^9}{b^7}\cdot \frac{a^9}{b^7}\cdot \frac{a^9}{b^7}=\frac{a^9\cdot a^9\cdot a^9}{b^7\cdot b^7\cdot b^7}=\frac{a^{\mathbf{9\cdot 3}}}{b^{\mathbf{7\cdot 3}}}=\frac{a^{27}}{b^{21}}
 	\]
 
-    Potensseille pätevät seuraavat laskusäännöt.
+ Edellä esitetyt ideat voi yleistää potenssien laskusäännöiksi:
     
     \laatikko{
         \textbf{Potenssien laskusääntöjä}
-    
-        Olkoot $m$ ja $n$ kokonaislukuja ja $a$ rationaaliluku.
-        
+                  
         \begin{tabular}{ll}
             $a^m\cdot a^n            = a^{m+n}$ & Samakantaisten potenssien tulo\\ % Kielitoimiston sanakirjan mukaan samakantainen, ei samankantainen
             $\displaystyle \frac{a^m}{a^n}= a^{m-n}$ & Samakantaisten potenssien osamäärä ($a\neq 0$)\\
@@ -59,7 +88,17 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
             $(a^m)^n                 = a^{m\cdot n}$ & Potenssin potenssi\\
         \end{tabular}
     }
-    
+ 
+    \begin{esimerkki}
+        Lasketaan potenssien laskusääntöjen avulla.
+        \begin{alakohdat}
+            \alakohta{$a^3\cdot a^2 = a^{2+3}=a^5$}
+            \alakohta{$(a^3)^2 = a^{2\cdot 3}=a^6$}
+            \alakohta{$\frac{7^9}{7^7}=7^{9-7}=7^2=49$}
+            \alakohta{$(ab)^5=a^5b^5$}
+         \end{alakohdat}
+    \end{esimerkki} 
+ 
 \subsection*{Negatiivinen luku ja nolla eksponenttina}
 
 Oletetaan seuraavissa päättelyissä, että $a \neq 0$. Silloin voimme jakaa $a$:lla.
