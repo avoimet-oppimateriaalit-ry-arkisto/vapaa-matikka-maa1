@@ -1,11 +1,25 @@
 \section{Prosenttilaskenta}
 
 Sana \termi{prosentti}{prosentti} tulee latinan kielen ilmaisusta \termi{pro centum}{pro centum},
-mikä tarkoittaa kirjaimellisesti sataa kohden. 
+joka tarkoittaa kirjaimellisesti sataa kohden. 
+Prosentit ovat siis sadasosia jostain.
 Prosentteja käytetään ilmaisemaan suhteellista osuutta.
 Prosentin merkki on \%.
 
 \laatikko{$1~\textnormal{prosentti} \; = 1~\% = \frac{1}{100} = 0,01$}
+
+\begin{esimerkki}
+Eräs kauppa myy tuotteensa $5$~prosentin alennuksella. Tämä tarkoittaa, että jokaisesta hinnasta vähennetään $\frac{5}{100}$ hinnasta. Jos tuotteen alkuperäinen hinta on esimerkiksi $100$~euroa, on alennettu hinta $95$~euroa. Jos tuotteen alkuperäinen hinta on $14,50$~euroa, on alennuksen määrä
+\[
+	\frac{5}{100} \cdot 14,50~\text{euroa} = 0,725~\text{euroa}.
+\]
+Alennettu hinta on tällöin $(14,50 - 0,725)~\text{euroa} \approx 13,78~\text{euroa}$.
+
+Samaan tulokseen pääsee vielä kätevämmin, kun ajattelee alennuksen määrän sijaan sitä, kuinka suuri osa hinnasta jää jäljelle. Jos alennus on $5~\%$, jää hinnasta jäljelle $95~\%$. Jos alkuperäinen hinta on $14,50$~euroa, on alennettu hinta 
+\[
+	\frac{95}{100} \cdot 14,50~\text{euroa} \approx 13,78~\text{euroa}.
+\]
+\end{esimerkki}
 
 \begin{esimerkki}
     Prosenttiluvut voidaan esittää myös muilla tavoin.
@@ -42,11 +56,11 @@ Prosentin merkki on \%.
     \termi{absoluuttinen muutos}{Absoluuttinen muutos} luvusta $a$ lukuun $b$ on $b-a$.
     Suhteellinen muutos saadaan suhteuttamalla muutos absoluuttinen muutos alkuperäiseen lukuun $a$ eli laskemalla
     
-    \[ \Delta_{suhteellinen} = \frac{\Delta_{absoluuttinen}}{a} = \frac{b-a}{a} \]
+    \[ \Delta_{\text{suhteellinen}} = \frac{\Delta_{\text{absoluuttinen}}}{a} = \frac{b-a}{a} \]
     
     Muutosprosentti saadaan suhteellisesta muutoksesta muuttamalla se prosenttiluvuksi:
     
-    \[ \Delta_{prosentti} = \Delta_{suhteellinen} \cdot 100~\% = \frac{b-a}{a} \cdot 100~\% \]
+    \[ \Delta_{\text{prosentti}} = \Delta_{\text{suhteellinen}} \cdot 100~\% = \frac{b-a}{a} \cdot 100~\% \]
     
     Jos muutosprosenttia lasketaan vastakkaiseen suuntaan, saadaan eri muutosprosentti.
 }
@@ -59,7 +73,7 @@ Prosentin merkki on \%.
     Halutaan tietää Vesan painon muutos prosentteina tammikuusta kesäkuuhun.
     
     \[
-        \Delta_{prosentti}
+        \Delta_{\text{prosentti}}
         = \frac{b-a}{a} \cdot 100~\%
         = \frac{64-68}{68} \cdot 100~\%
         = \frac{-4}{68} \cdot 100~\%
@@ -108,6 +122,26 @@ Prosentin merkki on \%.
     
     Anteron tulot ovat $72~\%$ Vesan tuloista.
 \end{esimerkki}
+
+Joissain tilanteissa perusarvo on tuntematon. Se ratkeaa usein mukavimmin yhtälöllä.
+
+\begin{esimerkki}
+Tuotteen hintaa korotettiin 15~\%, jolloin hinnaksi muodostui 175~euroa. Kuinka suuri oli alkuperäinen korottamaton hinta?
+
+\textbf{Ratkaisu.} 
+Olkoon alkuperäinen hinta $x$~euroa. Koska hintaa on korotettu 15~\%, on uusi hinta 115~\% alkuperäisestä. Käytetään vertailuprosentin laskukaavaa yhtälönä ja ratkaistaan se:
+\begin{align*}
+	\frac{175}{x} \cdot 100~\%	&= 115~\%	&	&|\, \text{Jaetaan $100~\%$:lla.} \\
+	\frac{175}{x}	&= 1,15	&	&|\, \text{Kerrotaan $x$:llä.} \\
+	175	&= 1,15x	&	&|\, \text{Jaetaan $1,15$:llä.} \\
+	x	&= \frac{175}{1,15} \approx 152,17.	&	& \\
+\end{align*}
+    \textbf{Ratkaisu.}
+    Tuotteen korottamaton hinta oli $152,17$~euroa.
+\end{esimerkki}
+
+Käytännössä tuntemattoman perusarvon selvittämisessä pääsee vielä vähemmällä, jos ajattelee, että $15$~prosentin korotuksen takia $x$ pitää kertoa $1,15$:llä, jotta saa korotetun hinnan. Näin pääsee suoraan yhtälöön $1,15x = 175$.
+
 
 % PROSENTTIYKSIKKÖ
 \laatikko{
