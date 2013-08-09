@@ -1,6 +1,6 @@
 \newcommand{\osa}[1]{\chapter{#1}} % osa
 \newcommand{\nosa}[1]{\chapter*{#1} \addcontentsline{toc}{chapter}{#1}} % numeroimaton osa
-\newcommand{\luku}[2]{\section{#2} \input{chapters/#1}} % luku
+\newcommand{\luku}[2]{\section{#2} \input{chapters/TEORIA_#1} \input{chapters/TEHT_#1}} % luku
 \newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \input{chapters/#1}} % numeroimaton luku
 
 \Opensolutionfile{ans}[chapters/LIITE_vastaukset]
@@ -15,7 +15,7 @@
 
 \osa{Yhtälöt}
     \luku{yhtalo}{Yhtälö}
-    \luku{ensimmaisen-asteen-yhtalo}{Ensimmäisen asteen yhtälö}
+    \luku{ensimmainen}{Ensimmäisen asteen yhtälö}
     \luku{verrannollisuus}{Suoraan ja kääntäen verrannollisuus}
     \luku{prosenttilaskenta}{Prosenttilaskenta}
     \luku{potenssiyhtalot}{Potenssiyhtälöt}
@@ -24,25 +24,24 @@
     \luku{funktio}{Funktio ja sen esitystavat}
 	\luku{potenssifunktio}{Potenssifunktio}
 	\luku{eksponenttifunktio}{Eksponenttifunktio}
+	
+%\nosa{Tiivistelmä}
 
 \nosa{Kertaustehtäviä}
-    \nluku{harjoituskokeet}{Harjoituskokeita}
-    \nluku{ylioppilaskokeet}{Ylioppilaskoetehtäviä}
-	\nluku{paasykokeet}{Pääsykoetehtäviä}
+    \nluku{TEHT_harjoituskokeet}{Harjoituskokeita}
+    \nluku{TEHT_ylioppilaskokeet}{Ylioppilaskoetehtäviä}
+	\nluku{TEHT_paasykokeet}{Pääsykoetehtäviä}
 
 \Closesolutionfile{ans}
 
 \nosa{Lisämateriaalia}
-    \nluku{LIITE_lahtotasotesti}{Lähtötasotesti}
+	\nluku{LIITE_vastaukset}{Vastaukset}
+    \nluku{LIITE_lahtotasotesti}{Lähtötasotesti} % ok?
 	\nluku{LIITE_kaytanto}{Yksiköt ja vastaustarkkuus}
 	\nluku{LIITE_saannot}{Laskusääntöjen todistuksia}
+	\nluku{LIITE_lukujarjestelmat}{Lukujärjestelmät} % ok?
 	\nluku{LIITE_lukuteoria}{Lukuteorian alkeet}
-	\nluku{LIITE_joukot}{Logiikan ja joukko-opin alkeet}
-	\nluku{LIITE_lukujarjestelmat}{Lukujärjestelmistä}
+	\nluku{LIITE_joukot}{Joukko-opin alkeet}
 	\nluku{LIITE_aksioomat}{Reaalilukujen aksioomat}
-	\nluku{LIITE_vastaukset}{Vastaukset}
     \nluku{LIITE_sanasto}{Sanasto}
-
-% Kertaustiivistelmä
-% makeindex
-% Symbolitaulukko
+	%\nluku{LIITE_symbolit}{Symbolit}

@@ -1,16 +1,19 @@
 \subsection*{Paikkajärjestelmät}
 
-Merkitsemme lukuja yleensä kymmenjärjestelmässä eli lukujärjestelmässä, jossa on kymmenen numeromerkkiä: $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$.
+Merkitsemme lukuja yleensä \termi{kymmenjärjestelmä}{kymmenjärjestelmässä} eli \termi{lukujärjestelmä}{lukujärjestelmässä}, jossa on kymmenen \termi{numeromerkki}{numeromerkkiä}:
+$0, 1, 2, 3, 4, 5, 6, 7, 8, 9$.
 \footnote{Muitakin numeromerkkejä voisi käyttää. Käyttämämme numeromerkit ovat nimeltään hindu-arabialaiset numerot.}
-Kymmenjärjestelmä tunnetaan myös desimaalijärjestelmänä. Tiedämme kuitenkin kulttuureja, joissa on käytetty pääasiallisesti jotakin muuta lukujärjestelmää.
+Kymmenjärjestelmää kutsutaan myös \termi{desimaalijärjestelmä}{desimaalijärjestelmäksi}.
+Tunnetaan kulttuureja, joissa on käytetty pääasiallisesti jotakin muuta lukujärjestelmää.
 
-Kymmenjärjestelmä on paikkajärjestelmä, eli merkin paikka määrittää sen merkityksen. Esimerkiksi luvussa $80$ merkin 8 merkitys on $8 \cdot 10^1$, mutta luvussa
-$820$ sen merkitys on $8 \cdot 10^2$.
+Kymmenjärjestelmä on \termi{paikkajärjestelmä}{paikkajärjestelmä}, eli merkin paikka määrittää sen merkityksen.
+Esimerkiksi luvussa $80$ merkin 8 merkitys on $8 \cdot 10^1$, mutta luvussa $820$ sen merkitys on $8 \cdot 10^2$.
 
-Nykyään yleisimmät desimaalijärjestelmästä poikkeavat lukujärjestelmät ovat binääri-, oktaali- ja heksadesimaalijärjestelmät, joissa on 2, 8 ja 16 numeromerkkiä.
+Nykyään yleisimmät desimaalijärjestelmästä poikkeavat lukujärjestelmät ovat \termi{binäärijärjestelmä}{binääri-},
+\termi{oktaalijärjestelmä}{oktaali-} ja \termi{heksadesimaalijärjestelmä}{heksadesimaalijärjestelmät}, joissa on 2, 8 ja 16 numeromerkkiä.
 Tietokoneet käsittelevät lukuja sisäisesti binäärijärjestelmässä, kun taas oktaali- ja heksadesimaalijärjestelmät ovat muutoin käteviä tietojenkäsittelytieteessä.
 
-Binäärijärjestelmässä luvun muodostavia numeromerkkejä kutsutaan biteiksi.
+Binäärijärjestelmässä luvun muodostavia numeromerkkejä kutsutaan \termi{bitti}{biteiksi}.
 Bitti voi olla joko päällä (1) tai pois päältä (0), ja toteutus tietokoneessa vastaa esimerkiksi sitä, että johtimessa kulkee virta (1) tai ei (0).
 
 Kuusitoistajärjestelmässä tarvitaan numeroiden $0 \ldots \, 9$ lisäksi kuusi uutta numeromerkkiä.
@@ -31,13 +34,13 @@ Klassinen vitsi ''Miksi tietojenkäsittelytieteilijä sekoittaa halloweenin ja j
 
 Yleisesti tunnetaan myös joitakin lukujärjestelmiä, jotka eivät ole paikkajärjestelmiä.
 
-Tukkimiehen kirjanpidossa toistetaan yhtä ainoaa merkkiä. Se on tavallaan 1-järjestelmä, mutta tällainen määrittely ei ole ongelmaton.
+\termi{tukkimiehen kirjanpito}{Tukkimiehen kirjanpidossa} toistetaan yhtä ainoaa merkkiä. Se on tavallaan 1-järjestelmä, mutta tällainen määrittely ei ole ongelmaton.
 
 \begin{center}
 	\includegraphics{pictures/Kuva1-1-tukkimiehenkirjanpito.pdf}
 \end{center}
 
-Hienostuneempi versio tukkimiehen kirjanpidosta on roomalaiset luvut, jotka nimensä mukaisesti olivat antiikin Roomassa keskeisin lukujärjestelmä.
+Hienostuneempi versio tukkimiehen kirjanpidosta ovat \termi{roomalaiset luvut}{roomalaiset luvut}, jotka nimensä mukaisesti olivat yleisin lukujärjestelmä antiikin Roomassa.
 Ne perustuvat havaintoon, että kun käytettävissä olevien merkkien määrää lisää, suuria lukuja voi kirjoittaa lyhyempään muotoon.
 Tilanne on verrattavissa vaikkapa kiinan kieleen, jossa on käytössä satoja erilaisia kirjoitusmerkkejä.
 Merkeissä on paljon muistettavaa, mutta toisaalta kokonaisen lauseen voi kirjoittaa vain parilla kirjoitusmerkillä.
@@ -58,13 +61,24 @@ Roomalaisten lukujen numeromerkit ovat I, V, X, L, C, D ja M. Ne vastaavat desim
 
 Roomalaiset luvut merkitään kirjoittamalla merkkejä laskevassa järjestyksessä, poikkeuksena vähennyssääntö. Merkkien kokonaisarvo määrää luvun.
 
-Lisäksi on kuusi kaksimerkkistä ilmaisua, jotka tunnetaan myös vähennyssääntönä: IV = $4$, IX = $9$, XL = $40$, XC = $90$, CD = $400$ ja CM = $900$.
-Niistä kukin voi esiintyä luvussa vain kerran. Kaksimerkkisiin ilmaisuihin pätevät samat säännöt kuin numeromerkkeihinkin:
-I = $1$ ei voi edeltää numeroa IV = $4$, eikä IV = $4$ numeroa V = $5$. Lisäksi merkinnät IXV, XCL ja CMD eivät ole sallittuja.
+Vähennyssääntö tarkoittaa kuutta kaksimerkkistä ilmaisua:
+
+\begin{equation*}
+	\rm IV=4\quad
+	IX=9\quad
+	XL=40\quad
+	XC=90\quad
+	CD=400\quad
+	CM=900
+\end{equation*}
+
+Luvussa voi olla vain kerran IV tai IX, vain kerran XL tai XC ja vain kerran CD tai CM.
+Kaksimerkkisiin ilmaisuihin pätevät samat säännöt kuin numeromerkkeihinkin: I = $1$ ei voi edeltää numeroa IV = $4$, eikä IV = $4$ numeroa V = $5$.
+Lisäksi merkinnät IXV, XCL ja CMD eivät ole sallittuja.
 
 Oikea roomalainen luku minimoi käytettyjen merkkien määrän. Esimerkiksi VIV ei ole roomalainen luku, sillä IX on lyhyempi.
 
-Nollaa roomalaisissa numeroissa ei ole; nolla nykyisessä merkityksessään kehitettiin Intiassa 800-luvulla jaa.
+\termi{nolla}{Nollaa} roomalaisissa numeroissa ei ole; nolla nykyisessä merkityksessään kehitettiin Intiassa 800-luvulla jaa.
 
 \begin{esimerkki}
 	Roomalaisia lukuja:
@@ -80,11 +94,12 @@ Nollaa roomalaisissa numeroissa ei ole; nolla nykyisessä merkityksessään kehi
 
 \subsection*{Huomautuksia}
 
-Numero ja luku eivät ole synonyymejä; numero on yksittäinen lukujärjestelmän merkki.
+\termi{numero}{Numero} ja \termi{luku}{luku} eivät ole synonyymejä; numero on yksittäinen lukujärjestelmän merkki.
 
 \begin{esimerkki}
-	Luku \[715531\] koostuu numeroista 7, 1, 5, 5, 3 ja 1.
-	Luku \[9\] koostuu ainoastaan vastaavasta numeromerkistä 9.
+	Luku $715531$ koostuu numeroista 7, 1, 5, 5, 3 ja 1.
+	
+	Luku $9$ koostuu ainoastaan vastaavasta numeromerkistä 9.
 \end{esimerkki}
 
 Englannin kielen sana \textit{number} voi viitata sekä numeroon että lukuun.
@@ -94,5 +109,5 @@ Ruotsiksi luku on \textit{tal}, lukumäärä \textit{antal} ja numeroa tai lukum
 Luvulla on aina suuruus mutta numerolla ei välttämättä ole. Esimerkiksi arkipäivän käsitteet postinumero ja puhelinnumero eivät ole lukuja, vaikka niissä numeroita yhdistelläänkin. 
 Emme voi esimerkiksi sanoa, onko postinumero 00950 jollakin tapaa suurempi kuin postinumero 00900.
 
-Tuhaterottimena käytetään suomenkielisessä tekstissä välilyöntiä, ei pilkkua tai pistettä.
-Desimaalierotin puolestaan on suomenkielisessä tekstissä pilkku, ei piste, kuten yhdysvaltalaisissa laskimissa.
+\termi{tuhaterotin}{Tuhaterottimena} käytetään suomenkielisessä tekstissä välilyöntiä, ei pilkkua tai pistettä.
+\termi{desimaalierotin}{Desimaalierotin} puolestaan on suomenkielisessä tekstissä pilkku, ei piste, kuten yhdysvaltalaisissa laskimissa.
