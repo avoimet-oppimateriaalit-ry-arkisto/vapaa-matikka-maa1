@@ -34,6 +34,6 @@
 *~
 .DS_Store
 content/*.pdf
-content/appendices/vastaukset.tex
+content/chapters/LIITE_vastaukset.tex
 content/revision.tex
 content/kuva-tmp-*
