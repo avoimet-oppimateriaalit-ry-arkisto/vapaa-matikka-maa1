@@ -1,8 +1,17 @@
 \subsection*{Jaollisuus ja tekijöihinjako}
 
 \laatikko{
-	Kokonaisluku $a$ on jaollinen kokonaisluvulla $b$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$.
+	\textbf{Määritelmä 1}
+	
+	Kokonaisluku $a$ on jaollinen kokonaisluvulla $b \neq 0$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$.
 	Tällöin sanotaan myös, että $b$ on $a$:n tekijä.
+	
+	\vspace*{24pt}
+	
+	\textbf{Määritelmä 2}
+	Luku $a$ on jaollinen luvulla $b \neq 0$, mikäli $\frac{a}{b}$ on kokonaisluku.
+	
+	Määritelmät ovat yhtäpitäviä.
 }
     
 \begin{esimerkki}
@@ -11,11 +20,6 @@
 		\alakohta{$-12$ ei ole jaollinen luvulla $5$, sillä ei ole kokonaislukua, joka kerrottuna viidellä olisi $12$.}
 	\end{alakohdat}
 \end{esimerkki}
- 
-Yllä jaollisuus määritellään kertolaskun avulla.
-Jaollisuuden voi määritellä myös jakolaskun avulla niin, että luku $a$ on jaollinen luvulla $b$, mikäli $a:b$ on kokonaisluku.
-Esimerkiksi luku $12$ on jaollinen luvulla $3$, koska $12:3 = 4$, ja $4$ on kokonaisluku.
-%Tämä määritelmä vaatii kuitenkin, että $b \neq 0$, joten sitä ei voida pitää yleispätevänä määritelmänä jaollisuudelle. Se on kuitenkin monesti yksinkertaisempi tapa ajatella.
    
 \begin{center}
 \includegraphics[scale=0.85]{pictures/Kuva2-4-3x4.pdf}
@@ -27,26 +31,20 @@ Kaikki luvut ovat jaollisia itsellään ja luvulla $1$. Esimerkiksi $7=7 \cdot 1
 	\termi{alkuluku}{Alkuluku} on ykköstä suurempi kokonaisluku, joka ei ole jaollinen muilla positiivisilla kokonaisluvuilla kuin luvulla $1$ ja itsellään.
 }
     
-    Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja.
-    kutsutaan alkutekijöiksi.
+Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja. Jos luvun tekijä on alkuluku, sitä kutsutaan alkutekijäksi.
     
-    \laatikko{
+\laatikko{
     \textbf{Aritmetiikan peruslause}
+	
+    Jokainen ykköstä suurempi kokonaisluku voidaan esittää (termien järjestystä lukuunottamatta) yksikäsitteisesti alkulukujen tulona.
+	(Jokainen ykköstä suurempi kokonaisluku voidaan jakaa alkutekijöihin (termien järjestystä lukuunottamatta) yksikäsitteisellä tavalla.)
+}
     
-    Jokainen ykköstä suurempi kokonaisluku voidaan esittää yksikäsitteisesti alkulukujen tulona.
-    }
+Aritmetiikan peruslause todistetaan kurssilla Logiikka ja lukuteoria.
     
-   Aritmetiikan peruslause todistetaan kurssilla Logiikka ja lukuteoria.
+Esimerkiksi luku $84$ voidaan kirjoittaa muodossa $2\cdot 2\cdot 3\cdot 7$. Havaitaan, että $2$, $3$, ja $7$ ovat kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona -- mahdollista kerrottavien termien järjestyksen vaihtoa lukuunottamatta.
     
-    Esimerkiksi luku $84$ voidaan kirjoittaa muodossa $2\cdot 2\cdot 3\cdot 7$. Kokeilemalla havaitaan, että 2, 3, ja 7 ovat kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona -- mahdollista kerrottavien termien järjestyksen vaihtoa lukuunottamatta.
-    
-    %Kun luku $84$ esitetään muodossa $2\cdot 2\cdot 3\cdot 7$ on tapana sanoa, että se on \emph{jaettu alkutekijöihin}. Alkutekjät esitetään yleensä kasvavassa numerojärjestyksessä. Jos sama luku esiintyy tekijöissä useampaan kertaan, on se yleensä yleensä tapana merkitä potenssina. Tällöin luku $84$ voitaisiin kirjoittaa tekijöihin jaettuna $2^2\cdot 3\cdot 7$ ja luku $96$ muodossa $2\cdot 2\cdot 2\cdot 2\cdot 2\cdot 3=2^5\cdot 3$.
-    
-    %Luvun alkutekijät voi löytää etsimällä luvulle ensin jonkin esityksen kahden luvun tulona. Näiden kahden luvun ei tarvitse olla alkulukuja. Sen jälkeen sama toistetaan näille kahdelle luvulle ja edelleen aina uusille luvuille, kunnes tulossa on jäljellä vain alkulukuja.
-    
-    %\begin{esimerkki}
-    %Luvun $96$ alkutekijät voi löytää vaikkapa seuraavanlaisella ketjulla: $96 = 2 \cdot 48 = 2 \cdot (2 \cdot 24) = 2 \cdot 2 \cdot (6 \cdot 4) = 2 \cdot 2 \cdot (2 \cdot 3) \cdot (2 \cdot 2)$. Nyt jäljellä on vain alkulukuja ja saatu tulo voidaan kirjoittaa lyhennettynä $96 = 2^5 \cdot 3$.
-    %\end{esimerkki}
+Luvun alkutekijät voi löytää etsimällä luvulle ensin jonkin esityksen kahden luvun tulona. Näiden kahden luvun ei tarvitse olla alkulukuja. Sen jälkeen sama toistetaan näille kahdelle luvulle ja edelleen aina uusille luvuille, kunnes jäljellä on vain alkulukuja.
 
 \begin{tehtavasivu}
 
