@@ -1,14 +1,12 @@
 Usein ollaan kiinnostuneita siitä, millainen yhteys on kahden asian välillä.
 Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 
-\laatikko{
-	\termi{funktio}{Funktio} $f$ liittää \termi{muuttuja}{muuttujaan} $x$ arvon $f(x)$.
+\laatikko{ % tästä on jaksettu riidellä
+	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää \termi{muuttuja}{muuttujaan} $x$ arvon $f(x)$.
 
 	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
 	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot kuuluvat.
 }
-
-% FIXME: Onko funktio sääntö? Tulisiko funktionaalisuusehto mainita? Lähestymistapoja on lukemattomia.
 
 \begin{esimerkki}
 	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla.
@@ -18,117 +16,136 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 	ja arvojoukoksi reaaliluvut.
 	Funktio voi liittää kuhunkin hyödykkeeseen esimerkiksi siitä maksettavan arvonlisäveroprosentin:
 	$f(\text{särkylääke}) = 10$ ja $f(\text{televisio}) = 24$.
-	
-	% FIXME: kuvassa vanhentuneet alv-prosentit
+
 	\begin{center}
 		\includegraphics[width=11.5cm]{pictures/funktiokone.pdf}
 	\end{center}
 \end{esimerkki}
 
-Funktioiden käyttämiseen liittyy joitakin vakiintuneita tapoja:
-\begin{alakohdat}
-	\alakohta{$f(x) = y$ lausutaan: ''Funktio saa arvon $y$ pisteessä $x$'',}
-	\alakohta{Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne voidaan päätellä asiayhteydestä.
-		Tällä kurssilla funktiot ovat yleensä reaaliluvuilta reaaliluvuille.}
-	\alakohta{Toisinaan funktiolle ja funktion kuvaajalle ei tehdä selkeää eroa:
+Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
+\begin{description}
+	\item[1)] $f(x) = y$ lausutaan: ''Funktio saa arvon $y$ pisteessä $x$.''
+	\item[2)] Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne voidaan päätellä asiayhteydestä.
+		Tällä kurssilla funktiot ovat yleensä reaaliluvuilta reaaliluvuille.
+	\item[3)] Usein kirjoitetaan ''funktio $f(x) = \text{lauseke}$,'' vaikka tarkkaan ottaen funktio on $f$ ja
+		$f(x)$ on funktion saama arvo pisteessä $x$.
+	\item[4)] Toisinaan funktiolle ja funktion kuvaajalle ei tehdä selkeää eroa:
 		$y = f(x)$ samaistetaan koordinaatistoon piirretyn funktion kuvaajan kanssa.
-		Periaatteessa funktio ja sen kuvaaja ovat kuitenkin eri asioita.}
-\end{alakohdat}
+		Oikeastaan funktio ja sen kuvaaja ovat kuitenkin eri asioita.
+\end{description}
 
-Funktiolla on usein jokin selkeä sääntö, joka voidaan kirjoittaa matemaattisena lausekkeena.
+\subsection*{Reaalifunktiot}
+
+Funktioita, jotka määritellään reaaliluvuilla, ja jotka saavat arvokseen reaalilukuja, kutsutaan reaalifunktioiksi.
+Funktiolla, erityisesti reaalifunktioilla, on usein jokin selkeä sääntö, joka voidaan kirjoittaa matemaattisena lausekkeena.
 
 \begin{esimerkki}
 	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan sivun pituuden
-	ja neliön pinta-alan välistä yhteyttä kuvata funktiolla $A(x) = x^2$.
+	ja neliön pinta-alan välistä yhteyttä kuvata funktiolla $A(x) = x^2$. % FIXME
 \end{esimerkki}
 
-Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla
-funktio on määritelty eli joilla funktion arvo voidaan laskea.
+Reaalifunktioita voidaan havainnollistaa koordinaatistossa kuvaajien avulla.
+Funktion $f$ kuvaajassa koordinaatistoon piirretään ne pisteet $(x, y)$, joiden $y$-koordinaatti on $f$:n arvo $x$-koordinaatissa.
+Reaalifunktioilla ei kuitenkaan voida laskea $y = f(x)$ kaikilla $f$:n määrittelyjoukon luvuilla $x$, joten esimerkiksi graafiset laskimet
+laskevat $y = f(x)$ ''riittävän monella'' luvulla ja sovittavat kuvaajan niiden perusteella.
+Funktioita voi piirtää helposti paitsi graafisilla laskimilla, myös tietokoneohjelmilla sekä esimerkiksi verkossa
+Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
+
+% Tarvitaan kuvien ja taulukkojen vierekkäin laittamiseen.
+\def\vcent#1{\mathsurround0pt$\vcenter{\hbox{#1}}$}
 
 \begin{esimerkki}
-	Määritellään funktio $f$ lausekkeella
-	\[ f(x) = \frac{1}{x-1}. \]
+	Funktion $f(x) = \frac{x}{2} - 1$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = \frac{x}{2} - 1$: % FIXME
+	\begin{center}
+		\begin{tabular}{cc}
+			\begin{tabular}{|r|l|}
+				\hline
+				$x$ & $y = f(x)$ \\
+				\hline
+				$-3$ & $-2,5$ \\
+				$-2$ & $-2$ \\
+				$-1$ & $-1,5$ \\
+				$0$ & $-1$ \\
+				$1$ & $-0,5$ \\
+				$2$ & $0$ \\
+				$3$ & $0,5$ \\
+				\hline
+			\end{tabular} &
+			\vcent{\includegraphics[width=8cm]{pictures/suoraesim.pdf}}
+		\end{tabular}
+	\end{center}
+\end{esimerkki}
+
+\begin{esimerkki}
+	Funktion $f(x) = x^2$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = x^2$: % FIXME
+	\begin{center}
+		\begin{tabular}{cc}
+			\begin{tabular}{|r|l|}
+				\hline
+				$x$ & $y = f(x)$ \\
+				\hline
+				$-2$ & $4$ \\
+				$-1$ & $1$ \\
+				$-0,5$ & $0.25$ \\
+				$0$ & $0$ \\
+				$0,5$ & $0.25$ \\
+				$1$ & $1$ \\
+				$2$ & $4$ \\
+				\hline
+			\end{tabular} &
+			\vcent{\includegraphics[width=6cm]{pictures/paraabeli.pdf}}
+		\end{tabular}
+	\end{center}
+\end{esimerkki}
+
+\begin{esimerkki}
+	Funktion $f(x) = x^3-5x+2$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = x^3-5x+2$: % FIXME
+	\begin{center}
+		\includegraphics[width=7cm]{pictures/deg3polynomiesim.pdf}
+	\end{center}
+\end{esimerkki}
+
+\subsection*{Määrittelyjoukko ja arvojoukko}
+
+Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla
+funktio on määritelty, eli joilla funktion arvo voidaan laskea.
+
+\begin{esimerkki}
+	Määritellään funktio $f$ lausekkeella \[ f(x) = \frac{1}{x-1}. \]
 	Mikä on funktion määrittelyjoukko?
-	
 	\begin{esimratk}
-		Funktio $f(x)$ on määritelty, kun nimittäjä $x-1$ on erisuuri kuin 0.
+		Funktio $f$ on määritelty, kun nimittäjä $x-1$ on erisuuri kuin 0.
 		Tämä toteutuu kaikilla $x$:n arvoilla lukuun ottamatta arvoa $x = 1$.
 		Funktion määrittelyjoukkoon kuuluvat siis kaikki reaaliluvut paitsi luku $1$.
 	\end{esimratk}
+	\begin{esimvast}
+		Funktion $f$ määrittelyjoukko on reaalilukujen joukko poislukien luku $1$.
+	\end{esimvast}
 \end{esimerkki}
 
 Funktion \termi{arvojoukko}{arvojoukko} sisältää ne maalijoukon alkiot,
 jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 
 \begin{esimerkki}
-	Mikä on edellä määritellyn funktion $f(x)$ arvojoukko?
-	% ratkaisu tarvitsee korjausta?
+	Mikä on edellä määritellyn funktion $f$ arvojoukko?
+	% korjaa
 	\begin{esimratk}
 		Arvojoukon selvittämiseksi tutkitaan, millä luvun $a$ arvoilla
-		yhtälöllä $f(x) = a$ on ratkaisu,
+		yhtälöllä $f(x) = a$ on ratkaisu. Oletetaan, että $x \neq 1$ (ks. edellinen esimerkki).
 		\begin{align*}
-			a &= \frac{1}{x-1} & &| \, \text{Oletetaan, että $x \neq 1$, jolloin voimme} \\
-			\text{kertoa lausekkeella $(x-1)$ puolittain.} \\
+			a &= \frac{1}{x-1} & &| \, \cdot (x-1), \; \text{sillä} \; x \neq 1 \\
 			a(x-1) &= 1 \\
-			x-1 &= \frac{1}{a} \\
-			x &= 1+\frac{1}{a} & &| \, \text{Havaitaan, että yhtälöllä on ratkaisu kaikilla $a \neq 0$.}
 		\end{align*}
-		Funktion arvojoukkona on siis koko reaalilukujen joukko poislukien luku $0$.
+		Havaitaan, että jos $a = 0$, yhtälöllä ei voi olla ratkaisua, koska $0 \cdot (x-1) = 0 \neq 1$.
+		Oletetaan jatkossa, että $a \neq 0$.
+		\begin{align*}
+			a(x-1) &= 1 & &| \, : a, \; \text{sillä} \; a \neq 0 \\
+			x-1 &= \frac{1}{a} \\
+			x &= 1+\frac{1}{a} \\
+		\end{align*}
+		Havaitaan, että yhtälöllä on ratkaisu kaikilla $a \neq 0$.
 	\end{esimratk}
-\end{esimerkki}
-
-Funktioita reaaliluvuilta reaaliluvuille voidaan havainnollistaa koordinaatistossa kuvaajien avulla. Funktion $f$ kuvaajassa koordinaatistoon piirretään ne pisteet, joilla y-koordinaatti on $f$:n arvo sen x-koordinaatissa. Siis kaikilla $f$:n määrittelyjoukon luvuilla $x$ lasketaan $y = f(x)$ ja piirretään piste $(x, y)$ koordinaatistoon. Funktioita voi piirtää helposti myös graafisilla laskimilla tai tietokoneohjelmilla (esimerkiksi Wolfram Alphalla\footnote{\url{http://www.wolframalpha.com/}}).
-
-% Tarvitaan kuvien ja taulukkojen vierekkäin laittamiseen.
-\def\vcent#1{\mathsurround0pt$\vcenter{\hbox{#1}}$}
-
-\begin{esimerkki}
-Funktion $f(x) = \frac{x}{2} - 1$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = \frac{x}{2} - 1$:
-\begin{center}
-\begin{tabular}{cc}
-\begin{tabular}{|r|l|}
-\hline
-$x$ & $y = f(x)$ \\
-\hline
-$-3$ & $-2,5$ \\
-$-2$ & $-2$ \\
-$-1$ & $-1,5$ \\
-$0$ & $-1$ \\
-$1$ & $-0,5$ \\
-$2$ & $0$ \\
-$3$ & $0,5$ \\
-\hline
-\end{tabular} &
-\vcent{\includegraphics[width=8cm]{pictures/suoraesim.pdf}}
-\end{tabular}
-\end{center}
-\end{esimerkki}
-
-\begin{esimerkki}
-Funktion $f(x) = x^2$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = x^2$:
-\begin{center}
-\begin{tabular}{cc}
-\begin{tabular}{|r|l|}
-\hline
-$x$ & $y = f(x)$ \\
-\hline
-$-2$ & $4$ \\
-$-1$ & $1$ \\
-$-0,5$ & $0.25$ \\
-$0$ & $0$ \\
-$0,5$ & $0.25$ \\
-$1$ & $1$ \\
-$2$ & $4$ \\
-\hline
-\end{tabular} &
-\vcent{\includegraphics[width=6cm]{pictures/paraabeli.pdf}}
-\end{tabular}
-\end{center}
-\end{esimerkki}
-
-\begin{esimerkki}
-Funktion $f(x) = x^3-5x+2$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = x^3-5x+2$:
-\begin{center}
-\includegraphics[width=7cm]{pictures/deg3polynomiesim.pdf}
-\end{center}
+	\begin{esimvast}
+		Funktion $f$ arvojoukko on reaalilukujen joukko poislukien luku $0$.
+	\end{esimvast}
 \end{esimerkki}
