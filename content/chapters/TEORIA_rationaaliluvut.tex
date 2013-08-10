@@ -26,27 +26,38 @@ luvulle vastaluvun.
 \laatikko{ Jokaisella luvulla $n$ on vastaluku $-n$, jolle pätee $n+(-n)=0$. }
 
 Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä kokonaislukujen joukon
-\[\zz = \{\ldots, -2, -1, 0, 1, 2, \ldots\},\] jota voidaan havainnollistaa \emph{lukusuoran} avulla
+\[\zz = \{\ldots, -2, -1, 0, 1, 2, \ldots\},\] jota voidaan havainnollistaa \emph{lukusuoran} avulla.
 
-\begin{center}
-\begin{lukusuora}{-4}{4}{10}
-\lukusuorapiste{-3}{}
-\lukusuorapiste{-2}{}
-\lukusuorapiste{-1}{}
-\lukusuorapiste{0}{}
-\lukusuorapiste{1}{}
-\lukusuorapiste{2}{}
-\lukusuorapiste{3}{}
-\lukusuoraalanimi{-3}{$-3$}
-\lukusuoraalanimi{-2}{$-2$}
-\lukusuoraalanimi{-1}{$-1$}
-\lukusuoraalanimi{0}{$0$}
-\lukusuoraalanimi{1}{$1$}
-\lukusuoraalanimi{2}{$2$}
-\lukusuoraalanimi{3}{$3$}
+\begin{kuva}
+	lukusuora.pohja(-4,4,12)
+	lukusuora.piste(-3, "$-3$")
+	lukusuora.piste(-2,"$-2$")
+	lukusuora.piste(-1,"$-1$")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(1,"$1$")
+	lukusuora.piste(2,"$2$")
+	lukusuora.piste(3,"$3$")
+\end{kuva}
 
-\end{lukusuora}
-\end{center}
+%\begin{center}
+%\begin{lukusuora}{-4}{4}{10}
+%\lukusuorapiste{-3}{}
+%\lukusuorapiste{-2}{}
+%\lukusuorapiste{-1}{}
+%\lukusuorapiste{0}{}
+%\lukusuorapiste{1}{}
+%\lukusuorapiste{2}{}
+%\lukusuorapiste{3}{}
+%\lukusuoraalanimi{-3}{$-3$}
+%\lukusuoraalanimi{-2}{$-2$}
+%\lukusuoraalanimi{-1}{$-1$}
+%\lukusuoraalanimi{0}{$0$}
+%\lukusuoraalanimi{1}{$1$}
+%\lukusuoraalanimi{2}{$2$}
+%\lukusuoraalanimi{3}{$3$}
+%
+%\end{lukusuora}
+%\end{center}
 
 Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
 yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
@@ -68,17 +79,28 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
     % tässä on vähän kyseenalaista käyttää sekaisin sanallista ja numeerista esitystä
     
     $5+8$ ''viiteen lisätään kahdeksan''
-    \begin{center}
-      \begin{lukusuora}{-1}{14}{14}
-        %\lukusuoranuolialas{5}{13}
-        %\lukusuoranuolialas{0}{8}
-        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
-        \lukusuorauusi
-        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
-        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
-       \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=1)
+		lukusuora.vali(8,13,i=2)
+	with vari("blue"): lukusuora.vali(0,8,i=2)
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(5,"$5$",1)
+	lukusuora.piste(8,"$8$",2)
+	lukusuora.piste(13,"$13$",2)
+\end{kuva}
+%      \begin{lukusuora}{-1}{14}{14}
+%        %\lukusuoranuolialas{5}{13}
+%        %\lukusuoranuolialas{0}{8}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+%       \end{lukusuora}
        ${\color{red}5}+{\color{blue}8}=13$
-    \end{center}
+\end{center}
     
     $5+(+8)$ ''viiteen lisätään plus kahdeksan''
     
@@ -87,15 +109,26 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 %säädetään kuva vähän irti tuosta edeltävästä tektistä
 %\vspace{0.3cm}     
     
-    \begin{center}
-          \begin{lukusuora}{-1}{14}{14}
-        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
-        \lukusuorauusi
-        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
-        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
-       \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=1)
+		lukusuora.vali(8,13,i=2)
+	with vari("blue"): lukusuora.vali(0,8,i=2)
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(5,"$5$",1)
+	lukusuora.piste(8,"$8$",2)
+	lukusuora.piste(13,"$13$",2)
+\end{kuva}
+%          \begin{lukusuora}{-1}{14}{14}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+%       \end{lukusuora}
        ${\color{red}5}+({\color{blue}+8})=13$
-    \end{center}
+\end{center}
     
     $5-(+8)$ ''viidestä vähennetään $+8$''
     
@@ -104,15 +137,24 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 %säädetään kuva vähän irti tuosta edeltävästä tektistä
 \vspace{0.3cm}     
     
-    \begin{center}
-              \begin{lukusuora}{-4}{8}{14}
-        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
-        \lukusuorauusi
-%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
-        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
-       \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=2)
+	with vari("blue"): lukusuora.vali(-3,5,i=1)
+	lukusuora.piste(0,"$0$",2)
+	lukusuora.piste(5,"$5$")
+	lukusuora.piste(-3,"$-3$",1)
+\end{kuva}
+%              \begin{lukusuora}{-4}{8}{14}
+%        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
+%        \lukusuorauusi
+%%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%       \end{lukusuora}
        ${\color{red}5}-({\color{blue}+8})=-3$
-    \end{center}
+\end{center}
 
 
 %lukiolaiset pitivät näitä epäselvinä kuvina
@@ -120,15 +162,24 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$, se kasvaa yhdellä. Kun lukuun lisätään $0$, se ei kasva lainkaan. Kun lukuun lisätään negatiivinen luku, esimerkiksi $-1$, on luonnollista ajatella, että se pienenee. Tällä logiikalla negatiivisen luvun lisäämisen pitäisi siis pienentää alkuperäistä lukua. Juuri näin vähennyslasku määritellään: $5+(-8)$ on yhtä suuri kuin $5-8$.
     
 \vspace{0.3cm}     
-    \begin{center}
-                 \begin{lukusuora}{-4}{8}{14}
-        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
-        \lukusuorauusi
-%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
-        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
-       \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=2)
+	with vari("blue"): lukusuora.vali(-3,5,i=1)
+	lukusuora.piste(0,"$0$",2)
+	lukusuora.piste(5,"$5$")
+	lukusuora.piste(-3,"$-3$",1)
+\end{kuva}
+%                 \begin{lukusuora}{-4}{8}{14}
+%        {\color{blue} \lukusuoravaliss{-3}{5}{\color{black}$-3$}{$5$}}
+%        \lukusuorauusi
+%%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%       \end{lukusuora}
        ${\color{red}5}+({\color{blue}-8})=-3$
-    \end{center}
+\end{center}
     
     
     $5-(-8)$ ''viidestä vähennetään miinus kahdeksan''
@@ -136,15 +187,26 @@ Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$, s
     Negatiivisen luvun lisääminen on vastakohta positiivisen luvun lisäämiselle. Tällöin on luonnollista, että negatiivisen luvun vähentäminen on vastakohta positiivisen luvun vähentämiselle. Koska positiivisen luvun vähentäminen pienentää lukua, pitäisi negatiivisen luvun vähentämisen kasvattaa lukua. Lasku $5-(-8)$ tarkoittaa siis samaa kuin $5+8$.
 \vspace{0.3cm}     
         
-    \begin{center}
-    \begin{lukusuora}{-1}{14}{14}
-        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
-        \lukusuorauusi
-        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
-        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
-       \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-4,14,12,n=2)
+	with vari("red"):
+		lukusuora.vali(0,5,i=1)
+		lukusuora.vali(8,13,i=2)
+	with vari("blue"): lukusuora.vali(0,8,i=2)
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(5,"$5$",1)
+	lukusuora.piste(8,"$8$",2)
+	lukusuora.piste(13,"$13$",2)
+\end{kuva}
+%    \begin{lukusuora}{-1}{14}{14}
+%        {\color{red} \lukusuoravaliss{0}{5}{$0$}{$5$}}
+%        \lukusuorauusi
+%        {\color{red} \lukusuoravaliss{8}{13}{$8$}{${\color{black}13}$}}
+%        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
+%       \end{lukusuora}
        ${\color{red}5}-({\color{blue}-8})=13$
-    \end{center}
+\end{center}
 
 
 \laatikko{
