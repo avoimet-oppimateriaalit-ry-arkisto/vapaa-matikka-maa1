@@ -238,54 +238,106 @@ Yhteen- ja vähennyslaskun merkkisäännöt
 
     $3 \cdot 4$ ''kolme kappaletta nelosia''
     
-   \begin{center}
-    \begin{lukusuora}{-1}{14}{14}
-	\color{red} \lukusuoravaliss{0}{4}{$0$}{$4$}
-	\color{red} \lukusuoravaliss{4}{8}{$4$}{$8$}
-	\color{red} \lukusuoravaliss{8}{12}{$8$}{$12$}
-
-      \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("red")
+	lukusuora.vali(0,4)
+	lukusuora.vali(4,8)
+	lukusuora.vali(8,12)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(4,"$4$")
+	lukusuora.piste(8,"$8$")
+	lukusuora.piste(12,"$12$")
+\end{kuva}
+%    \begin{lukusuora}{-1}{14}{14}
+%	\color{red} \lukusuoravaliss{0}{4}{$0$}{$4$}
+%	\color{red} \lukusuoravaliss{4}{8}{$4$}{$8$}
+%	\color{red} \lukusuoravaliss{8}{12}{$8$}{$12$}
+%
+%      \end{lukusuora}
       $3\cdot {\color{red}4}=12$
-    \end{center}
+\end{center}
     
     $3 \cdot (-4)$ ''kolme kappaletta miinus-nelosia''
     
     
-    \begin{center}
-    \begin{lukusuora}{-13}{2}{14}
-	\color{red} \lukusuoravaliss{-12}{-8}{$-12$}{$-8$}
-	\color{red} \lukusuoravaliss{-8}{-4}{$-8$}{$-4$}
-	\color{red} \lukusuoravaliss{-4}{0}{$-4$}{$0$}
-
-      \end{lukusuora}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("red")
+	lukusuora.vali(-4,0)
+	lukusuora.vali(-8,-4)
+	lukusuora.vali(-12,-8)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(-4,"$-4$")
+	lukusuora.piste(-8,"$-8$")
+	lukusuora.piste(-12,"$-12$")
+\end{kuva}
+%    \begin{lukusuora}{-13}{2}{14}
+%	\color{red} \lukusuoravaliss{-12}{-8}{$-12$}{$-8$}
+%	\color{red} \lukusuoravaliss{-8}{-4}{$-8$}{$-4$}
+%	\color{red} \lukusuoravaliss{-4}{0}{$-4$}{$0$}
+%
+%      \end{lukusuora}
       $3\cdot ({\color{red}-4})=-12$
-    \end{center}
+\end{center}
     
     $-3 \cdot 4$ ''miinus-kolme nelinkertaistetaan''
     
-    \begin{center}
-    \begin{lukusuora}{-13}{2}{14}
-	\color{red} \lukusuoravaliss{-12}{-9}{$-12$}{$-9$}
-	\color{red} \lukusuoravaliss{-9}{-6}{$-9$}{$-6$}
-	\color{red} \lukusuoravaliss{-6}{-3}{$-6$}{$-3$}
-	\color{red} \lukusuoravaliss{-3}{0}{$-3$}{$0$}
-
-      \end{lukusuora}
-      ${\color{red}-3}\cdot 4=-12$
-    \end{center}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("blue")
+	lukusuora.vali(-3,0)
+	lukusuora.vali(-6,-3)
+	lukusuora.vali(-9,-6)
+	lukusuora.vali(-12,-9)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(-3,"$-3$")
+	lukusuora.piste(-6,"$-6$")
+	lukusuora.piste(-9,"$-9$")
+	lukusuora.piste(-12,"$-12$")
+\end{kuva}
+%    \begin{lukusuora}{-13}{2}{14}
+%	\color{red} \lukusuoravaliss{-12}{-9}{$-12$}{$-9$}
+%	\color{red} \lukusuoravaliss{-9}{-6}{$-9$}{$-6$}
+%	\color{red} \lukusuoravaliss{-6}{-3}{$-6$}{$-3$}
+%	\color{red} \lukusuoravaliss{-3}{0}{$-3$}{$0$}
+%
+%      \end{lukusuora}
+      ${\color{blue}-3}\cdot 4=-12$
+\end{center}
     
     $-3 \cdot (-4)$ ''miinus-kolme miinus-nelinkertaistetaan''
     
-    \begin{center}
-    \begin{lukusuora}{-1}{14}{14}
-	\color{red} \lukusuoravaliss{12}{9}{$12$}{$9$}
-	\color{red} \lukusuoravaliss{9}{6}{$9$}{$6$}
-	\color{red} \lukusuoravaliss{6}{3}{$6$}{$3$}
-	\color{red} \lukusuoravaliss{3}{0}{$3$}{$0$}
-
-      \end{lukusuora}
-      ${\color{red}-3}\cdot (-4)=12$
-    \end{center}
+\begin{center}
+\begin{kuva}
+	lukusuora.pohja(-14,14,12)
+	vari("blue")
+	lukusuora.vali(0,3)
+	lukusuora.vali(3,6)
+	lukusuora.vali(6,9)
+	lukusuora.vali(9,12)
+	vari("black")
+	lukusuora.piste(0,"$0$")
+	lukusuora.piste(3,"$3$")
+	lukusuora.piste(6,"$6$")
+	lukusuora.piste(9,"$9$")
+	lukusuora.piste(12,"$12$")
+\end{kuva}
+%    \begin{lukusuora}{-1}{14}{14}
+%	\color{red} \lukusuoravaliss{12}{9}{$12$}{$9$}
+%	\color{red} \lukusuoravaliss{9}{6}{$9$}{$6$}
+%	\color{red} \lukusuoravaliss{6}{3}{$6$}{$3$}
+%	\color{red} \lukusuoravaliss{3}{0}{$3$}{$0$}
+%
+%      \end{lukusuora}
+      ${\color{blue}-3}\cdot (-4)=12$
+\end{center}
 
 \subsection*{Jakolasku}
 
