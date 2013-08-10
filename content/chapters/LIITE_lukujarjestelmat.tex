@@ -16,6 +16,10 @@ Tietokoneet käsittelevät lukuja sisäisesti binäärijärjestelmässä, kun ta
 Binäärijärjestelmässä luvun muodostavia numeromerkkejä kutsutaan \termi{bitti}{biteiksi}.
 Bitti voi olla joko päällä (1) tai pois päältä (0), ja toteutus tietokoneessa vastaa esimerkiksi sitä, että johtimessa kulkee virta (1) tai ei (0).
 
+%\begin{esimerkki}
+%	$10,01_2 = 1 \cdot 2^1 + 0 \cdot 2^0 + 0 \cdot 2^{-1} + 1 \cdot 2^{-2} = 2,25_{10}$
+%\end{esimerkki}
+
 Kuusitoistajärjestelmässä tarvitaan numeroiden $0 \ldots \, 9$ lisäksi kuusi uutta numeromerkkiä.
 Tavaksi on vakiintunut käyttää kirjainmerkkejä $\mathrm{A, B, C, D, E, F}$. Ne vastaavat desimaalilukuja $10 \ldots \, 15$.
 
@@ -111,3 +115,62 @@ Emme voi esimerkiksi sanoa, onko postinumero 00950 jollakin tapaa suurempi kuin 
 
 \termi{tuhaterotin}{Tuhaterottimena} käytetään suomenkielisessä tekstissä välilyöntiä, ei pilkkua tai pistettä.
 \termi{desimaalierotin}{Desimaalierotin} puolestaan on suomenkielisessä tekstissä pilkku, ei piste, kuten yhdysvaltalaisissa laskimissa.
+
+\begin{tehtavasivu}
+
+\begin{tehtava}
+Muunna seuraavat binääriluvut kymmenjärjestelmään.
+	\begin{alakohdat}
+		\alakohta{$101,0_2$}
+		\alakohta{$1,00101_2$}
+		\alakohta{$100101,1101_2$}
+	\end{alakohdat}
+\begin{vastaus}
+	\begin{alakohdat}
+		\alakohta{$5,0_{10}$}
+		\alakohta{$1,15625_{10}$}
+		\alakohta{$37.8125_{10}$}
+	\end{alakohdat}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Muunna seuraavat luvut binäärijärjestelmään.
+	\begin{alakohdat}
+		\alakohta{$7,0_{10}$}
+		\alakohta{$2,5_{10}$}
+		\alakohta{$11,1875_{10}$}
+	\end{alakohdat}
+\begin{vastaus}
+	\begin{alakohdat}
+		\alakohta{$111,0_2$}
+		\alakohta{$10,1_2$}
+		\alakohta{$1011,0011_2$}
+	\end{alakohdat}
+\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Laske
+	\begin{alakohdat}
+		\alakohta{$1101_2 \cdot 100_2$}
+		\alakohta{$1101001_2 \cdot 100000_2$}
+		\alakohta{$10110_2 \cdot 0,01_2$.}
+	\end{alakohdat}
+	\begin{vastaus}
+		\begin{alakohdat}
+			\alakohta{$110100_2$}
+			\alakohta{$110100100000_2$}
+			\alakohta{$101,1_2$}
+		\end{alakohdat}
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	Mikä on suuruusjärjestyksessä 148. positiivinen kokonaisluku, jonka kymmenjärjestelmäesityksessä on vain nollia ja ykkösiä?
+	\begin{vastaus}
+		$10010100$
+	\end{vastaus}
+\end{tehtava}
+
+\end{tehtavasivu}
