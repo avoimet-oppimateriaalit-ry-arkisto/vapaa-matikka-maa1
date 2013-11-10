@@ -15,6 +15,47 @@ Monissa käytännön tilanteissa jokin suure voidaan päätellä tai laskea kahd
 	\end{alakohdat}
 \end{esimerkki}
 
+
+\laatikko[Yhtälöihin liittyviä termejä]{
+	\begin{description}
+		\item[Tuntematon] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$.
+		\item[Yhtälön ratkaisu] Tuntemattoman $x$ arvo, jolla yhtälö pätee.
+		\item[Yhtälön ratkaiseminen] Kaikkien yhtälön ratkaisujen selvittäminen.
+	\end{description}
+	
+}
+
+Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. 
+
+%Lisännyt Jaakko Viertiö 2013-11-10
+\begin{esimerkki}
+ Tarkastellaan yhtälöä $x^3-2x^2-x+2=0$. Yhtälön \textit{eräs} ratkaisu on $x=1$, sillä $1^3-2\cdot{1^2}-1+2=0$. 
+ Myös $x=2$ on kyseisen yhtälön ratkaisu, sillä $2^3-2\cdot{2^2}-2+2=0$. 
+ Tuntemattomalle $x$ voidaan siis joissain tapauksissa löytää useita arvoja, jotka toteuttavat yhtälön. 
+\end{esimerkki}
+
+% FIXME: jokin helposti ymmärrettävä esimerkki tuntemattomista
+
+Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla.
+Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu.
+%Lisännyt Jaakko Viertiö 2013-11-10. Rautalangasta aina paras!
+Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia, ja toisella puolella kaikki muu.
+
+\laatikko[Yhtälöiden muokkaaminen]{
+	\begin{description}
+		\item[Puolittain lisääminen tai vähentäminen] Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku. Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.
+		\item[Puolittain kertominen tai jakaminen] Yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla. Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.
+	\end{description}
+%Huomautuksen ja jakolaskumaininnan lisännyt Jaakko Viertiö 2013-11-10
+	Huomaa, että itseasiassa vähennyslasku on negatiivisen luvun summaamista [$a-b=a+(-b)$], ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]
+}
+
+Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
+
+\begin{esimerkki}
+	Kuvitellaan orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
+\end{esimerkki}
+
 \begin{esimerkki}
 	Kuvassa oleva vaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia.
 	Kuinka paljon vaakakupissa on lakritsia?
@@ -59,11 +100,11 @@ Monissa käytännön tilanteissa jokin suure voidaan päätellä tai laskea kahd
 		
 		Ratkaistaan yhtälö.
 		\begin{align*}
-			\dfrac{27,7778t}{272000} &= \dfrac{28,0788(t+600)}{342000}  \\
+			\dfrac{27,7778t}{272000} &= \dfrac{28,0788(t+600)}{342000} &&\text{| $\cdot{272000}$} &&\text{| $\cdot{342000}$}  \\
 			342000 \cdot 27,7778t &= 272000 \cdot 28,0788(t+600) \\
 			9500007,6t &= 7637433,6(t+600) \\
-			9500007,6t &= 7637433,6t + 4582460160 \\
-			1862574t &= 4582460160 \\
+			9500007,6t &= 7637433,6t + 4582460160 &&\text{| $-7637433,6t$} \\ 
+			1862574t &= 4582460160 &&\text{| $:{1862574}$} \\
 			t &\approx 2460,28 \approx 2460
 		\end{align*}
 		
@@ -75,36 +116,6 @@ Monissa käytännön tilanteissa jokin suure voidaan päätellä tai laskea kahd
 	\end{esimvast}
 \end{esimerkki}
 
-\laatikko[Yhtälöihin liittyviä termejä]{
-	\begin{description}
-		\item[Tuntematon] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$.
-		\item[Yhtälön ratkaisu] Tuntemattoman $x$ arvo, jolla yhtälö pätee.
-		\item[Yhtälön ratkaiseminen] Kaikkien yhtälön ratkaisujen selvittäminen.
-	\end{description}
-}
-
-% FIXME: jokin helposti ymmärrettävä esimerkki tuntemattomista
-
-Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla.
-Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu.
-%Lisännyt Jaakko Viertiö 2013-11-10. Rautalangasta aina paras!
-Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia, ja toisella puolella kaikki muu.
-
-\laatikko[Yhtälöiden muokkaaminen]{
-	\begin{description}
-		\item[Puolittain lisääminen tai vähentäminen] Yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku. Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.
-		\item[Puolittain kertominen tai jakaminen] Yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla. Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.
-	\end{description}
-%Huomautuksen ja jakolaskumaininnan lisännyt Jaakko Viertiö 2013-11-10
-	Huomaa, että itseasiassa vähennyslasku on negatiivisen luvun summaamista [$a-b=a+(-b)$], ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]
-}
-
-Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
-
-\begin{esimerkki}
-	Kuvitellaan orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
-\end{esimerkki}
-
 \laatikko[Yhtälöiden luokittelu]{
 	\begin{description}
 		\item[Aina tosi yhtälö] Esimerkiksi yhtälöt $8=8$ ja $x=x$.
@@ -114,6 +125,17 @@ Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkai
 }
 
 Tärkeimpiä näistä ovat joskus todet yhtälöt.
+
+\begin{esimerkki}
+	\begin{itemize}
+		\item{Yhtälö $3x-12=6(\frac{1}{2}x-2)$ on yhtäpitävä yhtälön $0=0$ kanssa, sillä se saadaan tähän muotoon 
+		tekemällä yhtäpitävyyden molemmille puolille aina samat laskutoimitukset. Yhtälö on siis aina tosi.}
+		\item{Yhtälö $3x-11=6(\frac{1}{2}x-2)$ on yhtäpitävä yhtälön $0=1$ kanssa. Yhtälö on siis aina epätosi.}
+		\item{Yhtälö $3x-11=6(x-2)$ on yhtäpitävä yhtälön $x=\frac{1}{3}$ kanssa. Yhtälö on siis joskus tosi: täsmälleen silloin kun $x=\frac{1}{3}$.}
+	\end{itemize}
+
+\end{esimerkki}
+
 
 \laatikko[Yleisiä yhtälönratkaisuperiaatteita]{
 	\begin{description}
