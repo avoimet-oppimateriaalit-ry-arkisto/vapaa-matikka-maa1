@@ -48,26 +48,40 @@ joiden lukuarvon ajatellaan pysyvän muuttumattomana, on tapana kutsua \termi{va
 
 \termi{luonnolliset luvut}{Luonnolliset luvut} ovat lukuja, joita voidaan käyttää lukumäärän ilmaisemiseen.
 Luonnollisten lukujen joukkoa merkitään kirjaimella $\nn$ ja niihin katsotaan kuuluvan luvut 0, 1, 2, 3, jne...
-Matematiikan kielellä tämä on usein tapana ilmaista seuraavanlaisella merkinnällä: \[\nn = \{0, 1, 2, \ldots\}\]
+Matematiikan kielellä tämä on usein tapana ilmaista seuraavanlaisella merkinnällä: \[\nn = \{0, 1, 2, 3, \ldots\}\]
 
 Tässä kirjasarjassa katsotaan, että nolla on myös luonnollinen luku. Joissain muissa lähteissä saatetaan kuitenkin
-tarkoittaa luonnollisilla luvuilla joukkoa \[\nn_+ = \{1, 2, \ldots\}\], jota kutsutaan myös positiivisten kokonaislukujen joukoksi.
+tarkoittaa luonnollisilla luvuilla joukkoa $\nn_+ = \{1, 2, 3, \ldots\}$ jota kutsutaan myös positiivisten kokonaislukujen joukoksi.
 
 Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi $5 + 3 = 8$.
 
-Luonnollisten lukujen $m$ ja $n$ kertolasku määritellään peräkkäisinä yhteenlaskuina
+Luonnollisten lukujen kertolasku määritellään peräkkäisinä yhteenlaskuina
+
+\[5 \cdot 3 = 5 + 5 + 5 = 3 + 3 + 3 + 3 + 3.\]
+
+tai yleisesti kirjaimia käyttäen
+
 \laatikko{ \[m \cdot n = \underbrace{m + m + \ldots + m}_{n\text{ kpl}} = \underbrace{n + n + \ldots + n}_{m\text{ kpl}}.\] }
 
 Nollalla kertomisen ajatellaan olevan ''tyhjä yhteenlasku'' eli nolla:
 \laatikko{ \[0 \cdot m = 0\] }
 
-Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla:
-$m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun erotus
-ei kuitenkaan aina ole luonnollinen luku, esimerkkinä $3 - 5$.
-Ratkaisemme ongelman määrittelemällä kullekin luonnolliselle
-luvulle vastaluvun.
+%Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla:
+%$m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun erotus
+%ei kuitenkaan aina ole luonnollinen luku, esimerkkinä $3 - 5$.
+%Ratkaisemme ongelman määrittelemällä kullekin luonnolliselle
+%luvulle vastaluvun.
+
+Peruskoulun matematiikasta tutuista laskutoimituksista yhteenlasku ja kertolasku ovat ainoat,
+joilla voidaan laskea niin, että pysytään luonnollisten lukujen sisällä. Esimerkiksi vähennyslaskua
+$3-5$ ei voida laskea luonnollisten lukujen joukossa. Jotta vähennyslasku olisi kaikille luvuille
+mahdollinen, on keksitty niin sanottu vastaluvun käsite. Vastaluku määritellään seuraavasti:
 
 \laatikko{ Jokaisella luvulla $n$ on vastaluku $-n$, jolle pätee $n+(-n)=0$. }
+
+Esimerkiksi luvun $2$ vastaluku on $-2$. Yllä olevan määritelmän mukaan, kun luku lasketaan yhteen vastalukunsa kanssa, saadaan tulokseksi $0$.
+Esierkiksi $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$.
+Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$.
 
 Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä \termi{kokonaisluvut}{kokonaislukujen} joukon
 
@@ -104,18 +118,16 @@ Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä \termi{kokonaisluvu
 %\end{lukusuora}
 %\end{center}
 
-% === SIISTITTÄVÄ PÄTKÄ ALKAA ===
-
 Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
 yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 
 \laatikko{
 \[m-n = m+(-n)\]
 }
-
-    Esimerkiksi luvun $2$ vastalukua merkitään $-2$, ja sille pätee $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$.
     
 \laatikko{$$-(-a)=a$$}
+
+% === SIISTITTÄVÄ PÄTKÄ ALKAA ===
 
 \subsection*{Yhteen- ja vähennyslasku}
 
