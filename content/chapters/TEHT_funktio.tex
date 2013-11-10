@@ -1,6 +1,17 @@
 \begin{tehtavasivu}
 
 \paragraph*{Opi perusteet}
+\begin{tehtava}
+Määritä kuvaajasta funktion \(f\) arvot muuttujan arvoilla $0$ ja $1$. Millä muuttujan arvoilla \(f\) saa arvon \(3\)? Entä arvon \(0\)?
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -2, 4)
+    kuvaaja.piirra("x**2-1", nimi = "$f$")
+\end{kuva}
+\begin{vastaus}
+
+\end{vastaus}
+\end{tehtava}
+
 
 \begin{tehtava}
 Hahmottele funktion kuvaaja koordinaatistoon. Voit myös käyttää tietokonetta.
@@ -51,11 +62,11 @@ Hahmottele funktion kuvaaja koordinaatistoon. Voit myös käyttää tietokonetta
 \begin{tehtava} % Emilia Välttilä 9.11.2013
 	Missä pisteessä funktio $P(t)=-2t+4$ saa arvon
 	\begin{alakohdat}
-	  \alakohta{4}
-	  \alakohta{-2}
-	  \alakohta{8}
+	  \alakohta{$4$?}
+	  \alakohta{$-2$?}
+	  \alakohta{$8$?}
 	 \end{alakohdat}
-	 Funktion nollakohdaksi kutsutaan kohtaa, jossa funktio saa arvon nolla. Mikä on funktion $P(t)$ nollakohta?
+	 Funktion nollakohdaksi kutsutaan kohtaa, jossa funktio saa arvon nolla. Mikä on funktion $P$ nollakohta?
 	 
 \end{tehtava}
 
@@ -111,18 +122,18 @@ $ x=\frac{9}{8} $
   Muodosta aitauksen pinta-alan funktio $A(x)$.
   Mikä on aitauksen pinta-ala, kun lyhyemmän sivun pituus on
   \begin{alakohdat}
-    \alakohta{0m}
-    \alakohta{5m}
-    \alakohta{20m ?}
+    \alakohta{0~m}
+    \alakohta{5~m}
+    \alakohta{20~m ?}
     \alakohta{Mikä on funktion $A(x)$ määrittelyehto?}
   \end{alakohdat}
 
   \begin{vastaus}
     $A(x) = x^2 + 2x$ ($x(x+2)$)
       \begin{alakohdat}
-	\alakohta{0m}
-	\alakohta{35m}
-	\alakohta{440m}
+	\alakohta{0~m}
+	\alakohta{35~m}
+	\alakohta{440~m}
 	\alakohta{$x \geq 0$ (Pinta-ala on epänegatiivinen.)}
       \end{alakohdat}
   \end{vastaus}
@@ -130,51 +141,63 @@ $ x=\frac{9}{8} $
 
 \begin{tehtava}
 %Laatinut Emilia Välttilä 10.11.2013
-  Olkoon funktiot $f(x) = \frac{7s + 5x}{6} + 2s - 1$ ja $g(x) = -2x + \frac{1}{2}$, joille pätee $f(x) = g(x)$.
+  Olkoon $f(x) = \frac{7s + 5x}{6} + 2s - 1$ ja $g(x) = -2x + \frac{1}{2}$. Määritä vakio $s$, kun
   \begin{alakohdat}
-    \alakohta{Määritä vakio $s$, kun $x = 0$ ja kun $x = \frac{1}{2}$}
-    \alakohta{Mitä on $f(6)$, kun $s=1$? Minkä arvon funktio $g(x)$ tällöin saa?}
-  \end{alakohdat}
-
+    \alakohta{$f(0)=g(0)$}
+    \alakohta{$f\left(\frac{1}{2}\right) = g\left(\frac{1}{2}\right)$}
+   \end{alakohdat}
+   Määritä vielä $f(6)$ ja $g(f(6))$, kun $s=1$. 
   \begin{vastaus}
       \begin{alakohdat}
-      \alakohta{Kun $x = 0$, $s = -\frac{3}{19}$ ja kun $x = \frac{1}{2}$, $x = \frac{1}{38}$}
-      \alakohta{$f(6) = 3$ ja $g(3) = -\frac{11}{2}$}
+      \alakohta{$s = -\frac{3}{19}$ }
+      \alakohta{$s = \frac{1}{38}$}
       \end{alakohdat}
+   Jos $s=1$, niin $f(6) = 3$ ja $g(3) = -\frac{11}{2}$
   \end{vastaus}
 \end{tehtava}
 
 \begin{tehtava} % Emilia Välttilä 9.11.2013
-	Olkoon $f(x)=-2x$ $x=\frac{5}{6}$. Mitä on
+	Olkoon $f(x)=-2x$. Mitä on
 	\begin{alakohdat}
 	  \alakohta{$f(x+3)$}
 	  \alakohta{$f(x)+3$}
 	  \alakohta{$f(3x)$}
   	  \alakohta{$3f(x)$}
 	 \end{alakohdat}
-	 Onko $f(-2)$ negatiivinen?
+	% Onko $f(-2)$ negatiivinen?
+	\begin{vastaus}
+		\begin{alakohdat}
+	  	\alakohta{$-2x-6$}
+	  \alakohta{$-2x+3$}
+	  \alakohta{$-6x$}
+  	  \alakohta{$-6x$}
+	 \end{alakohdat}
+	\end{vastaus}
 \end{tehtava}
 
 \begin{tehtava} % Emilia Välttilä 9.11.2013
-	Olkoon $z(x) = \frac{x^2+\frac{1}{2}x}{x}-x+5$. Mitä on
+	Olkoon $z(x) = \frac{x^2+\frac{1}{2}x}{x}-x+5$. Määritä
 	\begin{alakohdat}
-	  \alakohta{$z(\frac{1}{2})$}
+	  \alakohta{$z\left(\frac{1}{2}\right)$}
 	  \alakohta{$z(-1)$}
-	  \alakohta{Osoita, ettei funktion $z(x)$ arvo riipu muuttujan $x$ arvosta.}
+	  \alakohta{$z(2013)$.}
 	 \end{alakohdat}
-	 
+	% Osaatko todistaa, ettei funktion $z$ arvo riipu muuttujan arvosta?
+	 Osoita, ettei funktion $z$ arvo riipu muuttujan arvosta.
   \begin{vastaus}
 	\begin{alakohdat}
 	  \alakohta{$\frac{11}{5}$}
 	  \alakohta{$\frac{11}{5}$}
-	  \alakohta{$z(x) = \frac{x^2+\frac{1}{2}x}{x}-x+5 = \frac{x(x+\frac{1}{2})}{x}-x+5 = \frac{1}{2}+5 = \frac{11}{5}$}
+	  \alakohta{$\frac{11}{5}$}
 	\end{alakohdat}
+	Vihje: Voit supistaa.
+%$z(x) = \frac{x^2+\frac{1}{2}x}{x}-x+5 = \frac{x(x+\frac{1}{2})}{x}-x+5 = \frac{1}{2}+5 = \frac{11}{5}$
   \end{vastaus} 
 	 
 \end{tehtava}
 
 \begin{tehtava} % Emilia Välttilä 9.11.2013
-	Millä vakion $a$ arvolla funktio $g(x) = \frac{2x+1+a}{5x}$ saa arvon 5, kun $x = 3$?
+	Millä vakion $a$ arvolla funktio $g(x) = \frac{2x+1+a}{5x}$ saa arvon 5 kohdassa $x = 3$?
 \begin{vastaus}
 $a=68$
 \end{vastaus}
@@ -184,7 +207,7 @@ $a=68$
 \paragraph*{Muita tehtäviä}
 
 \begin{tehtava}
-	Olkoon $f(x)=\frac{x^2+3x+1}{x^2-x}$. Laske
+	Olkoon $f(x)=\frac{x^2+3x+1}{x^2-x}$. Laske, mikäli mahdollista:
 	\begin{alakohdat}
 		\alakohta{$f(2)$}
 		\alakohta{$f(1)$}
@@ -202,25 +225,48 @@ $a=68$
 \end{tehtava}
 
 \begin{tehtava}
-	Olkoon $f(x)=\frac{2^x+4}{x}$. Laske
+	Olkoon $f(x)=\frac{2^x+4}{x}$. Laske, mikäli mahdollista:
 	\begin{alakohdat}
 		\alakohta{$f(2)$}
 		\alakohta{$f(\frac{1}{3})$}
-		\alakohta{$f(0)$}
+		%\alakohta{$f(0)$}
 		\alakohta{$f(-1)$}
 	\end{alakohdat}
 	\begin{vastaus}
 		\begin{alakohdat}
 			\alakohta{$4$}
 			\alakohta{$3\sqrt[3]{2}+12$}
-			\alakohta{ei määritelty}
+			%\alakohta{ei määritelty}
 			\alakohta{$\frac{-9}{2}$}
 		\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
 
+\begin{tehtava} % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
+	Olkoon $f(x) = \frac{x^2+3}{x}$. Laske
+	\begin{alakohdat}
+		\alakohta{$f(2)$}
+		\alakohta{$f(a)$}
+		\alakohta{$f(2a)$}
+		\alakohta{$2f(x^2)$}
+		\alakohta{$f(\sqrt{x+1})^2$}
+	\end{alakohdat}
+
+  \begin{vastaus}
+	\begin{alakohdat}
+		\alakohta{$\frac{7}{2}$}
+		\alakohta{$a + \frac{3}{a}$}
+		\alakohta{$2a + \frac{3}{2}a$}
+		\alakohta{$2x^2 + \frac{6}{x^2}$}
+		\alakohta{$\frac{x^2 + 8}{x + 1}$}
+	\end{alakohdat} 
+  \end{vastaus}
+
+	
+\end{tehtava}
+
 % kai vaikeahko
-\begin{tehtava}
+\begin{tehtava}$\boldsymbol{[\star]}$
 	Millä muuttujan $x$ arvoilla yhtälö $f(f(x)) = x$ pätee, kun
 	\begin{alakohdat}
 		\alakohta{$f(x) = 1$}
@@ -239,23 +285,34 @@ $a=68$
 \end{tehtava}
 
 %Laatinut V-P Kilpi 2013-11-09
-\begin{tehtava}
-  Olkoon $f(x)=\frac{x}{5}$ ja $g(x)=2x-3$. Muodosta yhdistetyt funktiot ja laske minkä arvon ne saavat kohdassa $ x=4 $.
+\begin{tehtava}$\boldsymbol{[\star]}$
+  Olkoon $f(x)=\frac{x}{5}$ ja $g(x)=2x-3$. Laske
+  %Muodosta yhdistetyt funktiot ja laske minkä arvon ne saavat kohdassa $ x=4 $.
 \begin{alakohdat}
-			\alakohta{$f(f(x))$}
-			\alakohta{$f(g(x))$}
+			\alakohta{$f(f(4))$}
+			\alakohta{$f(g(4))$}
+			\alakohta{$g(f(4))$}
 			\alakohta{$g(f(x))$}
+			\alakohta{$f(g(x))$}
+
+
+
+%			\alakohta{$f(f(x))$}
+%			\alakohta{$f(g(x))$}
+%			\alakohta{$g(f(x))$}
 		\end{alakohdat}
   \begin{vastaus}
 \begin{alakohdat}
     \alakohta{$\frac{4}{25}$}
 	\alakohta{$1$}
-	\alakohta{$-\frac{7}{5}$}				
+	\alakohta{$-\frac{7}{5}$}	
+	\alakohta{$2x/5-3$}
+	\alakohta{$2x/5-3/5$}			
 \end{alakohdat}
   \end{vastaus}
 \end{tehtava}
 
-\begin{tehtava} % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
+\begin{tehtava}$\boldsymbol{[\star]}$ % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
 	Olkoon $f(x) =\sqrt{x} $ 
 	ja 
 	\begin{equation*}
@@ -282,27 +339,6 @@ $a=68$
 	
 \end{tehtava}
 
-\begin{tehtava} % Emilia Välttilä 9.11.2013 (Sampo Tiensuun idea)
-	Olkoon $f(x) = \frac{x^2+3}{x}$. Laske
-	\begin{alakohdat}
-		\alakohta{$f(2)$}
-		\alakohta{$f(a)$}
-		\alakohta{$f(2a)$}
-		\alakohta{$2f(x^2)$}
-		\alakohta{$f(\sqrt{x+1})^2$}
-	\end{alakohdat}
 
-  \begin{vastaus}
-	\begin{alakohdat}
-		\alakohta{$\frac{7}{2}$}
-		\alakohta{$a + \frac{3}{a}$}
-		\alakohta{$2a + \frac{3}{2}a$}
-		\alakohta{$2x^2 + \frac{6}{x^2}$}
-		\alakohta{$\frac{x^2 + 8}{x + 1}$}
-	\end{alakohdat} 
-  \end{vastaus}
-
-	
-\end{tehtava}
 
 \end{tehtavasivu}
