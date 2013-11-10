@@ -22,17 +22,40 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 	\end{center}
 \end{esimerkki}
 
+%\begin{esimerkki}
+%Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä vuonna 2012.
+%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+%	\hline
+%	Tammi & Helmi & Maalis & Huhti & Touko & Kesä & Heinä & Elo & Syys & Loka & Marras & Joulu\\
+%	\hline
+%	-12 & -16 & -6 & -3 & 6 & 11 & 13 & 12 & 7 & 0 & -4 & -15\\
+%	\hline
+%	\end{tabular}
+%Taulukon perusteella voidaan määritellä funktio \(f\) kuukausien joukolta lämpötilojen joukolle liittämällä jokaiseen kuukauteen sitä vastaava keskilämpötila. Silloin esimerkiksi \(f(Tammi)=-12\) ja \(f(Touko) = -3\). 
+%%Lähtöjoukoksi mieluummin vain kuukausien järjestysnumerot? Lähde: Ilmatieteenlaitos
+%\end{esimerkki}
+
 Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 \begin{description}
-	\item[1)] $f(x) = y$ lausutaan: ''Funktio saa arvon $y$ pisteessä $x$.''
+	\item[1)] Merkintä $f(x) = y$ luetaan esimerkiksi: ''funktio \(f\) saa arvon $y$ pisteessä $x$'' tai lyhyemmin: ''\(f\) arvolla \(x\) on \(y\).''
 	\item[2)] Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne voidaan päätellä asiayhteydestä.
 		Tällä kurssilla funktiot ovat yleensä reaaliluvuilta reaaliluvuille.
-	\item[3)] Usein kirjoitetaan ''funktio $f(x) = \text{lauseke}$,'' vaikka tarkkaan ottaen funktio on $f$ ja
-		$f(x)$ on funktion saama arvo pisteessä $x$.
+	\item[3)] Usein kirjoitetaan esimerkiksi ''funktio $f(x) = x^2+3x$,'' vaikka tarkkaan ottaen funktio on $f$ ja
+		$f(x)$ on sen saama arvo pisteessä $x$.
 	\item[4)] Toisinaan funktiolle ja funktion kuvaajalle ei tehdä selkeää eroa:
 		$y = f(x)$ samaistetaan koordinaatistoon piirretyn funktion kuvaajan kanssa.
 		Oikeastaan funktio ja sen kuvaaja ovat kuitenkin eri asioita.
 \end{description}
+\begin{esimerkki}
+Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona. 
+
+\begin{kuva}
+    kuvaaja.pohja(0, 8, 0, 8)
+    kuvaaja.piirra("1.4**x", nimi = "$y=m(t)$")
+\end{kuva}
+
+Alkutilanteessa eli ajanhetkellä \(t=0\) bakteerikannan massa \(m(t)\) on \(m(0)=1\) gramma. Kahden tunnin kuluttua bakteerikannan massa on \(m(2)\approx 2,0\) grammaa ja kuuden tunnin kuluttua vastaavasti \(m(6)\approx 7,5\) grammaa. 
+\end{esimerkki}
 
 \subsection*{Reaalifunktiot}
 
