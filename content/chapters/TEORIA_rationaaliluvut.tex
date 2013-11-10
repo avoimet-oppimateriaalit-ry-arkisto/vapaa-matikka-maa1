@@ -8,25 +8,84 @@
 
 % FIXME: tähän voisi lisätä lyhyen, selkeän johdannon muuttujien käytön etuihin
 
-% === SIISTITTÄVÄ PÄTKÄ ALKAA ===
+\subsection*{Luvun käsite}
+
+\termi{luku}{Luku} on käsite, jolla voidaan ilmaista esimerkiksi suuruutta, lukumäärää tai järjestystä. Erityisesti on huomattava, että
+luku ja \termi{numero}{numero} eivät ole synonyymejä; numero on yksittäinen lukujärjestelmän merkki.
+
+\begin{esimerkki}
+	Luku $715531$ koostuu numeroista 7, 1, 5, 5, 3 ja 1.
+	
+	Luku $9$ koostuu ainoastaan vastaavasta numeromerkistä 9.
+\end{esimerkki}
+
+Englannin kielen sana \textit{number} voi viitata sekä numeroon että lukuun.
+Sana \textit{digit} tarkoittaa pelkästään yhtä numeromerkkiä.
+Ruotsiksi luku on \textit{tal}, lukumäärä \textit{antal} ja numeroa tai lukumäärää tarkoittamatonta
+numeroyhdistelmää kuvaa suomen kielen tapaan sana \textit{nummer}.
+
+Luvulla on aina suuruus mutta numerolla ei välttämättä ole. Esimerkiksi arkipäivän käsitteet
+postinumero ja puhelinnumero eivät ole lukuja, vaikka niissä numeroita yhdistelläänkin. 
+Emme voi esimerkiksi sanoa, onko postinumero 00950 jollakin tapaa suurempi kuin postinumero 00900.
+
+\termi{tuhaterotin}{Tuhaterottimena} käytetään suomenkielisessä tekstissä välilyöntiä, ei pilkkua tai pistettä.
+\termi{desimaalierotin}{Desimaalierotin} puolestaan on suomenkielisessä tekstissä pilkku, ei piste, kuten yhdysvaltalaisissa laskimissa.
+
+Matematiikassa lukuja merkitään usein kirjaimilla. Tästä on se etu, että kirjain voi tarkoittaa mitä lukua
+tahansa, joten kirjainten avulla pystytään ilmaisemaan luvuille päteviä yleisiä sääntöjä ja laskutoimituksia, joissa ei
+tiedetä, mikä luku johonkin paikkaan kuuluu. Esimerkiksi voimme sanoa, että kaikille luvuille
+(ainakin sellaisille, joita lukion matematiikassa käsitellään) pätee $x+y=y+x$. Tämä on paljon helpompaa
+kuin luetella $2+3=3+2$, $2+4=4+2$, $3+4=4+3$, $2+5=5+2$, jne...
+
+Yleensä samalla kirjaimella tarkoitetaan samassa asiayhteydessä aina samaa lukua.
+Esmerkiksi edellisessä esimerkissä $x$ tarkoittaa samaa lukua yhtälön kummallakin puolella. $y$ voi tarkoittaa eri lukua kuin $x$, mutta
+ei välttämättä. On myös mahdollista, että $x$ ja $y$ voivat tarkoittaa samaa lukua, eli yllä mainittu sääntö kertoo myös, että $2+2=2+2$.
+
+Kirjaimia, joiden lukuarvo voi vaihdella, on tapana kutsua \termi{muttuja}{muuttujiksi} ja sellaisia,
+joiden lukuarvon ajatellaan pysyvän muuttumattomana, on tapana kutsua \termi{vakio}{vakioiksi}.
+
+\subsection*{Lukualueet}
+
+\termi{luonnolliset luvut}{Luonnolliset luvut} ovat lukuja, joita voidaan käyttää lukumäärän ilmaisemiseen.
+Luonnollisten lukujen joukkoa merkitään kirjaimella $\nn$ ja niihin katsotaan kuuluvan luvut 0, 1, 2, 3, jne...
+Matematiikan kielellä tämä on usein tapana ilmaista seuraavanlaisella merkinnällä: \[\nn = \{0, 1, 2, 3, \ldots\}\]
+
+Tässä kirjasarjassa katsotaan, että nolla on myös luonnollinen luku. Joissain muissa lähteissä saatetaan kuitenkin
+tarkoittaa luonnollisilla luvuilla joukkoa $\nn_+ = \{1, 2, 3, \ldots\}$ jota kutsutaan myös positiivisten kokonaislukujen joukoksi.
 
 Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi $5 + 3 = 8$.
 
-Luonnollisten lukujen $m$ ja $n$ kertolasku määritellään peräkkäisinä yhteenlaskuina
+Luonnollisten lukujen kertolasku määritellään peräkkäisinä yhteenlaskuina
+
+\[5 \cdot 3 = 5 + 5 + 5 = 3 + 3 + 3 + 3 + 3.\]
+
+tai yleisesti kirjaimia käyttäen
+
 \laatikko{ \[m \cdot n = \underbrace{m + m + \ldots + m}_{n\text{ kpl}} = \underbrace{n + n + \ldots + n}_{m\text{ kpl}}.\] }
 
 Nollalla kertomisen ajatellaan olevan ''tyhjä yhteenlasku'' eli nolla:
 \laatikko{ \[0 \cdot m = 0\] }
 
-Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla:
-$m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun erotus
-ei kuitenkaan aina ole luonnollinen luku, esimerkkinä $3 - 5$.
-Ratkaisemme ongelman määrittelemällä kullekin luonnolliselle
-luvulle vastaluvun.
+%Luonnollisten lukujen $m$ ja $n$ erotus määritellään yhteenlaskun avulla:
+%$m-n$ on luku $k$, jolle $k + n = m$. Kahden luonnollisen luvun erotus
+%ei kuitenkaan aina ole luonnollinen luku, esimerkkinä $3 - 5$.
+%Ratkaisemme ongelman määrittelemällä kullekin luonnolliselle
+%luvulle vastaluvun.
+
+Peruskoulun matematiikasta tutuista laskutoimituksista yhteenlasku ja kertolasku ovat ainoat,
+joilla voidaan laskea niin, että pysytään luonnollisten lukujen sisällä. Esimerkiksi vähennyslaskua
+$3-5$ ei voida laskea luonnollisten lukujen joukossa. Jotta vähennyslasku olisi kaikille luvuille
+mahdollinen, on keksitty niin sanottu vastaluvun käsite. Vastaluku määritellään seuraavasti:
 
 \laatikko{ Jokaisella luvulla $n$ on vastaluku $-n$, jolle pätee $n+(-n)=0$. }
 
-Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä kokonaislukujen joukon
+Esimerkiksi luvun $2$ vastaluku on $-2$. Yllä olevan määritelmän mukaan, kun luku lasketaan yhteen vastalukunsa kanssa, saadaan tulokseksi $0$.
+Esierkiksi $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$.
+Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$. Yleisesti pätee
+
+\laatikko{$$-(-a)=a\text{.}$$}
+
+Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä \termi{kokonaisluvut}{kokonaislukujen} joukon
 
 \[\zz = \{\ldots, -2, -1, 0, 1, 2, \ldots\},\] jota voidaan havainnollistaa \termi{lukusuora}{lukusuoran} avulla
 
@@ -61,7 +120,6 @@ Luonnolliset luvut ja niiden vastaluvut muodostavat yhdessä kokonaislukujen jou
 %\end{lukusuora}
 %\end{center}
 
-
 Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
 yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 
@@ -69,9 +127,19 @@ yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
 \[m-n = m+(-n)\]
 }
 
-    Esimerkiksi luvun $2$ vastalukua merkitään $-2$, ja sille pätee $2+(-2)=0$. Vastaavasti luvun $-2$ vastaluku on sellainen luku, joka laskettuna yhteen luvun $-2$ kanssa antaa luvun $0$. Tämä on tietysti $2$, koska $-2+2=0$. Näin voidaan huomata, että $-(-2)=2$.
-    
-\laatikko{$$-(-a)=a$$}
+Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja vähennyslaskulle:
+
+\laatikko{
+\begin{itemize}
+\item{$a+(+b)=a+b$}
+\item{$a+(-b)=a-b$}
+\item{$a-(+b)=a-b$}
+\item{$a-(-b)=a+b$}
+\end{itemize}
+}
+
+
+% === SIISTITTÄVÄ PÄTKÄ ALKAA ===
 
 \subsection*{Yhteen- ja vähennyslasku}
 
@@ -211,17 +279,6 @@ Mitä tapahtuu, kun lisätään negatiivinen luku? Kun lukuun lisätään $1$, s
        ${\color{red}5}-({\color{blue}-8})=13$
 \end{center}
 
-
-\laatikko{
-Yhteen- ja vähennyslaskun merkkisäännöt
-
-\begin{alakohdat}
-\alakohta{$a+(+b)=a+b$}
-\alakohta{$a+(-b)=a-b$}
-\alakohta{$a-(+b)=a-b$}
-\alakohta{$a-(-b)=a+b$}
-\end{alakohdat}
-}
 
 %Koska $+b-b=0$, yhteen- ja vähennyslasku kumoavat toisensa, eli
 %
