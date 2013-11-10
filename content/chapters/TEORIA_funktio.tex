@@ -5,7 +5,7 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää \termi{muuttuja}{muuttujaan} $x$ arvon $f(x)$.
 
 	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
-	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot kuuluvat.
+	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat.
 }
 
 \begin{esimerkki}
@@ -22,18 +22,22 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 	\end{center}
 \end{esimerkki}
 
-%\begin{esimerkki}
-%Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä vuonna 2012.
-%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
-%	\hline
-%	Tammi & Helmi & Maalis & Huhti & Touko & Kesä & Heinä & Elo & Syys & Loka & Marras & Joulu\\
-%	\hline
-%	-12 & -16 & -6 & -3 & 6 & 11 & 13 & 12 & 7 & 0 & -4 & -15\\
-%	\hline
-%	\end{tabular}
-%Taulukon perusteella voidaan määritellä funktio \(f\) kuukausien joukolta lämpötilojen joukolle liittämällä jokaiseen kuukauteen sitä vastaava keskilämpötila. Silloin esimerkiksi \(f(Tammi)=-12\) ja \(f(Touko) = -3\). 
-%%Lähtöjoukoksi mieluummin vain kuukausien järjestysnumerot? Lähde: Ilmatieteenlaitos
-%\end{esimerkki}
+
+\begin{esimerkki}
+Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä vuonna 2012.
+
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	Tam & Hel & Maa & Huh & Tou & Kes & Hei & Elo & Syys & Loka & Mar & Jou\\
+	\hline
+	-12 & -16 & -6 & -3 & 6 & 11 & 13 & 12 & 7 & 0 & -4 & -15\\
+	\hline
+	\end{tabular}
+Lähde: Ilmatieteenlaitos
+
+Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Eli määrittelyjoukko eli muuttujan x arvot on kuukaudet, ja maalijoukko eli funktion arvojoukko \(f(x)\) lämpötilojen joukko. Nyt esimerkiksi \(f($Tam$)=-12\) ja \(f($Tou$) = 6\). 
+%TÄHÄN VOISI LAITTAA KUVAN KUVAAJASTA
+\end{esimerkki}
 
 Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 \begin{description}
@@ -47,7 +51,7 @@ Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 		Oikeastaan funktio ja sen kuvaaja ovat kuitenkin eri asioita.
 \end{description}
 \begin{esimerkki}
-Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona. 
+Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona $m$.
 
 \begin{kuva}
     kuvaaja.pohja(0, 8, 0, 8)
@@ -63,9 +67,8 @@ Funktioita, jotka määritellään reaaliluvuilla, ja jotka saavat arvokseen rea
 Funktiolla, erityisesti reaalifunktioilla, on usein jokin selkeä sääntö, joka voidaan kirjoittaa matemaattisena lausekkeena.
 
 \begin{esimerkki}
-	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan sivun pituuden
-	ja neliön pinta-alan välistä yhteyttä kuvata funktiolla $A(x) = x^2$. % FIXME
-\end{esimerkki}
+	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-ala kuvata funktiolla $A(x) = x^2$.
+\end{esimerkki} 
 
 Reaalifunktioita voidaan havainnollistaa koordinaatistossa kuvaajien avulla.
 Funktion $f$ kuvaajassa koordinaatistoon piirretään ne pisteet $(x, y)$, joiden $y$-koordinaatti on $f$:n arvo $x$-koordinaatissa.
