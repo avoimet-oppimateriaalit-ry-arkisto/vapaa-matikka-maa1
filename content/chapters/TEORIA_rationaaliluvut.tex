@@ -420,6 +420,19 @@ Kerto- ja jakolasku kumoavat toisensa
 \end{alakohdat}
 }
 
+\subsection*{Laskujärjestys}
+
+Yleisen käytännön mukaan laskulausekkeessa, jossa on useita laskutoimituksia, tehdään laskutoimitukset seuraavan järjestyksen mukaan:
+
+\laatikko{
+\begin{enumerate}
+\item{Suluissa olevat lausekkeet}
+\item{Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)}
+\item{Kerto- ja jakolaskut vasemmalta oikealle}
+\item{Yhteen- ja vähennyslaskut vasemmalta oikealle}
+\end{enumerate}
+}
+
 \subsection*{Lausekkeiden sieventäminen}
 
 Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin. Kun merkitsemme monimutkaisen lausekkeen lyhyemmin, sitä kutsutaan \termi{sieventäminen}{sieventämiseksi}. Sieventäminen on ikään kuin sotkuisen kaavan siistimistä selkeämmäksi.
@@ -428,6 +441,24 @@ Matematiikassa on tapana ajatella niin, että saman luvun voi kirjoittaa monella
                 & 42 \\ & -(-42) \\ & 6 \cdot 7 \\ & (50-29) \cdot 2                                                                                                      
                                                                                                                  \end{align*}
 tarkoittavat kaikki samaa lukua. Niinpä missä tahansa lausekkeessa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä ne tarkoittavat samaa lukua. Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
+
+Yhteen- ja vähennyslasku ovat toistensa käänteistoimituksia, joten saman luvun lisääminen ja vähentäminen peräkkäin kumoavat toisensa:
+
+\laatikko{
+\begin{alakohdat}
+\alakohta{$a+b-b=a$}
+\alakohta{$a-b+b=a$}
+\end{alakohdat}
+}
+
+Kerto- ja jakolasku ovat toistensa käänteistoimituksia, joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
+
+\laatikko{
+\begin{alakohdat}
+\alakohta{$a\cdot b:b=a$}
+\alakohta{$a:b\cdot b=a$}
+\end{alakohdat}
+}
 
 \laatikko{
 Yhteenlaskut voi laskea missä järjestyksessä tahansa
