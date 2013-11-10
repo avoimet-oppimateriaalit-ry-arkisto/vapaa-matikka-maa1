@@ -87,17 +87,18 @@
 \begin{tehtava}
 %Tehtävän laatinut Johanna Rämö 9.11.2013.
 %Ratkaisun tehnyt Johanna Rämö 9.11.2013.
+%Pieni korjaus Matias Jalkanen 10.11.2013
         \begin{alakohdat}
         \alakohta{Onko $x=4$ yhtälön $x^3=64$ ratkaisu?}
         \alakohta{Onko $x=2$ yhtälön $x^5=30$ ratkaisu?}
-        \alakohta{Onko $x=-1$ yhtälön $x^4-+3x+2=0$ ratkaisu?}
+        \alakohta{Onko $x=-1$ yhtälön $x^4-3x+2=0$ ratkaisu?}
         \end{alakohdat}
         
         \begin{vastaus}
         \begin{alakohdatrivi}
             \alakohta{On, sillä $4^3=4 \cdot 4 \cdot 4=64$.}
             \alakohta{Ei, sillä $2^5=2 \cdot 2 \cdot 2 \cdot 2 \cdot 2=32$.}
-            \alakohta{On, sillä $(-1)^4-+3(-1)+2=1-3+2=0$.}
+            \alakohta{On, sillä $(-1)^4-3(-1)+2=1-3+2=0$.}
         \end{alakohdatrivi}
         \end{vastaus}
 \end{tehtava}
@@ -201,18 +202,21 @@
 $$\left[ \frac{(a^2b^{-2}c)^{-3}:\left(c^2\cdot (ab^{-2})^0 \cdot a^{-4}\right)}
 {\left((c^{-1}\cdot a^3)^{-1}:a^2\right)^3(ab^2c^{-3})^3} \right]^2.$$
 \begin{vastaus}
-$c^2$
+%tarkistettu ja korjattu, Matias Jalkanen 10.11.2013
+%http://www.wolframalpha.com/input/?i=[%28a^2b^{-2}c%29^{-3}\%28c^2*%28ab^{-2}%29^0*a^{-4}%29}%2F{%28%28c^{-1}*a^3%29^{-1}*a^-2%29^3%28ab^2c^{-3}%29^3}]^2
+$a^20c^2$
 \end{vastaus}
 \end{tehtava} 
  
 \begin{tehtava}
+%Tarkistettu ja korjattu, Matias Jalkanen 10.11.2013
 $\star$ Tetraatio on lyhennysmerkintä ''potenssitornille'',
 jossa esiintyy vain yhtä lukua. Se määritellään seuraavasti.
 \[^na = \underbrace{{a^{a^{a^{\mathstrut^{.^{.^{.^{a}}}}}}}}}_{n\textrm{ kpl }}. \]
 Laske \quad a) $^42$  \quad b) $^35$. \\ c) Ratkaise yhtälö $^x2= 16$.
 \begin{vastaus}
 a) $^42 = 2^{2^{2^2}}=2^{2^4}=2^{16}=65\ 536$ \
-b) $^35 = 5^{5^5} = 5^{25} \approx 2,98 \cdot 10^{17}$. \\
+b) $^35 = 4^{4^4} = 4^{256} \approx 1,34 \cdot 10^{154}$. \\
 c) Kokeilemalla $x =3$.
 \end{vastaus}
 \end{tehtava}
@@ -651,4 +655,23 @@ c) Kokeilemalla $x =3$.
 		\end{alakohdat}
 	\end{vastaus}
 \end{tehtava}
+\begin{tehtava}
+%Laatinut ja ratkaissut Matias Jalkanen 10.11.2013
+Tarinan mukaan muuan intialainen ruhtinas pyysi erästä matemaatikkoa kehittämään uuden strategisen lautapelin ja luvannut hänelle pelin keksimisestä suuren palkkion. Tällöin matemaatikko keksi shakin. Ruhtinas ihastui peliin ja kysyi keksijältä, mitä tämä halusi palkkioksi. Keksijä pyysi palkkioksi niin monta vehnän jyvää kuin saadaan koko shakkilaudalta, jos niitä asetetaan sen ensimmäiselle ruudulle yksi, toiselle ruudulle kaksi, kolmannelle neljä, neljännelle kahdeksan ja edelleen jokaiselle ruudulle kaksi kertaa niin monta kuin edelliselle ruudulle.
+	\begin{alakohdatrivi}
+		\alakohta{Kuinka monta vehnän jyvää tulee viidennelle ruudulle?}
+		\alakohta{Kuinka monta vehnän jyvää viimeiselle ruudulle tulee?}
+		\alakohta{Kuinka montaa vehnän jyvää keksijä pyysi yhteensä?}
+	\end{alakohdatrivi}
+	
+	\begin{vastaus}
+	      \begin{alakohdat}
+		    \alakohta{$2^{5-1} = 16$}
+		    \alakohta{$2^{64-1}$}
+		    \alakohta{$2^64 - 1 = 18 446 744 073 709 551 615$}
+	      \end{alakohdat}
+	\end{vastaus}
+
+\end{tehtava}
+
 \end{tehtavasivu}
