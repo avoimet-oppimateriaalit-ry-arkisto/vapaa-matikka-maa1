@@ -2,6 +2,7 @@
 \newcommand{\nosa}[1]{\chapter*{#1} \addcontentsline{toc}{chapter}{#1}} % numeroimaton osa
 \newcommand{\luku}[2]{\section{#2} \input{chapters/TEORIA_#1} \input{chapters/TEHT_#1}} % luku
 \newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \input{chapters/#1}} % numeroimaton luku
+\newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{chapters/LIITE_vastaukset} \end{vastaussivu}}
 
 \Opensolutionfile{ans}[chapters/LIITE_vastaukset]
 
@@ -32,7 +33,6 @@
     \nluku{TEHT_harjoituskokeet}{Harjoituskokeita}
     \nluku{TEHT_ylioppilaskokeet}{Ylioppilaskoetehtäviä}
 	\nluku{TEHT_paasykokeet}{Pääsykoetehtäviä}
-
 \Closesolutionfile{ans}
 
 \nosa{Lisämateriaalia}
@@ -44,4 +44,5 @@
 	\nluku{LIITE_aksioomat}{Reaalilukujen aksioomat} % ok?
     %\nluku{LIITE_sanasto}{Sanasto}
 	%\nluku{LIITE_symbolit}{Symbolit}
-	\nluku{LIITE_vastaukset}{Vastaukset}
+
+	\vast
