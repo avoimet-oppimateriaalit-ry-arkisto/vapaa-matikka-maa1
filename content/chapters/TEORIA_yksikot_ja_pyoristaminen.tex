@@ -1,10 +1,69 @@
-\subsection*{Etuliitteet}
+\subsection*{Suureet ja yksiköt}
+
+Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \textbf{yksikön} kanssa. Tällöin luku yhdessä yksikön kanssa esittää tietoa \textbf{suureesta} eli jostakin mitattavasta ominaisuudesta. Esimerkiksi pituus on suure, jota voidaan mitata metreissä tai tuumissa.
+
+\laatikko[Suure]{luku $\cdot$ yksikkö}
+
+Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat kerrotut keskenään, mutta käytäntö on kirjoittaa kertolaskun sijasta luvun ja yksikön väliin väli. Luvun ja yksikön väliin tulee myös kieliopillisesti tyhjää. Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkataan symboleilla $\deg$, ' ja '', ja jotkin pituusyksiköt kuten tuuma, jota merkataan $'$.
+
+Seuraava taulukko selventää oikeinkirjoitusta:
+
+\begin{tabular}{c|c}
+Oikein & Väärin \\
+\hline
+3 m & 3m 	\\
+100 $\frac{\text{km}}{\text{h}}$ & 100$\frac{km}{h}$	\\
+2 \% & 2\% 	\\
+3$\deg$ & 3 $\deg$\\
+3,16$\deg$ 5' 13'' & 3,16 $\deg$ 5 ' 13 '' 	\\
+6 $\deg$ C & 6$\deg$ C 	\\
+\end{tabular}
+
+\subsection*{Yksiköiden yhdistäminen}
+
+Jos lausekkeessa on useita samanalsiai ja/tai erilaisia yksiköitä, näitä voidaan usein yhdistää ja sieventää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään.
+
+ESIMERKKI:
+ 2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 * m * m=6 m^2$ eli kuusi neliömetriä. 
+
+ESIMERKKI:
+
+Keskinopeus lasketaan kaavalla $v=s/t$, missä $v$ on nopeus, $s$ on kuljettu matka ja $t$ matkaan kulunut aika. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s:
+
+$v=s/t$
+$t=s/v$ sijoitetaan yksiköineen
+$t=100 m / 7 m/s$
+käsitellään yksiköitä kuten lukuja, ja erotellaan ne luvuista kertolaskun tapaan:
+100/7 m/m/s
+käytetään rationaalilukujen laskusääntöjä:
+...
+
+Luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät.
+
+ESIMERKKI:
+
+$3 m \cdot 4 m = 3\cdot 4 m\cdot m = 12 m^2$ \\
+$\frac{90 m}{10 \frac{m}{s}} = \frac{90}{10} \frac{m}{\frac{m}{s}}=9 m:\frac{m}{s}=9 m \cdot \frac{s}{m} = 9 \frac{ms}{m}=9 s$
+
 
 \subsection*{SI-järjestelmä}
 
-Monissa sovelluksissa ja erityisesti fysiikassa tarvitaan lukuja esittämään jotain suuretta (mitataavaa ominaisuutta). Suureita ...
 
 
+\begin{tabular}{c|c|c}
+Suure & Yksikkö & Yksikön tunnus\\
+\hline
+pituus & metri &	m\\
+massa & kilogramma & kg 	\\
+
+\end{tabular}
+
+
+
+Standardin mukaan yksiköiden tunnukset kirjoitetaan pystyyn, kursiivilla.
+
+
+\subsection*{Etuliitteet}
 
 
 \laatikko{
@@ -61,25 +120,6 @@ Kuinka monta minuuttia on $1,25$ h? $1,25 \text{h} = 1,25 \cdot 60 \text{min} = 
 % FIXME \todo{esimerkki cm muuttamisesta tuumaksi ja toisinpäin}
 % FIXME tämä pitäisi tekaista lukusuorana: \missingfigure{havainnollistava kuva, jossa on rinnastettu suoralla sentit ja tuumat}
 %\end{esimerkki}
-
-\subsection{Yksiköiden yhdistäminen}
-
-Jos lausekkeessa on useita samanalsiai ja/tai erilaisia yksiköitä, näitä voidaan usein yhdistää ja sieventää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään.
-
-ESIMERKKI:
- 2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 * m * m=6 m^2$ eli kuusi neliömetriä. 
-
-ESIMERKKI:
-
-Keskinopeus lasketaan kaavalla $v=s/t$, missä $v$ on nopeus, $s$ on kuljettu matka ja $t$ matkaan kulunut aika. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s:
-
-$v=s/t$
-$t=s/v$ sijoitetaan yksiköineen
-$t=100 m / 7 m/s$
-käsitellään yksiköitä kuten lukuja, ja erotellaan ne luvuista kertolaskun tapaan:
-100/7 m/m/s
-käytetään rationaalilukujen laskusääntöjä:
-...
 
 \subsection*{Pyöristäminen}
 
