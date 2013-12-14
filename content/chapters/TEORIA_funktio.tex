@@ -2,11 +2,14 @@ Usein ollaan kiinnostuneita siitä, millainen yhteys on kahden asian välillä.
 Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 
 \laatikko{ % tästä on jaksettu riidellä
-	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää \termi{muuttuja}{muuttujaan} $x$ arvon $f(x)$.
+	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää jokaiseen \termi{muuttuja}{muuttujaan} $x$ täsmälleen yhden arvon $f(x)$.
 
 	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
 	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat.
 }
+%Muokannut Jaakko Viertiö 14.12.2013
+
+Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi voidaan ajatella kassakone. Kun siihen luetaan sisään viivakoodi, antaa kassakone ulos hinnan.
 
 \begin{esimerkki}
 	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla.
@@ -39,6 +42,17 @@ Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet kes
 %TÄHÄN VOISI LAITTAA KUVAN KUVAAJASTA
 \end{esimerkki}
 
+\begin{esimerkki}
+Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona $m$.
+
+\begin{kuva}
+    kuvaaja.pohja(0, 8, 0, 8)
+    kuvaaja.piirra("1.4**x", nimi = "$y=m(t)$")
+\end{kuva}
+
+Alkutilanteessa eli ajanhetkellä \(t=0\) bakteerikannan massa \(m(t)\) on \(m(0)=1\) gramma. Kahden tunnin kuluttua bakteerikannan massa on \(m(2)\approx 2,0\) grammaa ja kuuden tunnin kuluttua vastaavasti \(m(6)\approx 7,5\) grammaa. 
+\end{esimerkki}
+
 Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 \begin{description}
 	\item[1)] Merkintä $f(x) = y$ luetaan esimerkiksi: ''funktio \(f\) saa arvon $y$ pisteessä $x$'' tai lyhyemmin: ''\(f\) arvolla \(x\) on \(y\).''
@@ -50,16 +64,18 @@ Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 		$y = f(x)$ samaistetaan koordinaatistoon piirretyn funktion kuvaajan kanssa.
 		Oikeastaan funktio ja sen kuvaaja ovat kuitenkin eri asioita.
 \end{description}
-\begin{esimerkki}
-Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona $m$.
 
-\begin{kuva}
-    kuvaaja.pohja(0, 8, 0, 8)
-    kuvaaja.piirra("1.4**x", nimi = "$y=m(t)$")
-\end{kuva}
-
-Alkutilanteessa eli ajanhetkellä \(t=0\) bakteerikannan massa \(m(t)\) on \(m(0)=1\) gramma. Kahden tunnin kuluttua bakteerikannan massa on \(m(2)\approx 2,0\) grammaa ja kuuden tunnin kuluttua vastaavasti \(m(6)\approx 7,5\) grammaa. 
-\end{esimerkki}
+Huomaa seuraavien käsitteiden erot:
+\laatikko{
+Määritellään funktio $f$ seuraavasti: $f(x)=3x-2$
+	\begin{itemize}
+		\item{$f$ on funktion nimi}
+		\item{merkintä $f(x)$ tarkoittaa \textit{funktion $f$ arvoa kohdassa $x$}}
+		\item{$3x-2$ on \textit{lauseke}, jolla $f(x)$ on määritelty}
+		\item{\textit{Yhtälö} $f(x)=3x-2$ kertoo, että funktion $f$ arvo kohdassa $x$ on yhtäsuuri lausekkeen $3x-2$ kanssa}
+		\item{$x$ on funktion muuttuja}
+	\end{itemize}
+}
 
 \subsection*{Reaalifunktiot}
 
@@ -137,6 +153,22 @@ Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla
 funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 
 \begin{esimerkki}
+	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
+	 Mikä on funktion $g$ määrittelyjoukko?
+	 \begin{esimratk}
+		Neliöjuuri $\sqrt{x}$ on määritelty, kun $x\geq{0}$. Funktion $g$ määrittelyjoukko on siis $x\geq{0}$.
+	 \end{esimratk}
+	 \begin{esimvast}
+	  $x\geq{0}$.
+	 \end{esimvast}
+\end{esimerkki}
+%Lisännyt Jaakko Viertiö 14.12.2013
+
+Käytännössä määrittelyjoukon rajoituksia tarvitaan yllä esitetyn parillisen juuren lisäksi esimerkiksi, kun funktiossa esiintyy muuttujaa nimittäjässä.
+Tällöin on huomioitava, ettei nimittäjässä saa olla nollaa millään muuttujan $x$ arvolla. 
+Soveltavissa tehtävissä saatetaan myös rajoittaa määrittelyjoukkoa vaikkapa siksi, että pituus ei voi olla negatiivista.
+
+\begin{esimerkki}
 	Määritellään funktio $f$ lausekkeella \[ f(x) = \frac{1}{x-1}. \]
 	Mikä on funktion määrittelyjoukko?
 	\begin{esimratk}
@@ -148,6 +180,7 @@ funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 		Funktion $f$ määrittelyjoukko on reaalilukujen joukko poislukien luku $1$.
 	\end{esimvast}
 \end{esimerkki}
+
 
 Funktion \termi{arvojoukko}{arvojoukko} sisältää ne maalijoukon alkiot,
 jotka funktio saa arvokseen ainakin yhdessä pisteessä.
