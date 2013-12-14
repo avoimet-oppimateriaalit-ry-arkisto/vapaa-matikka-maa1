@@ -1,6 +1,8 @@
 \subsection*{Suureet ja yksiköt}
 
-Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \textbf{yksikön} kanssa. Tällöin luku yhdessä yksikön kanssa esittää tietoa \textbf{suureesta} eli jostakin mitattavasta ominaisuudesta. Esimerkiksi pituus on suure, jota voidaan mitata metreissä tai tuumissa.
+Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \termi{yksikkö}{yksikön} kanssa.
+Tällöin luku yhdessä yksikön kanssa esittää tietoa \termi{suure}{suureesta} eli jostakin mitattavasta ominaisuudesta.
+Esimerkiksi pituus on suure, jota voidaan mitata metreissä tai tuumissa.
 
 \laatikko[Suure]{luku $\cdot$ yksikkö}
 
@@ -21,31 +23,32 @@ Oikein & Väärin \\
 
 \subsection*{Yksiköiden yhdistäminen}
 
-Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää ja sieventää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät.
+Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää ja sieventää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään.
+Luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla.
+Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät.
 
-ESIMERKKI:
-2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 * m * m=6 m^2$ eli kuusi neliömetriä. 
+\begin{esimerkki}
+2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 \cdot$ m $\cdot$ m $=6 $ m$^2$ eli kuusi neliömetriä.
+\end{esimerkki}
 
-ESIMERKKI:
+\begin{esimerkki}
+Keskinopeus lasketaan kaavalla $v=s/t$, missä $v$ on nopeus, $s$ on kuljettu matka ja $t$ matkaan kulunut aika.
+Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s:
 
-Keskinopeus lasketaan kaavalla $v=s/t$, missä $v$ on nopeus, $s$ on kuljettu matka ja $t$ matkaan kulunut aika. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s:
+Koska keskinopeus voidaan laskea kaavalla $v=s/t$, matkaan kulunut aika voidaan laskea kaavalla $t=s/v$.
+Sijoitetaan yksiköineen $s=300$ m ja $v= 7$ m/s ja käytetään ratinaalilukujen laskusääntöjä, jolloin saadaan:
+\begin{equation*}
+t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
+= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}} = \frac{100}{7} \textrm{ s} \approx 14 \textrm{ s}.
+\end{equation*}
+\end{esimerkki}
 
-$v=s/t$
-$t=s/v$ sijoitetaan yksiköineen
-$t=100 m / 7 m/s$
-käsitellään yksiköitä kuten lukuja, ja erotellaan ne luvuista kertolaskun tapaan:
-100/7 m/m/s
-käytetään rationaalilukujen laskusääntöjä:
-...
-
-ESIMERKKI:
-
-$3 m \cdot 4 m = 3\cdot 4 m\cdot m = 12 m^2$ \\
-$\frac{90 m}{10 \frac{m}{s}} = \frac{90}{10} \frac{m}{\frac{m}{s}}=9 m:\frac{m}{s}=9 m \cdot \frac{s}{m} = 9 \frac{ms}{m}=9 s$
-
+%\begin{esimerkki}
+%$3 m \cdot 4 m = 3\cdot 4 m\cdot m = 12 m^2$ \\
+%$\frac{90 m}{10 \frac{m}{s}} = \frac{90}{10} \frac{m}{\frac{m}{s}}=9 m:\frac{m}{s}=9 m \cdot \frac{s}{m} = 9 \frac{ms}{m}=9 s$
+%\end{esimerkki}
 
 \subsection*{SI-järjestelmä}
-
 
 
 \begin{tabular}{c|c|c}
