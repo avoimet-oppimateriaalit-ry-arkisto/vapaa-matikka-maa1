@@ -1,11 +1,20 @@
 % Huom! Epäyhtälöt mainitaan lukion opetussuunnitelmassa vasta
 % 2. kurssin kohdalla, joten niitä ei käsitellä tässä (Sampo Tiensuu 2013-12-14). 
 
-Monissa käytännön tilanteissa jokin suure voidaan päätellä tai laskea kahdella eri tavalla. Nämä tavat voidaan merkitä lukuina tai kirjoittaa lausekkeiksi. Merkitsemällä näin saadut lukuarvot ja lausekkeet yhtäsuuriksi saadaan \termi{yhtälö}{yhtälö}. Yhtälö on siis kahden lausekkeen merkitty yhtäsuuruus. Monia käytännön tilanteita voidaan mallintaa käyttämällä yhtälöitä.
+\termi{Lauseke}{Lauseke} on luku tai laskutoimitus kuten $9$ tai $\frac{x}{3}-9$. \termi{Termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvusta, vakioista ja muuttujista tulona, kuten $4ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$. \termi{Yhtälö}{Yhtälö} on kahden lausekkeen merkitty yhtäsuuruus, kuten $x+3=5/7+2$. Yhtälöitä käyttämällä voidaan mallintaa monia käytännön tilanteita.
 
 \begin{esimerkki}
-	Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan yhtälö $5x+\sqrt{x} = 7x+7$.
+	Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluva ajan ratkaiseminen matkan pituuden ja nopeuden avulla. Jos matka olisi 15 kilometriä ja nopeus on 5 km/h voimme merkitä $5*t=15$ , jossa t on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}
 \end{esimerkki}
+
+Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
+
+\begin{esimerkki}
+	Halutaan tietää onko olemassa lukua, jonka kolmas potenssi jaettuna kolmella on yhtä suuri kuin sen toinen potenssi jaettuna kahdella. Tällöin merkitään $\frac{x^3}{3}=\frac{x^2}{2}$. 
+\end{esimerkki}
+	%%\begin{esimerkki}
+%%	Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan yhtälö $5x+\sqrt{x} = 7x+7$.
+%%\end{esimerkki}
 
 \laatikko{
 	Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan että \termi{yhtälön päteminen}{yhtälö pätee}.
@@ -29,7 +38,12 @@ Monissa käytännön tilanteissa jokin suure voidaan päätellä tai laskea kahd
 	
 }
 
-Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. 
+Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. Kaikki kirjaimet eivät myöskään ole välttämättä tuntemattomia, vaan niillä voidaan tarkoittaa myös vakioita eli muuttumattomia lukuarvoja. Esimerkiksi fysiikassa käytetään usein eri kirjaimia merkitsemään eri luonnonvakioita.
+
+
+\begin{esimerkki}
+ Tarkastellaan legendaarista fysiikan yhtälöä $E=mc^2$. Tässä yhtälössä on vakio $c$ eli valonnopeus ja muuttujat E eli energia ja m eli massa.
+\end{esimerkki}
 
 %Lisännyt Jaakko Viertiö 2013-11-10
 \begin{esimerkki}
@@ -38,10 +52,11 @@ Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia.
  Tuntemattomalle $x$ voidaan siis joissain tapauksissa löytää useita arvoja, jotka toteuttavat yhtälön. 
 \end{esimerkki}
 
+
 % FIXME: jokin helposti ymmärrettävä esimerkki tuntemattomista
 
 Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla.
-Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu.
+Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. 
 %Lisännyt Jaakko Viertiö 2013-11-10. Rautalangasta aina paras!
 Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia, ja toisella puolella kaikki muu.
 
@@ -55,7 +70,7 @@ Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella 
 				\item{Puolittain kertominen tai jakaminen: yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla tai muuttujalla. Muuttujalla jakaessa täytyy ottaa huomioon ja merkitä, että yhtälö ei ole määritelty, kun muuttuja on nolla.
 				Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.}
 				\item{Huomaa, että itseasiassa vähennyslasku on negatiivisen luvun summaamista [$a-b=a+(-b)$], 
-				ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]}
+				ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]}				
 			\end{itemize}
 		\item[Sieventäminen laskusääntöjä käyttäen] Yhtälön lausekkeista voi esimerkiksi hakea yhteistä tekijää, avata sulkuja tai supistaa, 
 		ja pyrkiä täten saamaan lauseke yksinkertaisempaan muotoon. Esimerkiksi yhtälöä $3(x-2)=5(x+6)$ kannattaa lähteä ratkaisemaan avaamalla ensin 
@@ -67,6 +82,40 @@ Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella 
 }
 
 Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
+
+\begin{esimerkki}
+Ratkaistaan aikasemman esimerkin matkan kesto. Yhtälö on siis $5t=15$. 
+Laskusääntöjen mukaan jakamalla molemmat puolet viidellä, saamme yhtälön helposti muotoon $t=3$ 
+
+\end{esimerkki}
+
+\begin{esimerkki}
+Etsitään alun toisen esimerkin luku $x$, joka toteuttaa yhtälön $\frac{x^3}{3}=\frac{x^2}{2}$. Tehdään tämä kahdella tapaa vaiheittain
+
+		\begin{align*}
+			\frac{x^3}{3}&=\frac{x^2}{2} && \text{| Vähennetään oikean puolen lauseke molemmilta puolilta} \\
+			\frac{x^3}{3}-\frac{x^2}{2}&=0  && \text{| Lavennetaan ja lasketaan yhteen} \\
+			\frac{2x^3-3x2}{6}&=0 && \text{|Otetaan $x^2$ yhteiseksi tekijäksi} \\
+			\frac{x^2(2x-3)}{6}&=0 && \\
+		\end{align*}
+Yhtälön vasen puoli on selvästi nolla kun $x^2=0$ eli $x=0$ tai $2x-3=0$ eli $x=3/2$. 
+
+Toinen tapa
+\begin{align*}
+\frac{x^3}{3}&=\frac{x^2}{2} && \text{Jaetaan molemmat puolet oikean puolen termillä. } \\
+\frac{x^3}{3}/\frac{x^2}{2}&=1 && \text{Kerrotaan jakajan käänteisluvulla.} \\
+\frac{x^3\cdot2}{3\cdot x^2}&=1 && \text{Sievennetään. Huomataan ja merkitään että $x\neq0$} \\
+\frac{x\cdot2}{3}&=1 && \text{Jaetaan puolet kahdella ja kerrotaan kolmella} \\
+x&=\frac{3}{2}
+\end{align*}
+
+Tutkitaan vielä erikseen tilanne $x=0$, joka ei ole määritelty yllä olevassa osamäärässä. Sijoitetaan $x=0$ yhtälöön $\frac{x^3}{3}=\frac{x^2}{2}$ ja saadaan $\frac{0^3}{3}=\frac{0^2}{2}$, joka pätee sillä $0=0$ 
+
+Eli molemmin tavoin saatiin sama tulos.
+
+
+
+\end{esimerkki}
 
 \begin{esimerkki}
 	Kuvitellaan orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
