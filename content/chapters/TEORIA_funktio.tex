@@ -2,11 +2,14 @@ Usein ollaan kiinnostuneita siitä, millainen yhteys on kahden asian välillä.
 Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 
 \laatikko{ % tästä on jaksettu riidellä
-	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää \termi{muuttuja}{muuttujaan} $x$ arvon $f(x)$.
+	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää jokaiseen \termi{muuttuja}{muuttujaan} $x$ täsmälleen yhden arvon $f(x)$.
 
 	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
 	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat.
 }
+%Muokannut Jaakko Viertiö 14.12.2013
+
+Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi voidaan ajatella kassakone. Kun siihen luetaan sisään viivakoodi, antaa kassakone ulos hinnan.
 
 \begin{esimerkki}
 	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla.
@@ -137,6 +140,22 @@ Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla
 funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 
 \begin{esimerkki}
+	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
+	 Mikä on funktion $g$ määrittelyjoukko?
+	 \begin{esimratk}
+		Neliöjuuri $\sqrt{x}$ on määritelty, kun $x\geq{0}$. Funktion $g$ määrittelyjoukko on siis $x\geq{0}$.
+	 \end{esimratk}
+	 \begin{esimvast}
+	  $x\geq{0}$.
+	 \end{esimvast}
+\end{esimerkki}
+%Lisännyt Jaakko Viertiö 14.12.2013
+
+Käytännössä määrittelyjoukon rajoituksia tarvitaan yllä esitetyn parillisen juuren lisäksi esimerkiksi, kun funktiossa esiintyy muuttujaa nimittäjässä.
+Tällöin on huomioitava, ettei nimittäjässä saa olla nollaa millään muuttujan $x$ arvolla. 
+Soveltavissa tehtävissä saatetaan myös rajoittaa määrittelyjoukkoa vaikkapa siksi, että pituus ei voi olla negatiivista.
+
+\begin{esimerkki}
 	Määritellään funktio $f$ lausekkeella \[ f(x) = \frac{1}{x-1}. \]
 	Mikä on funktion määrittelyjoukko?
 	\begin{esimratk}
@@ -148,6 +167,7 @@ funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 		Funktion $f$ määrittelyjoukko on reaalilukujen joukko poislukien luku $1$.
 	\end{esimvast}
 \end{esimerkki}
+
 
 Funktion \termi{arvojoukko}{arvojoukko} sisältää ne maalijoukon alkiot,
 jotka funktio saa arvokseen ainakin yhdessä pisteessä.
