@@ -42,6 +42,17 @@ Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet kes
 %TÄHÄN VOISI LAITTAA KUVAN KUVAAJASTA
 \end{esimerkki}
 
+\begin{esimerkki}
+Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona $m$.
+
+\begin{kuva}
+    kuvaaja.pohja(0, 8, 0, 8)
+    kuvaaja.piirra("1.4**x", nimi = "$y=m(t)$")
+\end{kuva}
+
+Alkutilanteessa eli ajanhetkellä \(t=0\) bakteerikannan massa \(m(t)\) on \(m(0)=1\) gramma. Kahden tunnin kuluttua bakteerikannan massa on \(m(2)\approx 2,0\) grammaa ja kuuden tunnin kuluttua vastaavasti \(m(6)\approx 7,5\) grammaa. 
+\end{esimerkki}
+
 Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 \begin{description}
 	\item[1)] Merkintä $f(x) = y$ luetaan esimerkiksi: ''funktio \(f\) saa arvon $y$ pisteessä $x$'' tai lyhyemmin: ''\(f\) arvolla \(x\) on \(y\).''
@@ -53,16 +64,18 @@ Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 		$y = f(x)$ samaistetaan koordinaatistoon piirretyn funktion kuvaajan kanssa.
 		Oikeastaan funktio ja sen kuvaaja ovat kuitenkin eri asioita.
 \end{description}
-\begin{esimerkki}
-Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona $m$.
 
-\begin{kuva}
-    kuvaaja.pohja(0, 8, 0, 8)
-    kuvaaja.piirra("1.4**x", nimi = "$y=m(t)$")
-\end{kuva}
-
-Alkutilanteessa eli ajanhetkellä \(t=0\) bakteerikannan massa \(m(t)\) on \(m(0)=1\) gramma. Kahden tunnin kuluttua bakteerikannan massa on \(m(2)\approx 2,0\) grammaa ja kuuden tunnin kuluttua vastaavasti \(m(6)\approx 7,5\) grammaa. 
-\end{esimerkki}
+Huomaa seuraavien käsitteiden erot:
+\laatikko{
+Määritellään funktio $f$ seuraavasti: $f(x)=3x-2$
+	\begin{itemize}
+		\item{$f$ on funktion nimi}
+		\item{merkintä $f(x)$ tarkoittaa \textit{funktion $f$ arvoa kohdassa $x$}}
+		\item{$3x-2$ on \textit{lauseke}, jolla $f(x)$ on määritelty}
+		\item{\textit{Yhtälö} $f(x)=3x-2$ kertoo, että funktion $f$ arvo kohdassa $x$ on yhtäsuuri lausekkeen $3x-2$ kanssa}
+		\item{$x$ on funktion muuttuja}
+	\end{itemize}
+}
 
 \subsection*{Reaalifunktiot}
 
