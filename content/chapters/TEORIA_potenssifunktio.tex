@@ -32,8 +32,8 @@ saa sekä positiivisia että negatiivisia arvoja.}
 %\missingfigure{Potenssifunktioiden kuvaajat -- yksi parillisilla potensseilla ja toinen parittomilla (kerroin a positiivinen).}
 \begin{center}
 \begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
-\kuvaaja{0.2*x**2}{$\frac{1}{5}x^2$}{red}
-\kuvaaja{0.2*x**3}{$\frac{1}{5}x^3$}{blue}
+\kuvaaja{0.2*x**2}{$y=\frac{1}{5}x^2$}{red}
+\kuvaaja{0.2*x**3}{$y=\frac{1}{5}x^3$}{blue}
 \end{kuvaajapohja}
 \end{center}
 Potenssifunktion tärkeitä erikoistapauksia ovat asteluvut $n = 1$ ja $n = -1$.
@@ -60,11 +60,11 @@ enää määritelty kohdassa $x = 0$, vaan funktion arvot
 \newcommand{\kuvaajapos}[3]{
 \draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
 }
-\kuvaajaneg{x**(-1)}{$x^{-1}$}{red}
+\kuvaajaneg{x**(-1)}{$y=x^{-1}$}{red}
 \kuvaajaneg{x**(-2)}{}{blue}
 
 \kuvaajapos{x**(-1)}{}{red}
-\kuvaajapos{x**(-2)}{$x^{-2}$}{blue}
+\kuvaajapos{x**(-2)}{$y=x^{-2}$}{blue}
 
 \end{kuvaajapohja}
 \end{center}
@@ -77,16 +77,16 @@ Kuitenkin, koska murtopotensseja ei määritellä negatiivisilla kantaluvuilla, 
 $w(x)=\sqrt[3]{x}$ määrittelyjoukko on koko reaalilukujen joukko. Alla jotain murtopotenssifunktioita ja juurifunktioita esitettynä koordinaatistossa.
 
 \begin{center}
-	\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
-		\kuvaaja{x**1.6666666667}{$x^\frac{5}{3}$}{red}
-		\kuvaaja{x**0.5}{$x^\frac{1}{2}$}{blue}
+	\begin{kuvaajapohja}{1.0}{-3}{3}{-3}{3}
+		\kuvaaja{x**1.6666666667}{$y=x^\frac{5}{3}$}{red}
+		\kuvaaja{x**0.5}{$y=x^\frac{1}{2}$}{blue}
 	\end{kuvaajapohja}
 \end{center}
 
 Juurifunktioiden kuvaajissa huomaa määrittelyjoukko ja yhteys murtopotenssifunktioihin.
 
 \begin{center}
-	\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
+	\begin{kuvaajapohja}{1.0}{-3}{3}{-3}{3}
 	
 \newcommand{\kuvaajaneg}[3]{
 \draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
@@ -95,9 +95,9 @@ Juurifunktioiden kuvaajissa huomaa määrittelyjoukko ja yhteys murtopotenssifun
 \draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
 }
 		\kuvaajapos{x**0.333333333333333}{}{red}
-		\kuvaajapos{x**0.5}{$\sqrt{x}$}{blue}
+		\kuvaajapos{x**0.5}{$y=\sqrt{x}$}{blue}
 		
-		\kuvaajaneg{-(-x)**0.333333333333333}{$\sqrt[3]{x}$}{red}
+		\kuvaajaneg{-(-x)**0.333333333333333}{$y=\sqrt[3]{x}$}{red}
 	\end{kuvaajapohja}
 \end{center}
 
@@ -114,6 +114,30 @@ Tarkastellaan potenssifunktiota $f(x)=x^a$.
 		\item Jos potenssi $a<0$, funktiota $f(x)=x^(-a)=\frac{1}{x^a}$ ei ole määritelty kun $x=0$, ja funktio käyttäytyy origon ympäristössä erikoisesti.
 	\end{itemize}
 }
+
+%Tämä laitetaankin harjoitustehtäväksi t. Jaakko Viertiö
+%\begin{center}
+%	\begin{kuvaajapohja}{1.0}{-5}{5}{-5}{5}
+%	
+%	\newcommand{\kuvaajaneg}[3]{
+%\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+%}
+%\newcommand{\kuvaajapos}[3]{
+%\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+%}
+%	 \kuvaaja{x**10}{$x^{10}$}{blue}
+%	 \kuvaaja{x**1.5}{$x^{\frac{3}{2}}$}{blue}
+%	 \kuvaaja{x}{$x$}{black}
+%	 \kuvaaja{x**0.1}{$\sqrt[10]{x}=x^{\frac{1}{10}}$}{red}
+%	 \kuvaajapos{x**0.33333333333}{$\sqrt[3]{x}$}{red}
+%	 \kuvaajaneg{-(-x)**0.33333333333}{}{red}
+%	 \kuvaajaneg{x**(-1)}{}{violet}
+%	 \kuvaajaneg{x**(-8)}{$x^{-8}=\frac{1}{x^8}$}{violet}
+%	 \kuvaajapos{x**(-1)}{$x^{-1}=\frac{1}{x}$}{violet}
+%	 \kuvaajapos{x**(-8)}{}{violet}
+%	\end{kuvaajapohja}
+%\end{center}
+
 
 Tässä kurssissa on tarkoitus vain sivuta erilaisia funktioita ja niiden kuvaajia, ja tutustua niiden käyttäytymiseen alustavasti. 
 Asiaan palataan useaan otteeseen myöhemmillä kursseilla. Esimerkiksi funktioita kokonaislukupotenssilla tarkastellaan lähemmin kurssilla MAA2 ja

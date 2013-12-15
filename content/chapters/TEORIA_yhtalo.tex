@@ -1,24 +1,12 @@
-% Huom! Epäyhtälöt mainitaan lukion opetussuunnitelmassa vasta
-% 2. kurssin kohdalla, joten niitä ei käsitellä tässä (Sampo Tiensuu 2013-12-14). 
+\termi{Yhtälö}{Yhtälö} on väite kahden lausekkeen yhtäsuuruudesta.
 
-\termi{Lauseke}{Lauseke} on luku tai laskutoimitus kuten $9$ tai $\frac{x}{3}-9$. \termi{Termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona, kuten $-4\sqrt{2}ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$. 
-
-\termi{Yhtälö}{Yhtälö} on väite kahden lausekkeen yhtäsuuruudesta, kuten $x+3=5/7+2$. Yhtälöitä käyttämällä voidaan mallintaa monia käytännön tilanteita.
 
 \begin{esimerkki}
-	Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluva ajan ratkaiseminen matkan pituuden ja nopeuden avulla. Kuljettu matka on nopeus kerrottuna kuljetulla ajalla. 
-	
-	Jos matka olisi 15 kilometriä ja nopeus on 5 km/h voimme merkitä $5\cdot t=15$ , jossa t on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}
+	\begin{alakohdat}
+		\alakohta{$x+3=\frac{5}{7}+2$ on yhtälö, joka väittää lausekkeiden $x+3$ ja $\frac{5}{7}+2$ olevan lukuarvoltaan yhtä suuret.}
+		\alakohta{$2=\frac{4}{2}$ on yhtälö, joka väittää, että luku $2$ voidaan esittää myös muodossa \frac{4}{2}.}
+	\end{alakohdat}
 \end{esimerkki}
-
-Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
-
-\begin{esimerkki}
-	Halutaan tietää onko olemassa lukua, jonka kolmas potenssi jaettuna kolmella on yhtä suuri kuin sen toinen potenssi jaettuna kahdella. Tällöin merkitään $\frac{x^3}{3}=\frac{x^2}{2}$. 
-\end{esimerkki}
-	%%\begin{esimerkki}
-%%	Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan yhtälö $5x+\sqrt{x} = 7x+7$.
-%%\end{esimerkki}
 
 \laatikko{
 	Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan että \termi{yhtälön päteminen}{yhtälö pätee}.
@@ -32,14 +20,23 @@ Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
 \end{esimerkki}
 
 
-\laatikko[Yhtälöihin liittyviä termejä]{
+\laatikko[Yhtälöiden luokittelu]{
 	\begin{description}
-		\item[Tuntematon eli muuttuja] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$.
-		\item[Yhtälön ratkaisu(t)] Muuttujan arvo(t), jolla yhtälö pätee.
+		\item[Aina tosi yhtälö] Esimerkiksi yhtälöt $8=8$ ja $x=x$.
+		\item[Joskus tosi yhtälö] Esimerkiksi yhtälö $x+4=7$ on tosi, kun $x=3$, ja epätosi muulloin.
+		\item[Ei koskaan tosi yhtälö] Esimerkiksi yhtälö $0=1$.
+	\end{description}
+}
+
+Tärkeimpiä näistä ovat joskus todet yhtälöt. Seuraavaksi on esimerkki, joka osoittaa, kuinka näihin vaihtoehtoisiin tilanteisiin saatetaan päätyä yhtälöä
+ratkaistaessa.
+
+\laatikko[Yhtälöihin liittyviä käsitteitä]{
+	\begin{description}
+		\item[Tuntematon] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$.
+		\item[Yhtälön ratkaisu(t)] Muuttujan arvo(t), jolla yhtälö pätee. Kutsutaan myös yhtälön juuriksi.
 		\item[Yhtälön ratkaiseminen] Kaikkien yhtälön ratkaisujen selvittäminen.
 	\end{description}
-%Muuttujista höpöttää Jaakko Viertiö 2013-11-10
-	
 }
 
 Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. Kaikki kirjaimet eivät myöskään ole välttämättä tuntemattomia, vaan niillä voidaan tarkoittaa myös vakioita eli muuttumattomia lukuarvoja. Esimerkiksi fysiikassa käytetään usein eri kirjaimia merkitsemään eri luonnonvakioita.
@@ -48,6 +45,46 @@ Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. Kaikki kirjaim
 \begin{esimerkki}
  Tarkastellaan legendaarista fysiikan yhtälöä $E=mc^2$. Tässä yhtälössä on vakio $c$ eli valonnopeus, joka on luonnonvakio joka ei muutu. Lisäksi yhtälössä on muuttujat $E$ eli energia ja $m$ eli massa.
 \end{esimerkki}
+
+
+\begin{esimerkki}
+%Lisännyt Jaakko Viertiö 2013-11-10
+	\begin{itemize}
+		\item{Yhtälö $3x-12=6(\frac{1}{2}x-2)$ on yhtäpitävä yhtälön $0=0$ kanssa, sillä se saadaan tähän muotoon 
+		tekemällä yhtäpitävyyden molemmille puolille aina samat laskutoimitukset. Yhtälön yksinkertaisemmasta esityksestä $0=0$ nähdään, että muuttujan $x$ 
+		arvo ei vaikuta yhtälön ratkaisuihin. Toisin sanoen yhtälö on täysin sama, olipa muuttuja $x$ mikä tahansa luku. Yhtälö on siis aina tosi.}
+		\item{Yhtälö $3x-11=6(\frac{1}{2}x-2)$ on yhtäpitävä yhtälön $0=1$ kanssa. Jälkimmäisestä muodosta nähdään, ettei yhtälö voi olla tosi millään
+		muuttujan $x$ arvolla, sillä yhtälön muodossa $0=1$ ei esiinny muuttujaa $x$. Täten $x$ ei vaikuta yhtälön ratkaisuihin. 
+		Yhtälö on siis aina epätosi.}
+		\item{Yhtälö $3x-11=6(x-2)$ on yhtäpitävä yhtälön $x=\frac{1}{3}$ kanssa. Yhtälö on siis joskus tosi: täsmälleen silloin kun $x=\frac{1}{3}$.
+		Tämä voidaan tarkistaa sijoittamalla yhtälöön $x$:n paikalle arvo $\frac{1}{3}$, jolloin yhtälön vasen ja oikea puoli ovat yhtä suuret.}
+	\end{itemize}
+
+\end{esimerkki}
+
+
+
+
+\laatikko[Yhtälöiden luokittelu]{Yhtäsuuruusrelaation ominaisuuksia}
+
+
+Yhtälöitä käyttämällä voidaan mallintaa monia käytännön tilanteita.
+
+\begin{esimerkki}
+	Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluva ajan ratkaiseminen matkan pituuden ja nopeuden avulla. Kuljettu matka on nopeus kerrottuna kuljetulla ajalla. 
+	
+	Jos matka olisi 15 kilometriä ja nopeus on 5 km/h voimme merkitä $5\cdot t=15$ , jossa t on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}
+\end{esimerkki}
+
+Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun.
+
+\begin{esimerkki}
+	Halutaan tietää onko olemassa lukua, jonka kolmas potenssi jaettuna kolmella on yhtä suuri kuin sen toinen potenssi jaettuna kahdella. Tällöin merkitään $\frac{x^3}{3}=\frac{x^2}{2}$. 
+\end{esimerkki}
+	%%\begin{esimerkki}
+%%	Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan yhtälö $5x+\sqrt{x} = 7x+7$.
+%%\end{esimerkki}
+
 
 %Lisännyt Jaakko Viertiö 2013-11-10
 \begin{esimerkki}
@@ -67,27 +104,6 @@ Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tav
 Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut.
 %Lisännyt Jaakko Viertiö 2013-11-10. Rautalangasta aina paras!
 Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia, ja toisella puolella kaikki muu. 
-
-\laatikko[Yhtälöiden muokkaaminen]{
-	\begin{description}
-		\item[Laskutoimitukset], joita ovat
-		
-			\begin{itemize}
-				\item{Puolittain lisääminen ja vähentäminen: yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku tai muuttuja. 
-				Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.}
-				\item{Puolittain kertominen tai jakaminen: yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla, muuttujalla tai lausekkeella. Muuttujalla tai lausekkeella jakaessa täytyy ottaa huomioon ja merkitä, että yhtälö ei ole määritelty, kun jakaja on nolla.
-				Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.}
-				\item{Huomaa, että itseasiassa vähennyslasku on negatiivisen luvun summaamista [$a-b=a+(-b)$], 
-				ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]}				
-			\end{itemize}
-		\item[Sieventäminen laskusääntöjä käyttäen] Yhtälön lausekkeista voi esimerkiksi hakea yhteistä tekijää, avata sulkuja tai supistaa, 
-		ja pyrkiä täten saamaan lauseke yksinkertaisempaan muotoon. Esimerkiksi yhtälöä $3(x-2)=5(x+6)$ kannattaa lähteä ratkaisemaan avaamalla ensin 
-		sulut soveltamalla tuttuja laskusääntöjä. Näin yhtälö saadaan muotoon $3x-6=5x+30$, jonka jälkeen on helppoa jatkaa käyttämällä laskutoimituksia 
-		tuntemattoman $x$ ratkaisemiseksi. Yhtälön ratkaisu on $x=-18$.
-	\end{description}
-%Huomautuksen ja jakolaskumaininnan lisännyt Jaakko Viertiö 2013-11-10
-%Muokannut laajemminkin Jaakko Viertiö 2013-11-10
-}
 
 Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
 
@@ -178,34 +194,6 @@ Joten yhtälöllä on ratkaisu $x=36$.
 \end{esimerkki}
 
 
-
-\laatikko[Yhtälöiden luokittelu]{
-	\begin{description}
-		\item[Aina tosi yhtälö] Esimerkiksi yhtälöt $8=8$ ja $x=x$.
-		\item[Joskus tosi yhtälö] Esimerkiksi yhtälö $x+4=7$ on tosi, kun $x=3$, ja epätosi muulloin.
-		\item[Ei koskaan tosi yhtälö] Esimerkiksi yhtälö $0=1$.
-	\end{description}
-}
-
-Tärkeimpiä näistä ovat joskus todet yhtälöt. Seuraavaksi on esimerkki, joka osoittaa, kuinka näihin vaihtoehtoisiin tilanteisiin saatetaan päätyä yhtälöä
-ratkaistaessa.
-
-\begin{esimerkki}
-%Lisännyt Jaakko Viertiö 2013-11-10
-	\begin{itemize}
-		\item{Yhtälö $3x-12=6(\frac{1}{2}x-2)$ on yhtäpitävä yhtälön $0=0$ kanssa, sillä se saadaan tähän muotoon 
-		tekemällä yhtäpitävyyden molemmille puolille aina samat laskutoimitukset. Yhtälön yksinkertaisemmasta esityksestä $0=0$ nähdään, että muuttujan $x$ 
-		arvo ei vaikuta yhtälön ratkaisuihin. Toisin sanoen yhtälö on täysin sama, olipa muuttuja $x$ mikä tahansa luku. Yhtälö on siis aina tosi.}
-		\item{Yhtälö $3x-11=6(\frac{1}{2}x-2)$ on yhtäpitävä yhtälön $0=1$ kanssa. Jälkimmäisestä muodosta nähdään, ettei yhtälö voi olla tosi millään
-		muuttujan $x$ arvolla, sillä yhtälön muodossa $0=1$ ei esiinny muuttujaa $x$. Täten $x$ ei vaikuta yhtälön ratkaisuihin. 
-		Yhtälö on siis aina epätosi.}
-		\item{Yhtälö $3x-11=6(x-2)$ on yhtäpitävä yhtälön $x=\frac{1}{3}$ kanssa. Yhtälö on siis joskus tosi: täsmälleen silloin kun $x=\frac{1}{3}$.
-		Tämä voidaan tarkistaa sijoittamalla yhtälöön $x$:n paikalle arvo $\frac{1}{3}$, jolloin yhtälön vasen ja oikea puoli ovat yhtä suuret.}
-	\end{itemize}
-
-\end{esimerkki}
-
-
 Seuraavassa joitakin yleisiä toimenpiteitä yhtälöiden ratkaisuun, joita voi soveltaa päästäkseen eteenpäin. Kyseessä ei ole mikään aina toimiva
 ratkaisuohje, vaan joitain vinkkejä.
 
@@ -222,4 +210,4 @@ ratkaisuohje, vaan joitain vinkkejä.
 }
 %Muokannut alustavasti Jaakko Viertiö 2013-11-10
 
-Siirrymme nyt tarkastelemaan tärkeää yhtälöiden lajia, ensimmäisen asteen yhtälöitä.
+Siirrymme nyt tarkastelemaan tärkeää yhtälöiden erikoistapausta, ensimmäisen asteen yhtälöitä.
