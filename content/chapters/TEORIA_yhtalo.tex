@@ -1,10 +1,14 @@
 % Huom! Epäyhtälöt mainitaan lukion opetussuunnitelmassa vasta
 % 2. kurssin kohdalla, joten niitä ei käsitellä tässä (Sampo Tiensuu 2013-12-14). 
 
-\termi{Lauseke}{Lauseke} on luku tai laskutoimitus kuten $9$ tai $\frac{x}{3}-9$. \termi{Termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvusta, vakioista ja muuttujista tulona, kuten $4ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$. \termi{Yhtälö}{Yhtälö} on kahden lausekkeen merkitty yhtäsuuruus, kuten $x+3=5/7+2$. Yhtälöitä käyttämällä voidaan mallintaa monia käytännön tilanteita.
+\termi{Lauseke}{Lauseke} on luku tai laskutoimitus kuten $9$ tai $\frac{x}{3}-9$. \termi{Termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona, kuten $-4\sqrt{2}ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$. 
+
+\termi{Yhtälö}{Yhtälö} on väite kahden lausekkeen yhtäsuuruudesta, kuten $x+3=5/7+2$. Yhtälöitä käyttämällä voidaan mallintaa monia käytännön tilanteita.
 
 \begin{esimerkki}
-	Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluva ajan ratkaiseminen matkan pituuden ja nopeuden avulla. Jos matka olisi 15 kilometriä ja nopeus on 5 km/h voimme merkitä $5*t=15$ , jossa t on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}
+	Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluva ajan ratkaiseminen matkan pituuden ja nopeuden avulla. Kuljettu matka on nopeus kerrottuna kuljetulla ajalla. 
+	
+	Jos matka olisi 15 kilometriä ja nopeus on 5 km/h voimme merkitä $5\cdot t=15$ , jossa t on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}
 \end{esimerkki}
 
 Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
@@ -31,7 +35,7 @@ Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
 \laatikko[Yhtälöihin liittyviä termejä]{
 	\begin{description}
 		\item[Tuntematon eli muuttuja] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$.
-		\item[Yhtälön ratkaisu] Tuntemattoman $x$ arvo, jolla yhtälö pätee.
+		\item[Yhtälön ratkaisu(t)] Muuttujan arvo(t), jolla yhtälö pätee.
 		\item[Yhtälön ratkaiseminen] Kaikkien yhtälön ratkaisujen selvittäminen.
 	\end{description}
 %Muuttujista höpöttää Jaakko Viertiö 2013-11-10
@@ -42,12 +46,16 @@ Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. Kaikki kirjaim
 
 
 \begin{esimerkki}
- Tarkastellaan legendaarista fysiikan yhtälöä $E=mc^2$. Tässä yhtälössä on vakio $c$ eli valonnopeus ja muuttujat E eli energia ja m eli massa.
+ Tarkastellaan legendaarista fysiikan yhtälöä $E=mc^2$. Tässä yhtälössä on vakio $c$ eli valonnopeus, joka on luonnonvakio joka ei muutu. Lisäksi yhtälössä on muuttujat $E$ eli energia ja $m$ eli massa.
 \end{esimerkki}
 
 %Lisännyt Jaakko Viertiö 2013-11-10
 \begin{esimerkki}
- Tarkastellaan yhtälöä $x^3-2x^2-x+2=0$. Yhtälön \textit{eräs} ratkaisu on $x=1$, sillä $1^3-2\cdot{1^2}-1+2=0$. 
+ Tarkastellaan yhtälöä $x^3-2x^2-x+2=0$. 
+ 
+ Yhtälössä on yksi muuttuja $x$ ja neljä termiä: $x^3$, $-2x^2$, $-x$ ja $+2$.  
+ 
+ Yhtälön \textit{eräs} ratkaisu on $x=1$, sillä $1^3-2\cdot{1^2}-1+2=0$. 
  Myös $x=2$ on kyseisen yhtälön ratkaisu, sillä $2^3-2\cdot{2^2}-2+2=0$. 
  Tuntemattomalle $x$ voidaan siis joissain tapauksissa löytää useita arvoja, jotka toteuttavat yhtälön. 
 \end{esimerkki}
@@ -56,9 +64,9 @@ Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. Kaikki kirjaim
 % FIXME: jokin helposti ymmärrettävä esimerkki tuntemattomista
 
 Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla.
-Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. 
+Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut.
 %Lisännyt Jaakko Viertiö 2013-11-10. Rautalangasta aina paras!
-Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia, ja toisella puolella kaikki muu.
+Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia, ja toisella puolella kaikki muu. 
 
 \laatikko[Yhtälöiden muokkaaminen]{
 	\begin{description}
@@ -67,7 +75,7 @@ Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella 
 			\begin{itemize}
 				\item{Puolittain lisääminen ja vähentäminen: yhtälön molemmille puolille voidaan lisätä tai molemmilta puolilta voidaan vähentää luku tai muuttuja. 
 				Esimerkiksi yhtälö $3x+5 = 3$ saadaan näin muotoon $3x = -2$.}
-				\item{Puolittain kertominen tai jakaminen: yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla tai muuttujalla. Muuttujalla tai lausekkeella jakaessa täytyy ottaa huomioon ja merkitä, että yhtälö ei ole määritelty, kun jakaja on nolla.
+				\item{Puolittain kertominen tai jakaminen: yhtälön molemmat puolet voidaan kertoa tai jakaa nollasta poikkeavalla luvulla, muuttujalla tai lausekkeella. Muuttujalla tai lausekkeella jakaessa täytyy ottaa huomioon ja merkitä, että yhtälö ei ole määritelty, kun jakaja on nolla.
 				Esimerkiksi kertomalla yhtälön $2x = 4$ molemmat puolet luvulla $\frac{1}{2}$ saadaan yhtälö $x = 2$.}
 				\item{Huomaa, että itseasiassa vähennyslasku on negatiivisen luvun summaamista [$a-b=a+(-b)$], 
 				ja jakaminen on jakajan käänteisluvulla kertomista [$a:b=a\cdot{\frac{1}{b}}=\frac{a}{b}$]}				
@@ -84,36 +92,23 @@ Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella 
 Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
 
 \begin{esimerkki}
-Ratkaistaan aikasemman esimerkin matkan kesto. Yhtälö on siis $5t=15$. 
-Laskusääntöjen mukaan jakamalla molemmat puolet viidellä, saamme yhtälön helposti muotoon $t=3$ 
+Ratkaistaan esimerkin 2.36 matkan kesto. Yhtälö on siis $5t=15$, jossa t on aika, nopeus on 5 km/h ja matkan pituus 15 km.
+Laskusääntöjen mukaan jakamalla molemmat puolet viidellä, saamme yhtälön helposti muotoon $t=3$, joka on siis kyseisen yhtälön ratkaisu.
 
 \end{esimerkki}
 
+
 \begin{esimerkki}
-Etsitään alun toisen esimerkin luku $x$, joka toteuttaa yhtälön $\frac{x^3}{3}=\frac{x^2}{2}$. Tehdään tämä kahdella tapaa vaiheittain
+Ratkaistaan yhtälö $\frac{4\sqrt{x}a}{3}=8a$, jossa $a$ on vakio $\pi$ eli yhtälö voidaan kirjoittaa muotoon $\frac{4\pi\sqrt{x}}{3}=8\pi$
 
 		\begin{align*}
-			\frac{x^3}{3}&=\frac{x^2}{2} && \text{| Vähennetään oikean puolen lauseke molemmilta puolilta} \\
-			\frac{x^3}{3}-\frac{x^2}{2}&=0  && \text{| Lavennetaan ja lasketaan yhteen} \\
-			\frac{2x^3-3x2}{6}&=0 && \text{|Otetaan $x^2$ yhteiseksi tekijäksi} \\
-			\frac{x^2(2x-3)}{6}&=0 && \\
-		\end{align*}
-Yhtälön vasen puoli on selvästi nolla kun $x^2=0$ eli $x=0$ tai $2x-3=0$ eli $x=3/2$. 
-
-Toinen tapa
-\begin{align*}
-\frac{x^3}{3}&=\frac{x^2}{2} && \text{Jaetaan molemmat puolet oikean puolen termillä. } \\
-\frac{x^3}{3}/\frac{x^2}{2}&=1 && \text{Kerrotaan jakajan käänteisluvulla.} \\
-\frac{x^3\cdot2}{3\cdot x^2}&=1 && \text{Sievennetään. Huomataan ja merkitään että $x\neq0$} \\
-\frac{x\cdot2}{3}&=1 && \text{Jaetaan puolet kahdella ja kerrotaan kolmella} \\
-x&=\frac{3}{2}
+			\frac{4 \cdot \pi \cdot \sqrt{x}}{3} &= 8 \cdot {\pi} && \text{| Jaetaan molemmat puolet $\frac{4}{3}$} \\
+			{\pi}\sqrt{x} &= \frac{8\cdot 3\cdot {\pi}}{4} && \text{| Jaetaan molemmat puolet $\pi$} \\
+			\sqrt{x} &= \frac{24}{4} && \text{| Sievennellään} \\
+			\sqrt{x} &= 6 && \text{| Tässä huomataan, että $\sqrt{36}=6$} \\
 \end{align*}
 
-Tutkitaan vielä erikseen tilanne $x=0$, joka ei ole määritelty yllä olevassa osamäärässä. Sijoitetaan $x=0$ yhtälöön $\frac{x^3}{3}=\frac{x^2}{2}$ ja saadaan $\frac{0^3}{3}=\frac{0^2}{2}$, joka pätee sillä $0=0$ 
-
-Eli molemmin tavoin saatiin sama tulos.
-
-
+Joten yhtälöllä on ratkaisu $x=36$.
 
 \end{esimerkki}
 
