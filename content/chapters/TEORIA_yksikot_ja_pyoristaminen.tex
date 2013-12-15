@@ -33,7 +33,7 @@ Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihd
 
 \begin{esimerkki}
 Keskinopeus lasketaan kaavalla $v=s/t$, missä $v$ on nopeus, $s$ on kuljettu matka ja $t$ matkaan kulunut aika.
-Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s:
+Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
 
 Koska keskinopeus voidaan laskea kaavalla $v=s/t$, matkaan kulunut aika voidaan laskea kaavalla $t=s/v$.
 Sijoitetaan yksiköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
@@ -44,29 +44,31 @@ t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m
 \end{esimerkki}
 
 \begin{esimerkki}
-$3 \textrm{ m} \cdot 4 \textrm{ m} = 3\cdot 4 \textrm{ m}\cdot \textrm{ m} = 12 \textrm{ m}^2$ \\
+%$3 \textrm{ m} \cdot 4 \textrm{ m} = 3\cdot 4 \textrm{ m}\cdot \textrm{ m} = 12 \textrm{ m}^2$ \\
 $\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}}
 =9 \textrm{ m}:\frac{\textrm{m}}{\textrm{s}}=9 \textrm{ m} \cdot \frac{\textrm{s}}{\textrm{m}} = 9 \frac{\textrm{ms}}{\textrm{m}}=9 \textrm{ s}$
 \end{esimerkki}
 
 \subsection*{SI-järjestelmä}
 
+SI-järjestelmä eli kansainvälinen yksikköjärjestelmä on maailman käytetyin mittayksikköjärjestelmä.
+Siihen kuuluvat seuraavat suureet ja perusyksiköt.
 
 \begin{tabular}{c|c|c}
 Suure & Yksikkö & Yksikön tunnus\\
 \hline
 pituus & metri &	m\\
 massa & kilogramma & kg 	\\
-
+aika & sekunti & s \\
+sähkövirta & ampeeri & A \\
+lämpötila & kelvin & K \\
+ainemäärä & mooli & mol \\
+valovoima & kandela & cd
 \end{tabular}
-
-
-
-Standardin mukaan yksiköiden tunnukset kirjoitetaan pystyyn, kursiivilla.
-
 
 \subsection*{Etuliitteet}
 
+Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla.
 
 \laatikko{
 Tavallisimmat kerrannaisyksiköiden etuliitteet:
@@ -95,7 +97,11 @@ piko & $10^{-12}$ & p
 \end{tabular}
 }
 
-Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu (kt) ei tarkoita tasan $1000$ tavua,  vaan $1024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1048576 = 2^{20}$ tavua), yksi gigatavu $1024$ Mt jne.
+Esimerkiksi hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista.
+Esimerkiksi $1 \textrm{ ng} = 1 \cdot 10^{-9} \textrm{ g} = 0,000000009 \textrm{ g} $.
+
+Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu (kt) ei tarkoita tasan $1000$ tavua,  vaan $1024$ tavua ($2^{10}$).
+Vastaavasti yksi megatavu on $1024$ kt (eli $1048576 = 2^{20}$ tavua), yksi gigatavu $1024$ Mt jne.
 
 \subsection*{Yksikkömuunnokset}
 
@@ -111,18 +117,22 @@ Yksi tunti on $60$ minuuttia. Yksi minuutti on $60$ sekuntia.
 % FIXME \todo{taulukko amerikkalaisista yksiköistä}
 
 \begin{esimerkki}
-Kuinka monta minuuttia on $1,25$ h? $1,25 \text{h} = 1,25 \cdot 60 \text{min} = 75 \text{min}$. $1,35$ h on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ yhdistettynä lukuna $1 \frac{25}{100}$ eli $1 \frac{1}{4}$, mikä saattaa helpottaa laskemista.
+Kuinka monta minuuttia on $1,25$ h?
+
+\textbf{Ratkaisu. }
+$1,25 \text{h} = 1,25 \cdot 60 \text{min} = 75 \text{min}$. $1,35$ h on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ yhdistettynä lukuna $1 \frac{25}{100}$ eli $1 \frac{1}{4}$, mikä saattaa helpottaa laskemista.
 \end{esimerkki}
 
 \begin{esimerkki}
-Lääketabletin vahvuus on 25 $\upmu$g. Potilaalle on määrätty 0,1 mg vaikuttavaa ainetta. Kuinka monta tablettia määräys vastaa?
+Erään punaisen verisolun tilavuus on $9,0 \cdot 10^{-12} \textrm{ l}$. Ilmoita tilavuus
 
-\textbf{Ratkaisu.}
-Milligramman ja mikrogramman välinen \termi{suhdeluku}{suhdeluku} on 1000 (koska $10^{-3} : 10^{-6} = 1000$). Siispä 1 mg = 1000 $\upmu$g.
-Näin ollen 0,1 mg = 100 $\upmu$g. Koska $4 \cdot 25 \upmu\textrm{g}$, määräys vastaa neljää tablettia. 
+a) pikolitroina
 
-\textbf{Vastaus.}
-Määräys vastaa neljää tablettia.
+b) nanolitroina
+
+\textbf{Ratkaisu. }
+$9,0 \cdot 10^{-12} \textrm{ l} = 9,0 \textrm{ pl} = 0,009 \textrm{ nl}$.
+
 \end{esimerkki}
 
 %\begin{esimerkki}
