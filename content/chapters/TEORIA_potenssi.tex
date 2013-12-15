@@ -9,7 +9,8 @@ Lukua $a$ kutsutaan potenssin \termi{kantaluku}{kantaluvuksi} ja lukua $n$ \term
             2^4=2\cdot 2\cdot 2\cdot 2=16.
         \]
 Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \termi{neliö}{neliöksi} ja kolmatta potenssia $a^3$ sen \termi{kuutio}{kuutioksi}. Nimitysten taustalla on,
-että luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, on $a^3$ kyseisen kuution tilavuus.  
+että luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, on $a^3$ kyseisen kuution tilavuus.
+Luvun ensimmäinen potenssi on luku itse eli $a^1 = a$.
 
 \subsubsection*{Laskujärjestys}
 
@@ -99,9 +100,9 @@ a^3\cdot a^4=\underbrace{a\cdot a\cdot a}_{\text{3 kpl}}\cdot \underbrace{a\cdot
         \begin{tabular}{ll}
             $a^m\cdot a^n            = a^{m+n}$ & Samakantaisten potenssien tulo\\ % Kielitoimiston sanakirjan mukaan samakantainen, ei samankantainen
             $\displaystyle \frac{a^m}{a^n}= a^{m-n}$ & Samakantaisten potenssien osamäärä ($a\neq 0$)\\
+            $(a^m)^n                 = a^{m\cdot n}$ & Potenssin potenssi\\
             $(a\cdot b)^n            = a^n\cdot b^n$ & Tulon potenssi\\
             $\displaystyle \left (\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ & Osamäärän potenssi ($b\neq 0$)\\ 
-            $(a^m)^n                 = a^{m\cdot n}$ & Potenssin potenssi\\
         \end{tabular}
     }
  
@@ -184,3 +185,17 @@ nollalla ei voi jakaa.
             \alakohta{$(-2)^{-2}=\frac{1}{(-2)^{2}}=\frac{1}{4}$}
          \end{alakohdat}
     \end{esimerkki}
+
+Jos taulukoidaan esimerkiksi luvun 3 potensseja, voidaan huomata, että
+yhtä pienempi potenssi tarkoittaa aina sitä, että luku on \emph{kolmasosa}
+alkuperäisestä:
+   
+\begin{tabular}{c c c}
+$3^3$ & = & 27 \\
+$3^2$ & = & 9 \\
+$3^1$ & = & 3 \\
+$3^0$ & = & 1 \\
+$3^{-1}$ & = & $\frac{1}{3}$ \\
+$3^{-2}$ & = & $\frac{1}{9}$ \\
+$3^{-3}$ & = & $\frac{1}{27}$.
+\end{tabular}
