@@ -63,6 +63,10 @@ joiden lukuarvon ajatellaan pysyvän muuttumattomana, on tapana kutsua \termi{va
 Luonnollisten lukujen joukkoa merkitään kirjaimella $\nn$ ja niihin katsotaan kuuluvan luvut 0, 1, 2, 3, jne.
 Matematiikan kielellä tämä on usein tapana ilmaista seuraavanlaisella merkinnällä: \[\nn = \{0, 1, 2, 3, \ldots\}\]
 
+Luvun kuulumista johonkin joukkoon voidaan merkitä symbolilla $\in$,
+esimerkiksi $2 \in \nn$. Jos luku ei kuulu johonkin joukkoon, merkitään vastaavasti $\notin$, esimerkiksi
+$-2 \notin \nn$.
+
 Tässä kirjasarjassa katsotaan, että nolla on myös luonnollinen luku. Joissain muissa lähteissä saatetaan kuitenkin
 tarkoittaa luonnollisilla luvuilla joukkoa $\nn_+ = \{1, 2, 3, \ldots\}$ jota kutsutaan myös positiivisten kokonaislukujen joukoksi.
 
@@ -150,7 +154,8 @@ sisällä. Samoin esimerkiksi laskusta $8:4$ tulee tulokseksi kokonaisluku $2$.
 Sen sijaan esimerkiksi laskutoimituksella $8:3$ ei ole tulosta kokonaislukujen joukossa.
 Tätä varten on otettu käyttöön rationaaliluvun käsite.
 
-\termi{rationaaliluku}{Rationaaliluvulla} tarkoitetaan lukua, joka voidaan esittää kahden kokonaisluvun osamääränä. Esimerkiksi $\frac{2}{3}$ on rationaaluku samoin $0,25=\frac{1}{4}$.
+\termi{rationaaliluku}{Rationaaliluvulla} tarkoitetaan lukua, joka voidaan esittää
+kahden kokonaisluvun osamääränä. Esimerkiksi $\frac{2}{3}$ on rationaaluku samoin $0,25=\frac{1}{4}$.
 Myös kaikki kokonaisluvut ovat rationaalilukuja, sillä ne voidaan esittää osamäärinä:
 esimerksi $5=\frac{5}{1}$. Rationaalilukujen joukkoa merkitään symbolilla $\qq$.
 \[\qq= \text{ rationaalilukujen joukko} \]    
@@ -161,22 +166,114 @@ $\frac{a}{b}$ kutsutaan \termi{murtoluku}{murtoluvuksi}. Luku $a$ on murtoluvun
 \termi{nimittäjä}{nimittäjä}. Määritelmän mukaan kaikki rationaaliluvut
 voidaan esittää murtolukuina. Osoittajan ja nimittäjän yhtaikaista kertomista kokonaisluvulla kutsutaan
 \termi{laventaminen}{laventamiseksi} ja jakamista kokonaisluvulla \termi{supistaminen}{supistamiseksi}.
-Koska murtolukuesitystä voidaan laventaa millä tahansa kokonaisluvulla, esitystapoja on useita; esimerkiksi $\frac{1}{2}=\frac{3}{6}$.
+Koska murtolukuesitystä voidaan laventaa millä tahansa kokonaisluvulla, esitystapoja on useita;
+esimerkiksi $\frac{1}{2}=\frac{3}{6}$.
 
-Rationaalilukuja esitetään toisinaan myös \termi{sekamurtoluku}{sekamurtolukuina} eli lyhemmin sekalukuina. Sekalukuesityksessä
-luku esitetään summana kokonaisosasta ja murto-osasta (luku nollan ja yhden väliltä), mutta yhteenlaskumerkki jätetään merkitsemättä.
-Esimerkiksi sekaluku $3\frac{1}{4}$ tarkoittaa lukua $3 + \frac{1}{4}$ eli murtolukuesityksenä $\frac{13}{4}$. Jos luku on negatiivinen,
-miinusmerkki merkitään koko sekaluvun eteen, siis $-6\frac{4}{5}$ tarkoittaa lukua $-(6 + \frac{4}{5})$. Merkintä saattaa aiheuttaa
-sekaannusta, sillä $3\frac{5}{6}$ saattaisi myös viitata tuloon $3\cdot \frac{5}{6}$. Sekalukumerkintää käytetään vain lukuarvoilla,
-siis $a\frac{b}{c}$ tarkoittaa aina tuloa $a\cdot \frac{b}{c}$.
-
-Luvun kuulumista johonkin joukkoon voidaan merkitä symbolilla $\in$,
-esimerkiksi $-2 \in \zz$. Jos luku ei kuulu johonkin joukkoon, merkitään vastaavasti $\notin$, esimerkiksi $-2 \notin \nn$.
-
-Edellä esitellyt joukot $\nn$, $\zz$ ja 
-$\qq$ ovat sisäkkäisiä: kaikki luonnolliset luvut ovat kokonaislukuja, ja kaikki kokonaisluvut rationaalilukuja.
+Rationaalilukuja esitetään toisinaan myös \termi{sekamurtoluku}{sekamurtolukuina} eli lyhemmin
+sekalukuina. Sekalukuesityksessä luku esitetään summana kokonaisosasta ja murto-osasta (luku nollan
+ja yhden väliltä), mutta yhteenlaskumerkki jätetään merkitsemättä. Esimerkiksi sekaluku $3\frac{1}{4}$
+tarkoittaa lukua $3 + \frac{1}{4}$ eli murtolukuesityksenä $\frac{13}{4}$. Jos luku on negatiivinen,
+miinusmerkki merkitään koko sekaluvun eteen, siis $-6\frac{4}{5}$ tarkoittaa lukua $-(6 + \frac{4}{5})$.
+Merkintä saattaa aiheuttaa sekaannusta, sillä $3\frac{5}{6}$ saattaisi myös viitata tuloon
+$3\cdot \frac{5}{6}$. Sekalukumerkintää käytetään vain lukuarvoilla, siis $a\frac{b}{c}$ tarkoittaa aina
+tuloa $a\cdot \frac{b}{c}$.
 
 \subsection*{Reaaliluvut}
+
+Kaikki käyttämämme luvut eivät ole edes rationaalilukuja. Esimerkiksi peruskoulussa on käytetty
+lukua $\pi$, joka kuvaa ympyrän kehän pituuden suhdetta ympyrän halkaisijaan. Lukua $\pi$ ei voida
+esittää kahden kokonaisluvun osamääränä, joten se ei ole rationaaliluku.
+
+Toinen esimerkki luvusta, joka eri ole rationaaliluku on $\sqrt{2}$. $\sqrt{2}$ tarkoittaa sellaista
+positiivista lukua, joka kerrottuna itsellään on 2. Se tulee vastaan esimerksi suorakulmaisessa kolmiossa,
+jonka kateetit ovat pituudeltaan 1. (Neliöjuuren käsitteestä puhutaan tarkemmin tämän kirjan luvussa \ref{neliojuuri}.)
+
+\begin{kuva}
+	skaalaa(4)
+
+	A=(0,0)
+	B=(0,1)
+	C=(1,0)
+	D=(0.1,0.1)
+	E=(0,0.1)
+	F=(0.1,0)
+
+	geom.jana(B,A,"$1$")
+	geom.jana(C,B,r"$\sqrt{2}$")
+	geom.jana(A,C,"$1$")
+	geom.jana(E,D)
+	geom.jana(D,F)
+\end{kuva}
+
+Sellaisia lukuja, kuten $\pi$ ja $\sqrt{2}$, joita ei voida esittää kahden kokonaisluvun osamääränä,
+sanotaan \termi{irrationaaliluku}{irrationaaliluvuiksi}. Rationaaliluvut ja irrationaaliluvut muodostavat
+yhdessä \termi{irrationaaliluku}{reaalilukujen} joukon $\rr$.
+
+Reaalilukujen ominaisuuksista kerrotaan lisää luvussa \ref{reaaliluvut}.
+
+Seuraavassa taulukossa on yhteenveto lukiokursseilla käytettävistä lukualueista:
+\begin{center}\begin{tabular}{l|c|l}
+Joukko & Symboli & Mitä ne ovat\\
+\hline
+Luonnolliset luvut & $\nn$ &
+Luvut $0$, $1$, $2$, $3$, $\ldots$ \\
+Kokonaisluvut & $\zz$ & Luvut $\ldots$ $-2$, $-1$, $0$, $1$, $2$ $\ldots$ \\ 
+Rationaaliluvut & $\qq$ & Luvut, jotka voidaan esittää
+murtolukuna \\
+Reaaliluvut & $\rr$ & Kaikki lukusuoran luvut \\
+& & eli kaikki desimaaliluvut
+\end{tabular} \end{center} 
+
+Joukot $\nn$, $\zz$, $\qq$ ja $\rr$ ovat sisäkkäisiä. Kaikki luonnolliset luvut ovat myös kokonaislukuja,
+kaikki kokonaisluvut ovat myös rationaalilukuja ja kaikki rationaaliluvut ovat myös reaalulukuja.
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.5cm,y=0.5cm]
+\clip(-7.4,-8.8) rectangle (16.8,8.6);
+\draw [rotate around={0.5:(2.2,0)}] (2.2,0) ellipse (1.1cm and 0.9cm);
+\draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2cm and 1.6cm);
+\draw [rotate around={-0.8:(2.5,0)}] (2.5,0) ellipse (2.9cm and 2.6cm);
+\draw (2,1.5) node[anchor=north west] {$\nn$};
+\draw (4.0,2.7) node[anchor=north west] {$\zz$};
+\draw (5.5,3.9) node[anchor=north west] {$\qq$};
+%\draw (6.6,-4.6) node[anchor=north west] {{\scriptsize Irrationaaliluvut}};
+\draw (9.5,6.4) node[anchor=north west] {$\rr$};
+\draw [rotate around={0.5:(4.4,0)}] (4.4,0) ellipse (5cm and 4.2cm);
+%\draw [rotate around={18.2:(7.9,-5.4)}] (7.9,-5.4) ellipse (2.7cm and 0.6cm);
+\draw (0.8,1.6) node[anchor=north west] {$1$};
+\draw (1,-0.4) node[anchor=north west] {$5$};
+\draw (2.4,-0.2) node[anchor=north west] {$101$};
+\draw (4.8,0.7) node[anchor=north west] {$-5$};
+\draw (1.2,-1.7) node[anchor=north west] {$0$};
+\draw (1.2,3.1) node[anchor=north west] {$-14$};
+%\draw (4.1,-1) node[anchor=north west] {$75$};
+\draw (4.2,-2.8) node[anchor=north west] {$-\frac{1}{3}$};
+\draw (6.6,1.4) node[anchor=north west] {$2\frac{1}{2}$};
+\draw (-1.6,0.9) node[anchor=north west] {$-3$};
+%\draw (0.4,-3.1) node[anchor=north west] {$-4$};
+\draw (2.4,4.7) node[anchor=north west] {$2,6$};
+\draw (-1.3,4.1) node[anchor=north west] {$\frac{5}{7}$};
+\draw (-2.7,-1) node[anchor=north west] {$0,1$};
+\draw (5.5,-5.9) node[anchor=north west] {$\pi$};
+\draw (9.1,-3) node[anchor=north west] {$\sqrt[]{2}$};
+%\draw (6,-4.7) node[anchor=north west] {$-\frac{\pi}{2}$};
+%\draw (9.8,1.6) node[anchor=north west] {$\frac{5}{2}$};
+\draw (10.5,3) node[anchor=north west] {$\frac{1}{\sqrt{2}}$};
+%\draw (4.4,7.3) node[anchor=north west] {$3$};
+\draw (-0.1,-5.3) node[anchor=north west] {$\sqrt{15}$};
+%\draw (-4.9,1.5) node[anchor=north west] {$-5$};
+\draw (11.8,-0.9) node[anchor=north west] {$-\frac{\pi}{2}$};
+\draw (-0.6,6.8) node[anchor=north west] {$0,10110111011110\ldots$};
+%\draw (-3.7,-3) node[anchor=north west] {$-3$};
+\end{tikzpicture}
+
+Lukualueiden ominaisuudet tulevat tarkemmin esille tämän kirjan myöhemmissä luvuissa.
+
+Lukualueita voidaan laajentaa lisää vielä reaaliluvuistakin - - esimerkiksi \termi{kompleksiluvut}{kompleksiluvuiksi},
+jotka voidaan esittää tason pisteinä. Kompleksilukuja merkitään kirjaimella $\cc$. Kompleksiluvut eivät
+kuulu lukion oppimäärään, mutta niitä tarvitaan muun muassa insinöörialoilla yliopistoissa
+ja ammattikorkeakouluissa. Esimerkiksi vaihtosähköpiirien analyysissä, signaalinkäsittelyssä ja
+säätötekniikassa käytetään runsaasti kompleksilukuja. Kompleksiluvut ovat tärkeitä myös matematiikan
+tutkimuksessa itsessään. Tässä kirjassa niihin ei kuitenkaan perehdytä tarkemmin.
 
 % === SIISTITTÄVÄ PÄTKÄ ALKAA ===
 
