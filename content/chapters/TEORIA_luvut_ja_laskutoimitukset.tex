@@ -277,16 +277,21 @@ tutkimuksessa itsessään. Tässä kirjassa niihin ei kuitenkaan perehdytä tark
 
 % === SIISTITTÄVÄ PÄTKÄ ALKAA ===
 
-\subsection*{Yhteen- ja vähennyslasku}
+\subsection*{Yhteen- ja vähennyslaskun merkkisäännöt}
 
-Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
-yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
+Vähennyslasku määriteltiin yllä vastaluvun lisäämiseksi:
 
-\laatikko{
 \[m-n = m+(-n)\]
-}
 
-Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja vähennyslaskulle:
+Tämän perusteella voidaan myös päätellä, mitä tapahtuu, kun vähennettävä luku onkin negatiivinen. Esimerkiksi:
+
+\begin{align*}
+&8-(-5)&\quad\quad\quad\textrm{Muutetaan vähennyslasku vastaluvun lisäämiseksi}\\
+= &8+(-(-5))&\quad\quad\quad\textrm{$-(-5)$ tarkoittaa $-5$:n vastalukua, joka on 5.}\\
+= &8+5
+\end{align*}
+
+Tähän ideaan perustuvat seuraavat merkkisäännöt yhteen- ja vähennyslaskulle:
 
 \laatikko{
 \begin{itemize}
@@ -297,6 +302,8 @@ Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja väh
 \end{itemize}
 }
 
+Yleisesti ottaen voidaan sanoa, että kaksi '$-$'-merkkiä kumoavat toisensa.
+
     Kysymys: Mitä saadaan, kun luvusta $5$ vähennetään luku $-8$?
     
     Negatiivisten ja positiivisten lukujen yhteen- ja vähennyslaskut voidaan helposti tulkita lukusuoran avulla.
@@ -304,9 +311,9 @@ Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja väh
     % tässä on vähän kyseenalaista käyttää sekaisin sanallista ja numeerista esitystä
     
     $5+8$ ''viiteen lisätään kahdeksan''
-\begin{center}
-\begin{kuva}
-	lukusuora.pohja(-4,14,12,n=2)
+%\begin{center}
+\begin{luoKuva}{vali6}
+	lukusuora.pohja(-4,14,3,n=2, varaa_tila = False)
 	with vari("red"):
 		lukusuora.vali(0,5,i=1)
 		lukusuora.vali(8,13,i=2)
@@ -315,7 +322,7 @@ Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja väh
 	lukusuora.piste(5,"$5$",1)
 	lukusuora.piste(8,"$8$",2)
 	lukusuora.piste(13,"$13$",2)
-\end{kuva}
+\end{luoKuva}
 %      \begin{lukusuora}{-1}{14}{14}
 %        %\lukusuoranuolialas{5}{13}
 %        %\lukusuoranuolialas{0}{8}
@@ -325,7 +332,30 @@ Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja väh
 %        {\color{blue} \lukusuoravaliss{0}{8}{$0$}{$8$}}
 %       \end{lukusuora}
        ${\color{red}5}+{\color{blue}8}=13$
-\end{center}
+%\end{center}
+
+\begin{tabular}{|p{2.0cm}|p{2.0cm}|c|c|}
+\hline
+Epäyhtälö\-merkintä & Joukko-opillinen merkintä & Esitys lukusuoralla & Välin nimitys \\
+\hline
+ $-3<x<5$ & $x \in {]-3, 5[}$ & \naytaKuva{vali6} & Avoin väli  \\
+\hline
+ $-3<x \leq 5$ & $x \in {]-3, 5]}$ & \naytaKuva{vali6} & Puoliavoin väli  \\
+\hline
+ $-3\leq x < 5$ & $x \in {[-3, 5[}$ & \naytaKuva{vali6} & Puoliavoin väli  \\
+\hline
+$-3\leq x \leq 5$ & $x \in {[-3, 5]}$ & \naytaKuva{vali6} & Suljettu väli \\
+\hline
+$-3\leq x$ & $x \in {[-3, \infty[}$ & \naytaKuva{vali6} & Puoliavoin väli  \\
+\hline
+ $-3<x$ & $x \in {]-3, \infty[}$ & \naytaKuva{vali6} & Avoin väli \\
+\hline
+$x \leq 5$ & $x \in {]{-\infty}, 5]}$ & \naytaKuva{vali6} & Puoliavoin väli  \\
+\hline
+$x < 5$ & $x \in {]{-\infty}, 5[}$ & \naytaKuva{vali6} & Avoin väli  \\
+\hline
+\end{tabular}
+
     
     $5+(+8)$ ''viiteen lisätään plus kahdeksan''
     
