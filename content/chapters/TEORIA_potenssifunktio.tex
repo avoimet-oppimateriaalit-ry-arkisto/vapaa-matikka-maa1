@@ -69,10 +69,57 @@ enää määritelty kohdassa $x = 0$, vaan funktion arvot
 \end{kuvaajapohja}
 \end{center}
 
-%Aiemmin määriteltiin murtopotenssi $x^{\frac{m}{n}$, missä kantaluku $x\geq0$. Murtopotenssifunktiota määritellessä pitää myös muistaa kantaluvun positiivisuus, 
-%joten murtopotenssifunktion $f(x)=x^{\frac{m}{n}}$ määrittelyjoukko on positiivisten reaalilukujen joukko, eli $x\geq0$.
+Aiemmin määriteltiin murtopotenssi $x^{\frac{m}{n}}$, missä kantaluku $x\geq0$. Murtopotenssifunktiota määritellessä pitää myös muistaa kantaluvun positiivisuus, 
+joten murtopotenssifunktion $f(x)=x^{\frac{m}{n}}$ määrittelyjoukko on positiivisten reaalilukujen joukko, eli $x\geq0$.
 
-%Huomaa, että koska murtopotensseilla pätee $x^{\frac{m}{n}=\sqrt[n]{m}$, 
+Huomaa, että koska murtopotensseilla pätee $x^{\frac{m}{n}}={\sqrt[n]{x}}^m$, funktio $f(x)=x^{\frac{1}{2}}$ on itse asiassa sama kuin funktio $g(x)=\sqrt{x}$.
+Kuitenkin, koska murtopotensseja ei määritellä negatiivisilla kantaluvuilla, funktio $h(x)=x^{\frac{1}{3}}$ on määritelty ainoastaan kun $x\geq0$, mutta funktion
+$w(x)=\sqrt[3]{x}$ määrittelyjoukko on koko reaalilukujen joukko. Alla jotain murtopotenssifunktioita ja juurifunktioita esitettynä koordinaatistossa.
+
+\begin{center}
+	\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
+		\kuvaaja{x**1.6666666667}{$x^\frac{5}{3}$}{red}
+		\kuvaaja{x**0.5}{$x^\frac{1}{2}$}{blue}
+	\end{kuvaajapohja}
+\end{center}
+
+Juurifunktioiden kuvaajissa huomaa määrittelyjoukko ja yhteys murtopotenssifunktioihin.
+
+\begin{center}
+	\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
+	
+\newcommand{\kuvaajaneg}[3]{
+\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+\newcommand{\kuvaajapos}[3]{
+\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+		\kuvaajapos{x**0.333333333333333}{}{red}
+		\kuvaajapos{x**0.5}{$\sqrt{x}$}{blue}
+		
+		\kuvaajaneg{-(-x)**0.333333333333333}{$\sqrt[3]{x}$}{red}
+	\end{kuvaajapohja}
+\end{center}
+
+
+Kuvaajista voidaan nähdä yhteys potenssin ja kuvaajan tyypin välillä. 
+
+\laatikko{
+Tarkastellaan potenssifunktiota $f(x)=x^a$.
+
+	\begin{itemize}
+		\item Jos potenssi $a>1$, kuvaajan kasvu kiihtyy kun $x$ kasvaa.
+		\item Jos potenssi $a<1$, kuvaaja kasvaa aluksi nopeasti, mutta funktioiden arvojen kasvu hidastuu todella vähäiseksi $x$:n kasvaessa.
+		\item Jos potenssi $a=1$, funktio $f$ saa muodon $f(x)=x^1=x$, ja funktion kuvaaja on suora $y=x$.
+		\item Jos potenssi $a<0$, funktiota $f(x)=x^(-a)=\frac{1}{x^a}$ ei ole määritelty kun $x=0$, ja funktio käyttäytyy origon ympäristössä erikoisesti.
+	\end{itemize}
+}
+
+Tässä kurssissa on tarkoitus vain sivuta erilaisia funktioita ja niiden kuvaajia, ja tutustua niiden käyttäytymiseen alustavasti. 
+Asiaan palataan useaan otteeseen myöhemmillä kursseilla. Esimerkiksi funktioita kokonaislukupotenssilla tarkastellaan lähemmin kurssilla MAA2 ja
+juuri- ja murtopotenssifunktioita kurssilla MAA8.
+
+
 
 %Potenssifunktiota käsitellään samalla lailla riippumatta eksponentin
 %etumerkistä. Huomaa kuitenkin, että $\frac{1}{x^n} \neq 0 $ kaikilla $x$:n %arvoilla.
