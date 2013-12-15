@@ -1,8 +1,18 @@
 \label{reaaliluvut}
 
-Luku $\sqrt{2}$ on \termi{irrationaaliluku}{irrationaaliluku}. Toinen peruskoulusta tuttu irrationaaliluku
-on ympyrän kehän pituuden suhde halkaisijaan: $\pi$. Irrationaaliluvut voidaan sijoittaa
-lukusuoralle rationaalilukujen tapaan.
+Juurten ja murtopotenssien kohdalla on huomattava, että ainoastaan joidenkin juurten ja murtopotenssien
+arvot ovat rationaalilukuja. Itse asiassa juurilla on seuraava mielenkiintoinen ominaisuus, jota ei tällä kurssilla todisteta:
+
+\laatikko{
+Jos $m,n\in\zz$ ja $\sqrt[m]{n} \notin \zz$, niin $\sqrt[m]{n} \notin \qq$.
+
+Toisin sanottuna, jos kokonaisluvusta otettu kokonaislukujuuri ei ole kokonaisluku, niin se on aina irrationaaliluku.
+}
+
+Tämä tarkoittaa esimerkiksi sitä, että koska mikään kokonaisluku toiseen potenssiin korotettuna ei ole $2$, niin
+$sqrt{2}$ on väistämättä irrationaaliluku. Irrationaalilukuja tulee siis matematiikassa vastaan varsin usein.
+
+Irrationaalilukujen hahmottamista helpottaa se, että ne voidaan sijoittaa lukusuoralle rationaalilukujen tapaan.
 
 \begin{kuva}
 lukusuora.pohja(1.3, 3.3, 11)
@@ -13,9 +23,8 @@ with vari("red"):
 	lukusuora.kohta(sqrt(2), r"$\sqrt{2}$")
 \end{kuva}
 
-Rationaalilukuja ja irrationaalilukuja kutsutaan yhdessä \termi{reaaliluvut}{reaaliluvuiksi}.
-Reaalilukujen joukkoja merkitään $\rr$.
-Havainnollisesti reaalilukujen joukko sisältää kaikki lukusuoran luvut.
+Reaalilukujen joukko muodostuu rationaalilukujen ja irrationaalilukujen joukoista. Havainnollisesti voidaan sanoa, että
+reaalilukujen joukko sisältää kaikki lukusuoran luvut.
 
 Rationaaliluvut eivät täytä koko koko reaalilukusuoraa, mutta niitä on niin tiheässä, että jokaisen
 kahden eri reaaliluvun välissä on rationaalilukuja. Jokaiselle irrationaaliluvulle voidaan löytää
