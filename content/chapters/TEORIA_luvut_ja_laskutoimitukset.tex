@@ -277,16 +277,21 @@ tutkimuksessa itsessään. Tässä kirjassa niihin ei kuitenkaan perehdytä tark
 
 % === SIISTITTÄVÄ PÄTKÄ ALKAA ===
 
-\subsection*{Yhteen- ja vähennyslasku}
+\subsection*{Yhteen- ja vähennyslaskun merkkisäännöt}
 
-Kun käytämme kokonaislukuja, voidaan kahden luvun erotus määritellä
-yhteenlaskun ja vastaluvun avulla yksinkertaisesti:
+Vähennyslasku määriteltiin yllä vastaluvun lisäämiseksi:
 
-\laatikko{
 \[m-n = m+(-n)\]
-}
 
-Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja vähennyslaskulle:
+Tämän perusteella voidaan myös päätellä, mitä tapahtuu, kun vähennettävä luku onkin negatiivinen. Esimerkiksi:
+
+\begin{align*}
+&8-(-5)&\quad\quad\quad\textrm{Muutetaan vähennyslasku vastaluvun lisäämiseksi}\\
+= &8+(-(-5))&\quad\quad\quad\textrm{$-(-5)$ tarkoittaa $-5$:n vastalukua, joka on 5.}\\
+= &8+5
+\end{align*}
+
+Tähän ideaan perustuvat seuraavat merkkisäännöt yhteen- ja vähennyslaskulle:
 
 \laatikko{
 \begin{itemize}
@@ -297,13 +302,81 @@ Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja väh
 \end{itemize}
 }
 
-    Kysymys: Mitä saadaan, kun luvusta $5$ vähennetään luku $-8$?
-    
+Tämä asia ilmaistaan usein sanomalla, että kaksi peräkkäistä '$-$'-merkkiä kumoavat toisensa.
+
+%Seuraavassa kommentoituna taulukoitu versio lukusuorista.
+
+%\begin{luoKuva}{yhteenlasku1}
+%	lukusuora.pohja(-4,14,4,n=2, varaa_tila = False)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=1)
+%		lukusuora.vali(8,13,i=2)
+%	with vari("blue"): lukusuora.vali(0,8,i=2)
+%	lukusuora.piste(0,"$0$")
+%	lukusuora.piste(5,"$5$",1)
+%	lukusuora.piste(8,"$8$",2)
+%	lukusuora.piste(13,"$13$",2)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku2}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=1)
+%		lukusuora.vali(8,13,i=2)
+%	with vari("blue"): lukusuora.vali(0,8,i=2)
+%	lukusuora.piste(0,"$0$")
+%	lukusuora.piste(5,"$5$",1)
+%	lukusuora.piste(8,"$8$",2)
+%	lukusuora.piste(13,"$13$",2)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku3}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=2)
+%	with vari("blue"): lukusuora.vali(-3,5,i=1)
+%	lukusuora.piste(0,"$0$",2)
+%	lukusuora.piste(5,"$5$")
+%	lukusuora.piste(-3,"$-3$",1)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku4}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=2)
+%	with vari("blue"): lukusuora.vali(-3,5,i=1)
+%	lukusuora.piste(0,"$0$",2)
+%	lukusuora.piste(5,"$5$")
+%	lukusuora.piste(-3,"$-3$",1)
+%\end{luoKuva}
+%\begin{luoKuva}{yhteenlasku5}
+%	lukusuora.pohja(-4,14,4,n=2)
+%	with vari("red"):
+%		lukusuora.vali(0,5,i=1)
+%		lukusuora.vali(8,13,i=2)
+%	with vari("blue"): lukusuora.vali(0,8,i=2)
+%	lukusuora.piste(0,"$0$")
+%	lukusuora.piste(5,"$5$",1)
+%	lukusuora.piste(8,"$8$",2)
+%	lukusuora.piste(13,"$13$",2)
+%\end{luoKuva}
+%\begin{tabular}{|p{4.0cm}|c|}
+%\hline
+% ${\color{red}5}+{\color{blue}8}=13$ & \naytaKuva{yhteenlasku1}  \\
+%\hline
+% ${\color{red}5}+({\color{blue}+8})=13$ & \naytaKuva{yhteenlasku2}  \\
+%\hline
+% ${\color{red}5}-({\color{blue}+8})=-3$ & \naytaKuva{yhteenlasku3}  \\
+%\hline
+%${\color{red}5}+({\color{blue}-8})=-3$ & \naytaKuva{yhteenlasku4} \\
+%\hline
+%${\color{red}5}-({\color{blue}-8})=13$ & \naytaKuva{yhteenlasku5}  \\
+%\hline
+%\end{tabular}
+
     Negatiivisten ja positiivisten lukujen yhteen- ja vähennyslaskut voidaan helposti tulkita lukusuoran avulla.
     
     % tässä on vähän kyseenalaista käyttää sekaisin sanallista ja numeerista esitystä
-    
+
     $5+8$ ''viiteen lisätään kahdeksan''
+    
 \begin{center}
 \begin{kuva}
 	lukusuora.pohja(-4,14,12,n=2)
@@ -326,7 +399,7 @@ Tämä perusteella voidaan yleistää seuraavat merkkisäännöt yhteen- ja väh
 %       \end{lukusuora}
        ${\color{red}5}+{\color{blue}8}=13$
 \end{center}
-    
+   
     $5+(+8)$ ''viiteen lisätään plus kahdeksan''
     
     $+8$ tarkoittaa samaa kuin $8$. '$+$'-merkkiä käytetään luvun edessä silloin, kun halutaan korostaa, että kyseessä on nimenomaan positiivinen luku.
