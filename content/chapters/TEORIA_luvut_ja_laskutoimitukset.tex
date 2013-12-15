@@ -658,3 +658,79 @@ Yleisen käytännön mukaan laskulausekkeessa, jossa on useita laskutoimituksia,
 \item{Yhteen- ja vähennyslaskut vasemmalta oikealle}
 \end{enumerate}
 }
+
+Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
+
+Lisäksi yhteenlaskulla on sellainen erityisominaisuus, että pelkästään yhteenlaskua sisältävässä
+lausekkeessa laskujärjestys ei vaikuta tulokseen. Sen vuoksi yhteenlaskut voi laskea myös oikealta
+vasemmalle kunhan välissä ei ole esimerkiksi vähennyslaskua tai muita laskutoimituksia.
+
+Samoin kertolaskut voi laskea missä järjestyksessä tahansa kunhan välissä ei ole muita laskutoimituksia.
+
+Vähennyslaskussa ja jakolaskussa laskujärjestyksellä sen sijaan on merkitystä.
+
+\begin{esimerkki}
+Lasketaan laskutoimitus $-(8+3)+3+1-2\cdot 5$.
+
+Suluissa olevan laskutoimituksen voi laskea heti. Laskua $3-2$ ei voi laskea, koska
+vieressä oleva kertolasku on laskujärjestyksessä sitä ennen. Sen sijaan laskua $1-2$ ei voi laskea vielä,
+koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen.
+
+Laskun $3+1$ sen sijaan voi laskea. Oikealla puolella oleva vähennyslasku on
+laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
+koska yhteenlaskut voi laskea missä järjestyksessä vain.
+
+\begin{align*}
+   &-(8+3)+3-2\cdot 5&\textrm{Lasketaan ensin kertolasku ja suluissa oleva lasku.}
+\\=&-11+3-10&\qquad\textrm{Loput laskut lasketaan laskujärjestyksen mukaan vasemmalta oikealle.}
+\\=&-8-10&
+\\=&-18&
+\end{align*}
+\end{esimerkki}
+
+\subsection*{Jaollisuus ja tekijöihinjako}
+
+\laatikko{
+	\textbf{Määritelmä 1}
+	Kokonaisluku $a$ on jaollinen kokonaisluvulla $b \neq 0$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$.
+	Tällöin sanotaan myös, että $b$ on $a$:n tekijä.
+
+	\vspace*{24pt}
+
+	\textbf{Määritelmä 2}
+	Luku $a$ on jaollinen luvulla $b \neq 0$, mikäli $\frac{a}{b}$ on kokonaisluku.
+	
+	Määritelmät ovat yhtäpitäviä.
+}
+    
+\begin{esimerkki}
+	\begin{alakohdat}
+		\alakohta{Luku $-12$ on jaollinen luvulla $3$, sillä $-12 = 3 \cdot (-4)$.}
+		\alakohta{$-12$ ei ole jaollinen luvulla $5$, sillä ei ole kokonaislukua, joka kerrottuna viidellä olisi $12$.}
+	\end{alakohdat}
+\end{esimerkki}
+   
+\begin{center}
+\includegraphics[scale=0.85]{pictures/Kuva2-4-3x4.pdf}
+\end{center}
+    
+Kaikki luvut ovat jaollisia itsellään ja luvulla $1$. Esimerkiksi $7=7 \cdot 1=1 \cdot 7$, joten $7$ on jaollinen luvuilla $1$ ja $7$.
+    
+\laatikko{
+	\termi{alkuluku}{Alkuluku} on ykköstä suurempi kokonaisluku, joka ei ole jaollinen muilla positiivisilla kokonaisluvuilla kuin luvulla $1$ ja itsellään.
+}
+    
+Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja. Jos luvun tekijä on alkuluku, sitä kutsutaan alkutekijäksi.
+    
+\laatikko{
+    \textbf{Aritmetiikan peruslause}
+	
+    Jokainen ykköstä suurempi kokonaisluku voidaan esittää (termien järjestystä lukuunottamatta) yksikäsitteisesti alkulukujen tulona.
+	(Jokainen ykköstä suurempi kokonaisluku voidaan jakaa alkutekijöihin (termien järjestystä lukuunottamatta) yksikäsitteisellä tavalla.)
+}
+    
+Aritmetiikan peruslause todistetaan kurssilla Logiikka ja lukuteoria.
+    
+Esimerkiksi luku $84$ voidaan kirjoittaa muodossa $2\cdot 2\cdot 3\cdot 7$. Havaitaan, että $2$, $3$, ja $7$ ovat kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona -- mahdollista kerrottavien termien järjestyksen vaihtoa lukuunottamatta.
+    
+Luvun alkutekijät voi löytää etsimällä luvulle ensin jonkin esityksen kahden luvun tulona. Näiden kahden luvun ei tarvitse olla alkulukuja. Sen jälkeen sama toistetaan näille kahdelle luvulle ja edelleen aina uusille luvuille, kunnes jäljellä on vain alkulukuja.
