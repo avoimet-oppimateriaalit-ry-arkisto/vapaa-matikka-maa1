@@ -41,15 +41,17 @@ Koska keskinopeus voidaan laskea kaavalla $v=s/t$, matkaan kulunut aika voidaan 
 Sijoitetaan yksiköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
 \begin{equation*}
 t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
-= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}} = \frac{100}{7} \textrm{ s} \approx 14 \textrm{ s}.
+= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
+= \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
+=\frac{100}{7} \textrm{ s} \approx 14 \textrm{ s}.
 \end{equation*}
 \end{esimerkki}
 
-\begin{esimerkki}
+%\begin{esimerkki}
 %$3 \textrm{ m} \cdot 4 \textrm{ m} = 3\cdot 4 \textrm{ m}\cdot \textrm{ m} = 12 \textrm{ m}^2$ \\
-$\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}}
-=9 \textrm{ m}:\frac{\textrm{m}}{\textrm{s}}=9 \textrm{ m} \cdot \frac{\textrm{s}}{\textrm{m}} = 9 \frac{\textrm{ms}}{\textrm{m}}=9 \textrm{ s}$
-\end{esimerkki}
+%$\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}}
+%=9 \textrm{ m}:\frac{\textrm{m}}{\textrm{s}}=9 \textrm{ m} \cdot \frac{\textrm{s}}{\textrm{m}} = 9 \frac{\textrm{ms}}{\textrm{m}}=9 \textrm{ s}$
+%\end{esimerkki}
 
 \subsection*{SI-järjestelmä}
 
@@ -63,10 +65,13 @@ pituus & metri &	m\\
 massa & kilogramma & kg 	\\
 aika & sekunti & s \\
 sähkövirta & ampeeri & A \\
-lämpötila & kelvin & K \\
+(termodynaaminen) lämpötila & kelvin & K \\
 ainemäärä & mooli & mol \\
 valovoima & kandela & cd
 \end{tabular}
+
+Useille nk. johdannaisyksiköille on annettu omia nimiä, vaikka ne ovat johdettavissa perusyksiköistä.
+Näistä eräs esimerkki on tilavuuden yksikkö litra (1 l = 1 dm$^3$).
 
 \subsection*{Etuliitteet}
 
@@ -137,21 +142,50 @@ $9,0 \cdot 10^{-12} \textrm{ l} = 9,0 \textrm{ pl} = 0,009 \textrm{ nl}$.
 
 \end{esimerkki}
 
+\begin{esimerkki}
+Usain Boltin huippunopeudeksi 100 metrin juoksukilpailussa mitattiin 12,2 m/s.
+Janin polkupyörän huippunopeus alamäessä oli 42,5 km/h.
+Kumman huippunopeus oli suurempi?
+
+\textbf{Ratkaisu. }
+Muunnetaan yksiköt vastaamaan toisiaan.
+Janin polkupyörän huippunopeus oli $42,5 \textrm{ km/h} = 42500 \textrm{ m/h} = 42500 : 3600 \textrm{ m/s} \approx 11,8 \textrm{ m/s}$.
+Bolt oli siis pyöräilevää Jania nopeampi.
+\end{esimerkki}
+
 SI-järjestelmä ei ole ainoa käytetty mittayksikköjärjestelmä. Esimerkiksi nk. brittiläisessä mittayksikköjärjestelmässä pituutta voidaan mitata esimerkiksi tuumissa.
-Yksi tuuma (merkitään $1^{\prime \prime}$) vastaa 2,54 senttimetriä.
+Yksi tuuma (merkitään $1^{\prime \prime}$) vastaa 2,54 senttimetriä. Massan perusyksikkönä brittiläisessä mittayksikköjärjestelmässä käytetään paunaa.
+
+\begin{tabular}{c|c|c|c}
+Suure & Yksikkö & Yksikön tunnus & SI-järjestelmässä\\
+\hline
+pituus & tuuma & $^{\prime \prime}$ (tai in) & 2,54 cm \\
+massa & pauna & lb & 453,59237 g \\
+\end{tabular}
+
+Tuumien tai paunojen avulla ilmaistut suureet voidaan muuntaa SI-järjestelmään yllä olevassa taulukossa
+näkyvien suhdelukujen avulla.
 
 \begin{esimerkki}
 Kuina monta senttimetriä on 3,5 tuumaa? Entä kuinka monta tuumaa on 7,2 senttimetriä?
 
-\textbf{Ratkaisu. } Yksi tuuma vastaa 2,54 senttimetriä, jo
+\textbf{Ratkaisu. } Yksi tuuma vastaa 2,54 senttimetriä, joten kaksi tuumaa vastaa 5,08 senttimetriä jne.
 
 \begin{kuva}
-	lukusuora.pohja(0,7.62,7.62)
+	lukusuora.pohja(0,9,9)
 	lukusuora.piste(0, "$0^{\prime \prime} = 0 $ cm")
 	lukusuora.piste(2.54,"$1^{\prime \prime} = 2,54$ cm")
 	lukusuora.piste(5.08,"$2^{\prime \prime} = 5,08$ cm")
 	lukusuora.piste(7.62,"$3^{\prime \prime} = 7,62$ cm")
+	with vari("red"):
+	  lukusuora.piste(7.2)
+	  lukusuora.piste(8.9)
 \end{kuva}
+
+Tuumat saadaan siis senttimetreiksi kertomalla luvulla 2,54. Näin ollen $3,5^{\prime \prime} = 3,5 \cdot 2,54 \textrm{ cm} \approx 8,9 \textrm{ cm}$.
+
+Senttimetrien muuntaminen tuumiksi onnistuu vastaavasti \emph{jakamalla} luvulla 2,54.
+Näin ollen $7,2 \textrm{ cm} \approx 2,8^{\prime \prime}$, koska $7,2 : 2,54 \approx 2,8$.
 
 \end{esimerkki}
 

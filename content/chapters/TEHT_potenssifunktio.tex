@@ -80,11 +80,61 @@ Saako potenssifunktio $f$ negatiivisia arvoja, jos
 
 %Laatinut V-P Kilpi 2013-11-10
 \begin{tehtava}
-Saavatko funktiot $ f(x)=x^{3}-1$ sja $ g(x)=x^{3}+1$ missään kohdassa samaa arvoa?
+Saavatko funktiot $ f(x)=x^{3}-1$ ja $ g(x)=x^{3}+1$ missään kohdassa samaa arvoa?
 \begin{vastaus}
 Eivät saa.
 \end{vastaus}
 \end{tehtava}
+
+\begin{tehtava}
+Yhdistä funktioiden kuvaajat oikeaan funktioon.
+
+\begin{alakohdat}
+	\alakohta{$f(x)=x^{\frac{3}{2}}$}
+	\alakohta{$g(x)=x$}
+	\alakohta{$h(x)=x^{-8}$}
+	\alakohta{$a(x)=\sqrt[3]{x}$}
+	\alakohta{$b(x)=x^{\frac{1}{10}}$}
+	\alakohta{$c(x)=x^{10}$}
+	\alakohta{$d(x)=x^{-1}$}
+\end{alakohdat}
+
+\begin{center}
+	\begin{kuvaajapohja}{0.9}{-3.5}{3.5}{-3.5}{3.5}
+	
+	\newcommand{\kuvaajaneg}[3]{
+\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+\newcommand{\kuvaajapos}[3]{
+\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
+}
+	 \kuvaaja{x**10}{2}{red}
+	 \kuvaaja{x**1.5}{1}{green}
+	 \kuvaaja{x}{3}{black}
+	 \kuvaaja{x**0.1}{5}{purple}
+	 \kuvaajapos{x**0.33333333333}{7}{blue}
+	 \kuvaajaneg{-(-x)**0.33333333333}{}{blue}
+	 \kuvaajaneg{x**(-1)}{}{violet}
+	 \kuvaajaneg{x**(-8)}{6}{orange}
+	 \kuvaajapos{x**(-1)}{4}{violet}
+	 \kuvaajapos{x**(-8)}{}{orange}
+	\end{kuvaajapohja}
+\end{center}
+
+\begin{vastaus}
+	\begin{alakohdat}
+		\alakohta{1}
+		\alakohta{3}
+		\alakohta{6}
+		\alakohta{7}
+		\alakohta{5}
+		\alakohta{2}
+		\alakohta{4}
+	\end{alakohdat}
+\end{vastaus}
+
+\end{tehtava}
+
 
 \paragraph*{Hallitse kokonaisuus}
 
