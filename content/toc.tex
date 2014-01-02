@@ -4,7 +4,8 @@
 \newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \input{chapters/#1}} % numeroimaton luku
 \newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{chapters/LIITE_vastaukset} \end{vastaussivu}}
 
-\Opensolutionfile{ans}[chapters/LIITE_vastaukset]
+\Opensolutionfile{ans}[chapters/LIITE_vastaukset] %mitä tää komento tekee? T: JoonasD6
+
 \osa{Luvut ja laskutoimitukset}
     \luku{luvut_ja_laskutoimitukset}{Lukualueet}
     \luku{rationaaliluvut}{Murtoluvuilla laskeminen}
@@ -49,4 +50,4 @@
 	%\nluku{LIITE_symbolit}{Symbolit}
 
 \Closesolutionfile{ans}
-	\vast
+%	\vast
