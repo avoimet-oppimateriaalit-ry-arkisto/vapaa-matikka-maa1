@@ -103,7 +103,9 @@ Joillekin johdannaisyksiköille on annettu oma nimensä ja lyhenteensä, eikä y
 
 \begin{esimerkki}
 
-Yksi litra vastaa yhtä kuutiodesimetriä, eli $1\,\text{l}=1\,\text{dm}^3$.
+Tuhatta kilogrammaa kutsutaan tonniksi.
+
+Yksi litra vastaa yhtä kuutiodesimetriä, eli $1\,\text{l}=1\,\text{dm}^3$. (Ks. etuliitteet edellä.)
 
 Energian yksikkö joule ilmaistuna vain SI-järjestelmän perusyksiköitä käyttämällä: $\text{J}=\frac{\text{m}^2\text{kg}}{\text{s}^2}$.
 
@@ -111,21 +113,22 @@ Energian yksikkö joule ilmaistuna vain SI-järjestelmän perusyksiköitä käyt
 
 \subsection*{Etuliitteet}
 
-Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla. Tällöin yksikön suuruutta muokataan etuliitteellä. %jokseenkin epäselvä?
+Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla. Tällöin yksikön suuruutta muokataan etuliitteellä.
 
 \laatikko{
 Tavallisimmat kerrannaisyksiköiden etuliitteet:
-
+ %Pitäiskö järjestää vain yhdeksi taulukoksi?
 \begin{tabular}{c|c}
-\begin{tabular}{c|c|c}
-Nimi & Kerroin & Tunnus \\
+\begin{tabular}{c|c|c|c}
+Nimi & Kerroin & Tunnus & Kymmenpotenssin nimi suomeksi \\
 \hline
-deka & $10^{1}$ & da 	\\
-hehto & $10^{2}$ & h 	\\
-kilo & $10^{3}$ & k 	\\
-mega & $10^{6}$ & M 	\\
-giga & $10^{9}$ & G		\\
-tera & $10^{12}$ & T 	
+deka & $10^{1}$ & da  & kymmenen	\\
+hehto & $10^{2}$ & h & sata 	\\
+kilo & $10^{3}$ & k & tuhat	\\
+mega & $10^{6}$ & M & miljoona 	\\
+giga & $10^{9}$ & G & miljardi		\\
+tera & $10^{12}$ & T & biljoona \\
+peta & $10^{15}$ & P & -- \\
 \end{tabular}
 \begin{tabular}{c|c|c}
 Nimi & Kerroin & Tunnus \\
@@ -135,26 +138,50 @@ sentti & $10^{-2}$ & c 	\\
 milli & $10^{-3}$ & m	\\
 mikro & $10^{-6}$ & $\upmu$ \\
 nano & $10^{-9}$ & n 	\\
-piko & $10^{-12}$ & p
+piko & $10^{-12}$ & p \\
+femto & $10^{-15}$ & f
 \end{tabular}
 \end{tabular}
 }
 
+Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivankokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri erittäin pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä tulee.
+
+\begin{esimerkki}
+Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on valittu SI-järjestelmässä massan perusyksiköksi gramman sijaan käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin liian pieni.
+\end{esimerkki}
+
+\begin{esimerkki}
+Ilmaisussa 0,000046 metriä luku on niin pieni, että on käytännöllisempää ja usein helppotajuisempaa kirjoittaa 4,6 mikrometriä eli 4,6\,$\upmu$m.
+\end{esimerkki}
+
+\begin{esimerkki}
+Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. Esimerkiksi $1\,\textrm{ng} = 1 \cdot 10^{-9}\,\textrm{g} = 0,000000009\,\textrm{g} $.
+\end{esimerkki}
+
+%tähän vai minne kymmenpotensismuotojen ja suurten lukujen lukusanoista? long ja short scale
+
+\laatikko[Erittäin tärkeää kerrannaisyksiköiden potensseista!]{Edellä esitetty taulukko etuliitteistä pätee vain ensimmäisen asteen yksiköihin! Desimetri on kymmenesosa metristä, mutta neliödesimetri \emph{ei} ole kymmenesosa neliömetristä.
+
+Avain tämän ymmärtämiseen on huomata seuraava sopimus, kirjoitustapa: dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$! Potensissääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
+
 \begin{esimerkki}
 
-hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista.
+Kuinka mones osa kuutiodesimetri on kuutiometristä?
 
-Esimerkiksi $1 \textrm{ ng} = 1 \cdot 10^{-9} \textrm{ g} = 0,000000009 \textrm{ g} $.
-
-ESIMERKKI RNA:ta näin monta nanogrammaa millilitrassa... ja vielä lisää...
+	\begin{esimratk}
+	Puretaan auki käyttäen mainittua kirjoituskonventiota, potenssisääntöjä ja desi-etuliitteen määritelmää:$\text{dm}^3=\text{d}^3\,\text{m}^3=(10^{-1})^3\,\text{m}^3=10^-3\,\text{m}^3=\frac{1}{1000}\,\text{m}^3$
+	
+	Nähdään, että yksi kuutiodesimetri on tuhannesosa kuutiometristä.
+	\end{esimratk}
 
 \end{esimerkki}
 
-Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.. Vastaavat englannikieliset lyhenteet ovat kB ja MB. (Byte = tavu)
-
-% esimerkki: dm^2 =(dm)^2=d^2 m^2 TÄMÄ ON TÄRKEÄÄ!!!!!!!!!  dm^2 tarkoittaa oikeasti (dm)^2
+\laatikko{Huomautus tietotekniikasta:
+Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.. Vastaavat englannikieliset lyhenteet ovat kB ja MB. (Byte = tavu)}
 
 \subsection*{Yksiköiden yhdistäminen}
+
+%hakee vielä vähän loogista järhestystä :) T: Joonas
 
 Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan.
 
@@ -162,10 +189,12 @@ Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdist
 2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 \cdot$ m $\cdot$ m $=6 $ m$^2$ eli kuusi neliömetriä.
 \end{esimerkki}
 
+%pinta-alalaskuesimerkki
+
 \begin{esimerkki}
 Matkaan kulunut aika voidaan laskea kaavalla $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
 
-Sijoitetaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
+Sijoitetaan kaavaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
 \begin{equation*}
 t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
 = \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
@@ -188,22 +217,10 @@ $\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot 
 
 \subsection*{Yksikkömuunnokset}
 
-\laatikko{
-Yksi tunti on $60$ minuuttia. Yksi minuutti on $60$ sekuntia.
-\begin{itemize}
-  \item $1~\text{h} = 60~\text{min}$
-  \item $1~\text{min} = 60~\text{s}$
-  \item $1~\text{h} = 60~\text{min} = 60 \cdot 60~\text{s} = 3600~\text{s}$ 
-\end{itemize}
-}
-
-% FIXME \todo{taulukko amerikkalaisista yksiköistä}
+Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteiden ajatellaan olevan matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä.
 
 \begin{esimerkki}
-Kuinka monta minuuttia on $1,25$ h?
-
-\textbf{Ratkaisu. }
-$1,25 \text{ h} = 1,25 \cdot 60 \text{ min} = 75 \text{ min}$. $1,25$ h on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ yhdistettynä lukuna $1 \frac{25}{100}$ eli $1 \frac{1}{4}$, mikä saattaa helpottaa laskemista.
+$270\,\text{mm}=270\cdot\text{mm}=270\cdot10^{-3}\,\text{m}=\frac{270}{1000}\,\text{m}=0,27\,\text{m}$
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -218,6 +235,27 @@ $9,0 \cdot 10^{-12} \textrm{ l} = 9,0 \textrm{ pl} = 0,009 \textrm{nl}$.
 \end{esimratk}
 \end{esimerkki}
 
+Ajan yksiköissä on jäänteitä 60-järjestelmästä, jossa yksikköä ei jaetakaan kymmeneen pienempään osaan, vaan kuuteenkymmeneen:
+
+\laatikko{
+Yksi tunti on $60$ minuuttia. Yksi minuutti on $60$ sekuntia.
+\begin{itemize}
+  \item $1~\text{h} = 60~\text{min}$
+  \item $1~\text{min} = 60~\text{s}$
+  \item $1~\text{h} = 60~\text{min} = 60 \cdot 60~\text{s} = 3600~\text{s}$ 
+\end{itemize}
+}
+
+\begin{esimerkki}
+Kuinka monta minuuttia on $1,25$ h?
+
+\begin{esimratk}
+$1,25 \text{ h} = 1,25 \cdot 60 \text{ min} = 75 \text{ min}$. $1,25$ h on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ yhdistettynä lukuna $1 \frac{25}{100}$ eli $1 \frac{1}{4}$, mikä saattaa helpottaa laskemista.
+\end{esimratk}
+\end{esimerkki}
+
+%intro:
+
 \begin{esimerkki}
 Usain Boltin huippunopeudeksi 100 metrin juoksukilpailussa mitattiin 12,2 m/s. Janin polkupyörän huippunopeus alamäessä oli 42,5 km/h. Kumman huippunopeus oli suurempi?
 
@@ -225,6 +263,8 @@ Usain Boltin huippunopeudeksi 100 metrin juoksukilpailussa mitattiin 12,2 m/s. J
 Muunnetaan yksiköt vastaamaan toisiaan. Janin polkupyörän huippunopeus oli $42,5 \textrm{ km/h} = 42500 \textrm{ m/h} = 42500 : 3600 \textrm{m/s} \approx 11,8 \textrm{m/s}$.
 Bolt oli siis pyöräilevää Jania nopeampi.
 \end{esimerkki}
+
+Matkan, pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään tarkemmin geometrian MAA3-kurssilla. 
 
 SI-järjestelmä ei ole ainoa käytetty mittayksikköjärjestelmä. Esimerkiksi nk. brittiläisessä mittayksikköjärjestelmässä pituutta voidaan mitata esimerkiksi tuumissa. Yksi tuuma (merkitään $1^{\prime \prime}$) vastaa 2,54 senttimetriä. Massan perusyksikkönä brittiläisessä mittayksikköjärjestelmässä käytetään paunaa.
 
@@ -240,8 +280,9 @@ Tuumien tai paunojen avulla ilmaistut suureet voidaan muuntaa SI-järjestelmää
 \begin{esimerkki}
 Kuinka monta senttimetriä on 3,5 tuumaa? Entä kuinka monta tuumaa on 7,2 senttimetriä?
 
-\textbf{Ratkaisu. } Yksi tuuma vastaa 2,54 senttimetriä, joten kaksi tuumaa vastaa 5,08 senttimetriä jne.
-
+	\begin{esimratk}
+Yksi tuuma vastaa 2,54 senttimetriä, joten kaksi tuumaa vastaa 5,08 senttimetriä jne.
+	
 \begin{kuva}
 	lukusuora.pohja(0,9,9)
 	lukusuora.piste(0, "$0^{\prime \prime} = 0 $ cm")
@@ -256,7 +297,7 @@ Kuinka monta senttimetriä on 3,5 tuumaa? Entä kuinka monta tuumaa on 7,2 sentt
 Tuumat saadaan siis senttimetreiksi kertomalla luvulla 2,54. Näin ollen $3,5^{\prime \prime} = 3,5 \cdot 2,54 \textrm{ cm} \approx 8,9 \textrm{ cm}$.
 
 Senttimetrien muuntaminen tuumiksi onnistuu vastaavasti \emph{jakamalla} luvulla 2,54. Näin ollen $7,2 \textrm{ cm} \approx 2,8^{\prime \prime}$, koska $7,2 : 2,54 \approx 2,8$.
-
+	\end{esimratk}
 \end{esimerkki}
 
 \subsection*{Pyöristäminen}
