@@ -144,14 +144,14 @@ femto & $10^{-15}$ & f
 \end{tabular}
 }
 
-Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivankokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri erittäin pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä tulee.
+Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivankokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
 
 \begin{esimerkki}
 Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on valittu SI-järjestelmässä massan perusyksiköksi gramman sijaan käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin liian pieni.
 \end{esimerkki}
 
 \begin{esimerkki}
-Ilmaisussa 0,000046 metriä luku on niin pieni, että on käytännöllisempää ja usein helppotajuisempaa kirjoittaa 4,6 mikrometriä eli 4,6\,$\upmu$m.
+Ilmaisussa 0,000046 metriä luku on niin pieni, että on käytännöllisempää ja usein helppotajuisempaa kirjoittaa 46 mikrometriä eli 46\,$\upmu$m.
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -169,15 +169,19 @@ Avain tämän ymmärtämiseen on huomata seuraava sopimus, kirjoitustapa: dm$^2$
 Kuinka mones osa kuutiodesimetri on kuutiometristä?
 
 	\begin{esimratk}
-	Puretaan auki käyttäen mainittua kirjoituskonventiota, potenssisääntöjä ja desi-etuliitteen määritelmää:$\text{dm}^3=\text{d}^3\,\text{m}^3=(10^{-1})^3\,\text{m}^3=10^-3\,\text{m}^3=\frac{1}{1000}\,\text{m}^3$
+	Puretaan auki käyttäen mainittua kirjoituskonventiota, potenssisääntöjä ja desi-etuliitteen määritelmää: $\text{dm}^3=\text{d}^3\,\text{m}^3=(10^{-1})^3\,\text{m}^3=10^-3\,\text{m}^3=\frac{1}{1000}\,\text{m}^3$
 	
 	Nähdään, että yksi kuutiodesimetri on tuhannesosa kuutiometristä.
 	\end{esimratk}
 
 \end{esimerkki}
 
-\laatikko{Huomautus tietotekniikasta:
-Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.. Vastaavat englannikieliset lyhenteet ovat kB ja MB. (Byte = tavu)}
+\laatikko[Huomautus tietotekniikasta]{
+Datan määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.
+
+Vastaavat englannikieliset lyhenteet ovat kB ja MB. (byte = tavu)}
+
+%kaipaa vielä kielellistä siistimistä
 
 \subsection*{Yksiköiden yhdistäminen}
 
@@ -186,7 +190,7 @@ Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu 
 Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan.
 
 \begin{esimerkki}
-2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 \cdot$ m $\cdot$ m $=6 $ m$^2$ eli kuusi neliömetriä.
+2 metriä kertaa 3 metriä = $2\, \text{m} \cdot 3\, \text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\, \text{m}^2$ eli kuusi neliömetriä.
 \end{esimerkki}
 
 %pinta-alalaskuesimerkki
@@ -350,8 +354,7 @@ Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden mä
 Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan desimaalien lukumäärällä.
 
 \begin{esimerkki} Jos 175~cm pituisen ihmisen nousee seisomaan 2,15~cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi 177,15~cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen
-174,5~cm ja 175,5~cm väliltä. Lasketaan siis\\
-\indent 175~cm + 2,15~cm = 177,15~cm $\approx$ 177~cm. 
+174,5~cm ja 175,5~cm väliltä. Lasketaan siis \indent 175~cm + 2,15~cm = 177,15~cm $\approx$ 177~cm. 
 Epätarkempi lähtöarvo oli mitattu senttien tarkkuudella, joten pyöristettiin tasasentteihin.
 \end{esimerkki}
 
@@ -375,10 +378,6 @@ Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt
 \end{esimerkki}
 
 %MIKSI sieventäminen ei enää onnistunut?
-
 %tehtäviin metriä sekunnissa vs kilometriä tunnissa!
-
-
 %Lisää kymmenpotenssimuodoista! ja niiden avulla sieventämisestä :) valonnopeus yms.!
-
-%yksikkötarkastelutehtäviä? esimerkkejä, hrjoitustehtäviä!
+%yksikkötarkastelutehtäviä? esimerkkejä, harjoitustehtäviä! kerrotaanko [nopeus]=m/s -notaatiosta?
