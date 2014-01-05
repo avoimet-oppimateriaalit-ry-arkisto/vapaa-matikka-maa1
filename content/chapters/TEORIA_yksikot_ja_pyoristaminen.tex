@@ -2,6 +2,8 @@
 
 Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \termi{yksikkö}{yksikön} kanssa. Tällöin luku ja yksikkö yhdessä esittävät tietoa \termi{suure}{suureesta} eli jostakin mitattavasta ominaisuudesta.
 
+%selitä vielä, mitä yksikkö tekee?
+
 \begin{esimerkki}
 
 Aika on suure, jota voidaan mitata käyttämällä yksikkönä esimerkiksi sekunteja tai vuosia.
@@ -23,13 +25,13 @@ Nopeus on vektorisuure, koska nopeuteen liittyy sen suuruuden lisäksi myös suu
 
 \end{esimerkki}
 
+Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat kerrotut keskenään:
+
 \laatikko[Suure]{luku $\cdot$ yksikkö}
 
-Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan.
+Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää. (Näin sanoo myös suomen kielioppi.) Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkataan symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ''. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
 
 %Sivunlaitahuomio:: jos yksikkö on nimetty henkilön nimen mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella, esim. N, J tai Hz. Auki kirjoitettuna kuitenkin "kolme newtonia", kymmenen kilojoulea" ja "5,7 hertziä".
-
-Matemaattisesti suureita käsitellään aivan kuin luku ja yksikön lyhenne olisivat kerrotut keskenään, mutta käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää. (Näin sanoo myös suomen kielioppi.) Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkataan symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ''. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
 
 %typografiahuomautus sivun laitaan :)
 
@@ -37,6 +39,7 @@ Matemaattisesti suureita käsitellään aivan kuin luku ja yksikön lyhenne olis
 
 Seuraava taulukko selventää oikeinkirjoitusta:
 
+\begin{center}
 \begin{tabular}{c|c}
 Oikein & Väärin \\
 \hline
@@ -47,13 +50,16 @@ Oikein & Väärin \\
 3,16$^\circ$ 5' 13'' & 3,16 $^\circ$ 5 ' 13 '' 	\\
 6 $^\circ$C & 6$^\circ$C 	\\
 \end{tabular}
+\end{center}
 
-%Hienosti ladottuna luvun eteen EI tule välilyöntiä, vaan ohuke (thin space), jonka latexissa saa komennolla \,
+%Hienosti ladottuna luvun ja yksikön väliin EI tule välilyöntiä, vaan ohuke (thin space), jonka latexissa saa komennolla \,
 
 \subsection*{SI-järjestelmä}
 
-SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. Système international d'unités) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja perusyksiköt:
+SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. Système international d'unités) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
 
+
+\begin{center}
 \begin{tabular}{c|c|c|c}
 Suure & Suureen tunnus & Yksikkö & Yksikön tunnus\\
 \hline
@@ -65,23 +71,26 @@ sähkövirta & $I$ & ampeeri & A \\
 ainemäärä & $n$ & mooli & mol \\
 valovoima & $I$ & kandela & cd
 \end{tabular}
-
-Näistä perussuureista matematiikan kursseilla tulee osata ainakin pituus, massa ja aika. (Huomaa, että arkikielessä ja myös monissa tehtävänannoissa käytetään sanaa paino, vaikka tarkoitetaan massaa.) Tämän lisäksi matematiikan tehtävissä esiintyy usein näistä yhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita} kuten nopeus, pinta-ala, tilavuus ja tiheys.
+\end{center}
 
 Toisin kuin yksiköt, suureiden kirjainlyhenteet kirjoitetaan \textit{kursiivilla}. %ja tämäkin lopulta sivun laitaan pois leipätekstistä... :)
 
-\begin{esimerkki}
+Näitä suureita käsitellään tarkemmin fysiikassa, mutta matematiikan kursseilla tulee tuntea ainakin pituus, massa ja aika. (Huomaa, että arkikielessä käytetään usein sanaa paino, vaikka tarkoitetaan massaa.) Tämän lisäksi matematiikan tehtävissä esiintyy usein näistä yhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita} kuten nopeus, pinta-ala, tilavuus ja tiheys.
 
-Nopeus (tunnus $v$) on johdannaissuure, joka saadaan yhdistämällä matka ja aika: $\text{nopeus}=\frac{\text{matka}}{\text{aika}}$. Vastaava nopeuden yksikkö saadaan jakamalla matkan yksikkö ajan yksiköllä, käytettiin mitä yksiköitä hyvänsä: $\frac{\text{m}}{\text{s}}$ ja $\frac{\text{km}}{\text{h}}$.
+\laatikko[Tärkeitä johdannaissuureita]{
 
-Pinta-ala johdetaan pituuden avulla.
+\begin{itemize}
+\item Nopeus (tunnus $v$) on johdannaissuure, joka saadaan kuljetun matkan ja matkan kulkemiseen käytetyn ajan osamäärästä: $\text{nopeus}=\frac{\text{matka}}{\text{aika}}$. Vastaava nopeuden yksikkö saadaan jakamalla matkan yksikkö ajan yksiköllä, käytettiin mitä yksiköitä hyvänsä: $\frac{\text{m}}{\text{s}}$ ja $\frac{\text{km}}{\text{h}}$.
 
-Tilavuus
+\item Pinta-ala (tunnus usein $A$) saadaan kertomalla pituus toisella pituudella. Vastaavasti pinta-alan yksiköt saadaan pituuden yksiköistä. Jos esimerkiksi pituutta on mitattu metreissä, niin vastaava pinta-alan yksikkö on $m\cdot m=m^2$ eli neliömetri.
 
-Tiheys
-\end{esimerkki}
+\item Tilavuus (tunnus usein $V$) on edelleen johdettavissa kolmen pituuden tulona. Jos pituutta on mitattu metreissä, niin vastaava tilavuuden yksikkö on $m\cdot m \cdot m=m^3$ eli kuutiometri.
 
-Kun johdannaisyksiköissä esiintyy jakolaskua, yksikön voi kirjoittaa usealla eri tavalla (potenssisääntöjen avulla).
+\item Tiheys (tunnus kreikkalainen pieni roo, $\rho$) on johdannaissuure, joka määritellään massan ja tilavuuden osamääränä: $\text{tiheys}=\frac{\text{massa}}{\text{tilavuus}}$. Vastaavasti tiheyden yksiköt saadaan samalla jakolaskulla massan ja tilavuuden yksiköistä: jos kappaleen tilavuus on mitattu kuutiometreissä ja massa kilogrammoina, esitetään kappaleen tiheys yksiköissä $\frac{\text{kg}}{\text{m}^3}$.
+\end{itemize}
+}
+
+Kun johdannaisyksiköissä esiintyy jakolaskua, yksikön voi kirjoittaa useassa eri muodossa potenssisääntöjen avulla.
 
 \begin{esimerkki}
 
@@ -99,41 +108,9 @@ Energian yksikkö joule ilmaistuna vain SI-järjestelmän perusyksiköitä käyt
 
 \end{esimerkki}
 
-\subsection*{Yksiköiden yhdistäminen}
-
-Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan.
-
-\begin{esimerkki}
-2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 \cdot$ m $\cdot$ m $=6 $ m$^2$ eli kuusi neliömetriä.
-\end{esimerkki}
-
-\begin{esimerkki}
-Matkaan kulunut aika voidaan laskea kaavalla $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
-
-Sijoitetaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
-\begin{equation*}
-t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
-= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
-= \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
-=\frac{100}{7} \textrm{ s} \approx 14 \textrm{ s}.
-\end{equation*}
-\end{esimerkki}
-
-%Lisää vaiheita! (selvennetään lukujen ja yksiökiden erotusta ja rationaalilukujen laskusääntöjä) Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut... olisi hyvä.
-
-Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
-
-\begin{esimerkki}
-$3 \textrm{ m} \cdot 4 \textrm{ m} = 3\cdot 4 \textrm{ m}\cdot \textrm{ m} = 12 \textrm{ m}^2$ \\
-$\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}}
-=9 \textrm{ m}:\frac{\textrm{m}}{\textrm{s}}=9 \textrm{ m} \cdot \frac{\textrm{s}}{\textrm{m}} = 9 \frac{\textrm{ms}}{\textrm{m}}=9 \textrm{ s}$
-\end{esimerkki}
-
 \subsection*{Etuliitteet}
 
-Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla. Tällöin yksikön suuruutta muokataan etuliitteellä.
-
-%vähän epäselvä
+Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla. Tällöin yksikön suuruutta muokataan etuliitteellä. %jokseenkin epäselvä?
 
 \laatikko{
 Tavallisimmat kerrannaisyksiköiden etuliitteet:
@@ -175,6 +152,38 @@ ESIMERKKI RNA:ta näin monta nanogrammaa millilitrassa... ja vielä lisää...
 Tietotekniikassa datan määrää mitataan tavuina, mutta siellä yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.. Vastaavat englannikieliset lyhenteet ovat kB ja MB. (Byte = tavu)
 
 % esimerkki: dm^2 =(dm)^2=d^2 m^2 TÄMÄ ON TÄRKEÄÄ!!!!!!!!!  dm^2 tarkoittaa oikeasti (dm)^2
+
+\subsection*{Yksiköiden yhdistäminen}
+
+Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan.
+
+\begin{esimerkki}
+2 metriä kertaa 3 metriä = $2$ m $\cdot$ $3$ m $=2 \cdot 3 \cdot$ m $\cdot$ m $=6 $ m$^2$ eli kuusi neliömetriä.
+\end{esimerkki}
+
+\begin{esimerkki}
+Matkaan kulunut aika voidaan laskea kaavalla $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
+
+Sijoitetaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
+\begin{equation*}
+t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
+= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
+= \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
+=\frac{100}{7} \textrm{ s} \approx 14 \textrm{ s}.
+\end{equation*}
+\end{esimerkki}
+
+%Lisää vaiheita! (selvennetään lukujen ja yksiökiden erotusta ja rationaalilukujen laskusääntöjä) Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut... olisi hyvä.
+
+Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
+
+%tiheysesimerkki
+
+\begin{esimerkki}
+$3 \textrm{ m} \cdot 4 \textrm{ m} = 3\cdot 4 \textrm{ m}\cdot \textrm{ m} = 12 \textrm{ m}^2$ \\
+$\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}}
+=9 \textrm{ m}:\frac{\textrm{m}}{\textrm{s}}=9 \textrm{ m} \cdot \frac{\textrm{s}}{\textrm{m}} = 9 \frac{\textrm{ms}}{\textrm{m}}=9 \textrm{ s}$
+\end{esimerkki}
 
 \subsection*{Yksikkömuunnokset}
 
