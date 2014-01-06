@@ -95,7 +95,7 @@ Kun johdannaisyksiköissä esiintyy jakolaskua, yksikön voi kirjoittaa useassa 
 
 \begin{esimerkki}
 
-Nopeuden yksikkö metriä sekunnissa voidaan kirjoittaa murtolausekkeena $\frac{\text{m}}{\text{s}}$, samalla rivillä m/s tai potenssien avulla ms$^{-1}$.
+Nopeuden yksikkö metriä sekunnissa voidaan kirjoittaa murtolausekkeena $\frac{\text{m}}{\text{s}}$, samalla rivillä m/s tai negatiivisen eksponentin avulla ms$^{-1}$.
 
 \end{esimerkki}
 
@@ -162,7 +162,13 @@ Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. 
 
 \laatikko[Erittäin tärkeää kerrannaisyksiköiden potensseista!]{Edellä esitetty taulukko etuliitteistä pätee vain ensimmäisen asteen yksiköihin! Desimetri on kymmenesosa metristä, mutta neliödesimetri \emph{ei} ole kymmenesosa neliömetristä.
 
-Avain tämän ymmärtämiseen on huomata seuraava sopimus, kirjoitustapa: dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$! Potensissääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
+Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
+
+\begin{center}
+dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$!
+\end{center}
+
+Potensissääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
 
 \begin{esimerkki}
 
@@ -176,18 +182,20 @@ Kuinka mones osa kuutiodesimetri on kuutiometristä?
 
 \end{esimerkki}
 
+%toine ja ehkä kolmaskin esimerkkin esimerkki
+
 \laatikko[Huomautus tietotekniikasta]{
-Datan määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.
+Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on diskreetti, bittejä voi olla vain jokin luonnollisen luvun osoittama määrä, eikä bittejä voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Suomenkielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset yksikönlyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
 
-Vastaavat englannikieliset lyhenteet ovat kB ja MB. (byte = tavu)}
+Tietojenkäsittelyn kaksikantaisuuden johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua,  vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne. %viittaus lukujärjestelmäliitteeseen
 
-%kaipaa vielä kielellistä siistimistä
+%esimerkki
 
 \subsection*{Yksiköiden yhdistäminen}
 
-%hakee vielä vähän loogista järhestystä :) T: Joonas
+%hakee vielä vähän loogista järjestystä :) T: Joonas
 
-Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan.
+Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
 
 \begin{esimerkki}
 2 metriä kertaa 3 metriä = $2\, \text{m} \cdot 3\, \text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\, \text{m}^2$ eli kuusi neliömetriä.
@@ -207,17 +215,15 @@ t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m
 \end{equation*}
 \end{esimerkki}
 
-%Lisää vaiheita! (selvennetään lukujen ja yksiökiden erotusta ja rationaalilukujen laskusääntöjä) Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut... olisi hyvä.
+%Lisää vaiheita! (selvennetään lukujen ja yksiköiden erottelua ja rationaalilukujen laskusääntöjä) Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut... olisi hyvä.
 
 Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
 
 %tiheysesimerkki
 
-\begin{esimerkki}
-$3 \textrm{ m} \cdot 4 \textrm{ m} = 3\cdot 4 \textrm{ m}\cdot \textrm{ m} = 12 \textrm{ m}^2$ \\
-$\frac{90 \textrm{ m}}{10 \frac{\textrm{m}}{\textrm{s}}} %= \frac{90}{10} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}}
-=9 \textrm{ m}:\frac{\textrm{m}}{\textrm{s}}=9 \textrm{ m} \cdot \frac{\textrm{s}}{\textrm{m}} = 9 \frac{\textrm{ms}}{\textrm{m}}=9 \textrm{ s}$
-\end{esimerkki}
+%\begin{esimerkki}
+%Maapallon massa noin 
+%\end{esimerkki}
 
 \subsection*{Yksikkömuunnokset}
 
