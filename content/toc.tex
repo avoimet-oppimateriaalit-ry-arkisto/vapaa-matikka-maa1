@@ -4,8 +4,9 @@
 \newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \input{chapters/#1}} % numeroimaton luku
 \newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{chapters/LIITE_vastaukset} \end{vastaussivu}}
 
-\Opensolutionfile{ans}[chapters/LIITE_vastaukset] % kirjoittaa vastaukset tiedostoon chapters/LIITE_vastaukset.tex
+\Opensolutionfile{ans}[chapters/LIITE_vastaukset] %kirjoittaa vastaukset tiedostoon chapters/LIITE_vastaukset.tex
 
+\newpage
 \nluku{LIITE_lahtotasotesti}{Lähtötasotesti}
 
 \osa{Luvut ja laskutoimitukset}
@@ -24,9 +25,9 @@
 \osa{Yhtälöt}
     \luku{yhtalo}{Yhtälö}
     \luku{ensimmainen}{Ensimmäisen asteen yhtälö}
-    \luku{verrannollisuus}{Suoraan ja kääntäen verrannollisuus}
     \luku{prosenttilaskenta}{Prosenttilaskenta}
     \luku{potenssiyhtalot}{Potenssiyhtälöt}
+    \luku{verrannollisuus}{Suoraan ja kääntäen verrannollisuus}
     %    \nluku{Testaa tietosi!}
 
 \osa{Funktiot}
