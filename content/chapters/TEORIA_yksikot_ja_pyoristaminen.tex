@@ -33,8 +33,6 @@ Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden n
 
 %Sivunlaitahuomio:: jos yksikkö on nimetty henkilön nimen mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella, esim. N, J tai Hz. Auki kirjoitettuna kuitenkin "kolme newtonia", kymmenen kilojoulea" ja "5,7 hertziä".
 
-%typografiahuomautus sivun laitaan :)
-
 %onko tuuma varmasti merkattu oikein? (kaksoislainausmerkkejä on useita erilaisia)
 
 Seuraava taulukko selventää oikeinkirjoitusta:
@@ -58,7 +56,7 @@ Oikein & Väärin \\
 
 SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. Système international d'unités) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
 
-
+\laatikko[SI-järjestelmän perussuureet ja yksiköt]{
 \begin{center}
 \begin{tabular}{c|c|c|c}
 Suure & Suureen tunnus & Yksikkö & Yksikön tunnus\\
@@ -70,13 +68,12 @@ sähkövirta & $I$ & ampeeri & A \\
 (termodynaaminen) lämpötila & $T$ & kelvin & K \\
 ainemäärä & $n$ & mooli & mol \\
 valovoima & $I$ & kandela & cd
-
 \end{tabular}
-\end{center}
+\end{center}}
 
 Toisin kuin yksiköt, suureiden kirjainlyhenteet kirjoitetaan \textit{kursiivilla}. %ja tämäkin lopulta sivun laitaan pois leipätekstistä... :)
 
-Näitä suureita käsitellään tarkemmin fysiikassa, mutta matematiikan kursseilla tulee tuntea ainakin pituus, massa ja aika. (Huomaa, että arkikielessä käytetään usein sanaa paino, vaikka tarkoitetaan massaa.) Tämän lisäksi matematiikan tehtävissä esiintyy usein näistä yhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita} kuten nopeus, pinta-ala, tilavuus ja tiheys.
+Näitä suureita käsitellään tarkemmin fysiikassa ja kemiassa, mutta matematiikan kursseilla tulee tuntea ainakin pituus, massa ja aika. (Huomaa, että arkikielessä käytetään usein sanaa paino, vaikka tarkoitetaan massaa.) Tämän lisäksi matematiikan tehtävissä esiintyy usein näistä yhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita} kuten nopeus, pinta-ala, tilavuus ja tiheys.
 
 \laatikko[Tärkeitä johdannaissuureita]{
 
@@ -115,12 +112,11 @@ Energian yksikkö joule ilmaistuna vain SI-järjestelmän perusyksiköitä käyt
 
 Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avulla. Tällöin yksikön suuruutta muokataan etuliitteellä.
 
-\laatikko{
-Tavallisimmat kerrannaisyksiköiden etuliitteet:
- %Pitäiskö järjestää vain yhdeksi taulukoksi?
-\begin{tabular}{c|c}
+\laatikko[Tavallisimmat kerrannaisyksiköiden etuliitteet]{
+\begin{center}
+%\begin{tabular}{c|c}
 \begin{tabular}{c|c|c|c}
-Nimi & Kerroin & Tunnus & Kymmenpotenssin nimi suomeksi \\
+Nimi & Kerroin & Tunnus & Arvo suomeksi \\
 \hline
 deka & $10^{1}$ & da  & kymmenen	\\
 hehto & $10^{2}$ & h & sata 	\\
@@ -128,21 +124,25 @@ kilo & $10^{3}$ & k & tuhat	\\
 mega & $10^{6}$ & M & miljoona 	\\
 giga & $10^{9}$ & G & miljardi		\\
 tera & $10^{12}$ & T & biljoona \\
-peta & $10^{15}$ & P & -- \\
+peta & $10^{15}$ & P & <ei vakiintunutta nimeä> \\
 \end{tabular}
-\begin{tabular}{c|c|c}
-Nimi & Kerroin & Tunnus \\
+
+\begin{tabular}{c|c|c|c}
+Nimi & Kerroin & Tunnus & Arvo suomeksi \\
 \hline
-desi & $10^{-1}$ & d 	\\
-sentti & $10^{-2}$ & c 	\\
-milli & $10^{-3}$ & m	\\
-mikro & $10^{-6}$ & $\upmu$ \\
-nano & $10^{-9}$ & n 	\\
-piko & $10^{-12}$ & p \\
-femto & $10^{-15}$ & f
+desi & $10^{-1}$ & d & kymmenesosa	\\
+sentti & $10^{-2}$ & c & sadasosa\\
+milli & $10^{-3}$ & m	& tuhannesosa\\
+mikro & $10^{-6}$ & $\upmu$ & miljoonasosa\\
+nano & $10^{-9}$ & n 	& miljardisosa\\
+piko & $10^{-12}$ & p & biljoonasosa\\
+femto & $10^{-15}$ & f & tuhatbiljoonasosa
 \end{tabular}
-\end{tabular}
+%\end{tabular}
+\end{center}
 }
+
+%toi taulukko pitää tasata! 
 
 Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivankokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
 
@@ -163,7 +163,7 @@ Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. 
 \laatikko[Huomautus tietotekniikasta]{
 Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on diskreetti, eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Suomenkielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
 
-Tietojenkäsittelyn kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt jne.}
+Tietokoneidden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % (Joskus harvoinmaining MiB-, GiB-ehdotuksista?
 
 %esimerkki
 
@@ -174,32 +174,50 @@ Tietojenkäsittelyn kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta 
 Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
 
 \begin{esimerkki}
-2 metriä kertaa 3 metriä = $2\, \text{m} \cdot 3\, \text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\, \text{m}^2$ eli kuusi neliömetriä.
+2 metriä kertaa 3 metriä = $2\,\text{m} \cdot 3\,\text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\,\text{m}^2$ eli kuusi neliömetriä.
 \end{esimerkki}
 
-%pinta-alalaskuesimerkki
+%\begin{esimerkki}
+%
+%Vetyatomin halkaisija on noin 0,1 nanometriä. Kuinka monta vetyatomia tarvitaan peräkkäin, jotta saataisiin yhden senttimetrin pituinen atomijono?
+%
+%	\begin{esimratk}
+%	
+%	\end{esimratk}
+%
+%\end{esimerkki}
+
+%\begin{esimerkki}
+%
+%Paperiarkkipinossa, jonka korkeus on 10 senttimetriä, on yksi riisi eli... arkkia. Mikä on yhden paperiarkin paksuus? Kuinka monta arkkia on pinossa, jonka korkeus on metri? Tehtävässä ei huomioida paperiarkkien puristumista muiden papereiden painon vuoksi.
+%
+%	\begin{esimratk}
+%	
+%	\end{esimratk}
+%\end{esimerkki}
+
 
 \begin{esimerkki}
-Matkaan kulkemiseen kulunut aika voidaan laskea kaavalla $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
+Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa kaava, jolla voidaan laskea katkaan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. (Johto tedään Yhtälö-luvussa.) Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
 
 Sijoitetaan kaavaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
-\begin{equation*}
-t=\frac{100 \textrm{ m}}{ 7 \textrm{ m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
+\[t=\frac{100\,\textrm{m}}{7\,\textrm{m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
 = \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
 = \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
-=\frac{100}{7} \textrm{ s} \approx 14 \textrm{ s}.
-\end{equation*}
+=\frac{100}{7}\,\textrm{s} \approx 14\,\textrm{s}.\]
 \end{esimerkki}
 
-%Lisää vaiheita! (selvennetään lukujen ja yksiköiden erottelua ja rationaalilukujen laskusääntöjä) Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut... olisi hyvä.
-
-Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
+%Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut... olisi hyvä. Saisi vielä kerran kerrattua sanallisesti, mitä rationaalilukujen ominaisuuksia käytettiin ja mitä potenssisääntöjä käytettiin... :) T: Joonas Mäkinen
 
 %tiheysesimerkki
+
+%jokin esimerkki, missä potensseja...
 
 %\begin{esimerkki}
 %Maapallon massa noin 
 %\end{esimerkki}
+
+Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
 
 \subsection*{Yksikkömuunnokset}
 
@@ -217,7 +235,7 @@ a) pikolitroina
 b) nanolitroina
 
 \begin{esimratk}
-$9,0 \cdot 10^{-12}\,\textrm{l} = 9,0\,\textrm{pl} = 0,009{,\textrm{nl}$.
+$9,0 \cdot 10^{-12}\,\textrm{l} = 9,0\,\textrm{pl} = 0,009\,\textrm{nl}$.
 \end{esimratk}
 \end{esimerkki}
 
@@ -243,11 +261,18 @@ Kuinka mones osa kuutiodesimetri on kuutiometristä?
 
 \end{esimerkki}
 
-%toine ja ehkä kolmaskin
- esimerkki
-Matkan, pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään tarkemmin geometrian MAA3-kurssilla. 
 
-Ajan yksiköissä on jäänteitä 60-järjestelmästä, jossa yksikköä ei jaetakaan kymmeneen pienempään osaan vaan kuuteenkymmeneen:
+%\begin{esimerkki}
+
+%Kuinka monta desilitraa ... 
+
+%\end{esimerkki}
+
+%toine ja ehkä kolmaskin esimerkki
+
+Matkan, pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään tarkemmin ja lisää geometrian MAA3-kurssilla. 
+
+Ajan yksiköissä on jäänteitä 60-järjestelmästä. Yksikköjä ei jaetakaan kymmeneen pienempään osaan vaan kuuteenkymmeneen:
 
 \laatikko{
 Yksi tunti on $60$ minuuttia. Yksi minuutti on $60$ sekuntia.
@@ -257,6 +282,16 @@ Yksi tunti on $60$ minuuttia. Yksi minuutti on $60$ sekuntia.
   \item $1~\text{h} = 60~\text{min} = 60 \cdot 60~\text{s} = 3600~\text{s}$ 
 \end{itemize}
 }
+
+%\begin{esimerkki}
+%
+%Kuinka monta sekuntia on vuodessa?
+%
+%	\begin{esimratk}
+%
+%	\end{esimratk}
+%
+%\end{esimerkki}
 
 \begin{esimerkki}
 Kuinka monta minuuttia on $1,25$\,h?
@@ -270,7 +305,7 @@ $1,25\,\text{h} = 1,25 \cdot 60\,\text{min} = 75\,\text{min}$. $1,25$ tuntia on 
 Usain Boltin huippunopeudeksi 100 metrin juoksukilpailussa mitattiin 12,2 m/s. Janin polkupyörän huippunopeus alamäessä oli 42,5 km/h. Kumman huippunopeus oli suurempi?
 
 \textbf{Ratkaisu.}
-Muunnetaan yksiköt vastaamaan toisiaan. Janin polkupyörän huippunopeus oli $42,5 \textrm{ km/h} = 42500 \textrm{ m/h} = 42500 : 3600 \textrm{m/s} \approx 11,8 \textrm{m/s}$.
+Muunnetaan yksiköt vastaamaan toisiaan, jolloin luvuista tulee keskenään vertailukelpoisia. Janin polkupyörän huippunopeus oli $42,5\, \textrm{km/h} = 42\,500\,\textrm{m/h} = \frac{42\,500}{3\,600}\,\textrm{m/s} \approx 11,8 \textrm{m/s}$.
 Bolt oli siis pyöräilevää Jania nopeampi.
 \end{esimerkki}
 
