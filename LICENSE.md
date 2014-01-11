@@ -1,3 +1,3 @@
-Tämän teoksen käyttöoikeutta koskee Creative Commons Nimeä 3.0 Muokkaamaton -lisenssi.
+Tämän teoksen käyttöoikeutta koskee Creative Commons Nimeä 4.0 Kansainvälinen -lisenssi.
 
-This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+This work is licensed under a Creative Commons Attribution 4.0 International License.
