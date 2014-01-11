@@ -34,7 +34,8 @@
 *.pyc
 *~
 .DS_Store
-content/*.pdf
-content/chapters/LIITE_vastaukset.tex
-content/revision.tex
-content/kuva-tmp-*
+MAA1.pdf
+MAA1-pics.pdf
+content/LIITE_vastaukset.tex
+revision.tex
+kuva-tmp-*
