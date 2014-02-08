@@ -91,35 +91,51 @@ koska yhteenlaskut voi laskea missä järjestyksessä vain.
 
 \subsection*{Lausekkeiden sieventäminen}
 
-Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin. Kun merkitsemme monimutkaisen lausekkeen lyhyemmin, sitä kutsutaan \termi{sieventäminen}{sieventämiseksi}. Sieventäminen on ikään kuin sotkuisen kaavan siistimistä selkeämmäksi.
-Tähän lukuun on koottu sääntöjä, joiden avulla laskutoimituksia voi vaihtaa niin, että lopputulos ei muutu.
+Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen,
+lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella
+laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa
+päästään eteenpäin. Kun merkitsemme monimutkaisen lausekkeen lyhyemmin, sitä kutsutaan
+\termi{sieventäminen}{sieventämiseksi}. Sieventäminen on ikään kuin sotkuisen kaavan siistimistä selkeämmäksi.
+Tähän lukuun on koottu sääntöjä, joiden avulla lauseketta voi muutaa niin, että sen arvo ei muutu.
 
-Yhteen- ja vähennyslasku ovat toistensa käänteistoimituksia, joten saman luvun lisääminen ja vähentäminen peräkkäin kumoavat toisensa:
+Seuraavassa on esitelty tärkeimpiä sääntöjä, joita voidaan käyttää lausekkeiden sieventämisessä:
+
+\subsubsection*{Käänteistoimitukset}
+
+Luvun ja sen vastaluvun summa on nolla. Yhteen- ja vähennyslasku ovat toistensa käänteistoimituksia, joten saman
+luvun lisääminen ja vähentäminen peräkkäin kumoavat toisensa:
 
 \laatikko{
 \begin{alakohdat}
+\alakohta{$a-a=0$}
+\alakohta{$-a+a=0$}
 \alakohta{$a+b-b=a$}
 \alakohta{$a-b+b=a$}
 \end{alakohdat}
 }
 
-Kerto- ja jakolasku ovat toistensa käänteistoimituksia, joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
+Vastaavasti luvun ja sen käänteisluvun tulo on nolla. Kerto- ja jakolasku ovat toistensa käänteistoimituksia,
+joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
 
 \laatikko{
 \begin{alakohdat}
+\alakohta{$a\cdot \frac1a=0$}
+\alakohta{$\frac1a\cdot a=0$}
 \alakohta{$a\cdot b:b=a$}
 \alakohta{$a:b\cdot b=a$}
 \end{alakohdat}
 }
 
-Nämä säännöt ovat sieventämisen työkaluja. Voimme poistaa niiden avulla ylimääräisiä termejä ja tulontekijöitä lausekkeesta. 
+Näiden sääntöjen avulla voidaan poistaa ylimääräisiä termejä ja tulontekijöitä lausekkeesta. 
 
 \begin{esimerkki} 
 
- \begin{alakohdat}
-   \alakohta{sievennetään $2+c-c$, jossa c on mikä tahansa kokonaisluku.}
-\end{alakohdat}
+Sievennetään $2+c-c$, jossa c on mikä tahansa kokonaisluku.\\
+Ratkaisu: koska yhteenlasku ja vähennyslasku ovat toistensa käänteistoimituksia, tämän lausekkeen
+arvo on $2$ riippumatta siitä, mikä on $c$:n arvo.
 \end{esimerkki}
+
+\subsubsection*{Vaihdantalaki ja liitäntälaki}
 
 \laatikko{
 Yhteenlaskut voi laskea missä järjestyksessä tahansa
@@ -175,6 +191,8 @@ Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestys
 \begin{esimerkki}
 $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
 \end{esimerkki} 
+
+\subsubsection*{Osittelulaki}
 
 Yhteen- ja kertolaskua sisältävälle lausekkeelle pätee seuraava sääntö:
 
