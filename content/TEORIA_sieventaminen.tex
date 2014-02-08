@@ -15,9 +15,9 @@ Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ol
 
 Lisäksi yhteenlaskulla on sellainen erityisominaisuus, että pelkästään yhteenlaskua sisältävässä
 lausekkeessa laskujärjestys ei vaikuta tulokseen. Sen vuoksi yhteenlaskut voi laskea myös oikealta
-vasemmalle kunhan välissä ei ole esimerkiksi vähennyslaskua tai muita laskutoimituksia.
+vasemmalle, kunhan välissä ei ole esimerkiksi vähennyslaskua tai muita laskutoimituksia.
 
-Samoin kertolaskut voi laskea missä järjestyksessä tahansa kunhan välissä ei ole muita laskutoimituksia.
+Samoin kertolaskut voi laskea missä järjestyksessä tahansa, kunhan välissä ei ole muita laskutoimituksia.
 
 Vähennyslaskussa ja jakolaskussa laskujärjestyksellä sen sijaan on merkitystä.
 
@@ -27,21 +27,21 @@ Lasketaan laskutoimitus $-(8+3)+3+1-2\cdot 5$.
 Suluissa olevan laskutoimituksen voi laskea heti. Sen sijaan laskua $1-2$ ei voi laskea vielä,
 koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen. %"laskua ei voida laskea" olettaa, että siinä on lasku 1-2., mitä siinä EI OLE! Mur. Tämä pitää selittää kunnolla! :C T: Joonas
 
-Lasku $3+1$ sen sijaan voi laskea. Oikealla puolella oleva vähennyslasku on
+Laskun $3+1$ sen sijaan voi laskea. Oikealla puolella oleva vähennyslasku on
 laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
 koska yhteenlaskut voi laskea missä järjestyksessä vain.
 
 \begin{align*}
-   &-(8+3)+3-2\cdot 5&\textrm{Lasketaan ensin kertolasku ja suluissa oleva lasku.}
-\\=&-11+3-10&\qquad\textrm{Loput laskut lasketaan laskujärjestyksen mukaan vasemmalta oikealle.}
-\\=&-8-10&
-\\=&-18&
+   &-(8+3)+4-2\cdot 5&\textrm{Lasketaan ensin kertolasku ja suluissa oleva lasku.}
+\\=&-11+4-10&\qquad\textrm{Loput laskut lasketaan laskujärjestyksen mukaan vasemmalta oikealle.}
+\\=&-7-10&
+\\=&-17&
 \end{align*}
 \end{esimerkki}
 
 \subsection*{Lausekkeiden sieventäminen}
 
-Mitä tahansa lukua tai kirjoitettua laskutoimitusta (kuten kuten $9$ tai $\frac{x}{3}-9$) kutsutaan \termi{Lauseke}{lausekkeeksi}. \termi{Termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona, kuten $-4\sqrt{2}ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$.
+Mitä tahansa lukua tai kirjoitettua laskutoimitusta (kuten $9$ tai $\frac{x}{3}-9$) kutsutaan \termi{lauseke}{lausekkeeksi}. \termi{termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona, kuten $-4\sqrt{2}ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$.
 
 Matemaattisia ongelmia ratkaistaessa kannattaa usein etsiä vaihtoehtoisia tapoja jonkin laskutoimituksen, lausekkeen tai luvun ilmaisemiseksi. Tällöin usein korvataan esimerkiksi jokin laskutoimitus toisella laskutoimituksella, josta tulee sama tulos. Näin lauseke saadaan sellaiseen muotoon, jonka avulla ratkaisussa päästään eteenpäin. Kun merkitsemme monimutkaisen lausekkeen lyhyemmin, sitä kutsutaan \termi{sieventäminen}{sieventämiseksi}. Sieventäminen on ikään kuin sotkuisen kaavan siistimistä selkeämmäksi.
 
