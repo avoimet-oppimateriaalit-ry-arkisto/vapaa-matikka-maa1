@@ -11,16 +11,29 @@ voi itse asiassa ilmaista hyvin monella eri tavalla. Esimerkiksi seuraavat merki
                 & 42 \\ & -(-42) \\ & 6 \cdot 7 \\ & (50-29) \cdot 2                                                                                                      
 \end{align*}
 
-Niinpä matematiikassa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä se tarkoittaa samaa lukua.
+Niinpä matematiikassa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä se tarkoittaa samaa lukua kuin
+merkintä $42$.
 
-Kun lauseke muodostuu yhteenlaskusta, käytetään nimitystä \termi{termi}{Termi} tarkoittamaan yhtä yhteenlaskettavaa
-osa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista
+Kun lauseke muodostuu yhteenlaskusta, käytetään nimitystä \termi{termi}{termi} tarkoittamaan yhtä yhteenlaskettavaa
+osaa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista
 ja muuttujista tulona tai se voi myös olla vain yksittäintn luku. Esimerkiksi lausekkeen
 $-4\sqrt{2}ax^2+ax+1$ termit ovat $-4\sqrt{2}ax^2$, $ax$ ja $1$.
 
+Usein lausekkeessa esiintyy myös kirjaimia. Niillä merkitään lukuja, joiden arvoa ei tiedetä tai joiden arvo
+voi vaihdella tilanteesta riippuen ja niitä kutsutaan muuttujiksi, tuntemattomiksi tai vakioiksi (ks. luku \ref{muuttuja}).
+Yleensä lausekkeella on myös tällöin lukuarvo, mutta tätä lukuarvoa ei välttämättä voi laskea, jos muuttujan, tuntemattoman
+tai vakion lukuarvoa ei tiedetä.
+
+Kun lausekkeissa esiintyy tuntemattomia lukuja, on tapana sanoa, että kaksi lauseketta ovat yhtä suuria silloin, kun ne
+ovat yhtä suuria riippumatta siitä, mikä lukuarvo tuntemattomilla on. Esimerkiksi lausekkeet $x+y+2$ ja $y+2+x$ ovat yhtä
+suuria, koska riippumatta siitä, mitä $x$:n ja $y$:n lukuarvot ovat, kummastakin lausekkeesta saadaan sama tulos.
+
 \subsection*{Laskujärjestys}
 
-Yleisen käytännön mukaan laskulausekkeessa, jossa on useita laskutoimituksia, tehdään laskutoimitukset seuraavan järjestyksen mukaan:
+Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusjärjestyksellä usein vaikutusta lausekkeen arvoon.
+Tällöin käytetään sulklumerkkejä ilmaisemaan haluttua laskujärjestystä. Tämän lisäksi on olemassa yleinen sopimus siitä, missä
+järjestyksessä laskutoimitukset lasketaan silloin, kun suluilla ei ole muuta ilmaistu.
+
 Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
 
 \laatikko{
@@ -42,13 +55,13 @@ Samoin kertolaskut voi laskea missä järjestyksessä tahansa, kunhan välissä 
 
 Vähennyslaskussa ja jakolaskussa laskujärjestyksellä sen sijaan on merkitystä.
 
-
 \begin{esimerkki}
 Lasketaan lausekkeen $2+(3+1)\cdot 5$ arvo.
 
 Koska lausekkeessa on useita eri laskutoimituksia, joudumme laskemaan ne annetun järjestyksen mukaisesti.
 
-Ensimmäiseksi laskemme lausekkeen $(3+1)$ arvon, koska se on sulkujen sisällä. Tämän jälkeen laskemme tulon, koska kertolasku lasketaan ennen yhteenlaskua. Lopuksi summaamme saadun tulon kahden kanssa.
+Ensimmäiseksi laskemme lausekkeen $(3+1)$ arvon, koska se on sulkujen sisällä. Tämän jälkeen laskemme tulon,
+koska kertolasku lasketaan ennen yhteenlaskua. Lopuksi summaamme saadun tulon luvun $2$ kanssa.
 
 \begin{align*}
    &2+(3+1)\cdot 5&\textrm{Lasketaan ensin } (3+1)
