@@ -29,11 +29,12 @@ Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat ker
 
 \laatikko[Suure]{luku $\cdot$ yksikkö}
 
-Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää (näin sanoo myös suomen kielioppi). Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkataan symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ''. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
+Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää (tämä on ISO-standardin mukainen merkintätapa). %Ehkä myös Kotuksen ja Jukka Korpelan suosittelema. Aiemmin tätä perusteltiin tässä Suomen kieliopilla. Suomen kielioppi ei ole kuitenkaan mikään yksittäinen monoliittinen virallisesti olemassa oleva standardi vaan pikemminkin (normatiivisessakin muodossaan) kokoelma eri tavoin perusteltuja näkemyksiä ja suosituksia. -Jouni
+Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkitään symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ${\verb+"+}$. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
 
 %Sivunlaitahuomio:: jos yksikkö on nimetty henkilön nimen mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella, esim. N, J tai Hz. Auki kirjoitettuna kuitenkin "kolme newtonia", kymmenen kilojoulea" ja "5,7 hertziä".
 
-%onko tuuma varmasti merkattu oikein? (kaksoislainausmerkkejä on useita erilaisia)
+%tuuman merkki on korjattu jeesusteipillä oikeanlaiseksi -Jouni
 
 Seuraava taulukko selventää oikeinkirjoitusta:
 
@@ -43,18 +44,18 @@ Oikein & Väärin \\
 \hline
 3 m & 3m 	\\
 100 $\frac{\text{km}}{\text{h}}$ & 100$\frac{km}{h}$	\\
-2 \% & 2\% 	\\
+2\,\% & 2\% 	\\
 3$^\circ$ & 3 $^\circ$\\
 3,16$^\circ$ 5' 13'' & 3,16 $^\circ$ 5 ' 13 '' 	\\
-6 $^\circ$C & 6$^\circ$C 	\\
+6\,$^\circ$C & 6$^\circ$C 	\\
 \end{tabular}
 \end{center}
 
-%Hienosti ladottuna luvun ja yksikön väliin EI tule välilyöntiä, vaan ohuke (thin space), jonka latexissa saa komennolla \,
+%Hienosti ladottuna luvun ja yksikön väliin EI tule (sitovaa) whitespacea, vaan (sitova) ohuke (thin space), jonka latexissa saa komennolla \,
 
 \subsection*{SI-järjestelmä}
 
-SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. Système international d'unités) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
+SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. \textit{Système international d'unités}) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
 
 \laatikko[SI-järjestelmän perussuureet ja yksiköt]{
 \begin{center}
@@ -124,7 +125,7 @@ kilo & $10^{3}$ & k & tuhat	\\
 mega & $10^{6}$ & M & miljoona 	\\
 giga & $10^{9}$ & G & miljardi		\\
 tera & $10^{12}$ & T & biljoona \\
-peta & $10^{15}$ & P & <ei vakiintunutta nimeä> \\
+peta & $10^{15}$ & P & tuhat biljoonaa \\ %laitoin tuon tuhat biljoonaa -Jouni
 \end{tabular}
 
 \begin{tabular}{c|c|c|c}
@@ -144,10 +145,10 @@ femto & $10^{-15}$ & f & tuhatbiljoonasosa
 
 %toi taulukko pitää tasata! 
 
-Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivankokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
+Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivan kokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
 
 \begin{esimerkki}
-Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on valittu SI-järjestelmässä massan perusyksiköksi gramman sijaan käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin liian pieni.
+Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on valittu SI-järjestelmässä massan perusyksiköksi gramman asemesta käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin turhan pieni yksikkö.
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -158,12 +159,14 @@ Ilmaisussa 0,000046 metriä luku on niin pieni, että on käytännöllisempää 
 Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. Esimerkiksi $1\,\textrm{ng} = 1 \cdot 10^{-9}\,\textrm{g} = 0,000000009\,\textrm{g} $.
 \end{esimerkki}
 
-%tähän vai minne kymmenpotensismuotojen ja suurten lukujen lukusanoista? long ja short scale
+%tähän vai minne kymmenpotenssimuotojen ja suurten lukujen lukusanoista? long ja short scale
 
 \laatikko[Huomautus tietotekniikasta]{
-Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on diskreetti, eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Suomenkielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
+%Onko tähän mennessä puhuttu mitään kaksilukujärjestelmästä tai ylipäätään muista lukujärjestelmistä?
+Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on epäjatkuva, %epäjatkuva pro diskreetti -Jouni
+eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Yhteen kahdeksan bitin mittaiseen tavuun voidaan tallettaa kokonaisluku väliltä 0-255. Tavun sisällön merkitys voidan tulkita usealla tavalla, esimerkiksi yhtenä kirjaimena jossain merkistössä. Suomen kielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
 
-Tietokoneiden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % (Joskus harvoinmaining MiB-, GiB-ehdotuksista?
+Tietokoneiden rakenteen kaksikantaisuuden (ks. liite lukujärjestelmistä) johdosta tavujen kerrannaisyksiköllä tarkoitetaan usein lähimpiä kahden potensseja: kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$), yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % SI-järjestelmä ei tue tätä, vaan sen mukaan kt on tasan 1000 t ja niin edelleen. Binäärikerrannaisyksiköt sisältyvät IEC-standardiin ja merkitään KiB, MiB nje. mutta eivät ole levinneet laajalle. Usein esim. keskusmuistien koosta puhuttaessa käytetään binäärikerrannaisyksikköjä mutta kiintolevyjen koosta puhuttaessa kymmenen potensseja. Puututaanko tähän skismaan? Olen käyttänyt edellä sanamuotoa ``tarkoitetaan usein lähimpiä kahden potensseja''. -Jouni
 
 %esimerkki
 
@@ -171,7 +174,7 @@ Tietokoneiden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johdo
 
 %hakee vielä vähän loogista järjestystä :) T: Joonas
 
-Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
+Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin väli kertolaskun asemesta. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
 
 \begin{esimerkki}
 2 metriä kertaa 3 metriä = $2\,\text{m} \cdot 3\,\text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\,\text{m}^2$ eli kuusi neliömetriä.
