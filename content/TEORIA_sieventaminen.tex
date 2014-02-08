@@ -151,30 +151,17 @@ Lasketaan lausekkeen $2+(3+1)\cdot 5$ arvo.
 
 Koska lausekkeessa on useita eri laskutoimituksia, joudumme laskemaan ne annetun järjestyksen mukaisesti.
 
-Ensimmäiseksi laskemme lausekkeen $(3+1)$ arvon, koska se on sulkujen sisällä. Näin saamme $2+4\cdot 5$.
-
-Tämän jälkeen laskemme $4\cdot 5$, koska kertolasku lasketaan ennen yhteenlaskua. 
-
-Lopuksi summataan saatu tulo kahden kanssa, jolloin olemme suorittaneet 
-
-Seuraava
-
-Suluissa olevan laskutoimituksen voi laskea heti. Sen sijaan laskua $1-2$ ei voi laskea vielä,
-koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen. %"laskua ei voida laskea" olettaa, että siinä on lasku 1-2., mitä siinä EI OLE! Mur. Tämä pitää selittää kunnolla! :C T: Joonas
-
-Lasku $3+1$ sen sijaan voidaan laskea. Oikealla puolella oleva vähennyslasku on
-laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
-koska yhteenlaskut voi laskea missä järjestyksessä vain.
+Ensimmäiseksi laskemme lausekkeen $(3+1)$ arvon, koska se on sulkujen sisällä. Tämän jälkeen laskemme tulon, koska kertolasku lasketaan ennen yhteenlaskua. Lopuksi summaamme saadun tulon kahden kanssa.
 
 \begin{align*}
    &2+(3+1)\cdot 5&\textrm{Lasketaan ensin } (3+1)
-\\= &2+4\cdot5&\qquad\textrm{sen jälkeen tulo} 4\cdot 5 
-\\= &2+22& {lopuksi vielä summa}
-\\= &24&
+\\= &2+4\cdot5&\qquad\textrm{sen jälkeen tulo } 4\cdot 5 
+\\= &2+20& \textrm{lopuksi vielä summa}
+\\= &22&
 \end{align*}
 \end{esimerkki}
 
-Lisäksi yhteen- ja kertolaskua sisältävälle lausekkeelle pätee seuraava erittäin tärkeä sääntö:
+Yhteen- ja kertolaskua sisältävälle lausekkeelle pätee seuraava sääntö:
 
 \laatikko{
 $a(b+c)=ab+ac$\qquad\qquad(osittelulaki)
@@ -182,20 +169,21 @@ $a(b+c)=ab+ac$\qquad\qquad(osittelulaki)
 Vasemmalta oikealle luettaessa puhutaan \termi{sulkeiden avaaminen}{sulkujen avaamisesta}. Oikealta vasemmalle päin mentäessä puhutaan \termi{yhteinen tekijä}{yhteisen tekijän ottamisesta}.
 }
 
-Aikaisemmin mainittujen laskulakien perusteella osittelulaki voidaan yhdistää koskemaan myös toisin päin olevaa kertolaskun ja yhteenlaskun yhdistelmää, useamman luvun yhteenlaskua, vähennyslaskua ja jakolaskua:
+Osittelulakia voidaan käyttää muiden laskutoimituksiin liittyvien lakien rinnalla.
 
+\begin{esimerkki}
 \begin{align*}
 &(b+c)a = a(b+c) = ab+ac = ba+ca \text{ (Sovellettu vaihdantalakia)} \\
 &a(b+c+d) = a((b+c)+d) = a(b+c)+ad = ab+ac+ad \text{ (Sovellettu liitäntälakia)} \\
-&a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac \text{ (Sovellettu vähennyslaskun määritelmää vastaluvun avulla)} \\
-&(b+c):a = (b+c)\cdot\dfrac1a = b\cdot\dfrac1a+c\cdot\dfrac1a = b:a+c:a \text{ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla. Tämä ominaisuus esitellään myöhemmin rationaalilukujen yhteydessä.) }
+&a(b-c) = a(b+(-c))=ab+a\cdot(-c)=ab-ac \text{ (Sovellettu kertolaskun merkkisääntöä)} \\
+&(b+c):a = (b+c)\cdot\dfrac1a = b\cdot\dfrac1a+c\cdot\dfrac1a = b:a+c:a \text{ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla.) }
 \end{align*}
 
 Esimerkiksi seuraava laskutoimitus on helppo laskea osittelulain avulla: 
      \begin{align*}
 	  7777\cdot 542-7777\cdot 541 &= 7777\cdot (542-541)  \\ &= 7777\cdot 1 \\ &= 7777
      \end{align*}
-
+\end{esimerkki}
 
 Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$.
 
