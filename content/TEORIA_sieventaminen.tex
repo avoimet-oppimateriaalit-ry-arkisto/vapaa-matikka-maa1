@@ -1,44 +1,3 @@
-\subsection*{Laskujärjestys}
-
-Yleisen käytännön mukaan laskulausekkeessa, jossa on useita laskutoimituksia, tehdään laskutoimitukset seuraavan järjestyksen mukaan:
-
-\laatikko{
-\begin{enumerate}
-\item{Suluissa olevat lausekkeet}
-\item{Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)}
-\item{Kerto- ja jakolaskut vasemmalta oikealle}
-\item{Yhteen- ja vähennyslaskut vasemmalta oikealle}
-\end{enumerate}
-}
-
-Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
-
-Lisäksi yhteenlaskulla on sellainen erityisominaisuus, että pelkästään yhteenlaskua sisältävässä
-lausekkeessa laskujärjestys ei vaikuta tulokseen. Sen vuoksi yhteenlaskut voi laskea myös oikealta
-vasemmalle kunhan välissä ei ole esimerkiksi vähennyslaskua tai muita laskutoimituksia.
-
-Samoin kertolaskut voi laskea missä järjestyksessä tahansa kunhan välissä ei ole muita laskutoimituksia.
-
-Vähennyslaskussa ja jakolaskussa laskujärjestyksellä sen sijaan on merkitystä.
-
-\begin{esimerkki}
-Lasketaan laskutoimitus $-(8+3)+3+1-2\cdot 5$.
-
-Suluissa olevan laskutoimituksen voi laskea heti. Sen sijaan laskua $1-2$ ei voi laskea vielä,
-koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen. %"laskua ei voida laskea" olettaa, että siinä on lasku 1-2., mitä siinä EI OLE! Mur. Tämä pitää selittää kunnolla! :C T: Joonas
-
-Lasku $3+1$ sen sijaan voi laskea. Oikealla puolella oleva vähennyslasku on
-laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
-koska yhteenlaskut voi laskea missä järjestyksessä vain.
-
-\begin{align*}
-   &-(8+3)+3-2\cdot 5&\textrm{Lasketaan ensin kertolasku ja suluissa oleva lasku.}
-\\=&-11+3-10&\qquad\textrm{Loput laskut lasketaan laskujärjestyksen mukaan vasemmalta oikealle.}
-\\=&-8-10&
-\\=&-18&
-\end{align*}
-\end{esimerkki}
-
 \subsection*{Lausekkeiden sieventäminen}
 
 Mitä tahansa lukua tai kirjoitettua laskutoimitusta (kuten kuten $9$ tai $\frac{x}{3}-9$) kutsutaan \termi{Lauseke}{lausekkeeksi}. \termi{Termi}{Termi} puolestaan on yksi yhteenlaskettava osa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona, kuten $-4\sqrt{2}ax^2$ tai se voi olla jokin näistä yksittäisenä kuten pelkkä $1$.
@@ -122,6 +81,45 @@ Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestys
 \begin{esimerkki}
 $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
 \end{esimerkki} 
+
+Yleisen käytännön mukaan laskulausekkeessa, jossa on useita laskutoimituksia, tehdään laskutoimitukset seuraavan järjestyksen mukaan:
+
+\laatikko{
+\begin{enumerate}
+\item{Suluissa olevat lausekkeet}
+\item{Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)}
+\item{Kerto- ja jakolaskut vasemmalta oikealle}
+\item{Yhteen- ja vähennyslaskut vasemmalta oikealle}
+\end{enumerate}
+}
+
+Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
+
+Lisäksi yhteenlaskulla on sellainen erityisominaisuus, että pelkästään yhteenlaskua sisältävässä
+lausekkeessa laskujärjestys ei vaikuta tulokseen. Sen vuoksi yhteenlaskut voi laskea myös oikealta
+vasemmalle kunhan välissä ei ole esimerkiksi vähennyslaskua tai muita laskutoimituksia.
+
+Samoin kertolaskut voi laskea missä järjestyksessä tahansa kunhan välissä ei ole muita laskutoimituksia.
+
+Vähennyslaskussa ja jakolaskussa laskujärjestyksellä sen sijaan on merkitystä.
+
+\begin{esimerkki}
+Lasketaan laskutoimitus $-(8+3)+3+1-2\cdot 5$.
+
+Suluissa olevan laskutoimituksen voi laskea heti. Sen sijaan laskua $1-2$ ei voi laskea vielä,
+koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen. %"laskua ei voida laskea" olettaa, että siinä on lasku 1-2., mitä siinä EI OLE! Mur. Tämä pitää selittää kunnolla! :C T: Joonas
+
+Lasku $3+1$ sen sijaan voi laskea. Oikealla puolella oleva vähennyslasku on
+laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
+koska yhteenlaskut voi laskea missä järjestyksessä vain.
+
+\begin{align*}
+   &-(8+3)+3-2\cdot 5&\textrm{Lasketaan ensin kertolasku ja suluissa oleva lasku.}
+\\=&-11+3-10&\qquad\textrm{Loput laskut lasketaan laskujärjestyksen mukaan vasemmalta oikealle.}
+\\=&-8-10&
+\\=&-18&
+\end{align*}
+\end{esimerkki}
 
 Lisäksi yhteen- ja kertolaskua sisältävällä lausekkeelle pätee seuraava erittäin tärkeä sääntö:
 
