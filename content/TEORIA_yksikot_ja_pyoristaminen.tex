@@ -164,7 +164,7 @@ Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. 
 \laatikko[Huomautus tietotekniikasta]{
 Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on diskreetti, eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Suomenkielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
 
-Tietokoneidden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % (Joskus harvoinmaining MiB-, GiB-ehdotuksista?
+Tietokoneiden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % (Joskus harvoinmaining MiB-, GiB-ehdotuksista?
 
 %esimerkki
 
@@ -199,7 +199,7 @@ Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdist
 
 
 \begin{esimerkki}
-Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea katkaan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
+Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea matkan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
 
 Sijoitetaan kaavaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
 \[t=\frac{100\,\textrm{m}}{7\,\textrm{m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
@@ -348,7 +348,7 @@ Senttimetrien muuntaminen tuumiksi onnistuu vastaavasti \emph{jakamalla} luvulla
 
 \subsection*{Pyöristäminen}
 
-Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen 167,9337~cm, tämä tuskin on asiakkaalle kovin hyödyllistä tietoa. Epätarkempi arvo 168~cm antaa kaiken oleellisen informaation ja on mukavampi lukea.
+Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen 167,9337~cm, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo 168~cm antaa kaiken oleellisen informaation ja on mukavampi lukea.
 
 Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on lyhyempi. Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
 
@@ -395,12 +395,12 @@ Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden mä
 
 Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan desimaalien lukumäärällä.
 
-\begin{esimerkki} Jos 175~cm pituisen ihmisen nousee seisomaan 2,15~cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi 177,15~cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen
+\begin{esimerkki} Jos 175~cm pituinen ihminen nousee seisomaan 2,15~cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi 177,15~cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen
 174,5~cm ja 175,5~cm väliltä. Lasketaan siis \indent 175~cm + 2,15~cm = 177,15~cm $\approx$ 177~cm. 
 Epätarkempi lähtöarvo oli mitattu senttien tarkkuudella, joten pyöristettiin tasasentteihin.
 \end{esimerkki}
 
-Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan. Jos esimerkiksi pitkän pöydän pituus karkeasti mitattuna 5,9~m ja pöydän leveydeksi saadaan tarkalla mittauksella 1,7861~m, ei ole perusteltua olettaa pöydän pinta-alan olevan todella
+Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan. Jos esimerkiksi pitkän pöydän pituus karkeasti mitattuna on 5,9~m ja pöydän leveydeksi saadaan tarkalla mittauksella 1,7861~m, ei ole perusteltua olettaa pöydän pinta-alan olevan todella
 \[ 5,9~\textrm{m} \cdot 1,7861~\textrm{m} = 10,53799~\textrm{m}^2. \] 
 Pyöristys tehdään epätarkimman lähtöarvon mukaisesti kahteen merkitsevään numeroon:
 \[ 5,9~\textrm{m} \cdot 1,7861~\textrm{m} = 10,53799~\textrm{m}^2 \approx 11~\textrm{m}^2.\] 
@@ -413,7 +413,7 @@ mutta käytännön laskuihin riittää usein $3,14$.
 
 \subsubsection*{Tarkka arvo}
 
-Pitkässä matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä desimaalimuodossa. Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joissa joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
+Pitkässä matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä desimaalimuodossa. Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
 
 \begin{esimerkki}
 Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluvun $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837...$, mutta siitä otettu likiarvo saavuttaa vain rajatun tarkkuuden. 
