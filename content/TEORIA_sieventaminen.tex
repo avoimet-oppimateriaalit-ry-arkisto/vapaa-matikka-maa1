@@ -123,7 +123,58 @@ Pelkästään kerto- ja jakolaskua sisältävässä lausekkeessa laskujärjestys
 $5:8\cdot 7:2=5\cdot\frac18\cdot 7\cdot\frac12=7\cdot \frac12\cdot\frac18\cdot 5=7:2:8\cdot 5$
 \end{esimerkki} 
 
-Lisäksi yhteen- ja kertolaskua sisältävällä lausekkeelle pätee seuraava erittäin tärkeä sääntö:
+Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
+
+\laatikko{
+\begin{enumerate}
+\item{Suluissa olevat lausekkeet}
+\item{Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä luvussa)}
+\item{Kerto- ja jakolaskut}
+\item{Yhteen- ja vähennyslaskut}
+\end{enumerate}
+}
+
+Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
+
+
+
+Lisäksi yhteenlaskulla on sellainen erityisominaisuus, että pelkästään yhteenlaskua sisältävässä
+lausekkeessa laskujärjestys ei vaikuta tulokseen. Sen vuoksi yhteenlaskut voi laskea myös oikealta
+vasemmalle kunhan välissä ei ole esimerkiksi vähennyslaskua tai muita laskutoimituksia.
+
+Samoin kertolaskut voi laskea missä järjestyksessä tahansa kunhan välissä ei ole muita laskutoimituksia.
+
+Vähennyslaskussa ja jakolaskussa laskujärjestyksellä sen sijaan on merkitystä.
+
+\begin{esimerkki}
+Lasketaan lausekkeen $2+(3+1)\cdot 5$ arvo.
+
+Koska lausekkeessa on useita eri laskutoimituksia, joudumme laskemaan ne annetun järjestyksen mukaisesti.
+
+Ensimmäiseksi laskemme lausekkeen $(3+1)$ arvon, koska se on sulkujen sisällä. Näin saamme $2+4\cdot 5$.
+
+Tämän jälkeen laskemme $4\cdot 5$, koska kertolasku lasketaan ennen yhteenlaskua. 
+
+Lopuksi summataan saatu tulo kahden kanssa, jolloin olemme suorittaneet 
+
+Seuraava
+
+Suluissa olevan laskutoimituksen voi laskea heti. Sen sijaan laskua $1-2$ ei voi laskea vielä,
+koska vieressä oleva kertolasku on laskujärjestyksessä sitä ennen. %"laskua ei voida laskea" olettaa, että siinä on lasku 1-2., mitä siinä EI OLE! Mur. Tämä pitää selittää kunnolla! :C T: Joonas
+
+Lasku $3+1$ sen sijaan voidaan laskea. Oikealla puolella oleva vähennyslasku on
+laskujärjestyksessä vasta sen jälkeen, ja vasemmalla puolella oleva yhteenlasku ei haittaa,
+koska yhteenlaskut voi laskea missä järjestyksessä vain.
+
+\begin{align*}
+   &2+(3+1)\cdot 5&\textrm{Lasketaan ensin } (3+1)
+\\= &2+4\cdot5&\qquad\textrm{sen jälkeen tulo} 4\cdot 5 
+\\= &2+22& {lopuksi vielä summa}
+\\= &24&
+\end{align*}
+\end{esimerkki}
+
+Lisäksi yhteen- ja kertolaskua sisältävälle lausekkeelle pätee seuraava erittäin tärkeä sääntö:
 
 \laatikko{
 $a(b+c)=ab+ac$\qquad\qquad(osittelulaki)
