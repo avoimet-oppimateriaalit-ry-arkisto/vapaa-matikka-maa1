@@ -116,7 +116,7 @@ jossa $f(t)$ on atomiydinten lukumäärä ajanhetkellä $t$. Atomiydinten
 lukumäärä siis puolittuu kullakin aika-askeleella.
 \end{esimerkki}
 
-
+%Laatinut Paula Thitz 2014-02-09. FIXME Taulukon kokoa ja rivivälejä voisi mielellään säätää.
 \begin{esimerkki}
 Vuonna 2114 Mars-planeetan ilmasto ja olosuhteet on onnistuttu muuttamaan elämää ylläpitäviksi. Planeetan pintaa peittävät
 ruohomaat, ja planeetan asuttaminen on kovassa vauhdissa. Eräs riistan mausta nauttiva uudisasukas tuo maatilalleen aitaukseen 
@@ -131,7 +131,7 @@ Kuinka paljon kaniineja Marssissa on
 \begin{alakohdat}
 	\alakohta{1 tai 2 vuoden kuluttua?}
 	\alakohta{n vuoden kuluttua?}
-	\alakohta{Monenko vuoden kuluttua Marssin kaniinipopulaatio ylittää miljoonan yksilön rajan?}
+	\alakohta{Monenko vuoden kuluttua Marssin kaniinipopulaatio on ylittänyt miljoonan yksilön rajan?}
 \end{alakohdat}
 
 \textbf{Ratkaisu.}
@@ -150,24 +150,31 @@ poikasta. Kanipopulaation koko 2. vuonna on yhteensä $858+156=1014$ poikasta.\\
 
 \alakohta{Taulukoidaan kaniinipopulaation arvoja. Huomaamalla, että $f(t)$:n lausekkeesta voidaan ottaa yhteiseksi tekijäksi $a$, saadaan lauseketta
 yksinkertaistettua. Taulukkoa laatiessa huomataan, että pystytään päättelemään sääntö, jolla voidaan laskea kanipopulaation koko $n$:n 
-vuoden kuluttua.
+vuoden kuluttua.\\
 
 \begin{tabular}{|c|c|c|}                                                     \hline
-\textbf{vuosi} & \textbf{$f(t)$} & \textbf{kaniinipopulaation koko}\\ \hline
+\textbf{vuosi t} & \textbf{$f(t)$:n lauseke} & \textbf{kaniinipopulaation koko}\\ \hline
 1 &   $\frac{a}{2}\cdot11 + a = a(1+\frac{11}{2}) = \frac{13}{2}a$ & $f(1)=24\cdot\frac{13}{2}= 156$ \\ \hline 
-2 &   $(\frac{13}{2}a)\cdot\frac{13}{2}= \frac{13^2}{2^2}a$  & $f(2)=24\cdot\frac{13^2}{2^2}= 1014$\\ \hline 
+2 &   $\left(\frac{13}{2}a\right)\cdot\frac{13}{2}= \frac{13^2}{2^2}a$  & $f(2)=24\cdot\frac{13^2}{2^2}= 1014$\\ \hline 
 \ldots  & 		\ldots	&	\ldots	 \\ \hline
-n &   $(\frac{13^2}{2^2}a)\cdot\frac{13}{2} = \frac{13^n}{2^n}a$   & $f(n)=24\cdot(\frac{13}{2})^n$\\ \hline 
+n &   $\left(\frac{13^2}{2^2}a\right)\cdot\frac{13}{2} = \frac{13^n}{2^n}a$   & $f(n)=24\cdot\left(\frac{13}{2}\right)^n$\\ \hline 
     \end{tabular}
     }
  
 \alakohta{Halutaan tietää, millä $t$:n arvolla kaniinipopulaation kokoa kuvaava funktio saa arvokseen vähintään miljoonan, eli
 $f(t)\geq1000000$. Tämän epäyhtälön ratkaiseminen ei onnistu tämän kurssin tiedoilla, mutta tehtävä voidaan ratkaista sijoittamalla
 erilaisia $t$:n arvoja $f(t)$:n lausekkeeseen.\\
-Kun $t=5$, $f(t)=24\cdot(\frac{13}{2})^5 \approx 278 470$. \\
-Kun $t=6$, $f(t)=24\cdot(\frac{13}{2})^6 \approx 1 810 053$. \\
+Kun $t=5$, $f(t)=24\cdot\left(\frac{13}{2}\right)^5 \approx 278 470$. \\
+Kun $t=6$, $f(t)=24\cdot\left(\frac{13}{2}\right)^6 \approx 1 810 053$. \\
 
 Näyttää siltä, että miljoonan ruohonsyöjän populaatiokoko on ylitetty kuusi vuotta epäonnistuneen kaniinitarhausyrityksen jälkeen.}
+\end{alakohdat}
+
+\textbf{Vastaus.}
+\begin{alakohdat}
+	\alakohta{Vuoden kuluttua noin 160 yksilöä, kahden vuoden kuluttua noin 1010 yksilöä.}
+	\alakohta{$ 24\cdot(\frac{13}{2})^n $ yksilöä.}
+	\alakohta{Kuuden vuoden kuluttua.}
 \end{alakohdat}
 
 
