@@ -172,7 +172,7 @@ Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
 
 %Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 
-Funktion määrittelyjoukko on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukolla tarkoitetaan tavallisesti sitä reaalilukujen osajoukkoa joille funktion arvo voidaan laskea. %Jouni Kärkkäinen 92.2.2014
+Funktion määrittelyjoukko on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukon tarkoitetaan tavallisesti olevan \textit{mahdollisimman laaja reaalilukujen osajoukko} johon kuuluville arvoille funktion arvon voi laskea. %Jouni Kärkkäinen 92.2.2014
 
 \begin{esimerkki}
 	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
@@ -248,13 +248,13 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 	
 \subsection*{Paloittain määritelty funktio}
 
-Kappaleessa (prosenttilaskenta ?) sivuttiin itseisarvon määritelmää. Itseisarvofunktio $\lvert \rvert$ voidaan määritellä seuraavasti. \\ 
+Kappaleessa \ref{neliojuuri} sivuttiin itseisarvon määritelmää. Itseisarvofunktio $\lvert \rvert$ voidaan määritellä seuraavasti. \\ 
 $$
-\lvert \rvert\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert \rvert = \begin{cases}
+\lvert \rvert\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert x \rvert = \begin{cases}
                  x & \text{jos } x \geq 0 \\
                  -x & \text{jos } x < 0
               
-                \end{cases} %| | ei renderöidy vielä täydellisesti
+                \end{cases}
 $$
 
 Funktio siis jättää ei-negatiiviset luvut ennalleen, mutta vaihtaa negatiivisen luvun vastaluvukseen, ja arvojoukko koostuu pelkästään ei-negatiivisista luvuista. Funktio on määritelty kahdessa eri osassa: lähtöjoukon alkion arvosta riippuen valitaan sille sovellettava lauseke.
