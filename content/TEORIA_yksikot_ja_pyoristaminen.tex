@@ -30,7 +30,7 @@ Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat ker
 \laatikko[Suure]{luku $\cdot$ yksikkö}
 
 Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää (tämä on ISO-standardin mukainen merkintätapa). %Ehkä myös Kotuksen ja Jukka Korpelan suosittelema. Aiemmin tätä perusteltiin tässä Suomen kieliopilla. Suomen kielioppi ei ole kuitenkaan mikään yksittäinen monoliittinen virallisesti olemassa oleva standardi vaan pikemminkin (normatiivisessakin muodossaan) kokoelma eri tavoin perusteltuja näkemyksiä ja suosituksia. -Jouni
-Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkitään symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ${\verb+"+}$. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
+Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkitään symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkitään ${\verb+"+}$. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
 
 %Sivunlaitahuomio:: jos yksikkö on nimetty henkilön nimen mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella, esim. N, J tai Hz. Auki kirjoitettuna kuitenkin "kolme newtonia", kymmenen kilojoulea" ja "5,7 hertziä".
 
@@ -224,7 +224,7 @@ Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vä
 
 \subsection*{Yksikkömuunnokset}
 
-Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteiden ajatellaan olevan matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä.
+Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteet ivat matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä. %''ajatellaan olevan matemaattisesti vain kertoimia -> ovat matemaattisesti vain kertoimia. -Jouni
 
 \begin{esimerkki}
 $270\,\text{mm}=270\cdot\text{mm}=270\cdot10^{-3}\,\text{m}=\frac{270}{1000}\,\text{m}=0,27\,\text{m}$
@@ -249,6 +249,8 @@ Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
 \begin{center}
 dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$!
 \end{center}
+
+%erittäin hyvä pointti! -Jouni
 
 Potensissääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
 
@@ -415,10 +417,11 @@ mutta käytännön laskuihin riittää usein $3,14$.
 
 \subsubsection*{Tarkka arvo}
 
-Pitkässä matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä desimaalimuodossa. Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
+Pitkässä matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä desimaalimuodossa. %Ei irrationaaliluvuille ole _olemassa_ desimaaliesitystä -Jouni
+Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
 
 \begin{esimerkki}
-Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluvun $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837...$, mutta siitä otettu likiarvo saavuttaa vain rajatun tarkkuuden. 
+Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluku $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837...$, mutta tuloksena on vain likiarvo, lasketaanpa desimaalilukua mihin tahansa tarkkuuteen hyvänsä. %muutin argumenttia vähän -Jouni
 \end{esimerkki}
 
 %MIKSI sieventäminen ei enää onnistunut?
