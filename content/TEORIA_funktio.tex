@@ -5,7 +5,9 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää jokaiseen \termi{muuttuja}{muuttujaan} $x$ täsmälleen yhden arvon $f(x)$.
 
 	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
-	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat.
+	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat. Merkintä
+	$f\colon A \to B$ tarkoittaa, että funktion $f$ määrittelyjoukko on $A$ ja maalijoukko
+	on $B$.
 }
 %Muokannut Jaakko Viertiö 14.12.2013
 
@@ -13,10 +15,11 @@ Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi 
 
 \begin{esimerkki}
 	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla.
-	Valitaan funktion määrittelyjoukoksi tiettyjen hyödykkeiden joukko,
+	Valitaan funktion määrittelyjoukoksi tiettyjen hyödykkeiden joukko
 		\[ A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja},
 		\text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\}, \]
-	ja arvojoukoksi reaaliluvut.
+	ja arvojoukoksi reaaliluvut. Merkitään tätä funktiota kirjaimella $f$, jolloin
+	$f\colon A \to \mathbb{R}$.
 	Funktio voi liittää kuhunkin hyödykkeeseen esimerkiksi siitä maksettavan arvonlisäveroprosentin:
 	$f(\text{särkylääke}) = 10$ ja $f(\text{televisio}) = 24$.
 
@@ -83,7 +86,7 @@ Funktioita, jotka määritellään reaaliluvuilla, ja jotka saavat arvokseen rea
 Funktiolla, erityisesti reaalifunktioilla, on usein jokin selkeä sääntö, joka voidaan kirjoittaa matemaattisena lausekkeena.
 
 \begin{esimerkki}
-	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-ala kuvata funktiolla $A(x) = x^2$.
+	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-alaa kuvata funktiolla $A(x) = x^2$.
 \end{esimerkki} 
 
 Reaalifunktioita voidaan havainnollistaa koordinaatistossa kuvaajien avulla.
@@ -156,7 +159,7 @@ funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
 	 Mikä on funktion $g$ määrittelyjoukko?
 	 \begin{esimratk}
-		Neliöjuuri $\sqrt{x}$ on määritelty, kun $x\geq{0}$. Funktion $g$ määrittelyjoukko on siis $x\geq{0}$.
+		Neliöjuuri $\sqrt{x}$ on määritelty, kun $x\geq{0}$. Funktion $g$ määrittelyehto on siis $x\geq{0}$ ja määrittelyjoukko koostuu nollasta ja sitä suuremmista reaaliluvuista.
 	 \end{esimratk}
 	 \begin{esimvast}
 	  $x\geq{0}$.

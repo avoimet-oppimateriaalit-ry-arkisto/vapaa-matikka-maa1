@@ -8,7 +8,7 @@ Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matem
 
 Aika on suure, jota voidaan mitata käyttämällä yksikkönä esimerkiksi sekunteja tai vuosia.
 
-Pituus on suure, ja sen arvo voidaan mitata ja esittää käyttäen yksikkönä esimerkiksi metrejä ja tuumia. (Myös matkaa ja etäisyyttä mitataan samoissa yksiköissä; näillä suureilla on sovellusriippuvainen, erityisesti geometriassa ja fysiikassa esille tuleva nyanssiero.)
+Pituus on suure, ja sen arvo voidaan mitata ja esittää käyttäen yksikkönä esimerkiksi metrejä ja tuumia. Itse asiassa myös matkaa ja etäisyyttä mitataan samoissa yksiköissä; näillä suureilla on sovellusriippuvainen, erityisesti geometriassa ja fysiikassa esille tuleva nyanssiero.
 
 Energia on suure, jota mitataan esimerkiksi yksiköissä joule tai kalori.
 \end{esimerkki}
@@ -29,11 +29,12 @@ Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat ker
 
 \laatikko[Suure]{luku $\cdot$ yksikkö}
 
-Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää. (Näin sanoo myös suomen kielioppi.) Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkataan symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ''. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
+Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää (tämä on ISO-standardin mukainen merkintätapa). %Ehkä myös Kotuksen ja Jukka Korpelan suosittelema. Aiemmin tätä perusteltiin tässä Suomen kieliopilla. Suomen kielioppi ei ole kuitenkaan mikään yksittäinen monoliittinen virallisesti olemassa oleva standardi vaan pikemminkin (normatiivisessakin muodossaan) kokoelma eri tavoin perusteltuja näkemyksiä ja suosituksia. -Jouni
+Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkitään symboleilla $^\circ$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkataan ${\verb+"+}$. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}.
 
 %Sivunlaitahuomio:: jos yksikkö on nimetty henkilön nimen mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella, esim. N, J tai Hz. Auki kirjoitettuna kuitenkin "kolme newtonia", kymmenen kilojoulea" ja "5,7 hertziä".
 
-%onko tuuma varmasti merkattu oikein? (kaksoislainausmerkkejä on useita erilaisia)
+%tuuman merkki on korjattu jeesusteipillä oikeanlaiseksi -Jouni
 
 Seuraava taulukko selventää oikeinkirjoitusta:
 
@@ -43,18 +44,18 @@ Oikein & Väärin \\
 \hline
 3 m & 3m 	\\
 100 $\frac{\text{km}}{\text{h}}$ & 100$\frac{km}{h}$	\\
-2 \% & 2\% 	\\
+2\,\% & 2\% 	\\
 3$^\circ$ & 3 $^\circ$\\
 3,16$^\circ$ 5' 13'' & 3,16 $^\circ$ 5 ' 13 '' 	\\
-6 $^\circ$C & 6$^\circ$C 	\\
+6\,$^\circ$C & 6$^\circ$C 	\\
 \end{tabular}
 \end{center}
 
-%Hienosti ladottuna luvun ja yksikön väliin EI tule välilyöntiä, vaan ohuke (thin space), jonka latexissa saa komennolla \,
+%Hienosti ladottuna luvun ja yksikön väliin EI tule (sitovaa) whitespacea, vaan (sitova) ohuke (thin space), jonka latexissa saa komennolla \,
 
 \subsection*{SI-järjestelmä}
 
-SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. Système international d'unités) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
+SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. \textit{Système international d'unités}) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
 
 \laatikko[SI-järjestelmän perussuureet ja yksiköt]{
 \begin{center}
@@ -73,7 +74,7 @@ valovoima & $I$ & kandela & cd
 
 Toisin kuin yksiköt, suureiden kirjainlyhenteet kirjoitetaan \textit{kursiivilla}. %ja tämäkin lopulta sivun laitaan pois leipätekstistä... :)
 
-Näitä suureita käsitellään tarkemmin fysiikassa ja kemiassa, mutta matematiikan kursseilla tulee tuntea ainakin pituus, massa ja aika. (Huomaa, että arkikielessä käytetään usein sanaa paino, vaikka tarkoitetaan massaa.) Tämän lisäksi matematiikan tehtävissä esiintyy usein näistä yhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita} kuten nopeus, pinta-ala, tilavuus ja tiheys.
+Näitä suureita käsitellään tarkemmin fysiikassa ja kemiassa, mutta matematiikan kursseilla tulee tuntea ainakin pituus, massa ja aika. (Huomaa, että arkikielessä käytetään usein sanaa paino, vaikka tarkoitetaan massaa.) Tämän lisäksi matematiikan tehtävissä esiintyy usein näistä yhdistämällä saatuja \termi{johdannaissuure}{johdannaissuureita}, kuten nopeus, pinta-ala, tilavuus ja tiheys.
 
 \laatikko[Tärkeitä johdannaissuureita]{
 
@@ -82,7 +83,7 @@ Näitä suureita käsitellään tarkemmin fysiikassa ja kemiassa, mutta matemati
 
 \item Pinta-ala (tunnus usein $A$, engl. area) saadaan kertomalla pituus toisella pituudella. Vastaavasti pinta-alan yksiköt saadaan pituuden yksiköistä. Jos esimerkiksi pituutta on mitattu metreissä, niin vastaava pinta-alan yksikkö on $m\cdot m=m^2$ eli neliömetri.
 
-\item Tilavuus (tunnus usein $V$, engl. Volume) on edelleen johdettavissa kolmen pituuden tulona. Jos pituutta on mitattu metreissä, niin vastaava tilavuuden yksikkö on $m\cdot m \cdot m=m^3$ eli kuutiometri.
+\item Tilavuus (tunnus usein $V$, engl. volume) on edelleen johdettavissa kolmen pituuden tulona. Jos pituutta on mitattu metreissä, niin vastaava tilavuuden yksikkö on $m\cdot m \cdot m=m^3$ eli kuutiometri.
 
 \item Tiheys (tunnus kreikkalainen pieni roo, $\rho$) on johdannaissuure, joka määritellään massan ja tilavuuden osamääränä: $\text{tiheys}=\frac{\text{massa}}{\text{tilavuus}}$. Vastaavasti tiheyden yksiköt saadaan samalla jakolaskulla massan ja tilavuuden yksiköistä: jos kappaleen tilavuus on mitattu kuutiometreissä ja massa kilogrammoina, esitetään kappaleen tiheys yksiköissä $\frac{\text{kg}}{\text{m}^3}$.
 \end{itemize}
@@ -102,7 +103,7 @@ Joillekin johdannaisyksiköille on annettu oma nimensä ja lyhenteensä, eikä y
 
 Tuhatta kilogrammaa kutsutaan tonniksi.
 
-Yksi litra vastaa yhtä kuutiodesimetriä, eli $1\,\text{l}=1\,\text{dm}^3$. (Ks. etuliitteet edellä.)
+Yksi litra vastaa yhtä kuutiodesimetriä, eli $1\,\text{l}=1\,\text{dm}^3$ (ks. etuliitteet edellä).
 
 Energian yksikkö joule ilmaistuna vain SI-järjestelmän perusyksiköitä käyttämällä: $\text{J}=\frac{\text{m}^2\text{kg}}{\text{s}^2}$.
 
@@ -124,7 +125,7 @@ kilo & $10^{3}$ & k & tuhat	\\
 mega & $10^{6}$ & M & miljoona 	\\
 giga & $10^{9}$ & G & miljardi		\\
 tera & $10^{12}$ & T & biljoona \\
-peta & $10^{15}$ & P & <ei vakiintunutta nimeä> \\
+peta & $10^{15}$ & P & tuhat biljoonaa \\ %laitoin tuon tuhat biljoonaa -Jouni
 \end{tabular}
 
 \begin{tabular}{c|c|c|c}
@@ -144,10 +145,10 @@ femto & $10^{-15}$ & f & tuhatbiljoonasosa
 
 %toi taulukko pitää tasata! 
 
-Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivankokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
+Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivan kokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
 
 \begin{esimerkki}
-Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on valittu SI-järjestelmässä massan perusyksiköksi gramman sijaan käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin liian pieni.
+Kilogramma tarkoittaa tuhatta grammaa. Kilogramma on valittu SI-järjestelmässä massan perusyksiköksi gramman asemesta käytännöllisyyssyistä, sillä yksi gramma on moniin sovelluksiin turhan pieni yksikkö.
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -158,12 +159,14 @@ Ilmaisussa 0,000046 metriä luku on niin pieni, että on käytännöllisempää 
 Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. Esimerkiksi $1\,\textrm{ng} = 1 \cdot 10^{-9}\,\textrm{g} = 0,000000009\,\textrm{g} $.
 \end{esimerkki}
 
-%tähän vai minne kymmenpotensismuotojen ja suurten lukujen lukusanoista? long ja short scale
+%tähän vai minne kymmenpotenssimuotojen ja suurten lukujen lukusanoista? long ja short scale
 
 \laatikko[Huomautus tietotekniikasta]{
-Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on diskreetti, eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Suomenkielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
+%Onko tähän mennessä puhuttu mitään kaksilukujärjestelmästä tai ylipäätään muista lukujärjestelmistä?
+Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on epäjatkuva, %epäjatkuva pro diskreetti -Jouni
+eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Yhteen kahdeksan bitin mittaiseen tavuun voidaan tallettaa kokonaisluku väliltä 0-255. Tavun sisällön merkitys voidan tulkita usealla tavalla, esimerkiksi yhtenä kirjaimena jossain merkistössä. Suomen kielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
 
-Tietokoneidden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johdosta yksi kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$). Vastaavasti yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % (Joskus harvoinmaining MiB-, GiB-ehdotuksista?
+Tietokoneiden rakenteen kaksikantaisuuden (ks. liite lukujärjestelmistä) johdosta tavujen kerrannaisyksiköllä tarkoitetaan usein lähimpiä kahden potensseja: kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$), yksi megatavu (Mt) on $1024$ kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$ Mt ja niin edelleen.} % SI-järjestelmä ei tue tätä, vaan sen mukaan kt on tasan 1000 t ja niin edelleen. Binäärikerrannaisyksiköt sisältyvät IEC-standardiin ja merkitään KiB, MiB nje. mutta eivät ole levinneet laajalle. Usein esim. keskusmuistien koosta puhuttaessa käytetään binäärikerrannaisyksikköjä mutta kiintolevyjen koosta puhuttaessa kymmenen potensseja. Puututaanko tähän skismaan? Olen käyttänyt edellä sanamuotoa ``tarkoitetaan usein lähimpiä kahden potensseja''. -Jouni
 
 %esimerkki
 
@@ -171,7 +174,7 @@ Tietokoneidden toiminnan kaksikantaisuuden (ks. liite lukujärejstelmistä) johd
 
 %hakee vielä vähän loogista järjestystä :) T: Joonas
 
-Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkataan luvun ja yksikön väliin väli kertolaskun sijaan. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
+Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin väli kertolaskun asemesta. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
 
 \begin{esimerkki}
 2 metriä kertaa 3 metriä = $2\,\text{m} \cdot 3\,\text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\,\text{m}^2$ eli kuusi neliömetriä.
@@ -198,7 +201,7 @@ Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdist
 
 
 \begin{esimerkki}
-Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa kaava, jolla voidaan laskea katkaan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. (Johto tedään Yhtälö-luvussa.) Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
+Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea matkan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. Lasketaan, kuinka kauan kestää 300 metrin matka nopeudella 7 m/s.
 
 Sijoitetaan kaavaan yksikköineen $s=300$ m ja $v= 7$ m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
 \[t=\frac{100\,\textrm{m}}{7\,\textrm{m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
@@ -221,7 +224,7 @@ Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vä
 
 \subsection*{Yksikkömuunnokset}
 
-Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteiden ajatellaan olevan matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä.
+Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteet ivat matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä. %''ajatellaan olevan matemaattisesti vain kertoimia -> ovat matemaattisesti vain kertoimia. -Jouni
 
 \begin{esimerkki}
 $270\,\text{mm}=270\cdot\text{mm}=270\cdot10^{-3}\,\text{m}=\frac{270}{1000}\,\text{m}=0,27\,\text{m}$
@@ -246,6 +249,8 @@ Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
 \begin{center}
 dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$!
 \end{center}
+
+%erittäin hyvä pointti! -Jouni
 
 Potensissääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
 
@@ -347,7 +352,7 @@ Senttimetrien muuntaminen tuumiksi onnistuu vastaavasti \emph{jakamalla} luvulla
 
 \subsection*{Pyöristäminen}
 
-Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen 167,9337~cm, tämä tuskin on asiakkaalle kovin hyödyllistä tietoa. Epätarkempi arvo 168~cm antaa kaiken oleellisen informaation ja on mukavampi lukea.
+Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen 167,9337~cm, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo 168~cm antaa kaiken oleellisen informaation ja on mukavampi lukea.
 
 Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on lyhyempi. Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
 
@@ -394,12 +399,12 @@ Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden mä
 
 Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan desimaalien lukumäärällä.
 
-\begin{esimerkki} Jos 175~cm pituisen ihmisen nousee seisomaan 2,15~cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi 177,15~cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen
+\begin{esimerkki} Jos 175~cm pituinen ihminen nousee seisomaan 2,15~cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi 177,15~cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen
 174,5~cm ja 175,5~cm väliltä. Lasketaan siis \indent 175~cm + 2,15~cm = 177,15~cm $\approx$ 177~cm. 
 Epätarkempi lähtöarvo oli mitattu senttien tarkkuudella, joten pyöristettiin tasasentteihin.
 \end{esimerkki}
 
-Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan. Jos esimerkiksi pitkän pöydän pituus karkeasti mitattuna 5,9~m ja pöydän leveydeksi saadaan tarkalla mittauksella 1,7861~m, ei ole perusteltua olettaa pöydän pinta-alan olevan todella
+Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan. Jos esimerkiksi pitkän pöydän pituus karkeasti mitattuna on 5,9~m ja pöydän leveydeksi saadaan tarkalla mittauksella 1,7861~m, ei ole perusteltua olettaa pöydän pinta-alan olevan todella
 \[ 5,9~\textrm{m} \cdot 1,7861~\textrm{m} = 10,53799~\textrm{m}^2. \] 
 Pyöristys tehdään epätarkimman lähtöarvon mukaisesti kahteen merkitsevään numeroon:
 \[ 5,9~\textrm{m} \cdot 1,7861~\textrm{m} = 10,53799~\textrm{m}^2 \approx 11~\textrm{m}^2.\] 
@@ -412,10 +417,11 @@ mutta käytännön laskuihin riittää usein $3,14$.
 
 \subsubsection*{Tarkka arvo}
 
-Pitkässä matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä desimaalimuodossa. Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joissa joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
+Pitkässä matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä desimaalimuodossa. %Ei irrationaaliluvuille ole _olemassa_ desimaaliesitystä -Jouni
+Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
 
 \begin{esimerkki}
-Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluvun $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837...$, mutta siitä otettu likiarvo saavuttaa vain rajatun tarkkuuden. 
+Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluku $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837...$, mutta tuloksena on vain likiarvo, lasketaanpa desimaalilukua mihin tahansa tarkkuuteen hyvänsä. %muutin argumenttia vähän -Jouni
 \end{esimerkki}
 
 %MIKSI sieventäminen ei enää onnistunut?
