@@ -1,0 +1,10 @@
+language: latex
+before_install: 
+    git submodule init
+    git submodule update
+install: 
+    wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    tar -xzf install-tl-unx.tar.gz
+    sudo ./install-tl-*/install-tl --profile=travis/texlive.profile
+    sudo /usr/local/texlive/2013/bin/x86_64-linux/tlmgr install dblfloatfix ulem unicode-math filehook xits titlesec babel-finnish answers cancel was datetime framed mdframed needspace
+script: make
