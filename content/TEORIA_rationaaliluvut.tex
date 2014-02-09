@@ -2,7 +2,8 @@ Rationaaliluvun esitystä kokonaislukujen osamääränä
 $\frac{a}{b}$ kutsutaan \termi{murtoluku}{murtoluvuksi}. Luku $a$ on murtoluvun
 \termi{osoittaja}{osoittaja} ja luku $b$ on
 \termi{nimittäjä}{nimittäjä}. Nimittäjä on aina erisuuri kuin nolla ($b\neq0 $). Määritelmän mukaan kaikki rationaaliluvut
-voidaan esittää murtolukuina. 
+voidaan esittää murtolukuina.  Usein rationaaliluvut voidaan esittää myös desimaaliesityksen avulla.
+
 
 Rationaalilukuja esitetään toisinaan myös \termi{sekamurtoluku}{sekamurtolukuina} eli lyhyemmin
 sekalukuina. Sekalukuesityksessä luku esitetään summana kokonaisosasta ja murto-osasta (luku nollan
@@ -13,24 +14,31 @@ Merkintä saattaa aiheuttaa sekaannusta, sillä $3\frac{5}{6}$ saattaisi myös v
 $3\cdot \frac{5}{6}$. Sekalukumerkintää käytetään vain lukuarvoilla, siis $a\frac{b}{c}$ tarkoittaa aina
 tuloa $a\cdot \frac{b}{c}$. 
 
+\begin{esimerkki}
+        Rationaaliluvulla $\frac{5}{4}$ on kolme erilaista esitystapaa: murtolukuesitys, sekalukuesitys ja desimaaliesitys.
+        \[\frac{5}{4} = 1\frac{1}{4}=1,25 \]
+    \end{esimerkki}
+
 Murtolukujen laskutoimituksia varten sekaluvut kannattaa usein muuttaa murtolukuesitykseksi.
 
-% Tähän laatikkoon pitäisi lisätä kaavarivin yläpuolelle nuoli vasemmalle (teksti: laventaminen) ja alapuolelle 
-% nuoli oikealle (teksti: supistaminen). Tällöin voidaan jättää pois jälkimmäinen yhtäsuuruus.
 \laatikko{
-	Murtoluku pysyy samana, kun sekä osoittajassa että nimittäjässä oleva luku kerrotaan (\termi{laventaminen}{lavennetaan})
+	Murtoluvun arvo pysyy samana, kun sekä osoittajassa että nimittäjässä oleva luku kerrotaan (\termi{laventaminen}{lavennetaan})
 	samalla luvulla. Vastaavasti, osoittaja ja nimittäjä voidaan jakaa (\termi{supistaminen}{supistaa}) samalla luvulla, 
 	jos jako menee tasan.
-% 	\[ \text{laventaminen}\]
-% 	\[ \longrightarrow\]
-% Nuoliviritys toimisi, mutta rivivälit kaipaavat muokkausta (laventaminen ja nuoli lähemmäs toisiaan). 
+	\[ \text{laventaminen}\]
+	\[ \longrightarrow\]
+% \FIXME Nuoliviritys toimisi, mutta rivivälit kaipaavat muokkausta (laventaminen ja nuoli lähemmäs toisiaan). 
 	 \[
-	 \frac{a}{b} = 1\cdot \frac{a}{b} = \frac{c}{c} \cdot \frac{a}{b} = \frac{ca}{cb}
+	 \frac{a}{b} = \frac{ca}{cb}
 	 \]
-	 missä $b \neq 0$ ja $c \neq 0$.
+	 
+ 	\[ \longleftarrow\]
+ 	\[ \text{supistaminen}\]
+ 	
+	missä $b \neq 0$ ja $c \neq 0$.
 }
 
-Koska murtolukuesitystä voidaan laventaa millä tahansa kokonaisluvulla, jokaisella murtoluvulla on monta esitystapaa;
+Koska murtolukuesitystä voidaan laventaa millä tahansa (nollasta eriävällä) kokonaisluvulla, jokaisella murtoluvulla on monta esitystapaa;
 esimerkiksi $\frac{1}{2}=\frac{3}{6}$. Konkreettisemmin voidaan ajatella, että puolikas pizza ei vähene vaikka molemmat 
 puolikkaat jaetaan edelleen kolmeen osaan.
 
@@ -83,6 +91,34 @@ Murtolukuja, joiden nimittäjät ovat samat, sanotaan \termi{samanniminen}{saman
 Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlaskukin (vähennyslasku voidaan
 ajatella vastaluvun lisäämisenä). Ensin lavennetaan samannimisiksi, sitten suoritetaan vähennyslasku 
 osoittajassa.
+
+\begin{esimerkki}
+        Laske
+        \[
+        2\frac{2}{3} - \frac{3}{7}.
+        \]
+        
+        \textbf{Ratkaisu.}
+        Aloitetaan muuttamalla sekalukuesitys murtoluvuksi. Nimittäjillä ei ole yhteisiä tekijöitä, joten yhteinen nimittäjä 
+        löytyy ristiinkertomalla.
+        %lisätäänkö lavennusmerkki? teknisesti hankala? käytetäänkö maailmalla? opiskelijoille kuitenkin tuttu
+        %tai sitten voisi sanallisesti kertoa, millä lavennetaan.
+        \begin{align*}
+            2\frac{2}{3} - \frac{3}{7} = \frac{2\cdot3+2}{3} - \frac{3}{7} \\
+            			&=\frac{8}{3} - \frac{3}{7}\\
+            			&=\frac{7\cdot8}{7\cdot3} - \frac{3\cdot3}{3\cdot7}\\
+            			&=\frac{56}{21} - \frac{9}{21}\\
+            			&=\frac{56-9}{21}\\
+            			&=\frac{45}{21}.\\
+        \end{align*}
+        Erotuksena syntyvän murtoluvun osoittaja ja nimittäjä ovat molemmat jaollisia kolmella, eli murtolukua voidaan supistaa. 
+        Esitetään vastaus yksinkertaisimmassa (sievimmässä) muodossa.
+        \begin{align*}
+            \frac{45}{21} = \frac{45:3}{21:3}\\
+		  &=\frac{15}{7}\\
+		  &=2\frac{1}{7}.\\
+        \end{align*}
+    \end{esimerkki}
 
 \subsection*{Murtolukujen kertolasku}
     
