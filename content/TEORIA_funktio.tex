@@ -16,9 +16,11 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 \end{comment}
 
 \laatikko{
-  \termi{funktio}{Funktio} eli \termi{kuvaus}{kuvaus} joukosta $A$ joukkoon $B$ liittää jokaiseen joukon $A$ alkioon täsmälleen yhden joukon $B$ alkion. Funktion $f$ alkioon $x$ liittämää arvoa merkitään $f(x)$. 
-  %voisi sanoa myös 'yhden ja vain yhden' tai vain 'yhden'; 'täsmälleen yhden' on mielestäni sekä riittävän selkeä että sujuva ilmaus -Jouni
+  \termi{funktio}{Funktio} eli \termi{kuvaus}{kuvaus} $f$ joukosta $A$ joukkoon $B$ liittää jokaiseen joukon $A$ alkioon täsmälleen yhden joukon $B$ alkion. Funktion $f$ alkioon $x$ liittämää arvoa merkitään $f(x)$. 
+  %voisi sanoa myös 'yhden ja vain yhden' tai vain 'yhden'; 'täsmälleen yhden' on mielestäni sekä riittävän selkeä ettäsujuva ilmaus -Jouni
   }
+  %Tähän väliin voisi laittaa havainnollisen kuvan: toisaalla kenttänä määrittelyjoukko, toisaalta maalijoukko, ja nuoli liittää jonkin määrittelyjoukon alkion maalijoukon alkioon.
+  
   Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukoksi} ja joukkoa $B$ puolestaan $f$:n \termi{maalijoukko}{maalijoukoksi}. Tällöin voidaan merkitä lyhyesti $f\colon A \to B$. Funktion $f$ \termi{arvojoukko}{arvojoukko} ovat $f$:n kaikki maalijoukkoon $B$ kuuluvat arvot $f(x)$.
    
   
@@ -40,19 +42,24 @@ Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi 
 \end{esimerkki}
 
 
+
 \begin{esimerkki}
 Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä vuonna 2012.
 
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 	\hline
-	Tam & Hel & Maa & Huh & Tou & Kes & Hei & Elo & Syys & Loka & Mar & Jou\\
+	tam & hel & maa & huh & tou & kes & hei & elo & syys & loka & mar & jou\\
 	\hline
 	-12 & -16 & -6 & -3 & 6 & 11 & 13 & 12 & 7 & 0 & -4 & -15\\
-	\hline
+	\hline %vaihdoin kuukausien lyhenteet alkamaan pienillä alkukirjaimilla -Jouni
 	\end{tabular}
-Lähde: Ilmatieteenlaitos
+%	\caption*{Lähde: Ilmatieteen laitos}
+	
+Lähde: Ilmatieteen laitos %voisiko tämän tehdä captionina?
 
-Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Eli määrittelyjoukko eli muuttujan x arvot on kuukaudet, ja maalijoukko eli funktion arvojoukko \(f(x)\) lämpötilojen joukko. Nyt esimerkiksi \(f($Tam$)=-12\) ja \(f($Tou$) = 6\). 
+Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Määrittelyjoukko ovat vuoden kaikki kuukaudet, maalijoukkoon kuuluvat kaikki mahdolliset lämpötilat, ja arvojoukko koostuu funktion kaikista arvoista, siis eri kuukausien keskilämpötiloista. %Nyt esimerkiksi \(f($tam$)=-12\) ja \(f($tou$) = 6\). (tämä on edellinen versio) Käyttäisin mieluummin matematiikkamoodia ympärillä ja sisälllä \text{} -Jouni 9.2.2014
+Nyt esimerkiksi $f(\text{tam}) = -12$ ja $f(\text{tou}) = 6$.
+
 %TÄHÄN VOISI LAITTAA KUVAN KUVAAJASTA
 \end{esimerkki}
 
@@ -97,21 +104,21 @@ Funktioita, jotka määritellään reaaliluvuilla, ja jotka saavat arvokseen rea
 Funktiolla, erityisesti reaalifunktioilla, on usein jokin selkeä sääntö, joka voidaan kirjoittaa matemaattisena lausekkeena.
 
 \begin{esimerkki}
-	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-alaa kuvata funktiolla $A(x) = x^2$.
+	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-alaa kuvata funktiolla $A\colon A(x) = x^2$.
 \end{esimerkki} 
 
-Reaalifunktioita voidaan havainnollistaa koordinaatistossa kuvaajien avulla.
+Reaalifunktioita voidaan havainnollistaa koordinaatistossa \textit{kuvaajien} avulla.
 Funktion $f$ kuvaajassa koordinaatistoon piirretään ne pisteet $(x, y)$, joiden $y$-koordinaatti on $f$:n arvo $x$-koordinaatissa.
 Reaalifunktioilla ei kuitenkaan voida laskea $y = f(x)$ kaikilla $f$:n määrittelyjoukon luvuilla $x$, joten esimerkiksi graafiset laskimet
 laskevat $y = f(x)$ ''riittävän monella'' luvulla ja sovittavat kuvaajan niiden perusteella.
-Funktioita voi piirtää helposti paitsi graafisilla laskimilla, myös tietokoneohjelmilla sekä esimerkiksi verkossa
+Funktioiden kuvaajia voi piirtää helposti paitsi graafisilla laskimilla, myös tietokoneohjelmilla sekä esimerkiksi verkossa
 Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
 
 % Tarvitaan kuvien ja taulukkojen vierekkäin laittamiseen.
 \def\vcent#1{\mathsurround0pt$\vcenter{\hbox{#1}}$}
 
 \begin{esimerkki}
-	Funktion $f(x) = \frac{x}{2} - 1$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = \frac{x}{2} - 1$: % FIXME
+	Funktion $f \colon f(x) = \frac{x}{2} - 1$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = \frac{x}{2} - 1$: % FIXME
 	\begin{center}
 		\begin{tabular}{cc}
 			\begin{tabular}{|r|l|}
@@ -163,8 +170,9 @@ Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
 
 \subsection*{Määrittelyjoukko ja arvojoukko}
 
-Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla
-funktio on määritelty, eli joilla funktion arvo voidaan laskea.
+%Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla funktio on määritelty, eli joilla funktion arvo voidaan laskea.
+
+Funktion määrittelyjoukko on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukon tarkoitetaan tavallisesti olevan \textit{mahdollisimman laaja reaalilukujen osajoukko} johon kuuluville arvoille funktion arvon voi laskea. %Jouni Kärkkäinen 92.2.2014
 
 \begin{esimerkki}
 	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
@@ -178,9 +186,9 @@ funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 \end{esimerkki}
 %Lisännyt Jaakko Viertiö 14.12.2013
 
-Käytännössä määrittelyjoukon rajoituksia tarvitaan yllä esitetyn parillisen juuren lisäksi esimerkiksi, kun funktiossa esiintyy muuttujaa nimittäjässä.
+Käytännössä määrittelyjoukon rajoituksia tarvitaan yllä esitetyn parillisen juuren lisäksi esimerkiksi silloin kun funktiossa esiintyy muuttuja nimittäjässä.
 Tällöin on huomioitava, ettei nimittäjässä saa olla nollaa millään muuttujan $x$ arvolla. 
-Soveltavissa tehtävissä saatetaan myös rajoittaa määrittelyjoukkoa vaikkapa siksi, että pituus ei voi olla negatiivista.
+Soveltavissa tehtävissä saatetaan myös rajoittaa määrittelyjoukkoa vaikkapa siksi, että pituus ei voi olla negatiivinen.
 
 \begin{esimerkki}
 	Määritellään funktio $f$ lausekkeella \[ f(x) = \frac{1}{x-1}. \]
@@ -234,7 +242,43 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 			\kuvaaja{x**2}{$y=x^2$}{black}
 		\end{kuvaajapohja}
 	\end{center}
-
+	
 	
 \end{esimerkki}
+	
+\subsection*{Paloittain määritelty funktio}
+
+Kappaleessa \ref{neliojuuri} sivuttiin itseisarvon määritelmää. Itseisarvofunktio $\lvert \rvert$ voidaan määritellä seuraavasti. \\ 
+$$
+\lvert \rvert\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert x \rvert = \begin{cases}
+                 x & \text{jos } x \geq 0 \\
+                 -x & \text{jos } x < 0
+              
+                \end{cases}
+$$
+
+Funktio siis jättää ei-negatiiviset luvut ennalleen, mutta vaihtaa negatiivisen luvun vastaluvukseen, ja arvojoukko koostuu pelkästään ei-negatiivisista luvuista. Funktio on määritelty kahdessa eri osassa: lähtöjoukon alkion arvosta riippuen valitaan sille sovellettava lauseke.
+
+\begin{esimerkki}
+ 
+ Määritellään funktio $g\colon \mathbb{R} \to \mathbb{R}$ lausekkeilla
+ $$
+ g(x) = \begin{cases}
+         \frac{x}{x} & \text{jos } x \neq 0 \\
+         1 & \text{jos } x = 0
+        \end{cases}
+$$
+ 
+Mikä on funktion arvojoukko? Miksi määrittelemme kohdan $x = 0$ erikseen?
+
+\begin{esimratk}
+Kun $x \neq 0$, osamäärästä $\frac{x}{x}$ saadaan aina $1$. Kohdassa $x=0$ funktion arvoksi on puolestaan määritelty $1$. Näin ollen funktion $g$ arvojoukko koostuu yhdestä ainoasta luvusta, ykkösestä. Koska lauseke $\frac{0}{0}$ ei ole määritelty, määrittelemme kohdan $x=0$ erikseen. Funktio on siis vakioarvoinen ja voisimme kirjoittaa sen yksinkertaisest $g\colon g(x) = 1$. 
+
+\end{esimratk}
+
+ 
+\end{esimerkki}
+
+	
+
 
