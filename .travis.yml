@@ -7,4 +7,5 @@ install:
     - tar -xzf install-tl-unx.tar.gz
     - sudo ./install-tl-*/install-tl --profile=travis/texlive.profile
     - sudo /usr/local/texlive/2013/bin/x86_64-linux/tlmgr install dblfloatfix ulem unicode-math filehook xits titlesec babel-finnish answers cancel was datetime framed mdframed needspace
+    - export PATH=/usr/local/texlive/2013/bin/x86_64-linux:$PATH
 script: make
