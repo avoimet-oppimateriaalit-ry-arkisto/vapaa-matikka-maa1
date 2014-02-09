@@ -20,8 +20,9 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
   %voisi sanoa myös 'yhden ja vain yhden' tai vain 'yhden'; 'täsmälleen yhden' on mielestäni sekä riittävän selkeä ettäsujuva ilmaus -Jouni
   }
   %Tähän väliin voisi laittaa havainnollisen kuvan: toisaalla kenttänä määrittelyjoukko, toisaalta maalijoukko, ja nuoli liittää jonkin määrittelyjoukon alkion maalijoukon alkioon.
+ % Funktiokone! Paras havainnollistus ikinä! - Joel
   
-  Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukoksi} ja joukkoa $B$ puolestaan $f$:n \termi{maalijoukko}{maalijoukoksi}. Tällöin voidaan merkitä lyhyesti $f\colon A \to B$. Funktion $f$ \termi{arvojoukko}{arvojoukko} ovat $f$:n kaikki maalijoukkoon $B$ kuuluvat arvot $f(x)$.
+  Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukoksi} ja joukkoa $B$ puolestaan $f$:n \termi{maalijoukko}{maalijoukoksi}. Tällöin voidaan merkitä lyhyesti $f\colon A \to B$. Funktion $f$ \termi{arvojoukko}{arvojoukon} muodostavat $f$:n kaikki maalijoukkoon $B$ kuuluvat arvot $f(x)$.
    
   
 Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi voidaan ajatella kassakone. Kun siihen luetaan sisään viivakoodi, antaa kassakone ulos hinnan.
@@ -79,7 +80,7 @@ Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 	\item[1)] Merkintä $f(x) = y$ luetaan esimerkiksi: ''funktio \(f\) saa arvon $y$ pisteessä $x$'' tai lyhyemmin: ''\(f\) arvolla \(x\) on \(y\).''
 	\item[2)] Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne voidaan päätellä asiayhteydestä.
 		Tällä kurssilla funktiot ovat yleensä reaaliluvuilta reaaliluvuille.
-	\item[3)] Usein kirjoitetaan esimerkiksi ''funktio $f(x) = x^2+3x$,'' vaikka tarkkaan ottaen funktio on $f$ ja
+	\item[3)] Usein kirjoitetaan esimerkiksi ''funktio $f(x) = x^2+3x$'', vaikka tarkkaan ottaen funktio on $f$ ja
 		$f(x)$ on sen saama arvo pisteessä $x$.
 	\item[4)] Toisinaan funktiolle ja funktion kuvaajalle ei tehdä selkeää eroa:
 		$y = f(x)$ samaistetaan koordinaatistoon piirretyn funktion kuvaajan kanssa.
@@ -172,7 +173,7 @@ Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
 
 %Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 
-Funktion määrittelyjoukko on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukon tarkoitetaan tavallisesti olevan \textit{mahdollisimman laaja reaalilukujen osajoukko} johon kuuluville arvoille funktion arvon voi laskea. %Jouni Kärkkäinen 92.2.2014
+Funktion \termi{määrittelyjoukko}{määrittelyjoukko} on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukon tarkoitetaan tavallisesti olevan \textit{mahdollisimman laaja reaalilukujen osajoukko} johon kuuluville arvoille funktion arvon voi laskea. %Jouni Kärkkäinen 92.2.2014
 
 \begin{esimerkki}
 	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
@@ -230,6 +231,7 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 		Funktion $f$ arvojoukko on reaalilukujen joukko poislukien luku $0$.
 	\end{esimvast}
 \end{esimerkki}
+%Kuva tähän esimerkkiin? Näkisi miten lähtö- ja arvojoukkojen "puuttuvat" alkiot näkyvät kuvaajassa.
 
 \begin{esimerkki}
 	Tarkastellaan reaalifunktiota $f(x)=x^2$. Funktion $f$ \textit{määrittelyjoukko} on selkeästi koko reaalilukujen joukko, sillä toinen potenssi $x^2$ 
@@ -248,9 +250,9 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 	
 \subsection*{Paloittain määritelty funktio}
 
-Kappaleessa \ref{neliojuuri} sivuttiin itseisarvon määritelmää. Itseisarvofunktio $\lvert \rvert$ voidaan määritellä seuraavasti. \\ 
+Kappaleessa \ref{neliojuuri} sivuttiin itseisarvon määritelmää. Itseisarvofunktio $f: f(x) = \lvert x \rvert$ voidaan määritellä seuraavasti. \\ 
 $$
-\lvert \rvert\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert x \rvert = \begin{cases}
+f\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert x \rvert = \begin{cases}
                  x & \text{jos } x \geq 0 \\
                  -x & \text{jos } x < 0
               
@@ -269,10 +271,10 @@ Funktio siis jättää ei-negatiiviset luvut ennalleen, mutta vaihtaa negatiivis
         \end{cases}
 $$
  
-Mikä on funktion arvojoukko? Miksi määrittelemme kohdan $x = 0$ erikseen?
+Mikä on funktion arvojoukko? Miksi määrittelemme kohdan $x = 0$ erikseen?
 
 \begin{esimratk}
-Kun $x \neq 0$, osamäärästä $\frac{x}{x}$ saadaan aina $1$. Kohdassa $x=0$ funktion arvoksi on puolestaan määritelty $1$. Näin ollen funktion $g$ arvojoukko koostuu yhdestä ainoasta luvusta, ykkösestä. Koska lauseke $\frac{0}{0}$ ei ole määritelty, määrittelemme kohdan $x=0$ erikseen. Funktio on siis vakioarvoinen ja voisimme kirjoittaa sen yksinkertaisest $g\colon g(x) = 1$. 
+Kun $x \neq 0$, osamäärästä $\frac{x}{x}$ saadaan aina $1$. Kohdassa $x=0$ funktion arvoksi on puolestaan määritelty $1$. Näin ollen funktion $g$ arvojoukko koostuu yhdestä ainoasta luvusta, ykkösestä. Koska lauseke $\frac{0}{0}$ ei ole määritelty, määrittelemme kohdan $x=0$ erikseen. Funktio on siis vakioarvoinen ja voisimme kirjoittaa sen yksinkertaisesti $g\colon g(x) = 1$. 
 
 \end{esimratk}
 
