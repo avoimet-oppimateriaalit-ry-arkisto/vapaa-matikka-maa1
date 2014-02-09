@@ -16,7 +16,7 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 \end{comment}
 
 \laatikko{
-  \termi{funktio}{Funktio} eli \termi{kuvaus}{kuvaus} joukosta $A$ joukkoon $B$ liittää jokaiseen joukon $A$ alkioon täsmälleen yhden joukon $B$ alkion. Funktion $f$ alkioon $x$ liittämää arvoa merkitään $f(x)$. 
+  \termi{funktio}{Funktio} eli \termi{kuvaus}{kuvaus} $f$ joukosta $A$ joukkoon $B$ liittää jokaiseen joukon $A$ alkioon täsmälleen yhden joukon $B$ alkion. Funktion $f$ alkioon $x$ liittämää arvoa merkitään $f(x)$. 
   %voisi sanoa myös 'yhden ja vain yhden' tai vain 'yhden'; 'täsmälleen yhden' on mielestäni sekä riittävän selkeä ettäsujuva ilmaus -Jouni
   }
   %Tähän väliin voisi laittaa havainnollisen kuvan: toisaalla kenttänä määrittelyjoukko, toisaalta maalijoukko, ja nuoli liittää jonkin määrittelyjoukon alkion maalijoukon alkioon.
@@ -48,14 +48,18 @@ Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä
 
 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 	\hline
-	Tam & Hel & Maa & Huh & Tou & Kes & Hei & Elo & Syys & Loka & Mar & Jou\\
+	tam & hel & maa & huh & tou & kes & hei & elo & syys & loka & mar & jou\\
 	\hline
 	-12 & -16 & -6 & -3 & 6 & 11 & 13 & 12 & 7 & 0 & -4 & -15\\
-	\hline
+	\hline %vaihdoin kuukausien lyhenteet alkamaan pienillä alkukirjaimilla -Jouni
 	\end{tabular}
-Lähde: Ilmatieteenlaitos
+%	\caption*{Lähde: Ilmatieteen laitos}
+	
+Lähde: Ilmatieteen laitos %voisiko tämän tehdä captionina?
 
-Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Eli määrittelyjoukko eli muuttujan x arvot on kuukaudet, ja maalijoukko eli funktion arvojoukko \(f(x)\) lämpötilojen joukko. Nyt esimerkiksi \(f($Tam$)=-12\) ja \(f($Tou$) = 6\). 
+Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Määrittelyjoukko ovat vuoden kaikki kuukaudet, maalijoukkoon kuuluvat kaikki mahdolliset lämpötilat, ja arvojoukko koostuu funktion kaikista arvoista, siis eri kuukausien keskilämpötiloista. %Nyt esimerkiksi \(f($tam$)=-12\) ja \(f($tou$) = 6\). (tämä on edellinen versio) Käyttäisin mieluummin matematiikkamoodia ympärillä ja sisälllä \text{} -Jouni 9.2.2014
+Nyt esimerkiksi $f(\text{tam}) = -12$ ja $f(\text{tou}) = 6$.
+
 %TÄHÄN VOISI LAITTAA KUVAN KUVAAJASTA
 \end{esimerkki}
 
@@ -114,7 +118,7 @@ Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
 \def\vcent#1{\mathsurround0pt$\vcenter{\hbox{#1}}$}
 
 \begin{esimerkki}
-	Funktion $f(x) = \frac{x}{2} - 1$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = \frac{x}{2} - 1$: % FIXME
+	Funktion $f \colon f(x) = \frac{x}{2} - 1$ kuvaaja sisältää kaikki pisteet $(x, y)$, joilla pätee $y = \frac{x}{2} - 1$: % FIXME
 	\begin{center}
 		\begin{tabular}{cc}
 			\begin{tabular}{|r|l|}
@@ -168,7 +172,7 @@ Wolfram Alphalla (\url{http://www.wolframalpha.com/}).
 
 %Funktion määrittelyjoukko koostuu niistä muuttujan arvoista, joilla funktio on määritelty, eli joilla funktion arvo voidaan laskea.
 
-Funkition määrittelyjoukko on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukolla tarkoitetaan tavallisesti sitä reaalilukujen osajoukkoa joille funktion arvo voidaan laskea. %Jouni Kärkkäinen 92.2.2014
+Funktion määrittelyjoukko on niiden arvojen joukko, joille funktion arvo on olemassa. Jos määrittelyjoukkoa ei ole mainittu erikseen, määrittelyjoukolla tarkoitetaan tavallisesti sitä reaalilukujen osajoukkoa joille funktion arvo voidaan laskea. %Jouni Kärkkäinen 92.2.2014
 
 \begin{esimerkki}
 	 Määritellään funktio $g$ lausekkeella \[ g(x) = \sqrt{x}. \]
@@ -239,9 +243,42 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 		\end{kuvaajapohja}
 	\end{center}
 	
-
-
-
 	
 \end{esimerkki}
+	
+\subsection*{Paloittain määritelty funktio}
+
+Kappaleessa (prosenttilaskenta ?) sivuttiin itseisarvon määritelmää. Itseisarvofunktio $\lvert \rvert$ voidaan määritellä seuraavasti. \\ 
+$$
+\lvert \rvert\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert \rvert = \begin{cases}
+                 x & \text{jos } x \geq 0 \\
+                 -x & \text{jos } x < 0
+              
+                \end{cases} %| | ei renderöidy vielä täydellisesti
+$$
+
+Funktio siis jättää ei-negatiiviset luvut ennalleen, mutta vaihtaa negatiivisen luvun vastaluvukseen, ja arvojoukko koostuu pelkästään ei-negatiivisista luvuista. Funktio on määritelty kahdessa eri osassa: lähtöjoukon alkion arvosta riippuen valitaan sille sovellettava lauseke.
+
+\begin{esimerkki}
+ 
+ Määritellään funktio $g\colon \mathbb{R} \to \mathbb{R}$ lausekkeilla
+ $$
+ g(x) = \begin{cases}
+         \frac{x}{x} & \text{jos } x \neq 0 \\
+         1 & \text{jos } x = 0
+        \end{cases}
+$$
+ 
+Mikä on funktion arvojoukko? Miksi määrittelemme kohdan $x = 0$ erikseen?
+
+\begin{esimratk}
+Kun $x \neq 0$, osamäärästä $\frac{x}{x}$ saadaan aina $1$. Kohdassa $x=0$ funktion arvoksi on puolestaan määritelty $1$. Näin ollen funktion $g$ arvojoukko koostuu yhdestä ainoasta luvusta, ykkösestä. Koska lauseke $\frac{0}{0}$ ei ole määritelty, määrittelemme kohdan $x=0$ erikseen. Funktio on siis vakioarvoinen ja voisimme kirjoittaa sen yksinkertaisest $g\colon g(x) = 1$. 
+
+\end{esimratk}
+
+ 
+\end{esimerkki}
+
+	
+
 
