@@ -16,7 +16,11 @@
 
 Englannin kielen sana \textit{number} voi viitata sekä numeroon että lukuun. Sana \textit{digit} tarkoittaa pelkästään yhtä numeromerkkiä. Ruotsiksi luku on \textit{tal}, lukumäärä \textit{antal} ja numeroa tai lukumäärää tarkoittamatonta numeroyhdistelmää kuvaa suomen kielen tapaan sana \textit{nummer}.
 
-Luvulla on aina suuruus mutta numerolla ei välttämättä ole. Esimerkiksi arkipäivän käsitteet postinumero ja puhelinnumero eivät ole lukuja, vaikka niissä numeroita yhdistelläänkin. Emme voi esimerkiksi sanoa, onko postinumero 00950 jollakin tapaa merkitykseltään suurempi kuin postinumero 00900.
+
+%Luvulla on aina suuruus mutta numerolla ei välttämättä ole. Esimerkiksi arkipäivän käsitteet postinumero ja puhelinnumero eivät ole lukuja, vaikka niissä numeroita yhdistelläänkin. Emme voi esimerkiksi sanoa, onko postinumero 00950 jollakin tapaa merkitykseltään suurempi kuin postinumero 00900.
+
+Joskus numerosarjoja ei tulkita minkään asian suuruudeksi tai lukumääräksi, vaan ne ovat vain joitain asioita koodaavia lukuja tai merkkijonoja. Esim. postinumero 00900 merkitsee postinkantajalle tiettyä aluetta jolle postia jaetaan. Tietokoneiden ASCII-merkkijärjestelmässä puolestaan luku 125 merkitsee kirjainta U. %vaihtoehtoinen edelliselle kappaleelle. Minusta esim. ASCII-koodeja voidaan sanoa luvuiksi pikemminkin kuin pelkiksi merkkijonoiksi (tätä vahvistaa että sille koodeille on olemassa ekvivalentit esitysmuodot sekä binääri-, oktaali-, kymmen- että heksadesimaalilukujärjestelmissä). -Jouni
+
 
 \termi{tuhaterotin}{Tuhaterottimena} käytetään suomenkielisessä tekstissä välilyöntiä, ei pilkkua tai pistettä.
 \termi{desimaalierotin}{Desimaalierotin} puolestaan on suomenkielisessä tekstissä pilkku, ei piste kuten yhdysvaltalaisissa laskimissa.
@@ -25,15 +29,10 @@ Luvulla on aina suuruus mutta numerolla ei välttämättä ole. Esimerkiksi arki
 %tuhansien erottelu, yhdysvaltalaisessa kirjassa merkintä \$ 1,000.50 tarkoittaa tuhatta dollaria ja 50 senttiä.
 %\end{esimerkki}
 
-Matematiikassa lukuja merkitään usein kirjaimilla. Tästä on se etu, että kirjain voi tarkoittaa mitä lukua
-tahansa, joten kirjainten avulla pystytään ilmaisemaan luvuille päteviä yleisiä sääntöjä ja laskutoimituksia, joissa ei
-tiedetä, mikä luku johonkin paikkaan kuuluu. Esimerkiksi voimme sanoa, että kaikille luvuille
-(ainakin sellaisille, joita lukion matematiikassa käsitellään) pätee $x+y=y+x$. Tämä on paljon helpompaa
-kuin luetella $2+3=3+2$, $2+4=4+2$, $3+4=4+3$, $2+5=5+2$, jne.
+Matematiikassa lukuja merkitään usein kirjaimilla tai muilla symboleilla. Tästä on se etu, että kirjain voi tarkoittaa mitä lukua tahansa, joten kirjainten avulla pystytään ilmaisemaan kaikille luvuille päteviä yleisiä sääntöjä tarvitsematta välittää siitä, mikä luku johonkin paikkaan kuuluu. Esimerkiksi voimme sanoa, että kaikille luvuille $x$ ja $y$ (ainakin sellaisille, joita lukion matematiikassa käsitellään) pätee $x+y=y+x$. Tämä on paljon helpompaa kuin luetella (äärettömän monta tapausta) esim. $2+3=3+2$, $2+4=4+2$, $3+4=4+3$, $2+5=5+2$, jne.
 
 Yleensä samalla kirjaimella tarkoitetaan samassa asiayhteydessä aina samaa lukua.
-Esmerkiksi edellisessä esimerkissä $x$ tarkoittaa samaa lukua yhtälön kummallakin puolella. $y$ voi tarkoittaa eri lukua kuin $x$, mutta
-ei välttämättä. On myös mahdollista, että $x$ ja $y$ voivat tarkoittaa samaa lukua, eli yllä mainittu sääntö kertoo myös, että $2+2=2+2$.
+Esimerkiksi edellisessä esimerkissä $x$ tarkoittaa samaa lukua yhtälön kummallakin puolella. $y$ tarkoittaa myös jotain lukua joka on sama yhtälön kummallakin puolella. $y$ voi tarkoittaa eri lukua kuin $x$, mutta ei välttämättä. On myös mahdollista, että $x$ ja $y$ voivat tarkoittaa samaa lukua. Siispä yllä mainittu sääntö kertoo myös, että $2+2=2+2$. 
 
 %Laskea-verbin kaksi merkitystä
 
@@ -63,7 +62,7 @@ esimerkiksi $2 \in \nn$. Jos luku ei kuulu johonkin joukkoon, merkitään vastaa
 $-2 \notin \nn$.
 
 Tässä kirjasarjassa katsotaan, että nolla on myös luonnollinen luku. Joissain muissa lähteissä saatetaan kuitenkin
-tarkoittaa luonnollisilla luvuilla joukkoa $\nn_+ = \{1, 2, 3, \ldots\}$ jota kutsutaan myös positiivisten kokonaislukujen joukoksi.
+tarkoittaa luonnollisilla luvuilla joukkoa $\mathbb Z_{>0}~=~\{1, 2, 3, \ldots\}$ jota kutsutaan myös positiivisten kokonaislukujen joukoksi. %(myös positiiviset) kokonaisluvut ovat joukko-opillisesti rakennettuna ihan erilaisia otuksia kuin luonnolliset luvut...
 
 Luonnollisille luvuille $m$ ja $n$ on määritelty yhteenlasku $m + n$, esimerkiksi $5 + 3 = 8$.
 
