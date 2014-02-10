@@ -8,14 +8,7 @@ TEXMFSYSVAR /usr/local/texlive/2013/texmf-var
 TEXMFVAR ~/.texlive2013/texmf-var
 binary_x86_64-linux 1
 collection-basic 1
-collection-binextra 1
-collection-fontsrecommended 1
-collection-games 1
 collection-latex 1
-collection-latexrecommended 1
-collection-metapost 1
-collection-pictures 1
-collection-xetex 1
 in_place 0
 option_adjustrepo 1
 option_autobackup 1
