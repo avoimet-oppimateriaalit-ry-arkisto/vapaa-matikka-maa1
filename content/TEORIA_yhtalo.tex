@@ -20,7 +20,7 @@
 	\end{alakohdat}
 \end{esimerkki}
 
-%yhtä suuri... yhtä suuri :D
+%yhtä suuri ERIKSEEN, ei yhdyssana
 
 
 %Virkerakenne ja yhtälöiden luokittelulaatikon otsikointi...
@@ -78,19 +78,6 @@ Koska yhtälön puolet ovat yhtä suuret, eli tarkoittavat täsmälleen samaa as
 %Esimerkki yhtälöstä, jolla on useita ratkaisuja! annettujen juuriehdotusten tarkistaminen
 %esimerkki, että yhtälön ratkaisun voi myös arvata!
 
-\laatikko[Yhtäsuuruusrelaation ominaisuuksia]{
-
-Yhtäsuuruus on kahden luvun välinen riippuvuus, jolla on seuraavat kolme tärkeää ominaisuutta:
-
-\begin{enumerate}
-
-\item \termi{refleksiivisyys}{Refleksiivisyys}: Jokainen luku on yhtäsuuri itsensä kanssa, eli $x=x$ kaikilla luvuilla $x$.
-\item \termi{symmetrisyys}{Symmetrisyys}: Yhtäsuuruus toimii molempiin suuntiin, eli $x=y$ ja myös $y=x$ kaikilla $x$ ja $y$.
-\item \termi{transitiivisuus}{Transitiivisuus}: Jos $x=y$ ja $y=z$, niin $x=z$.
-
-\end{enumerate}
-}
-
 
 %yhtälöpariesimerkki, viittaus transitiivisuuteen
 
@@ -123,16 +110,9 @@ Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
  Tuntemattomalle $x$ voidaan siis joissain tapauksissa löytää useita arvoja, jotka toteuttavat yhtälön. 
 \end{esimerkki}
 
+\subsection*{Yhtälön ratkaiseminen}
 
-% FIXME: jokin helposti ymmärrettävä esimerkki tuntemattomista
-% mihinkäs tämä alempi teksti, kun yhtälön ratkaisua/muokkaamista on jo käyty aiemmin...
-
-Otsikko: Yhtälön ratkaiseminen
-
-Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla.
-Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut. Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia ja toisella puolella kaikki muu. 
-
-Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
+Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla. Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut. Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia ja toisella puolella kaikki muu.  Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
 
 \begin{esimerkki}
 Ratkaistaan aiemman esimerkin matkan kesto. Yhtälö on siis $5t=15$, jossa t on aika, nopeus on 5 km/h ja matkan pituus 15 km. 
@@ -202,7 +182,6 @@ puolille on sallittua lisätä sama luku.
 		\[ \frac{28,0788(t+600)}{342000} = \frac{27,7778t}{272000} \]
 		
 		Ratkaistaan yhtälö
-		%Välivaiheselityksiä lisäsi Jaakko Viertiö 2013-11-10
 		\begin{align*}
 			\frac{27,7778t}{272000} &= \frac{28,0788(t+600)}{342000} &&\text{| $\cdot{272000}$} &&\text{| $\cdot{342000}$}  \\
 			342000 \cdot 27,7778t &= 272000 \cdot 28,0788(t+600) \\
@@ -220,27 +199,15 @@ puolille on sallittua lisätä sama luku.
 	\end{esimvast}
 \end{esimerkki}
 
-
-Seuraavassa joitakin yleisiä toimenpiteitä yhtälöiden ratkaisuun, joita voi soveltaa päästäkseen eteenpäin. Kyseessä ei ole mikään aina toimiva
-ratkaisuohje, vaan joitain vinkkejä.
-
+Mitään varsinaista ei virhettä yhtälönratkaisussa ei ole tehty niin kauan kuin sama operaatio tehdään aina yhtälön molemmille puolille, mutta vaatii rutiinia, jotta oppii, mitä laskutoimituksia kannattaa tehdä ja missä järjestyksessä. Seuraavassa joitakin yleisiä toimenpiteitä yhtälöiden ratkaisuun, joita voi soveltaa päästäkseen eteenpäin. Kyseessä ei ole mikään aina toimiva ratkaisuohje, vaan yleisiä vinkkejä.
 
 \laatikko[Yleisiä yhtälönratkaisuperiaatteita]{
 	\begin{description}
 		\item[1)] Kerro tuntematonta sisältävät lausekkeet pois nimittäjistä.
 		\item[2)] Yhdistä useat murtolausekkeet yhdeksi laventamalla ne samannimisiksi.
 		\item[3)] Siirrä tuntemattomia sisältävät yhtälön osat samalle puolelle ja ota tuntematon yhteiseksi tekijäksi.
-		\item[4)] Kumoa juuret korottamalla yhtälö puolittain sopivaan potenssiin.
+		\item[4)] Kumoa juuret ja murtopotenssit korottamalla yhtälö puolittain sopivaan potenssiin.
 		\item[5)] Sulkuja ei välttämättä aina kannata kertoa auki.
 		\item[6)] Yhtälö on ratkaistu vasta, kun jäljellä on enää vain yksi kappale tuntematonta suuretta, ja se sijaitsee yksin omalla puolellaan yhtälöä.
 	\end{description}
 }
-%Muokannut alustavasti Jaakko Viertiö 2013-11-10
-
-Siirrymme nyt tarkastelemaan tärkeää yhtälöiden erikoistapausta, ensimmäisen asteen yhtälöitä.
-
-%TEHTÄVIÄ tähän ennen ensimmäisen asteen yhtälöä!
-
-%TEHTÄVIÄ: 1) Onko yhtälö tosi vai epätosi? Aina tosi, ehdollsiesti tosi? 2) Tarkista, voivatko seuraavat olla yhtälön juuria, ... 3) Kirjoita yhtälönä?
-
-%Tutki, onko X yhtälön juuri...
