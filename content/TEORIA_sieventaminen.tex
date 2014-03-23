@@ -18,7 +18,7 @@ Kun lausekkeissa esiintyy tuntemattomia lukuja, on tapana sanoa, että kaksi lau
 
 \subsection*{Laskujärjestys}
 
-Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusjärjestyksellä usein vaikutusta lausekkeen arvoon. Tällöin käytetään sulklumerkkejä ilmaisemaan haluttua laskujärjestystä. Tämän lisäksi on olemassa yleinen sopimus siitä, missä järjestyksessä laskutoimitukset lasketaan silloin, kun suluilla ei ole muuta ilmaistu.
+Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusjärjestyksellä usein vaikutusta lausekkeen arvoon. Tällöin käytetään sulkumerkkejä ilmaisemaan haluttua laskujärjestystä. Tämän lisäksi on olemassa yleinen sopimus siitä, missä järjestyksessä laskutoimitukset lasketaan silloin, kun suluilla ei ole muuta ilmaistu.
 
 Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
 
@@ -143,7 +143,7 @@ Vasemmalta oikealle luettaessa puhutaan \termi{sulkeiden avaaminen}{sulkujen ava
 
 Osittelulakia voidaan käyttää muiden laskutoimituksiin liittyvien lakien rinnalla. Kun vähennyslasku ajatellaan vastaluvun lisäämisenä ja jakolasku ajatellaan käänteisluvulla kertomisena, voidaan osittelulaki laajentaa koskemaan myös jakolaskua. Seuraavassa on esimerkkejä tällaisista osittelulain sovelluksista:
 
-\laatikko{
+\begin{esimerkki}
 \begin{align*}
 &(b+c)a = a(b+c) = ab+ac = ba+ca \\
 &\text{ (Sovellettu vaihdantalakia)} \\
@@ -154,7 +154,7 @@ Osittelulakia voidaan käyttää muiden laskutoimituksiin liittyvien lakien rinn
 &(b+c):a = (b+c)\cdot\frac1a = b\cdot\frac1a+c\cdot\frac1a = b:a+c:a \\
 &\text{ (Sovellettu jakolaskun ilmaisemista käänteisluvun avulla.) }
 \end{align*}
-}
+\end{esimerkki}
 
 Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$.
 
@@ -171,6 +171,7 @@ Sievennyksen lisäksi osittelulaki on kätevä työkalu luvuilla laskemisessa ja
 46\cdot 9 &= 46\cdot (10-1) \\ &= 46\cdot 10 - 46\cdot 1 \\ &= 460-46 \\ &= 414
     \end{align*}
 \end{esimerkki}
+%toinen esimerkki
 
 \subsubsection*{Käänteistoimitukset}
 
@@ -202,11 +203,11 @@ Nämä säännöt ovat sieventämisen työkaluja. Voimme poistaa niiden avulla y
 
 \begin{esimerkki} 
     \begin{alakohdat}
-    \alakohta{sievennetään $2+c-c$, missä c on mikä tahansa kokonaisluku.\vspace*{11pt}
+    \alakohta{sievennetään $2+c-c$, missä $c$ on mikä tahansa kokonaisluku.\vspace*{11pt}
    
-    Koska $-c$ on $c$:n vastaluku, niin niiden summa $c+(-c)$ on $0$. Tällöin lausekkeen arvo on $2+0$. Huomaa, että vastaus on 2 riippumatta $c$:n arvosta.}
+    Koska $-c$ on $c$:n vastaluku, niin niiden summa $c+(-c)$ on $0$. Tällöin lausekkeen arvo on $2+0$. Huomaa, että vastaus on $2$ riippumatta $c$:n arvosta.}
     \alakohta{Esimerkki kerto- ja jakolaskun keskinäisestä kumoamisvaikutuksesta}
-    \alakohta{Esimerkki sekasupistuksesta. Vaikkapa $8+((x-x)+z)/z=8$. }
+%    \alakohta{Esimerkki sekasupistuksesta. Vaikkapa $8+((x-x)+z)/z=8$. }
     \end{alakohdat}
 \end{esimerkki}
 
