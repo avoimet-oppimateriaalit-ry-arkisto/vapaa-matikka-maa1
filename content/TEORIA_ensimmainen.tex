@@ -33,6 +33,8 @@ Muun muassa seuraavat yhtälöt ovat ensimmäisen asteen yhtälöitä:
 %		tuntemattoman $x$ ratkaisemiseksi. Yhtälön ratkaisu on $x=-18$.
 %	\end{description}
 
+Ensimmäisen asteen yhtälöt ratkaistaan kuten edellisessä kappaleessa esitettiin, eli tekemällä yhtälön molemmille puolille 
+samoja toimenpiteitä, kunnes $x$ saadaan selvitettyä. 
 
 \begin{esimerkki}
 Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
@@ -52,12 +54,12 @@ Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen
 
 \begin{align*}
 ax+b &= cx+d & &| \, \text{Vähennetään molemmilta puolilta $cx+d$}. \\
-ax+b - (cx+d) &= 0 & &| \, \text{Järjestellään termejä uudelleen.} \\
+ax+b - (cx+d) &= 0 & &| \, \text{Avataan sulut ja järjestellään termejä uudelleen.} \\
 ax - cx + b - d &= 0 & &| \, \text{Otetaan yhteinen tekijä.} \\
 (a-c)x + (b-d) &= 0 & &
 \end{align*}
 
-Tämä on määritelmän mukainen ensimmäisen asteen yhtälö, koska $a \neq c$.
+Tämä on määritelmän mukainen ensimmäisen asteen yhtälö, koska $a \neq c$, eli $a-c \neq 0$.
 
 \begin{esimerkki}
 Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun: \\
@@ -65,3 +67,36 @@ Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun: \\
 (2) Vähennetään molemmilta puolilta $b$. Saadaan yhtälö $(a-c)x = d-b$. \\
 (3) Jaetaan molemmat puolet lausekkeella $(a-c)$. Saadaan yhtälö ratkaistuun muotoon $x = \frac{d-b}{a-c}$. 
 \end{esimerkki}
+
+Ensimmäisen asteen yhtälöllä voidaan mallintaa joitakin yksinkertaisia käytännön tilanteita. 
+
+\begin{esimerkki} 
+Matti ja Teppo ovat veljeksiä. Teppo on 525 päivää vanhempi kuin Matti. Muodostetaan ensimmäisen asteen yhtälö, 
+josta voidaan ratkaista Matin ikä sijoittamalla $x$:n paikalle Tepon ikä. Lasketaan saadulla yhtälöllä Matin ikä sinä päivänä, kun 
+Teppo täyttää 50 vuotta. Oletetaan nyt, että vuodessa on 365 päivää.
+
+Merkitään Tepon ikää päivissä $x$:llä ja Matin ikää päivissä $y$:llä. Tiedetään, että koska Teppo on 525 päivää vanhempi kuin 
+Matti, niin $x=y+525$. Koska tehtävässä pyydettiin yhtälöä, josta voidaan ratkaista Matin ikä, muokataan saatua ensimmäisen asteen 
+yhtälöä hieman:
+
+      \begin{align*}
+	   x &= y+525 & &| \, \text{Vähennetään puolittain 525.} \\
+	   x-525 &= y & &| \, \text{Tiedetään, että jos $a=b$, niin $b=a$.} \\
+	   y &= x-525 & &
+      \end{align*}
+      
+Nyt on saatu ensimmäisen asteen yhtälö, josta saadaan ratkaistua Matin ikä, kunhan vain tiedetään Tepon ikä. Koska $x$ ja $y$ ovat 
+veljesten iät päivinä, muunnetaan hieman yksiköitä. 50 vuotta päivissä on $50 \cdot 365 = 18\,250$. Nyt saadaan
+
+      \begin{align*}
+	  y &= x-525 & &| \, \text{Sijoitetaan $x$:n paikalle Tepon ikä $18\,250$ päivää.} \\
+	  y &= 18\,250-525 & & \\
+	  y &= 17\,725 & &| \, \text{Muokataan vastausta informatiivisempaan muotoon.} \\
+	  y &= 17\,520+205 & & \\
+	  y &= 48 \cdot 365 +205 & &
+      \end{align*}
+      
+  Siis kysytty Matin ikä on 48 vuotta ja 205 päivää.
+  
+\end{esimerkki}
+%räpelsi jaakko viertiö 23.3.2014 
