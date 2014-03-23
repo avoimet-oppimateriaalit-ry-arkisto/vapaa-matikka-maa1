@@ -19,13 +19,31 @@ Englannin kielen sana \textit{number} voi viitata sekä numeroon että lukuun. S
 Jos näet yhdysvaltalaisessa yhteydessä ilmaisun 1,000.50 dollaria, tämä tarkoittaa tuhatta dollaria ja 50 senttiä. Suomenkielisessä tekstissä sama luku kirjoitettaisiin 1\,000,50 dollaria.
 \end{esimerkki}
 
+Matematiikan merkintätavat eivät yleensä ole mitään niin sanottua luonnollista kieltä kuten suomi tai tanska, vaan asiat pyritään merkitsemään tiivisti ja mahdollisimman universaalein merkinnöin niin, että samoja merkintöjä ymmärtäisi joku muukin kuin samaa äidinkieltä puhuva. Matematiikan kehitys on sitä myöten tuonut mukanaan suuren määrän erilaisia merkintöjä, symboleita ja historian varrella muodostuneita käytäntöjä.
+
+Matematiikassa lukuja merkitään tai pikemminkin symboloidaan usein kirjaimilla. Tästä on se etu, että kirjain voi tarkoittaa mitä lukua tahansa, joten kirjainten avulla pystytään ilmaisemaan kaikille luvuille päteviä yleisiä sääntöjä tarvitsematta välittää siitä, mikä luku johonkin paikkaan kuuluu. Matematiikaasa pyritään yleistämään ilmaisut mahdollisimman kattaviksi.
+
+\begin{esimerkki}
+Voidaan tiivistää $x=x$ ilmaisemaan, että jokainen luku on yhtä suuri itsensä kanssa, eikä meidän tarvitse erikseen luetella mahdollisia (kaikkiaan ääretöntä määrää) lukuja: $0=0$, $1=1$, $2=2$, ...
+\end{esimerkki}
+
+\begin{esimerkki}
+Kaikille luvuille $x$ ja $y$ (ainakin sellaisille, joita lukion matematiikassa käsitellään) pätee $x+y=y+x$. Tämä on paljon helpompaa kuin luetella (äärettömän monta tapausta) esim. $2+3=3+2$, $2+4=4+2$, $3+4=4+3$, $2+5=5+2$, jne.
+\end{esimerkki}
+
+
+Yleensä samalla kirjaimella tarkoitetaan samassa asiayhteydessä aina samaa lukua. Esimerkiksi edellisessä esimerkissä $x$ tarkoittaa samaa lukua yhtälön kummallakin puolella. $y$ tarkoittaa myös jotain lukua joka on sama yhtälön kummallakin puolella. $y$ voi tarkoittaa eri lukua kuin $x$, mutta ei välttämättä. On myös mahdollista, että $x$ ja $y$ voivat tarkoittaa samaa lukua. Siispä yllä mainittu sääntö kertoo myös, että $2+2=2+2$. 
+
+Kirjaimia, joiden lukuarvo voi vaihdella, on tapana kutsua \termi{muuttuja}{muuttujiksi}, ja sellaisia,
+joiden lukuarvon ajatellaan pysyvän muuttumattomana, on tapana kutsua \termi{vakio}{vakioiksi}.
+
 \subsection*{Relaatiot ja laskutoimitukset}
 
-Matemaattisesta notaatiosta + relaatio + laskutoimitus + yhtäsuuruus
+Matematiikassa olemme kiinnostuneita tutkimuksen kohteen (yleensä lukujen) ominaisuuksista ja niiden suhteista toisiin asioihin. Riippuvuussuhteita kutsutaan matematiikassa \termi{relaatio}{relaatioiksi}. Tulimme jo käyttäneeksi kahta erilaista relaatiota, joilla kummallakin on oma merkintänsä: yhteenlasku ja yhtäsuuruus.
 
+Harjoituksena vähän formaalimmasta matematiikasta esitämme seuraavat yhtäsuuruusrelaation ominaisuudet:
 
-\laatikko[Yhtäsuuruusrelaation ominaisuuksia]{
-
+\laatikko[Yhtäsuuruusrelaatio]{
 Yhtäsuuruus on kahden luvun välinen riippuvuus, jolla on seuraavat kolme tärkeää ominaisuutta:
 \begin{enumerate}
 \item \termi{refleksiivisyys}{Refleksiivisyys}: Jokainen luku on yhtäsuuri itsensä kanssa, eli $x=x$ kaikilla luvuilla $x$.
@@ -34,13 +52,16 @@ Yhtäsuuruus on kahden luvun välinen riippuvuus, jolla on seuraavat kolme tärk
 \end{enumerate}
 }
 
-Matematiikassa lukuja merkitään usein kirjaimilla tai muilla symboleilla. Tästä on se etu, että kirjain voi tarkoittaa mitä lukua tahansa, joten kirjainten avulla pystytään ilmaisemaan kaikille luvuille päteviä yleisiä sääntöjä tarvitsematta välittää siitä, mikä luku johonkin paikkaan kuuluu. Esimerkiksi voimme sanoa, että kaikille luvuille $x$ ja $y$ (ainakin sellaisille, joita lukion matematiikassa käsitellään) pätee $x+y=y+x$. Tämä on paljon helpompaa kuin luetella (äärettömän monta tapausta) esim. $2+3=3+2$, $2+4=4+2$, $3+4=4+3$, $2+5=5+2$, jne.
+\begin{esimerkki}
 
-Yleensä samalla kirjaimella tarkoitetaan samassa asiayhteydessä aina samaa lukua. Esimerkiksi edellisessä esimerkissä $x$ tarkoittaa samaa lukua yhtälön kummallakin puolella. $y$ tarkoittaa myös jotain lukua joka on sama yhtälön kummallakin puolella. $y$ voi tarkoittaa eri lukua kuin $x$, mutta ei välttämättä. On myös mahdollista, että $x$ ja $y$ voivat tarkoittaa samaa lukua. Siispä yllä mainittu sääntö kertoo myös, että $2+2=2+2$. 
+\end{esimerkki}
 
-Kirjaimia, joiden lukuarvo voi vaihdella, on tapana kutsua \termi{muuttuja}{muuttujiksi}\label{muuttuja} ja sellaisia,
-joiden lukuarvon ajatellaan pysyvän muuttumattomana, on tapana kutsua \termi{vakio}{vakioiksi}.
+On hyvinkin mahdollista, että nämä ominaisuudet voivat tuntua lukijasta triviaaleilta eli niin yksinkertaisilta ja itsestään selviltä, ettei niitä tarvitse edes mainita. Matematiikka on kuitenkin kumulatiivinen eli edellisen päälle rakentuva ja tarkka tieteenala, joten on on tarpeellista, että kaikki asiat – myös triviaalit – määritellään hyvin. Hyvin määritelty tarkoittaa... selvää ja yksikäsitteistä... nimetään ominaisuudet, jotta niihin voidaan myöhemmin viitata
 
+
+
+
+yhteenlasku on esimerkki operaatiosta
 
 \subsection*{Luonnolliset luvut}
 
