@@ -1,4 +1,4 @@
-\subsection*{Suureet ja yksiköt}
+ \subsection*{Suureet ja yksiköt}
 
 Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \termi{yksikkö}{yksikön} kanssa. Tällöin luku ja yksikkö yhdessä esittävät tietoa \termi{suure}{suureesta} eli jostakin mitattavasta ominaisuudesta.
 
@@ -115,7 +115,6 @@ Monesti suureita kuvataan \termi{kerrannaisyksikkö}{kerrannaisyksiköiden} avul
 
 \laatikko[Tavallisimmat kerrannaisyksiköiden etuliitteet]{
 \begin{center}
-%\begin{tabular}{c|c}
 \begin{tabular}{c|c|c|c}
 Nimi & Kerroin & Tunnus & Arvo suomeksi \\
 \hline
@@ -139,7 +138,6 @@ nano & $10^{-9}$ & n 	& miljardisosa\\
 piko & $10^{-12}$ & p & biljoonasosa\\
 femto & $10^{-15}$ & f & tuhatbiljoonasosa
 \end{tabular}
-%\end{tabular}
 \end{center}
 }
 
@@ -159,20 +157,39 @@ Ilmaisussa 0,000046 metriä luku on niin pieni, että on käytännöllisempää 
 Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. Esimerkiksi $1\,\textrm{ng} = 1 \cdot 10^{-9}\,\textrm{g} = 0,000000009\,\textrm{g} $.
 \end{esimerkki}
 
-%tähän vai minne kymmenpotenssimuotojen ja suurten lukujen lukusanoista? long ja short scale
+%long ja short scale?
 
-% Tässä on Siirin alustavaa pohdintaa siitä, mitä alaotsikon ``suuruusluokat ja kymmenpotenssimuoto'' alle on tulossa.. 
-% Kymmenpotenssimuoto eli eksponenttimuoto on merkintätapa, jossa luku ilmoitetaan kertoimen sekä jonkin kymmenen kokonaislukupotenssin tulona. Kymmenpotenssimuodosta on hyötyä, kun halutaan kirjoittaa suuria tai pieniä lukuja lyhyesti. Mittaustarkkuuden ilmoittamiseksi tarvitaan joskus kymmenpotenssimuotoa. On yleinen tapa valita esitysmuoto niin, että kerroin on vähintään yksi, mutta alle kymmenen. 
+\subsection*{Suuruusluokat ja kymmenpotenssimuoto}
 
-%Esimerkkejä.
-%•	Sama luku voidaan esittää äärettömän monella tavalla kymmenpotenssimuodossa. 4321=4,321*103=43,21*102=432,1*10-1
-%•	”Pilkun siirtämisellä” tarkoitetaan käytännössä luvun kymmenpotenssiesityksen muokkaamista. Pilkku siirtyy oikealle yhtä monta pykälää kuin kymmenen potenssi pienenee ja päinvastoin. 0,4121*104=41,21*102 (=412,1*100 eli 412,1)  ja 9,1*102 = 0,91*103 (= 910*100 = 910) //tehdään tästä jokin kiva taulukko tuon litanjan sijaan//
-%•	Maan massa on noin 5 974 000 000 000 000 000 000 000 kg. Muuta massa kymmenpotenssimuotoon, jossa kerroin on yli yksi, mutta alle kymmenen. 
-%Ratkaisu: 5,974•1024 kg	Vetymolekyylissä H2 ytimien välinen etäisyys on noin 0,000 000 000 074 m eli 7,4•10-11 m
-%•	Jos juoksuradan pituudeksi ilmoitetaan 1000 m, ei lukija voi tietää, millä tarkkuudella mittaus on tehty. Mittaustarkkuus välittyy kymmenpotenssin avulla: jos etäisyys ilmoitetaan muodossa 1,00•103 m, on mitattu kymmenen metrin tarkkuudella, jos muodossa 1,0•103, on mitattu sadan metrin tarkkuudella jne.
-%•	Edellä esitetty ”pilkun siirtäminen” tapahtuu vastaavalla tavalla silloin, kun muokataan 
+Kymmenpotenssimuoto eli eksponenttimuoto on merkintätapa, jossa luku ilmoitetaan kertoimen sekä jonkin kymmenen kokonaislukupotenssin tulona. Kymmenpotenssimuodosta on hyötyä, kun halutaan kirjoittaa suuria tai pieniä lukuja lyhyesti. Mittaustarkkuuden ilmoittamiseksi tarvitaan joskus kymmenpotenssimuotoa. On yleinen tapa valita esitysmuoto niin, että kerroin on vähintään yksi mutta alle kymmenen. Sama luku voidaan esittää äärettömän monella tavalla kymmenpotenssimuodossa. 
 
+”Pilkun siirtämisellä” tarkoitetaan käytännössä luvun kymmenpotenssiesityksen muokkaamista. Pilkku siirtyy oikealle yhtä monta pykälää kuin kymmenen potenssi pienenee ja päinvastoin. Pilkuttoman luvun tapauksessa pilkku ``kuvitellaan luvun perään''. Koska $10^0 = 1$, voidaan ilman kymmenpotenssia esitetyn luvun perään tarvittaessa lisätä tämä kerroin mielessä. $10$ tarkoittaa luonnollisesti samaa asiaa kuin $10^1$. 
 
+\laatikko[Joitakin esitysmuotoja samoille luvuille]{
+\begin{center}
+\begin{tabular}{c|c|c|c|c|c|c}
+\hline
+$1\,234\,000\cdot10^{-3}$ & $14\cdot10^{-3}$ & $130\,000\,000\,000\cdot10^{-3}$ & $1\cdot10^{-5}$ \\
+$123\,400\cdot10^{-2}$ & $1,4\cdot10^{-2}$ & $13\,000\,000\,000\cdot10^{-2}$ & $0,1\cdot10^{-4}$ \\
+$12\,340\cdot10^{-1}$ & $0,14\cdot10^{-1}$ &  $1\,300\,000\,000\cdot10^{-1}$ &  $0,001\cdot10^{-2}$ \\
+$1\,234$ & $0,014$ & $130,000\,000$ & $0,00001$ \\
+$123,4\cdot10$ & $0,0014\cdot10$ & $130\cdot10^{6}$ & $0,000001\cdot10$ \\
+$12,34\cdot10^{2}$ & $0,00014\cdot10^{2}$ & $1,3\cdot10^{2}$ & $0,0000001\cdot10^{2}$ \\
+$1,234\cdot10^{3}$ & $0,000014\cdot10^{3}$ & $0,13\cdot10^{9}$ & $0,00000001\cdot10^{3}$ \\
+    	 \end{tabular}
+  \end{center}
+}
+\begin{esimerkki}
+Maan massa on noin $5\,974\,000\,000\,000\,000\,000\,000\,000$\,kg  eli $5,974\cdot10^{24}$\,kg.
+\end{esimerkki}
+
+\begin{esimerkki}
+Vetymolekyylissä H$_2$ ytimien välinen etäisyys on noin $0,000000000074$\,m eli $7,4\cdot10^{11}$\,m. 
+\end{esimerkki}
+
+\begin{esimerkki}
+Jos juoksuradan pituudeksi ilmoitetaan $1\,000$\,m, ei lukija voi tietää, millä tarkkuudella mittaus on tehty. Mittaustarkkuus välittyy kymmenpotenssin avulla: jos etäisyys ilmoitetaan muodossa $1,00\cdot10^{3}$\,m, on mitattu kymmenen metrin tarkkuudella, ja jos muodossa $1,0\cdot10^{3}$\,m, on mitattu sadan metrin tarkkuudella jne.
+\end{esimerkki}
 
 
 \laatikko[Huomautus tietotekniikasta]{
@@ -185,8 +202,6 @@ Tietokoneiden rakenteen kaksikantaisuuden (ks. liite lukujärjestelmistä) johdo
 %esimerkki
 
 \subsection*{Yksiköiden yhdistäminen}
-
-%hakee vielä vähän loogista järjestystä :) T: Joonas
 
 Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin väli kertolaskun asemesta. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon.
 
@@ -403,8 +418,7 @@ Luku & Merkitsevät numerot \\
 \end{center}
 
 %miten tämä liittyy merkitseviin numeroihin?
-Jos esimerkiksi pöydän paksuudeksi on mitattu millin tuhannesosien tarkkuudella 2\,cm, voidaan pituus ilmoittaa muodossa 2,0000\,cm, jolloin tarkkuus tulee näkyviin.
-
+%Jos esimerkiksi pöydän paksuudeksi on mitattu millin tuhannesosien tarkkuudella 2\,cm, voidaan pituus ilmoittaa muodossa 2,0000\,cm, jolloin tarkkuus tulee näkyviin.
 %Samasta syystä kellonaikoja ilmoitettaessa klo 19 käsitetään siten, että kyse on tasatunnista. Klo 19.00 ei lisäinformaatiota?
 
 Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden määrässä. Kasvimaalla asuvaa 100 citykania on tuskin laskettu ihan tarkasti, mutta 100\,m juoksuradan todellinen pituus ei varmasti ole todellisuudessa esimerkiksi 113\,m.
