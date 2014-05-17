@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa1.svg)](https://travis-ci.org/avoimet-oppimateriaalit-ry/vapaa-matikka-maa1)
+
 ## Vapaa matikka MAA1 (Funktiot ja yhtälöt)
 
 * Below in English
