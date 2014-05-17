@@ -1,7 +1,8 @@
+\providecommand{\lukufilter}[2]{#2} % ylikirjoitetaan kaanna_luku.sh -skriptistä.
 \newcommand{\osa}[1]{\chapter{#1}} % osa
 \newcommand{\nosa}[1]{\chapter*{#1} \addcontentsline{toc}{chapter}{#1}} % numeroimaton osa
-\newcommand{\luku}[2]{\section{#2} \input{content/TEORIA_#1} \input{content/TEHT_#1}} % luku
-\newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \input{content/#1}} % numeroimaton luku
+\newcommand{\luku}[2]{\section{#2} \lukufilter{#1}{\input{content/TEORIA_#1} \input{content/TEHT_#1}}} % luku
+\newcommand{\nluku}[2]{\section*{#2} \addcontentsline{toc}{section}{#2} \lukufilter{#1}{\input{content/#1}}} % numeroimaton luku
 \newcommand{\vast}{\section*{Vastaukset} \addcontentsline{toc}{section}{Vastaukset} \begin{vastaussivu} \input{content/LIITE_vastaukset} \end{vastaussivu}}
 
 \Opensolutionfile{ans}[content/LIITE_vastaukset] % kirjoittaa vastaukset tiedostoon content/LIITE_vastaukset.tex
