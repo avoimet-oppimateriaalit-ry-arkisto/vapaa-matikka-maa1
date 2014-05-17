@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# This script is for AUTOMATIC INSTALLATION of LaTeX. It is meant to be used
+# with Travis, Vagrant, etc. It is not recommended to install LaTeX on your
+# machine with this script.
+#
+# Tämä skripti on tarkoitettu LaTeXin AUTOMAATTISEEN ASENTAMISEEN. Tämä ei ole
+# suositeltava tapa asentaa LaTeX
+
+DEPENDENCIES=""
+
+while read DEP
+do
+  DEPENDENCIES="$DEPENDENCIES $DEP"
+done < "dependencies_latex"
+
+wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+tar -xzf install-tl-unx.tar.gz
+sudo ./install-tl-*/install-tl --profile=travis/texlive.profile
+sudo /usr/local/texlive/2013/bin/x86_64-linux/tlmgr install $DEPENDENCIES
+export PATH=/usr/local/texlive/2013/bin/x86_64-linux:$PATH
