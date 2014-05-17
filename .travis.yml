@@ -1,0 +1,5 @@
+language: latex
+install:
+  - ./commons/latex-install-scripts/install_latex
+  - export PATH=/usr/local/texlive/2013/bin/x86_64-linux:$PATH
+script: make
