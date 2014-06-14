@@ -19,7 +19,7 @@ tuloa $a\cdot \frac{b}{c}$.
 Murtolukujen laskutoimituksia varten sekaluvut kannattaa usein muuttaa murtolukuesitykseksi. 
 \newpage
 
-Jos kahdella murtoluvulla on sama nimittäjä, niitä sanotaan \termi{samannimiset}{samannimisiksi}. %yhdyssana...? JA TARKISTA MURTOLUKU, RATIONAALUKU, MURTOLUKUMUOTO, MURTOLUKUESITYS -KOHERENSSI!!!
+Jos kahdella murtoluvulla on sama nimittäjä, niitä sanotaan \termi{samannimisyys}{samannimisiksi}. %yhdyssana...? JA TARKISTA MURTOLUKU, RATIONAALUKU, MURTOLUKUMUOTO, MURTOLUKUESITYS -KOHERENSSI!!!
 
 \begin{esimerkki}
 Luvut $\frac15$, $\frac75$ ja $-\frac{25}{5}$ ovat keskenään samannimisiä. Luvut $\frac23$ ja $\frac57$ eivät ole samannimisiä.
@@ -64,14 +64,13 @@ Mitä tahansa kahta murtolukua voidaan vertailla laventamalla (tai supistamalla)
 
 \laatikko{
     Jos murtolukujen nimittäjät ovat samat, 
-    voidaan murtoluvut laskea yhteen laskemalla osoittajat yhteen.
+    voidaan murtoluvut laskea yhteen laskemalla osoittajat yhteen. %PERUSTELU: PERUSTUU OSITTELULAKIIN
     \[
     \frac{a}{c} + \frac{b}{c} = \frac{a+b}{c}
-    \]
-    missä $c \neq 0$
+    \], missä $c \neq 0$
 }
 
-Murtolukuja, joiden nimittäjät ovat samat, sanotaan \termi{samanniminen}{samannimisiksi}. Jos yhteenlaskettavilla murtoluvuilla on eri nimittäjät, murtoluvut lavennetaan ensin samannimisiksi ja sitten osoittajat lasketaan yhteen. Jos siis $\frac{a}{b}$ ja $\frac{c}{d}$ ovat murtolukuja (missä $b \neq 0$ ja $d \neq 0$), lasketaan
+Jos yhteenlaskettavilla murtoluvuilla on eri nimittäjät, murtoluvut lavennetaan ensin samannimisiksi ja sitten osoittajat lasketaan yhteen. Jos siis $\frac{a}{b}$ ja $\frac{c}{d}$ ovat murtolukuja (missä $b \neq 0$ ja $d \neq 0$), lasketaan
 
 \laatikko{
     \[
@@ -104,7 +103,7 @@ Yllä esitetty menettely, missä murtoluvut on lavennettu toistensa nimittäjill
     Kaikki rationaaliluvut voidaan esittää murtolukumuodossa, mutta myöskokonaisluvut voidaan esittää murtolukuina asettamalla murtoluvun nimittäjäksi yksi. Tätä voidaan käyttää, kun lasketaan yhteen kokonaislukuja ja murtolukuja.
     
     \begin{esimerkki}
-        Laske\[ 2 + \frac{1}{3}\].
+        Laske\[ 2 + \frac{1}{3}.\]
         \textbf{Ratkaisu.}
         Kirjoitetaan lausekkeen kokonaisluku $2$ murtolukuna, minkä jälkeen murtoluvut voidaan laventaa samannimisiksi ja laskea yhteen:
         \begin{align*}
@@ -123,27 +122,27 @@ Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlask
 %ei-niin-pitkälle menevä esimerkki vähennyslaskusta
  %selitä, miksi tuo toimii: koska kertolaskun vaihdannaisuus %SEKALUKU PITÄÄ SELITTÄÄ PAREMMIN! ja antaa esimerkkejä!!!
 %lisätäänkö lavennusmerkki sievennystehtäviin?
-
+\newpage
 \begin{esimerkki}
         Laske \[2\frac{2}{3} - \frac{3}{7}\] ja anna vastaus sekamurtolukuna.
         
         \textbf{Ratkaisu.}
     %    Aloitetaan muuttamalla sekalukuesitys murtoluvuksi.
         \begin{align*}
-            2\frac{2}{3} - \frac{3}{7}\\
-            &=2+\frac{2}{3} - \frac{3}{7}\\
+            2\frac{2}{3} - \frac{3}{7}&=2+\frac{2}{3} - \frac{3}{7}\\
             &=\frac{2}{1}+\frac{2}{3} - \frac{3}{7}\\
             &=\frac{2\cdot3}{1\cdot3}+\frac{2}{3}-\frac{3}{7}\\
-            &=\frac{2\cdot3+2}{3} - \frac{3}{7} \\
+            &=\frac{6}{3}+\frac{2}{3}-\frac{3}{7}\\
+            &=\frac{6+2}{3} - \frac{3}{7} \\
             &=\frac{8}{3} - \frac{3}{7}\\
-            &=\frac{7\cdot8}{7\cdot3} - \frac{3\cdot3}{3\cdot7}\\
+            &=\frac{8\cdot7}{3\cdot7} - \frac{3\cdot3}{7\cdot3}\\
             &=\frac{56}{21} - \frac{9}{21}\\
             &=\frac{56-9}{21}\\
             &=\frac{45}{21}\\
-            &=\frac{45}{21}\\
-            &=\frac{45:3}{21:3}\\
+            &=\frac{45/3}{21/3}\\
             &=\frac{15}{7}\\
-            &=\frac{2\cdot7+1}{7}\\ %TÄSTÄ ETEENPÄIN, TÄMÄ VAIHE PITÄÄ SELITTÄÄ (eli lavennus ``käänteisesti``)
+            &=\frac{14+1}{7}\\
+            &=\frac{2\cdot7+1}{7}\\ %TÄSTÄ ETEENPÄIN, TÄMÄ VAIHE PITÄÄ SELITTÄÄ (eli lavennus ``käänteisesti``) (osittelulaki)
             &=\frac{2\cdot7}{7}+\frac{1}{7}\\
             &=\frac{2}{1}+\frac{1}{7}\\
             &=2+\frac{1}{7}\\
@@ -219,6 +218,9 @@ Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlask
 \includegraphics[scale=0.4]{pictures/Kuva3-1-4.pdf}
 \includegraphics[scale=0.4]{pictures/Kuva3-1-5.pdf}
 
+
+%esimerkkejä...
+
 \subsection*{Murtolukujen jakolasku}
 
 \laatikko{
@@ -232,6 +234,7 @@ Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlask
     \[
     \frac{a}{b}\cdot \frac{b}{a} = 1.
     \]    
+%esitä analogia a-b=a+(-b) ja PERUSTELLAAN TÄLLÄ JA OSITTELULAILLA YHTEENLASKU NIMITTÄJÄSSÄ!
 
   %  Murtolukujen $p=\frac{a}{b}$ ja $q=\frac{c}{d}\neq 0$ \termi{osamäärä}{osamäärä} $p : q$ saadaan, kun kerrotaan luku $p$ luvun $q$ käänteisluvulla,
  %   \[
