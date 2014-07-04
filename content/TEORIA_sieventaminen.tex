@@ -23,12 +23,12 @@ Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusj
 Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
 
 \laatikko{
-\begin{enumerate}
-\item{Suluissa olevat lausekkeet}
-\item{Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)}
-\item{Kerto- ja jakolaskut vasemmalta oikealle}
-\item{Yhteen- ja vähennyslaskut vasemmalta oikealle}
-\end{enumerate}
+\vaiheet{
+§ Suluissa olevat lausekkeet
+§ Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)
+§ Kerto- ja jakolaskut vasemmalta oikealle
+§ Yhteen- ja vähennyslaskut vasemmalta oikealle
+}
 }
 
 Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
@@ -179,34 +179,32 @@ Luvun ja sen vastaluvun summa on nolla. Yhteen- ja vähennyslasku ovat toistensa
 luvun lisääminen ja vähentäminen peräkkäin kumoavat toisensa:
 
 \laatikko{
-\begin{alakohdat}
-\alakohta{$a-a=0$}
-\alakohta{$-a+a=0$}
-\alakohta{$a+b-b=a$}
-\alakohta{$a-b+b=a$}
-\end{alakohdat}
+\alakohdat{
+§ $a-a=0$
+§ $-a+a=0$
+§ $a+b-b=a$
+§ $a-b+b=a$
+}
 }
 
 Vastaavasti luvun ja sen käänteisluvun tulo on nolla. Kerto- ja jakolasku ovat toistensa käänteisoperaatioita, joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
 
 \laatikko{
-\begin{alakohdat}
-\alakohta{$a\cdot \frac1a=1$}
-\alakohta{$\frac1a\cdot a=1$}
-\alakohta{$a\cdot b:b=a$}
-\alakohta{$a:b\cdot b=a$}
-\end{alakohdat}
+\alakohdat{
+§ $a\cdot \frac1a=1$
+§ $\frac1a\cdot a=1$
+§ $a\cdot b:b=a$
+§ $a:b\cdot b=a$
+}
 }
 
 Nämä säännöt ovat sieventämisen työkaluja. Voimme poistaa niiden avulla ylimääräisiä termejä ja tulontekijöitä lausekkeista.
 
 \begin{esimerkki} 
-    \begin{alakohdat}
-    \alakohta{sievennetään $2+c-c$, missä $c$ on mikä tahansa kokonaisluku.\vspace*{11pt}
+    Sievennetään $2+c-c$, missä $c$ on mikä tahansa kokonaisluku.\vspace*{11pt}
    
-    Koska $-c$ on $c$:n vastaluku, niin niiden summa $c+(-c)$ on $0$. Tällöin lausekkeen arvo on $2+0$. Huomaa, että vastaus on $2$ riippumatta $c$:n arvosta.}
-%    \alakohta{Esimerkki kerto- ja jakolaskun keskinäisestä kumoamisvaikutuksesta}
-%    \alakohta{Esimerkki sekasupistuksesta. Vaikkapa $8+((x-x)+z)/z=8$. }
-    \end{alakohdat}
+    Koska $-c$ on $c$:n vastaluku, niin niiden summa $c+(-c)$ on $0$. Tällöin lausekkeen arvo on $2+0$. Huomaa, että vastaus on $2$ riippumatta $c$:n arvosta.
+%    § Esimerkki kerto- ja jakolaskun keskinäisestä kumoamisvaikutuksesta
+%    § Esimerkki sekasupistuksesta. Vaikkapa $8+((x-x)+z)/z=8$. 
 \end{esimerkki}
 
