@@ -21,12 +21,12 @@ banaanien paino, jotka saa ostettua tietyllä rahamäärällä:
 \begin{center} 
 \begin{tabular}{|l|r|r|}
 \hline
-Hinta (euroa) & Paino (kg) & Hinta/paino (euroa/kg) \\
+Paino (kg) & Hinta (euroa) & Hinta/paino (euroa/kg) \\
 \hline
-$1,00$ & $0,50$ & $2,00$ \\
-$2,00$ & $1,00$ & $2,00$ \\
-$3,00$ & $1,50$ & $2,00$ \\
-$4,00$ & $2,00$ & $2,00$ \\
+$0,50$ & $1,00$ & $2,00$ \\
+$1,00$ & $2,00$ & $2,00$ \\
+$1,50$ & $3,00$ & $2,00$ \\
+$2,00$ & $4,00$ & $2,00$ \\
 \hline
 \end{tabular}
 \end{center}
@@ -41,19 +41,15 @@ Samoin jos toisen muuttujan arvo puolittuu, toisenkin arvo puolittuu.
 Jos suoraan verrannollisista muuttujista piirretään kuvaaja, pisteet
 asettuvat suoralle:
 
-%\missingfigure{Kuva, johon piirretty vaaka-akselille käytetty rahamäärä
-%ja pystyakselille ostettujen banaanien paino.}
-
 \begin{center}
-\begin{kuvaajapohja}{1.5}{0}{5}{0}{3}
-\kuvaajapiste{1}{0.5}
-\kuvaajapiste{2}{1}
-\kuvaajapiste{3}{1.5}
-\kuvaajapiste{4}{2}
-\kuvaaja{0.5*x}{}{black}
-\node at (8.2,0) {euroa};
-\node at (0,4.8) {kg};
-\end{kuvaajapohja}
+\begin{kuva}
+    kuvaaja.pohja(0, 3, 0, 5, korkeus = 7, nimiX = "paino (kg)", nimiY = "hinta (euroa)")
+    piste((0.5, 1))
+    piste((1, 2))
+    piste((1.5, 3))
+    piste((2, 4))
+    kuvaaja.piirra(lambda x: 2*x)
+\end{kuva}
 \end{center}
 
 Suoraan verrannollisia muuttujia ovat myös esimerkiksi
@@ -89,7 +85,7 @@ $$ k = x_1y_1 = x_2y_2$$
 			\hline
 			$5$ & $2$ & $10$ \\
 			$10$ & $1$ & $10$ \\
-			$12$ & $0,8$ & $10$ \\
+			$12$ & $0,8333$ & $10$ \\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -102,21 +98,14 @@ toinen muuttujista kaksinkertaistuu, toinen puolittuu.
 Jos kääntäen verrannollisista muuttujista piirretään kuvaaja, pisteet
 muodostavat laskevan käyrän:
 
-%\missingfigure{Kuva, johon on piirretty matka-aika ja nopeus (yllä olevan
-%taulukon mukaisesti).}
-
-% FIXME sellainen käyrätemplate, joka toimii myös silloin, jos toiseen akseliin
-% FIXME tarvitaan eri jakoväli kuin toiseen.
-% FIXME Myös akseleiden nimeäminen olisi kiva olla templatessa.
 \begin{center}
-	\begin{kuvaajapohja}{0.8}{0}{13}{0}{5}
-		\kuvaajapiste{5}{2}
-		\kuvaajapiste{10}{1}
-		\kuvaajapiste{12}{0.8}
-		\kuvaaja{10/x}{}{black}
-		\node at (10.6,0) {h};
-		\node at (0,4.3) {km/h};
-	\end{kuvaajapohja}
+\begin{kuva}
+    kuvaaja.pohja(0, 13, 0, 5, leveys = 8, korkeus = 5, nimiX = "matka-aika (h)", nimiY = "nopeus (km/h)")
+    piste((5, 2))
+    piste((10, 1))
+    piste((12, 0.8333))
+    kuvaaja.piirra(lambda x: 10.0/x, a = 1e-10)
+\end{kuva}
 \end{center}
 
 Kääntäen verrannollisia muuttujia ovat myös esimerkiksi
