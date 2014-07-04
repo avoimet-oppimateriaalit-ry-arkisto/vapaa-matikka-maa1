@@ -63,6 +63,25 @@ Ratkaise yhtälö $2x^3 + 16 = 0$
 	}
 \end{esimerkki}
 
+\begin{luoKuva}{potenssiyhtaloratk}
+	kuvaaja.pohja(-4, 6, -50, 110, leveys = 9, korkeus = 6, nimiX = "$x$", nimiY = "$y$")
+	with vari("red"): kuvaaja.piirra(lambda x: x**3, kohta = -3, suunta = -45, nimi = r"$y = x^3$")
+	with vari("green!70!black"): kuvaaja.piirra(lambda x: x**4, kohta = -2.86, suunta = -180, nimi = r"$y = x^4$")
+	with vari("blue"): kuvaaja.piirra(lambda x: x**6, kohta = -2, suunta = 45, nimi = r"$y = x^6$")
+	A1 = geom.piste(-50**0.25, 50, suunta = -135, nimi = "\\tiny$(-\sqrt[4]{50}, 50)$")
+	A2 = geom.piste(50**0.25, 50, suunta = 45, nimi = "\\tiny$(\sqrt[4]{50}, 50)$")
+	B = geom.piste(100**(1./3), 100, suunta = -20, nimi = "\\tiny$(\sqrt[3]{100}, 100)$")
+	
+	def xproj(p): return (p[0], 0)
+	def yproj(p): return (0, p[1])
+	def kulma(p):
+		geom.jana(xproj(p), p)
+		geom.jana(yproj(p), p)
+	
+	kulma(A1)
+	kulma(A2)
+	kulma(B)
+\end{luoKuva}
 \begin{esimerkki}
 	\alakohdat{
 		§ Potenssiyhtälön $x^3 = 100$ ratkaisu on $x=\sqrt[3]{100}$.
@@ -70,7 +89,7 @@ Ratkaise yhtälö $2x^3 + 16 = 0$
 		§ Potenssiyhtälöllä $x^4=50$ on kaksi ratkaisua $x=\sqrt[4]{50}=2,6591...$ ja $x=-\sqrt[4]{50}=-2,6591...$.
 	}
 	\begin{center}
-		\includegraphics[width=11.5cm]{pictures/xpot346.pdf} %KUVAAJILLE ERI VÄRIT SELVENTÄISI ASIAA
+		\naytaKuva{potenssiyhtaloratk}
 	\end{center}
 \end{esimerkki}
 
