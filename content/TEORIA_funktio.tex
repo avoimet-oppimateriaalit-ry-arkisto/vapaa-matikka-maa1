@@ -240,11 +240,12 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 	koko reaalilukujen joukko. Kuitenkin, koska parillisena potenssina $x^{2}\geq0$, olipa $x$ mikä luku hyvänsä, funktion $f$ \textit{arvojoukko} on kaikki 
 	positiiviset reaaliluvut.
 	
-	\begin{center}
-		\begin{kuvaajapohja}{0.7}{-5}{5}{-2}{8}
-			\kuvaaja{x**2}{$y=x^2$}{black}
-		\end{kuvaajapohja}
-	\end{center}
+\begin{center}
+\begin{kuva}
+	kuvaaja.pohja(-5, 5, -2, 8, korkeus=7, nimiX = "$x$", nimiY = "$y$")
+	with vari("red"): kuvaaja.piirra(lambda x: x**2, kohta=2.5, nimi="$y=x^2$")
+\end{kuva}
+\end{center}
 	
 	
 \end{esimerkki}

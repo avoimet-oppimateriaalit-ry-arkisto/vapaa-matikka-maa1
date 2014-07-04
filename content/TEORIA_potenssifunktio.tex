@@ -29,13 +29,14 @@ Jos aste on pariton, kuvaaja muodostaa ''kaksoismutkan'' ja potenssifunktio
 saa sekä positiivisia että negatiivisia arvoja.
 }
 
-%\missingfigure{Potenssifunktioiden kuvaajat -- yksi parillisilla potensseilla ja toinen parittomilla (kerroin a positiivinen).}
 \begin{center}
-\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
-\kuvaaja{0.2*x**2}{$y=\frac{1}{5}x^2$}{red}
-\kuvaaja{0.2*x**3}{$y=\frac{1}{5}x^3$}{blue}
-\end{kuvaajapohja}
+\begin{kuva}
+    kuvaaja.pohja(-4, 4, -4, 4, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    with vari("red"): kuvaaja.piirra(lambda x: 0.2*x**2, kohta = -3, nimi = r"$y=\frac{1}{5}x^2$")
+    with vari("blue"): kuvaaja.piirra(lambda x: 0.2*x**3, kohta = -2.5, nimi = r"$y=\frac{1}{5}x^3$")
+\end{kuva}
 \end{center}
+
 Potenssifunktion tärkeitä erikoistapauksia ovat asteluvut $n = 1$ ja $n = -1$.
 Kun $n = 1$, saadaan edellisessä luvussa esitelty suoraan verrannollinen
 riippuvuus $x$:n ja $f(x)$:n välillä, ja kun $n = -1$, muuttuja $x$ ja
@@ -47,26 +48,18 @@ Tällöin funktion muoto muuttuu merkittävästi. Funktio ei myöskään ole
 enää määritelty kohdassa $x = 0$, vaan funktion arvot
 ''räjähtävät äärettömyyteen'' kun y-akselia lähestytään:
 
-%\missingfigure{Potenssifunktioiden kuvaajat - yksi potenssilla -1 ja toinen potenssilla -2.}
-
 \begin{center}
-\begin{kuvaajapohja}{0.5}{-6}{6}{-6}{6}
-%\kuvaaja{x**(-1)}{$\frac{1}{5}x^2$}{red}
-%\kuvaaja{x**(-2)}{$\frac{1}{5}x^3$}{blue}
-% FIXME: alla oleva puukotus, että saa äärettömyyteen menevät käppyrät piirtymään oikein
-\newcommand{\kuvaajaneg}[3]{
-\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
-}
-\newcommand{\kuvaajapos}[3]{
-\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
-}
-\kuvaajaneg{x**(-1)}{$y=x^{-1}$}{red}
-\kuvaajaneg{x**(-2)}{}{blue}
-
-\kuvaajapos{x**(-1)}{}{red}
-\kuvaajapos{x**(-2)}{$y=x^{-2}$}{blue}
-
-\end{kuvaajapohja}
+\begin{kuva}
+    kuvaaja.pohja(-4, 4, -4, 4, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    def f(x):
+      if(abs(x) < 10**-10): return 10**10
+      return x**-1
+    def g(x):
+      if(abs(x) < 10**-10): return 10**10
+      return x**-2
+    with vari("red"): kuvaaja.piirra(f, kohta = 2, suunta = 45, nimi = r"$y=x^{-1}$")
+    with vari("blue"): kuvaaja.piirra(g, kohta = 0.75, nimi = r"$y=x^{-2}$")
+\end{kuva}
 \end{center}
 
 Aiemmin määriteltiin murtopotenssi $x^{\frac{m}{n}}$, missä kantaluku $x\geq0$. Murtopotenssifunktiota määritellessä pitää myös muistaa kantaluvun positiivisuus, 
@@ -77,28 +70,21 @@ Kuitenkin, koska murtopotensseja ei määritellä negatiivisilla kantaluvuilla, 
 $w(x)=\sqrt[3]{x}$ määrittelyjoukko on koko reaalilukujen joukko. Alla jotain murtopotenssifunktioita ja juurifunktioita esitettynä koordinaatistossa.
 
 \begin{center}
-	\begin{kuvaajapohja}{1.0}{-3}{3}{-3}{3}
-		\kuvaaja{x**1.6666666667}{$y=x^\frac{5}{3}$}{red}
-		\kuvaaja{x**0.5}{$y=x^\frac{1}{2}$}{blue}
-	\end{kuvaajapohja}
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -3, 3, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    with vari("red"): kuvaaja.piirra(lambda x: x**(5./3), a = 0, nimi=r"$y=x^\frac{5}{3}$")
+    with vari("blue"): kuvaaja.piirra(lambda x: x**(1./2), a = 0, nimi=r"$y=x^\frac{1}{2}$")
+\end{kuva}
 \end{center}
 
 Juurifunktioiden kuvaajissa huomaa määrittelyjoukko ja yhteys murtopotenssifunktioihin.
 
 \begin{center}
-	\begin{kuvaajapohja}{1.0}{-3}{3}{-3}{3}
-	
-\newcommand{\kuvaajaneg}[3]{
-\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
-}
-\newcommand{\kuvaajapos}[3]{
-\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
-}
-		\kuvaajapos{x**0.333333333333333}{}{red}
-		\kuvaajapos{x**0.5}{$y=\sqrt{x}$}{blue}
-		
-		\kuvaajaneg{-(-x)**0.333333333333333}{$y=\sqrt[3]{x}$}{red}
-	\end{kuvaajapohja}
+\begin{kuva}
+    kuvaaja.pohja(-3, 3, -3, 3, leveys = 6, nimiX = "$x$", nimiY = "$y$")
+    with vari("red"): kuvaaja.piirra(lambda x: copysign(abs(x)**(1./3), x), suunta = -45, nimi=r"$y=\sqrt[3]{x}$")
+    with vari("blue"): kuvaaja.piirra(lambda x: sqrt(x), a = 0, suunta = 45, nimi=r"$y=\sqrt{x}$")
+\end{kuva}
 \end{center}
 
 
