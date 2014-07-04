@@ -42,7 +42,7 @@ Luku $4$ on vakio, koska sen suuruus on aina sama asiayhteydestä riippumatta. \
 
 \subsection*{Relaatiot ja laskutoimitukset}
 
-Matematiikassa olemme kiinnostuneita tutkimuksen kohteen (yleensä lukujen) ominaisuuksista ja niiden suhteista toisiin asioihin. Riippuvuussuhteita kutsutaan matematiikassa \termi{relaatio}{relaatioiksi}. Tulimme jo käyttäneeksi kahta erilaista relaatiota, joilla kummallakin on oma merkintänsä: yhteenlasku ja yhtäsuuruus.
+Matematiikassa olemme kiinnostuneita tutkimuksen kohteen (yleensä lukujen) ominaisuuksista ja niiden suhteista toisiin asioihin. Riippuvuussuhteita kutsutaan matematiikassa \termi{relaatio}{relaatioiksi}. Tulimme jo käyttäneeksi kahta erilaista relaatiota, joilla kummallakin on oma merkintänsä: yhteenlasku ja yhtäsuuruus. Yhteenlasku $+$ yhdistää kaksi lukua yhdeksi uudeksi luvuksi, ja yhtäsuuruus $=$ vertailee kahta lukua keskenään.
 
 Harjoituksena vähän formaalimmasta matematiikasta esitämme seuraavat yhtäsuuruusrelaation ominaisuudet:
 
@@ -69,8 +69,8 @@ $4<5$ pitää paikkansa, mutta $5<4$ ei. Kyseinen relaatio ei siis ole symmetrin
 Olkoot $a$ ja $b$ edustavat ihmisiä, ja relaatiota ``$a$ rakastaa $b$:tä'' merkitään $a \heartsuit b$. Tällöin relaatio \heartsuit ei ole symmetrinen, refleksiivinen eikä transitiivinen.
 \end{esimerkki}
 
-Yhteenlasku on esimerkki relaatiosta, joka yhdistää kaksi lukua johonkin kolmanteen lukuun (ei siis vain kahta lukua keskenään). Tällaisia relaatioita kutsutaan \termi{laskutoimitus}{laskutoimituksiksi}. (Vielä yleisemmin puhutaan \termi{operaatio}{operaatioista}.)
-
+Yhteenlasku on esimerkki relaatiosta, joka yhdistää kaksi lukua johonkin kolmanteen lukuun (ei siis vain kahta lukua keskenään). Tällaisia relaatioita kutsutaan \termi{laskutoimitus}{laskutoimituksiksi}. Vielä yleisemmin puhutaan \termi{operaatio}{operaatioista}.
+%tehtäviä päättelystä ja syntaksin ymmärtämisestä?
 %vvvvv omaksi luvukseen? vvvv
 
 \subsection*{Luonnolliset luvut}
@@ -643,11 +643,7 @@ Kun ensin kerrotaan jollain ja sitten jaetaan samalla luvulla, päädytään tak
 mistä lähdettiin.  Jakolaskujen merkkisäännöt on sovittu niin, että tämä ominaisuus säilyy.
 Ne ovat siis samat kuin kertolaskujen merkkisäännöt.
 
-Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä, mitä laskun
-$(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja kertolasku säilyvät toisilleen
-käänteisinä, eli mikä luku kerrottuna luvulla $-3$ on $-12$. Kertolaskun merkkisäännöistä
-nähdään helposti, että tämän luvun täytyy olla $+4$ eli $4$. Niinpä on
-sovittu, että $(-12):(-3)=12:3=4$.
+Esimerkiksi haluamme, että $(-12):(-3)\cdot (-3)=-12$. Nyt voimme kysyä, mitä laskun $(-12):(-3)$ tulokseksi pitäisi tulla, jotta jakolasku ja kertolasku säilyvät toisilleen käänteisinä, eli mikä luku kerrottuna luvulla $-3$ on $-12$. Kertolaskun merkkisäännöistä nähdään helposti, että tämän luvun täytyy olla $+4$ eli $4$. Niinpä on sovittu, että $(-12):(-3)=12:3=4$.
 
 \laatikko{
 Kerto- ja jakolaskun merkkisäännöt
@@ -666,14 +662,14 @@ Huomaa, että jokainen miinusmerkki voidaan tulkita kertolaskuna: $-a=(-1)\cdot 
 
 \laatikko{
 	\textbf{Määritelmä 1}
-	Kokonaisluku $a$ on jaollinen kokonaisluvulla $b \neq 0$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$.
-	Tällöin sanotaan myös, että $b$ on $a$:n \termi{tekijä}{tekijä}.
+	Kokonaisluku $a$ on jaollinen kokonaisluvulla $b \neq 0$, jos on olemassa kokonaisluku $c$ niin, että $a = b \cdot c$. Tällöin sanotaan myös, että $b$ on $a$:n \termi{tekijä}{tekijä}.
 
 	\vspace*{24pt}
 
 	\textbf{Määritelmä 2}
 	Luku $a$ on jaollinen luvulla $b \neq 0$, mikäli $\frac{a}{b}$ on kokonaisluku.
-	
+	%jaollisuusmerkintä
+	%myöhemminhuomautus, että jaollisuudesta puhutaan vain kokonaislukujen yhteydessä, ei esim- rationaalilukujen
 	Määritelmät ovat yhtäpitäviä.
 }
     
@@ -691,20 +687,45 @@ Huomaa, että jokainen miinusmerkki voidaan tulkita kertolaskuna: $-a=(-1)\cdot 
 Kaikki luvut ovat jaollisia itsellään ja luvulla $1$. Esimerkiksi $7=7 \cdot 1=1 \cdot 7$, joten $7$ on jaollinen luvuilla $1$ ja $7$.
     
 \laatikko{
-	\termi{alkuluku}{Alkuluku} on ykköstä suurempi kokonaisluku, joka ei ole jaollinen muilla positiivisilla kokonaisluvuilla kuin luvulla $1$ ja itsellään.
+	\termi{alkuluku}{Alkuluku} on lukua yksi suurempi luonnollinen luku, joka ei ole jaollinen muilla positiivisilla kokonaisluvuilla kuin luvulla $1$ ja itsellään.
 }
-    
-Esimerkiksi luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja. Jos luvun tekijä on alkuluku, sitä kutsutaan \termi{alkutekijä}{alkutekijäksi}.
-    
+
+
+\begin{esimerkki}
+	\begin{alakohdat}
+		\alakohta{Luvut 2, 3, 5, 7, 11, 13, 17 ja 19 ovat alkulukuja.}
+		\alakohta{Luku 18 ei ole alkuluku, koska se on jaollinen esimerkiksi luvulla 9.}
+		\alakohta{Mikään negatiivinen luku ei voi olla alkuluku, koska jokainen negatiivinen luku $-a$ voidaan kirjoittaa tulona $-1\cdot a$.}
+	\end{alakohdat}
+\end{esimerkki}
+
+Jos luvun tekijä on alkuluku, sitä kutsutaan \termi{alkutekijä}{alkutekijäksi}.
+
+% \begin{esimerkki}
+% 	\begin{alakohdat}
+% 		\alakohta{}
+% 		\alakohta{Luku 18 ei ole alkuluku, koska se on jaollinen esimerkiksi luvulla 2.}
+% 	\end{alakohdat}
+% \end{esimerkki}
+
 \laatikko{
     \textbf{Aritmetiikan peruslause}
 	
     Jokainen ykköstä suurempi kokonaisluku voidaan esittää (termien järjestystä lukuunottamatta) yksikäsitteisesti alkulukujen tulona.
 	(Jokainen ykköstä suurempi kokonaisluku voidaan jakaa alkutekijöihin (termien järjestystä lukuunottamatta) yksikäsitteisellä tavalla.)
 }
-    
+
 Aritmetiikan peruslause todistetaan kurssilla Logiikka ja lukuteoria.
     
 Esimerkiksi luku $84$ voidaan kirjoittaa muodossa $2\cdot 2\cdot 3\cdot 7$. Havaitaan, että $2$, $3$, ja $7$ ovat kaikki alkulukuja. Aritmetiikan peruslauseen nojalla tiedetään, että tämä on ainoa tapa kirjoittaa $84$ alkulukujen tulona -- mahdollista kerrottavien termien järjestyksen vaihtoa lukuunottamatta.
     
 Luvun alkutekijät voi löytää etsimällä luvulle ensin jonkin esityksen kahden luvun tulona. Näiden kahden luvun ei tarvitse olla alkulukuja. Sen jälkeen sama toistetaan näille kahdelle luvulle ja edelleen aina uusille luvuille, kunnes jäljellä on vain alkulukuja.
+
+% \begin{esimerkki}
+% 	\begin{alakohdat}
+% 		\alakohta{}
+% 		\alakohta{Luku 18 ei ole alkuluku, koska se on jaollinen esimerkiksi luvulla 2.}
+% 	\end{alakohdat}
+% \end{esimerkki}
+
+
