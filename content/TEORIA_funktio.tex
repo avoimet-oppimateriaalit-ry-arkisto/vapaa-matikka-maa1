@@ -22,7 +22,7 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
   %Tähän väliin voisi laittaa havainnollisen kuvan: toisaalla kenttänä määrittelyjoukko, toisaalta maalijoukko, ja nuoli liittää jonkin määrittelyjoukon alkion maalijoukon alkioon.
  % Funktiokone! Paras havainnollistus ikinä! - Joel
   
-  Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukoksi} ja joukkoa $B$ puolestaan $f$:n \termi{maalijoukko}{maalijoukoksi}. Tällöin voidaan merkitä lyhyesti $f\colon A \to B$. Funktion $f$ \termi{arvojoukko}{arvojoukon} muodostavat $f$:n kaikki maalijoukkoon $B$ kuuluvat arvot $f(x)$.
+Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukoksi} ja joukkoa $B$ puolestaan $f$:n \termi{maalijoukko}{maalijoukoksi}. Tällöin voidaan merkitä lyhyesti $f\colon A \to B$. Funktion $f$ \termi{arvojoukko}{arvojoukon} muodostavat $f$:n kaikki maalijoukkoon $B$ kuuluvat arvot $f(x)$.
    
   
 Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi voidaan ajatella kassakone. Kun siihen luetaan sisään viivakoodi, antaa kassakone ulos hinnan.
@@ -55,8 +55,6 @@ Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä
 	\hline %vaihdoin kuukausien lyhenteet alkamaan pienillä alkukirjaimilla -Jouni
 	\end{tabular}
 %	\caption*{Lähde: Ilmatieteen laitos}
-	
-Lähde: Ilmatieteen laitos %voisiko tämän tehdä captionina?
 
 Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Määrittelyjoukko ovat vuoden kaikki kuukaudet, maalijoukkoon kuuluvat kaikki mahdolliset lämpötilat, ja arvojoukko koostuu funktion kaikista arvoista, siis eri kuukausien keskilämpötiloista. %Nyt esimerkiksi \(f($tam$)=-12\) ja \(f($tou$) = 6\). (tämä on edellinen versio) Käyttäisin mieluummin matematiikkamoodia ympärillä ja sisälllä \text{} -Jouni 9.2.2014
 Nyt esimerkiksi $f(\text{tam}) = -12$ ja $f(\text{tou}) = 6$.
@@ -93,7 +91,7 @@ Huomaa seuraavien käsitteiden erot:
 Määritellään funktio $f$ seuraavasti: $f(x)=3x-2$
 	\luettelo{
 		§ $f$ on funktion nimi
-		§ merkintä $f(x)$ tarkoittaa funktion \textit{$f$ arvoa kohdassa $x$}
+		§ merkintä $f(x)$ tarkoittaa funktion $f$ \textit{arvoa kohdassa $x$}
 		§ $3x-2$ on \textit{lauseke}, jolla $f(x)$ on määritelty
 		§ \textit{Yhtälö} $f(x)=3x-2$ kertoo, että funktion $f$ arvo kohdassa $x$ on yhtäsuuri lausekkeen $3x-2$ kanssa
 		§ $x$ on funktion muuttuja
@@ -106,15 +104,10 @@ Funktioita, jotka määritellään reaaliluvuilla, ja jotka saavat arvokseen rea
 Funktiolla, erityisesti reaalifunktioilla, on usein jokin selkeä sääntö, joka voidaan kirjoittaa matemaattisena lausekkeena.
 
 \begin{esimerkki}
-	Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-alaa kuvata funktiolla $A\colon A(x) = x^2$.
+Jos neliön sivun pituutta merkitään muuttujalla $x$, voidaan pinta-alaa kuvata funktiolla $A\colon A(x) = x^2$.
 \end{esimerkki} 
 
-Reaalifunktioita voidaan havainnollistaa koordinaatistossa \textit{kuvaajien} avulla.
-Funktion $f$ kuvaajassa koordinaatistoon piirretään ne pisteet $(x, y)$, joiden $y$-koordinaatti on $f$:n arvo $x$-koordinaatissa.
-Reaalifunktioilla ei kuitenkaan voida laskea $y = f(x)$ kaikilla $f$:n määrittelyjoukon luvuilla $x$, joten esimerkiksi graafiset laskimet
-laskevat $y = f(x)$ ''riittävän monella'' luvulla ja sovittavat kuvaajan niiden perusteella.
-Funktioiden kuvaajia voi piirtää helposti paitsi graafisilla laskimilla, myös tietokoneohjelmilla sekä esimerkiksi verkossa
-Wolfram Alphalla (\url{http://www.wolframalpha.com/}). 
+Reaalifunktioita voidaan havainnollistaa koordinaatistossa \textit{kuvaajien} avulla. Funktion $f$ kuvaajassa koordinaatistoon piirretään ne pisteet $(x, y)$, joiden $y$-koordinaatti on $f$:n arvo $x$-koordinaatissa. Reaalifunktioilla ei kuitenkaan voida laskea $y = f(x)$ kaikilla $f$:n määrittelyjoukon luvuilla $x$, joten esimerkiksi graafiset laskimet laskevat $y = f(x)$ ''riittävän monella'' luvulla ja sovittavat kuvaajan niiden perusteella. Funktioiden kuvaajia voi piirtää helposti paitsi graafisilla laskimilla, myös tietokoneohjelmilla sekä esimerkiksi verkossa Wolfram Alphalla (\url{http://www.wolframalpha.com/}). 
 
 % Tarvitaan kuvien ja taulukkojen vierekkäin laittamiseen.
 \def\vcent#1{\mathsurround0pt$\vcenter{\hbox{#1}}$}
@@ -217,17 +210,13 @@ Funktion \termi{määrittelyjoukko}{määrittelyjoukko} on niiden arvojen joukko
 \end{esimerkki}
 %Lisännyt Jaakko Viertiö 14.12.2013
 
-Käytännössä määrittelyjoukon rajoituksia tarvitaan yllä esitetyn parillisen juuren lisäksi esimerkiksi silloin kun funktiossa esiintyy muuttuja nimittäjässä.
-Tällöin on huomioitava, ettei nimittäjässä saa olla nollaa millään muuttujan $x$ arvolla. 
-Soveltavissa tehtävissä saatetaan myös rajoittaa määrittelyjoukkoa vaikkapa siksi, että pituus ei voi olla negatiivinen.
+Käytännössä määrittelyjoukon rajoituksia tarvitaan yllä esitetyn parillisen juuren lisäksi esimerkiksi silloin kun funktiossa esiintyy muuttuja nimittäjässä. Tällöin on huomioitava, ettei nimittäjässä saa olla nollaa millään muuttujan $x$ arvolla. Soveltavissa tehtävissä saatetaan myös rajoittaa määrittelyjoukkoa vaikkapa siksi, että pituus ei voi olla negatiivinen.
 
 \begin{esimerkki}
 	Määritellään funktio $f$ lausekkeella \[ f(x) = \frac{1}{x-1}. \]
 	Mikä on funktion määrittelyjoukko?
 	\begin{esimratk}
-		Funktio $f$ on määritelty, kun nimittäjä $x-1$ on erisuuri kuin 0.
-		Tämä toteutuu kaikilla $x$:n arvoilla lukuun ottamatta arvoa $x = 1$.
-		Funktion määrittelyjoukkoon kuuluvat siis kaikki reaaliluvut paitsi luku $1$.
+	Funktio $f$ on määritelty, kun nimittäjä $x-1$ on erisuuri kuin $0$. Tämä toteutuu kaikilla $x$:n arvoilla lukuun ottamatta arvoa $x = 1$. Funktion määrittelyjoukkoon kuuluvat siis kaikki reaaliluvut paitsi luku $1$.
 	\end{esimratk}
 	\begin{esimvast}
 		Funktion $f$ määrittelyjoukko on reaalilukujen joukko poislukien luku $1$.
@@ -264,10 +253,7 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 %Kuva tähän esimerkkiin? Näkisi miten lähtö- ja arvojoukkojen "puuttuvat" alkiot näkyvät kuvaajassa.
 
 \begin{esimerkki}
-	Tarkastellaan reaalifunktiota $f(x)=x^2$. Funktion $f$ \textit{määrittelyjoukko} on selkeästi koko reaalilukujen joukko, sillä toinen potenssi $x^2$ 
-	on määritelty, olipa muuttuja $x$ mikä reaaliluku tahansa. Funktio $f$ on reaalifunktio, joten sen arvot ovat reaalilukuja. Sen \textit{maalijoukko} on siis 
-	koko reaalilukujen joukko. Kuitenkin, koska parillisena potenssina $x^{2}\geq0$, olipa $x$ mikä luku hyvänsä, funktion $f$ \textit{arvojoukko} on kaikki 
-	positiiviset reaaliluvut.
+	Tarkastellaan reaalifunktiota $f(x)=x^2$. Funktion $f$ \textit{määrittelyjoukko} on selkeästi koko reaalilukujen joukko, sillä toinen potenssi $x^2$ on määritelty, olipa muuttuja $x$ mikä reaaliluku tahansa. Funktio $f$ on reaalifunktio, joten sen arvot ovat reaalilukuja. Sen \textit{maalijoukko} on siis koko reaalilukujen joukko. Kuitenkin, koska parillisena potenssina $x^{2}\geq0$, olipa $x$ mikä luku hyvänsä, funktion $f$ \textit{arvojoukko} on kaikki positiiviset reaaliluvut.
 	
 \begin{center}
 \begin{kuva}
@@ -311,7 +297,3 @@ Kun $x \neq 0$, osamäärästä $\frac{x}{x}$ saadaan aina $1$. Kohdassa $x=0$ f
 
  
 \end{esimerkki}
-
-	
-
-
