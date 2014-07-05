@@ -36,20 +36,16 @@ Matematiikan sovelluksissa näistä tärkeimpiä ovat joskus (eli ehdollisesti) 
 
 \laatikko[Yhtälöihin liittyviä käsitteitä]{
 	\begin{description}
-		\item[Tuntematon] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$. Tuntemattomien lisäksi yhtälöissä voi olla \termi{vakiotermi}{vakiotermejä}, joiden arvo ei riipu muuttujan $x$ arvosta.
-		\item[Yhtälön ratkaisu(t)] Muuttujan arvo(t), jolla yhtälö pätee. Kutsutaan myös yhtälön juuriksi.
+		\item[Tuntematon] Luku, jonka arvoa ei tiedetä. Tuntemattomia merkitään vaihtelevilla symboleilla. Jos tuntemattomia on vain yksi, sitä merkitään 	yleensä kirjaimella $x$ (alunperin kreikkalainen $\chi$, \textit{khi}).
+		\item[Yhtälön ratkaisu(t)] Muuttujan arvo(t), jolla yhtälö pätee. Kutsutaan myös yhtälön juuriksi. (Nimityksellä ei ole mitään tekemistä juurenottolaskutoimituksen kanssa.)
 		\item[Yhtälön ratkaiseminen] Kaikkien yhtälön ratkaisujen selvittäminen.
 	\end{description}
 }
-
 Huomioi, että yhtälössä voi olla useitakin eri tuntemattomia. Kaikki kirjaimet eivät myöskään ole välttämättä tuntemattomia, vaan niillä voidaan tarkoittaa myös vakioita eli muuttumattomia lukuarvoja. Esimerkiksi fysiikassa käytetään usein eri kirjaimia merkitsemään eri luonnonvakioita.
 
-
 \begin{esimerkki}
- Tarkastellaan legendaarista fysiikan yhtälöä $E=mc^2$. Tässä yhtälössä on vakio $c$ eli valonnopeus, joka on luonnonvakio eikä siis muutu. Lisäksi yhtälössä on muuttujat $E$ eli energia ja $m$ eli massa.
+Tarkastellaan legendaarista fysiikan yhtälöä $E=mc^2$. Tässä yhtälössä on vakio $c$ eli valonnopeus, joka on luonnonvakio eikä siis (nykytiedon mukaan) muutu. Lisäksi yhtälössä on muuttujat $E$ eli energia ja $m$ eli massa. Riippuu käsiteltävästä tilanteesta, ovatko energia ja massa vakioita vai muuttujia, ja tuntemattomana voi eri tilanteessa toimia mikä tahansa: $E$, $m$ tai $c$.
 \end{esimerkki}
-
-Seuraavaksi on esimerkki, joka osoittaa, kuinka näihin vaihtoehtoisiin tilanteisiin saatetaan päätyä yhtälöä ratkaistaessa.
 
 \laatikko[Yhtälön muokkaaminen]{
 
@@ -63,13 +59,9 @@ Koska yhtälön puolet ovat yhtä suuret, eli tarkoittavat täsmälleen samaa as
 %Lisännyt Jaakko Viertiö 2013-11-10
 	\luettelo{
 		§ Yhtälö $3x-12=6(\frac{1}{2x-2})$ on yhtäpitävä yhtälön $0=0$ kanssa, sillä se saadaan tähän muotoon 
-		tekemällä yhtäpitävyyden molemmille puolille aina samat laskutoimitukset. Yhtälön yksinkertaisemmasta esityksestä $0=0$ nähdään, että muuttujan $x$ 
-		arvo ei vaikuta yhtälön ratkaisuihin. Toisin sanoen puolet ovat aina samat, olipa muuttuja $x$ mikä tahansa luku. Yhtälö on siis aina tosi.
-		§ Yhtälö $3x-11=6(\frac{1}{2x-2})$ on yhtäpitävä yhtälön $0=1$ kanssa. Jälkimmäisestä muodosta nähdään, ettei yhtälö voi olla tosi millään
-		muuttujan $x$ arvolla, sillä yhtälön muodossa $0=1$ ei esiinny muuttujaa $x$. Täten $x$ ei vaikuta yhtälön ratkaisuihin. 
-		Yhtälö on siis aina epätosi.
-		§ Yhtälö $3x-11=6(x-2)$ on yhtäpitävä yhtälön $x=\frac{1}{3}$ kanssa. Yhtälö on siis joskus tosi: täsmälleen silloin kun $x=\frac{1}{3}$.
-		Tämä voidaan tarkistaa sijoittamalla yhtälöön $x$:n paikalle arvo $\frac{1}{3}$, jolloin yhtälön vasen ja oikea puoli ovat yhtä suuret.
+		tekemällä yhtäpitävyyden molemmille puolille aina samat laskutoimitukset. Yhtälön yksinkertaisemmasta esityksestä $0=0$ nähdään, että muuttujan $x$ arvo ei vaikuta yhtälön ratkaisuihin. Toisin sanoen puolet ovat aina samat, olipa muuttuja $x$ mikä tahansa luku. Yhtälö on siis aina tosi.
+		§ Yhtälö $3x-11=6(\frac{1}{2x-2})$ on yhtäpitävä yhtälön $0=1$ kanssa. Jälkimmäisestä muodosta nähdään, ettei yhtälö voi olla tosi millään muuttujan $x$ arvolla, sillä yhtälön muodossa $0=1$ ei esiinny muuttujaa $x$. Täten $x$ ei vaikuta yhtälön ratkaisuihin. Yhtälö on siis aina epätosi.
+		§ Yhtälö $3x-11=6(x-2)$ on yhtäpitävä yhtälön $x=\frac{1}{3}$ kanssa. Yhtälö on siis joskus tosi: täsmälleen silloin kun $x=\frac{1}{3}$. Tämä voidaan tarkistaa sijoittamalla yhtälöön $x$:n paikalle arvo $\frac{1}{3}$, jolloin yhtälön vasen ja oikea puoli ovat yhtä suuret.
 	}
 
 \end{esimerkki}
@@ -101,13 +93,7 @@ Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
 
 %Lisännyt Jaakko Viertiö 2013-11-10
 \begin{esimerkki}
- Tarkastellaan yhtälöä $x^3-2x^2-x+2=0$. 
- 
- Yhtälössä on yksi muuttuja $x$ ja neljä termiä: $x^3$, $-2x^2$, $-x$ ja $+2$.  
- 
- Yhtälön \textit{eräs} ratkaisu on $x=1$, sillä $1^3-2\cdot{1^2}-1+2=0$. 
- Myös $x=2$ on kyseisen yhtälön ratkaisu, sillä $2^3-2\cdot{2^2}-2+2=0$. 
- Tuntemattomalle $x$ voidaan siis joissain tapauksissa löytää useita arvoja, jotka toteuttavat yhtälön. 
+Tarkastellaan yhtälöä $x^3-2x^2-x+2=0$.  Yhtälössä on yksi muuttuja $x$ ja neljä termiä: $x^3$, $-2x^2$, $-x$ ja $+2$. Yhtälön \textit{eräs} ratkaisu on $x=1$, sillä $1^3-2\cdot{1^2}-1+2=0$. Myös $x=2$ on kyseisen yhtälön ratkaisu, sillä $2^3-2\cdot{2^2}-2+2=0$. Tuntemattomalle $x$ voidaan siis joissain tapauksissa löytää useita arvoja, jotka toteuttavat yhtälön. 
 \end{esimerkki}
 
 \subsection*{Yhtälön ratkaiseminen}
@@ -115,11 +101,10 @@ Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun
 Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla. Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut. Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia ja toisella puolella kaikki muu.  Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
 
 \begin{esimerkki}
-Ratkaistaan aiemman esimerkin matkan kesto. Yhtälö on siis $5t=15$, jossa t on aika, nopeus on 5 km/h ja matkan pituus 15 km. 
-Jakamalla laskusääntöjen mukaan yhtälön molemmat puolet viidellä, saadaan yhtälö muotoon $t=3$, joka on samalla kyseisen yhtälön ratkaisu.
+Ratkaistaan aiemman esimerkin matkan kesto. Yhtälö on siis $5t=15$, jossa $t$ on aika, nopeus on $5$\,km/h ja matkan pituus $15$\,km. Jakamalla laskusääntöjen mukaan yhtälön molemmat puolet viidellä, saadaan yhtälö muotoon $t=3$, joka on samalla kyseisen yhtälön ratkaisu.
 \end{esimerkki}
 
-
+%HELPOMPI ESIMERKKI, JA TÄÄ MUUTENKIN TURHAN VAIKEA AINEEN JA PIINEEN :)
 \begin{esimerkki}
 Ratkaistaan yhtälö $\frac{4\sqrt{x}a}{3}=8a$, jossa $a$ on vakio $\pi$ eli yhtälö voidaan kirjoittaa muotoon $\frac{4\pi\sqrt{x}}{3}=8\pi$.
 
@@ -134,14 +119,10 @@ Joten yhtälöllä on ratkaisu $x=36$.
 
 \end{esimerkki}
 
-Yhtälön ratkaisemista voidaan ajatella havainnollisemmin kuvittelemalla orsivaaka, joka on tasapainossa.
-Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. 
-Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille 
-puolille on sallittua lisätä sama luku.
+Yhtälön ratkaisemista voidaan ajatella havainnollisemmin kuvittelemalla orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
 
 \begin{esimerkki}
-	Kuvassa oleva vaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia.
-	Kuinka paljon vaakakupissa on lakritsia?
+Kuvassa oleva vaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia.	Kuinka paljon vaakakupissa on lakritsia?
 	\begin{center}
 		\includegraphics[scale=0.6]{pictures/Kuva10-1-vaaka.pdf} % CC-BY Lilja Tamminen
 		%\includegraphics{unused/kala-vaaka.png} % CC-BY Hannu Köngäs
@@ -149,8 +130,9 @@ puolille on sallittua lisätä sama luku.
 		% kirjan muun kuvituksen kanssa. Kumpi jätetään? Nyt päällä Liljan kuva.
 	\end{center}
 	\begin{esimratk}
-		Merkitään lakritsin määrää tuntemattomalla $x$. Tilannetta kuvaa yhtälö $2 = 0,5 + x$.
-		Ratkaistaan yhtälö.
+Merkitään lakritsin määrää tuntemattomalla $x$. Tilannetta kuvaa yhtälö $2 = 0,5 + x$, joka muodostetaan vaa'an toiminnan ymmäryksen avulla: tasapainossa molemmissa vaakakupeissa tulee olla massaltaan yhtä paljon ainetta, eli massat (määrät) voidaan merkitä yhtä suuriksi.
+
+Ratkaistaan yhtälö.
 		\begin{align*}
 			2 &= 0,5 + x &&\text{| $-0,5$} \\
 			2 - 0,5 &= x && \\
@@ -164,15 +146,12 @@ puolille on sallittua lisätä sama luku.
 \end{esimerkki}
 
 \begin{esimerkki}
-	Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunnissa ja $23$ minuutissa tasaista vauhtia.
-	$10$ minuuttia junan lähdön jälkeen auto lähtee Helsingistä Jyväskylään kulkien tasaista $100$ kilometrin tuntivauhtia.
-	Jyväskylään on Helsingistä maanteitse $272$ kilometriä.
-	Kuinka kauan auton lähdöstä on kulunut, kun juna ja auto ovat kulkeneet yhtä suuren osan omista matkoistaan?
+Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunnissa ja $23$ minuutissa tasaista vauhtia. $10$ minuuttia junan lähdön jälkeen auto lähtee Helsingistä Jyväskylään kulkien tasaista $100$ kilometrin tuntivauhtia. Jyväskylään on Helsingistä maanteitse $272$ kilometriä. Kuinka kauan auton lähdöstä on kulunut, kun juna ja auto ovat kulkeneet yhtä suuren osan omista matkoistaan?
 	\begin{esimratk}
 		Lasketaan aluksi junan nopeus
 		\[3\,\text{h} \; 23\,\text{min} \; = 12\,180\,\text{s} \]
 		\[\frac{342\,000\,\text{m}}{12\,180\,\text{s}} \approx  28,0788\,\frac{\text{m}}{\text{s}} \]
-		
+		%SIEVENNETYT MURTOLUVUT + HUOMAUTUS LIKIARVOISTA!
 		Muunnetaan lisäksi auton nopeus yksikköön $\frac{\text{m}}{\text{s}}$ (muuntokerroin $3,6$).
 		\[100\,\frac{\text{km}}{\text{h}} \approx 27,7778 \frac{\text{m}}{\text{s}} \]
 		
@@ -219,12 +198,18 @@ Joissakin tilanteissa ratkaistavana on useampi tuntematon. Kuitenkin yhdestä yh
 \laatikko{Jos ratkaistaan $n$ tuntematonta, tähän tarvitaan vähintään $n$ toisistaan riippumatonta yhtälöä.}
 
 Jos halutaan esimerkiksi selvittää, mitkä luvut $x$ ja $y$ toteuttavat sekä yhtälön $2x=y+5$ ja toisaalta 
-myös yhtälön $x-10=4y+2$, ratkaistaan nämä molemmat niin sanottuna \termi{yhtälöpari}{yhtälöparina}.
+myös yhtälön $x-10=4y+2$, ratkaistaan nämä molemmat niin sanottuna \termi{yhtälöpari}{yhtälöparina}. Yleensä samanaikaisesti ratkottavat yhtälöt merkitään allekain seuraavasti:
+$$\left\{    
+    \begin{array}{rcl}
+        2x&=&y+5 \\
+        x-10&=&4y+2 \\
+    \end{array}
+    \right.$$
+
+Yleinen, aina toimiva ratkaisumenetelmä yhtälöpareille on ratkaista jommasta kummasta yhätlöstä erikseen toinen tuntematon ja sijoitetaan saatu ratkaisu toiseen yhtälöön, jolloin yksi \termi{tuntemattoman eliminointi}{tuntematon eliminoituu} eli poistuu, jolloin ongelma yksinkertaistuu yhden tuntemattoman ratkaisuksi.
 
 \begin{esimerkki}
-	Ratkaise yhtälöpari $2x=y+5$ $x-10=4y+2$.
-	
-	Ratkaistaan molemmista yhtälöistä muuttuja $x$. 
+Ratkaise yhtälöpari $2x=y+5$; $x-10=4y+2$. Ratkaistaan molemmista yhtälöistä muuttuja $x$. 
 	
 	\begin{align*}
 	    2x &= y+5 \\
@@ -239,17 +224,22 @@ Nyt yhtäsuuruusrelaation transitiivisuuden perusteella, koska $\frac{y+5}{2}=x$
 
 \begin{align*}
 	\frac{y+5}{2} &= 4y+12 \\
+	y+5 &= 2(4y+12)\\
 	y+5 &= 8y+24 \\
-	-7y &= 19
+	y -8y&= 24-5 \\
+	-7y &= 19 \\
 	y=-\frac{19}{7}
 \end{align*}
 
 Nyt saatu $y$:n arvo voidaan sijoittaa jompaan kumpaan alkuperäiseen yhtälöön, esimerkiksi yhtälöön $2x=y+5$, ja tästä saadaan ratkaistua myös $x$.
 
 \begin{align*}
-      2x &= -\frac{19}{7} \\
-      x &= -\frac{19}{14}
+      2x &= -\frac{19}{7}+5\\
+      2x &= \frac{16}{7} \\
+      x &= -\frac{8}{7}
 \end{align*}
 
-Siis yhtälöparin ratkaisu on $x=-\frac{19}{14}$ ja $y=-\frac{19}{7}$.
+Siis yhtälöparin ratkaisu on $x=\frac{8}{7}$ ja $y=-\frac{19}{7}$. Sijoittamalla voidaan tarkistaa, että luvut todellakin toteuttavat molemmat alkuperäiset yhtälö..
 \end{esimerkki} %TEHTÄVIÄ JA SOVELLUKSIA!
+
+Yhtälöparien ja yhtälöryhmien ratkaisuun ja geometriseen merkitykseen tutustutaan tarkemmin MAA4-kurssilla.
