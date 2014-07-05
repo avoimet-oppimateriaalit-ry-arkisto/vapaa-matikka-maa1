@@ -60,12 +60,12 @@ Soluviljelmässä olevien \textit{Escherichia coli} -bakteerien määrää voida
 \[
 f(t) = 2^t, t \ge 0,
 \]
-jossa $f(t)$ on bakteerien lukumäärä ajanhetkellä $t$.
+jossa $f(t)$ on bakteerien lukumäärä ajanhetkellä $t$. (Tässä ei oteta kantaa käytettyyn ajan yksikköön -- mikä tahansa käy.)
 
 Huomaa, että funktion $f(t)$ arvot voivat olla myös rationaalisia tai irrationaalisia, vaikka bakteerien määrä on kokonaisluku. Yleensä tätä ei pidetä ongelmallisena, vaan funktiota voidaan käsitellä, ikään kuin bakteerien määrä olisi jatkuvasti kasvava suure. Mallit ovat harvoin täydellisiä, eikä virhe ei ole käytännössä merkittävä, koska mallin antamat luvut voidaan helposti pyöristää.
 
 \begin{center}
-	\begin{kuvaajapohja}{0.8}{-4}{6}{-1}{9}
+	\begin{kuvaajapohja}{0.8}{0}{6}{-1}{9} %määrittelyjoukko ei hyväksy negatiivisia!
 		\kuvaaja{2**x}{$f(t)=2^t$}{black}
 	\end{kuvaajapohja}
 \end{center}
@@ -117,8 +117,7 @@ $2$ &   $\left(\frac{13}{2}a\right)\cdot\frac{13}{2}= \frac{13^2}{2^2}a$  & $f(2
 $n$ &   $\left(\frac{13^2}{2^2}a\right)\cdot\frac{13}{2} = \frac{13^n}{2^n}a$   & $f(n)=24\cdot\left(\frac{13}{2}\right)^n$\\ \hline 
     \end{tabular}
  
-§ Halutaan tietää, millä $t$:n arvolla kaniinipopulaation kokoa kuvaava funktio saa arvokseen vähintään miljoonan, eli $f(t)\geq1\,000\,000$. Tämän epäyhtälön ratkaiseminen ei onnistu tämän kurssin tiedoilla, mutta tehtävä voidaan ratkaista sijoittamalla
-erilaisia $t$:n arvoja $f(t)$:n lausekkeeseen.\\
+§ Halutaan tietää, millä $t$:n arvolla kaniinipopulaation kokoa kuvaava funktio saa arvokseen vähintään miljoonan, eli $f(t)\geq1\,000\,000$. Tämän epäyhtälön täsmällinen, tarkka ratkaiseminen ei onnistu tämän kurssin tiedoilla, mutta tehtävä voidaan ratkaista sijoittamalla erilaisia $t$:n arvoja $f(t)$:n lausekkeeseen.\\
 Kun $t=5$, $f(t)=24\cdot\left(\frac{13}{2}\right)^5 \approx 278\,470$. \\
 Kun $t=6$, $f(t)=24\cdot\left(\frac{13}{2}\right)^6 \approx 1\,810\,053$. \\
 
