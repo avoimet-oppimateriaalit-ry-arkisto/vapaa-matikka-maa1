@@ -22,13 +22,11 @@ Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusj
 
 Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
 
-\laatikko{
-\vaiheet{
-§ Suluissa olevat lausekkeet
+\numerointilaatikko{Suoritusjärjestys}{
+§ Suluissa olevat lausekkeet sisemmistä suluista ulompiin sulkuihin
 § Potenssilaskut (potenssia käsitellään tarkemmin myöhemmin tässä kirjassa)
 § Kerto- ja jakolaskut vasemmalta oikealle
 § Yhteen- ja vähennyslaskut vasemmalta oikealle
-}
 }
 
 Käytännössä laskutoimituksen voi laskea, jos sen kummallakaan puolella ei ole laskutoimitusta, joka pitäisi laskea ensin.
@@ -178,26 +176,22 @@ Sievennyksen lisäksi osittelulaki on kätevä työkalu luvuilla laskemisessa ja
 Luvun ja sen vastaluvun summa on nolla. Yhteen- ja vähennyslasku ovat toistensa käänteistoimituksia, joten saman
 luvun lisääminen ja vähentäminen peräkkäin kumoavat toisensa:
 
-\laatikko{
-\alakohdat{
+\luettelolaatikko{Käänteistoimitukset I}{
 § $a-a=0$
 § $-a+a=0$
 § $a+b-b=a$
 § $a-b+b=a$
 }
-}
 
-Vastaavasti luvun ja sen käänteisluvun tulo on nolla. Kerto- ja jakolasku ovat toistensa käänteisoperaatioita, joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
+Vastaavasti luvun ja sen käänteisluvun tulo on nolla. Kerto- ja jakolasku ovat toistensa käänteistoimituksia, joten peräkkäin kertominen ja jakaminen samalla luvulla kumoavat toisensa:
 
-\laatikko{
-\alakohdat{
+\luettelolaatikko{Käänteistoimitukset II}{
 § $a\cdot \frac1a=1$
 § $\frac1a\cdot a=1$
 § $a\cdot b:b=a$
 § $a:b\cdot b=a$
 }
-}
-
+s
 Nämä säännöt ovat sieventämisen työkaluja. Voimme poistaa niiden avulla ylimääräisiä termejä ja tulontekijöitä lausekkeista.
 
 \begin{esimerkki} 
