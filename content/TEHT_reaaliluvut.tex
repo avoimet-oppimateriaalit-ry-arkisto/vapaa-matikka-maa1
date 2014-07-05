@@ -14,17 +14,35 @@ Järjestys on \mbox{$-3$,$1$,$\sqrt{2}$,$\sqrt{3}$,$\sqrt{\pi}$,$\pi,4$}
 Piirrä samankokoiset kuvat lukusuoran väleistä, joiden päätepisteet ovat 
 \alakohdat{
 § $0$ ja $1$
-§ $0$ ja $0,001$
-§ $0$ ja $0,00001$.
+§ $0$ ja $0,1$
+§ $0$ ja $0,01$.
 }
 Miten b-kohdan väli sijoittuu a-kohdan välille? Entä c-kohdan väli b-kohdan välille? Mikä olisi samaa logiikkaa käyttäen seuraava väli ja miten se sijoittuisi c-kohdan välille? Havainnollista piirtämällä.
-% \begin{vastaus}
-% \alakohdat{
-% § <kuva puuttuu!> %FIXME kuva puuttuu
-% § <kuva puuttuu!>
-% § <kuva puuttuu!>
-% }
-% \end{vastaus}
+\begin{vastaus}
+a)
+\begin{kuva}
+	lukusuora.pohja(-0.2,1.2,6)
+	lukusuora.piste(0)
+	lukusuora.piste(1)
+	lukusuora.vali(0,1)
+\end{kuva}
+\\
+b) 
+\begin{kuva}
+	lukusuora.pohja(-0.2,1.2,6)
+	lukusuora.piste(0)
+	lukusuora.piste(0.1)
+	lukusuora.vali(0,0.1)
+\end{kuva}
+\\
+c) 
+\begin{kuva}
+	lukusuora.pohja(-0.2,1.2,6)
+	lukusuora.piste(0)
+	lukusuora.piste(0.01)
+	lukusuora.vali(0,0.01)
+\end{kuva}
+\end{vastaus}
 \end{tehtava}
 
 
@@ -111,8 +129,10 @@ e) Perustele edellisten kohtien avulla, että minkä tahansa kahden luvun
 välissä on äärettömän monta rationaali- ja irrationaalilukua.
 \begin{vastaus}
 Vihjeet: a) keskiarvo \ b) $\sqrt{2}$ on irrationaaliluku. Käytä
-painotettua keskiarvoa. \ c) pyöristäminen \ d) hyödynnä b-kohtaa
+painotettua keskiarvoa. \ c) pyöristäminen \ d) hyödynnä c-kohtaa
 e) keskiarvot %painotettua keskiarvoa ei ole opetettu!
+\\
+a) $\frac{a+b}{2}$ \\ b) $\frac{\sqrt{2}a+b}{\sqrt{2}+1}$ \\ c) Pyöristä pienempi luku ylöspäin sen desimaalin tarkkuudella, jossa lukujen kymmenjärjestelmäesitykset eroavat ensimmäisen kerran. \\ d) Jos rationaaliluku $r$ on irrationaalilukujen $a$ ja $b$ välissä, niin $\frac{a+r}{2}$ kelpaa. \\ e) Jos kahden rationaaliluvun välissä olisi vain äärellinen määrä rationaalilukuja, löytyisi kahden vierekkäisen välistä a-kohdan perusteella vielä yksi. Koska kahden rationaaliluvun välissä on ääretön määrä rationaalilukuja, b-kohdasta seuraa, että niiden välissä on äärettömän monta irrationaalilukua. Irrationaalilukujen välissä olevien rationaali- ja irrationaalilukujen äärettömyys seuraa vastaavasti.
 \end{vastaus}
 \end{tehtava}
 
