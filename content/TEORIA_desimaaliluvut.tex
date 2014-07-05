@@ -29,9 +29,7 @@ Kymmenjärjestelmä saa nimensä siitä, että jokainen luvussa esiintyvä numer
 
 \subsubsection*{Murtoluvun muuttaminen desimaaliluvuksi}
 
-Murtoluku on tapa merkitä jakolaskua. Jakolaskun tuloksen esittämiseksi desimaalilukuna
-käytetään peruskoulun alaluokilla opetettavaa jakokulmaa. Jakokulman ajatus on yksinkertaisesti kokeilla, kuinka monta jakajaa, sen kymmenesosaa, sadasosaa ja niin
-edelleen jaettavaan mahtuu. Jakokulmat voi laskea käsin, laskin tekee saman nopeammin.
+Murtoluku on tapa merkitä jakolaskua. Jakolaskun tuloksen esittämiseksi desimaalilukuna käytetään peruskoulun alaluokilla opetettavaa jakokulmaa. Jakokulman ajatus on yksinkertaisesti kokeilla, kuinka monta jakajaa, sen kymmenesosaa, sadasosaa ja niin edelleen jaettavaan mahtuu. Jakokulmat voi laskea käsin, laskin tekee saman nopeammin.
 
 \begin{esimerkki}
 Muutetaan $\frac{21}{4}$ desimaaliluvuksi laskemalla jakolasku $21 : 4$ jakokulmassa.
@@ -45,8 +43,6 @@ Muutetaan $\frac{21}{4}$ desimaaliluvuksi laskemalla jakolasku $21 : 4$ jakokulm
 %
 %
 % Kun jakojäännökseksi jää luku nolla, jako on mennyt tasan ja vastaus on luettavissa jakokulman yläpuolelta.
-
-
 
 \[ 
 \begin{array}{cccccc}
@@ -78,18 +74,26 @@ Vastaavasti laskien saadaan $\frac{3}{11}=0,272727\ldots \ $ :
  & & & & & \ddots
 \end{array}
 \]
-Koska jakojäännökset 3 ja 8 toistuvat loputtomiin, tämä desimaaliluku
-ei ole päättyvä. Siinä on \termi{jakso}{jakso}: numerosarja 27 toistuu.
-Jaksoa voidaan merkitä yläviivan avulla seuraavasti:
+Koska jakojäännökset $3$ ja $8$ toistuvat loputtomiin, tämä desimaaliluku ei ole päättyvä. Siinä on \termi{jakso}{jakso}: numerosarja $27$ toistuu. Jaksoa voidaan merkitä yläviivan avulla seuraavasti:
 \[ 0,27272727\ldots = 0,\overline{27} \]
 \end{esimerkki}
 
-{\bf Kaikkien murtolukujen desimaaliesitykset ovat joko päättyviä tai jaksollisia.}
-Vähennyslaskuissa syntyvät jakojäännökset ovat nimittäin aina jakajaa pienempiä, ja siksi
-ne alkavat väistämättä toistaa itseään, ellei jako jossakin vaiheessa mene tasan.
-Koska eri vaihtoehtoja jakojäännöksiksi on yksi jakajaa vähemmän,
-jakson pituus on suurimmillaan yhden verran jakajaa pienempi. Esimerkiksi luvulla
-$\frac{1}{7}=0,\overline{142857}$ jakso on pisin mahdollinen, $7-1=6$ numeron mittainen.
+Tavan mukaan jakolaskun mennessä tasan desimaaliluvun tulevia nollia $\ldots000\ldots=\overline{0}$ ei merkitä, kuten ei nollia luvun edessäkään.
+
+\begin{esimerkki}
+	\alakohdat{
+	§ $\frac{5}{4} = 1,250000\ldots = 1,25\overline{0}$ merkitään $1,25$
+	§ $001,25$ merkitään $1,25$
+	}
+\end{esimerkki}
+
+Huomaa, että matemaatikolle luvut $1,25$ ja $1,250$ tarkoittavat täsmälleen samaa asiaa. Sovelluksissa, joissa luvut eivät ole tarkkoja vain mittaustuloksia tai arvioita, esityksillä voi olla nyanssiero, joka kertoo mittauksen tarkkuudesta. Vastaustarkkuudesta ja pyöristämisestä kerrotaan lisää myöhemmin. %viittaus Yksiköt ja vastaustarkkuus -lukuun (jos se vielä sen niminen on)
+
+Toistuva nollien jakso on vain yksi esimerkki rationaalilukujen desimaaliesityksen vääjäämättömästä jaksollisuudesta.
+
+\laatikko{Kaikkien rationaalilukujen desimaaliesitykset ovat jaksollisia.}
+
+Vähennyslaskuissa syntyvät jakojäännökset ovat nimittäin aina jakajaa pienempiä, ja siksi ne alkavat väistämättä toistaa itseään, ellei jako jossakin vaiheessa mene tasan. Koska eri vaihtoehtoja jakojäännöksiksi on yksi jakajaa vähemmän, jakson pituus on suurimmillaan yhden verran jakajaa pienempi. Esimerkiksi luvulla $\frac{1}{7}=0,\overline{142857}$ jakso on pisin mahdollinen, $7-1=6$ numeron mittainen.
 
 \begin{esimerkki}
 Esimerkkejä murtolukujen desimaaliesityksistä
@@ -100,11 +104,6 @@ Esimerkkejä murtolukujen desimaaliesityksistä
 	§ $ \frac{1}{4} = 0,25$
 	§ $ \frac{3}{4} = 0,75$
 }
-Huomaa, että tavan mukaan jakolaskun mennessä tasan desimaaliluvun tulevia nollia $\ldots000\ldots=\overline{0}$ ei merkitä, kuten ei nollia luvun edessäkään.
-	\alakohdat{
-	§ $\frac{5}{4} = 1,250000\ldots = 1,25\overline{0}$ merkitään $1,25$
-	§ $001,25$ merkitään $1,25$
-	}
 \end{esimerkki}
 
 
@@ -115,25 +114,24 @@ desimaali erikseen murtoluvuksi ja laskemalla syntyneet luvut yhteen.
 
 \begin{esimerkki}
 $21,37 = 21+ \frac{3}{10}+\frac{7}{100} =
-\frac{2100}{100}+\frac{30}{100}+\frac{7}{100}
- = \frac{2100+30+7}{100} = \frac{2137}{100}.$
+\frac{2\,100}{100}+\frac{30}{100}+\frac{7}{100}
+ = \frac{2\,100+30+7}{100} = \frac{2\,137}{100}.$
 \end{esimerkki}
 
 Tämä on turhan työlästä, ja paljon helpommalla päästäänkin kun lavennetaan luku ''niin monella kympillä, kuin siinä on numeroita desimaalipilkun jälkeen''. Täsmällisemmin sanottuna luvulla $10^n$, jossa $n$ on pilkun jälkeen tulevien numeroiden määrä.
 
 \begin{esimerkki}
-$21,47 = 21,37 \cdot  \frac{100}{100} = \frac{21,37 \cdot 100}{100} = \frac{2137}{100}$
+$21,47 = 21,37 \cdot  \frac{100}{100} = \frac{21,37 \cdot 100}{100} = \frac{2\,137}{100}$
 \end{esimerkki}
 
 \begin{esimerkki}
-$0,007 = 0,007 \cdot 1 = 0,007 \cdot \frac{10^3}{10^3} = \frac{0,007 \cdot 1000}{1000} = \frac{7}{1000}$
+$0,007 = 0,007 \cdot 1 = 0,007 \cdot \frac{10^3}{10^3} = \frac{0,007 \cdot 1\,000}{1\,000} = \frac{7}{1\,000}$
 
 \end{esimerkki}
 
 %Menetelmän toimivuus kaikkien desimaalilukujen tapauksessa voidaan todistaa %tarkastelemalla desimaaliluvun määritelmää, mutta jätetään tässä tekemättä.
 
-Minkä tahansa \termi{jaksollinen desimaaliluku}{jaksollisen desimaaliluvun} voi muuttaa murtoluvuksi seuraavalla tempulla.
-Muutetaan esimerkiksi $0,575757\ldots$ murtoluvuksi. Jos merkitään
+Minkä tahansa \termi{jaksollinen desimaaliluku}{jaksollisen desimaaliluvun} voi muuttaa murtoluvuksi seuraavalla tempulla. Muutetaan esimerkiksi $0,575757\ldots$ murtoluvuksi. Jos merkitään
 \[
 \begin{array}{rcll}
 x &=& \ \, 0,575757 \ldots\ , &\textrm{saadaan sadalla kertomalla} \\
@@ -143,9 +141,7 @@ x &=& \ \, 0,575757 \ldots\ , &\textrm{saadaan sadalla kertomalla} \\
 x &=& \frac{57}{99} = \frac{19}{33}.
 \end{array}
 \]
-Siis $0,575757\ldots = \frac{19}{33}$. Menetelmä toimii kaikille jaksollisille
-desimaaliluvuille: kerrotaan vain sopivalla luvun 10 potenssilla, jotta jakso
-katoaa vähennyslaskussa.
+Siis $0,575757\ldots = \frac{19}{33}$. Menetelmä toimii kaikille jaksollisille desimaaliluvuille: kerrotaan vain sopivalla luvun $10$ potenssilla, jotta jakso katoaa vähennyslaskussa.
 
 \laatikko{
 Nämä kannattaa muistaa:
