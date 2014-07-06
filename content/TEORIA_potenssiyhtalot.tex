@@ -148,6 +148,44 @@ Television leveys on noin $16x = 16\cdot 6,36\approx 102$\,cm.
 {\bf Vastaus.} Noin $102$\,cm.
 \end{esimerkki}
 
+\begin{esimerkki}
+	Juudas tallettaa 30 hopearahaa pankkiin. Rahamäärä kasvaa vuodessa $1\,$prosentin korkoa. Kuinka paljon rahaa on tilillä 2000 vuoden kuluttua?
+	\begin{esimratk}
+		Tutkitaan, miten Juudaksen talletuksen suuruus lähtee kasvamaan.
+		\begin{tabular}{c|c|c}
+			Pääoma & Korko / & Pääoma / \\
+			vuoden alussa / &  & vuoden lopussa / \\
+			hopearahaa & hopearahaa & hopearahaa \\
+			$30$ & $0,01 \cdot 30 = 0,3$ & $30+0,3 = 30,3$ \\
+			$30,3$ & $0,01 \cdot 30,3 = 0,303$ & $30,3 + 0,303 =30,603$ \\
+			$30,603$ & $0,01 \cdot 30,603 = 0,30603$ & $30,603+ 0,30603 = 30,90903$ \\
+			$30,90903$ & $0,01 \cdot 30,90903 = 0,3090903$ & $30,90903+0,3090903 = 31,2181203$
+		\end{tabular}
+		Huomataan, että pääoma kertautuu aina vakiolla. Nimittäin, jos pääoma on alussa $P_0$, se kasvaa $\frac{p}{100}P_0$, missä $p$ on korkoprosentti. Nyt vuoden lopussa talletettuna on $P_1 = P +\frac{p}{100}P_0 = (1+\frac{p}{100})P_0$, eli uusi pääoma saadaan kertomalla vanha luvulla $1+\frac{p}{100}$. Lisäksi toisen vuoden jälkeen tilillä on siis 
+		\[
+		P_2 = \left(1+\frac{p}{100}\right)P_1 = \left(1+\frac{p}{100}\right)\left(1+\frac{p}{100}\right)P_0 = \left(1+\frac{p}{100}\right)^2P_0,
+		\]
+		ja siis yleisesti $n$:n vuoden jälkeen
+		\[
+		P_n = \left(1+\frac{p}{100}\right)^nP_0.
+		\]
+		Tämä on ns. korkoa korolle kaava. Nyt voidaan laskea, että Juudaksen lopullinen pääoma on 2000 vuoden jälkeen hopearahoissa
+		\[
+		P_{2000} = \left(1+\frac{1}{100}\right)^{2000}\cdot 30 \approx 13\,178\,586\,151.5 \approx 13\,000\,000\,000.
+		\]
+		Tilille kertyi siis kutakuinkin 13 miljardia hopearahaa.
+	\end{esimratk}
+\end{esimerkki}
+
+\laatikko{
+\textbf{Korkoa korolle -periaate}
+
+Kun korkoprosentti on $p$, pääoma $P_0$ kasvaa $n$:n vuoden aikana arvoon
+\[
+	P_n = \left(1+\frac{p}{100}\right)^nP_0.
+\]
+}
+
 
 \begin{esimerkki}
 Suursijoittaja Nalle Mursulla on $5\,000$ euroa ylimääräistä rahaa, jonka hän aikoo sijoittaa $30$ vuodeksi.  Nalle Mursu haluaa sijoittamansa pääoman kasvavan $100\,000$ euroksi $30$ vuodessa.  Kuinka suuren vuotuisen korkokannan Nalle Mursu tarvitsee sijoitukselleen? 
