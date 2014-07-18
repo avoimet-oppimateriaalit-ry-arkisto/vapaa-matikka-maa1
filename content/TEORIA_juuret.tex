@@ -115,6 +115,7 @@ Laske
 \subsection*{Juurten laskusäännöt}
 Juurille on olemassa laskusääntöjä, jotka voivat auttaa sieventämisessä ja ratkaisujen löytämisessä. 
 
+%vaihda laatikkotyyppi
 \numerointilaatikko{Laskusäännöt}{
 	§ Ehdolla, että $x\geq0$, $y>0$ ja $m$ sekä $n$ ovat positiivisia kokonaislukuja.
 	§§ $\sqrt[m]{x}\cdot{\sqrt[m]{y}}=\sqrt[m]{xy}$
@@ -161,16 +162,26 @@ Laske
 \end{esimvast}
 \end{esimerkki}
 
-Juurten laskusääntöjä voidaan käyttää myös käänteisesti sieventämään monimutkaisempia juurilausekkeita. Tällöin pyritään jakamaan juurrettava alkulukutekijöihin, joiden potenssit vastaavat juuren kertalukua.
+Sievennystapana on, että juuren sisälle jätetään mahdollisimman yksinkertainen (itseisarvoltaan pieni, vähän numeroita sisältävä) luku. Tällöin pyritään jakamaan juurrettava alkulukutekijöihin, joista yhden tai useamman potenssi vastaava otetun juuren kertalukua. Vaikeissa tapauksissa sopivan tulomuodon etsimiseen voi käyttää esimerkiksi laskinta. Huomaa, että oikeita lopullisia vastauksia on vain yksi oikea, eikä optimaalisinta tulomuotoa tarvitse keksiä heti ensimmäisenä.
+
+%\begin{esimerkki}
+%Esitä luvut tulomuodossa, jossa...
+%\end{esimerkki}
 
 \begin{esimerkki}
-Sievennä juurilausekkeet $\sqrt{8}$ ja $\sqrt{\frac{9}{16}}$. %luettelomerkintä
+Sievennä juurilausekkeet. \alakohdat{§ $\sqrt{20}$ § $\sqrt{\frac{9}{16}}$ § $\sqrt[3]{120}$ § $\sqrt{10}$}
 
 	\begin{esimratk}
 	\alakohdat{
-§ Koska $8$ voidaan kirjoittaa tulona $2\cdot4$, on $\sqrt{8}=\sqrt{2\cdot 4}$. Juurten tulosäännön nojalla tämä voidaan kirjoittaa	 kahden neliöjuuren tulona $\sqrt{2}\sqrt{4}$, joka sievenee muotoon $2\sqrt{2}$. Sievennystapana on, että juuren sisälle jätetään mahdollisimman yksinkertainen (itseisarvoltana pieni) luku.
+§ Koska $20$ voidaan kirjoittaa tulona $4\cdot5$, on $\sqrt{20}=\sqrt{4\cdot 5}$. Juurten tulosäännön nojalla tämä voidaan kirjoittaa kahden neliöjuuren tulona $\sqrt{4}\sqrt{5}$, joka sievenee muotoon $2\sqrt{5}$, koska luku neljä on neliöluku.
 § $\sqrt{\frac{9}{16}}=\frac{\sqrt{9}}{\sqrt{16}}=\frac{\sqrt{3^2}}{\sqrt{4^2}}=\frac{3}{4}$
+§ Kirjoitetaan luku $120$ tulona, jossa esiintyisi jokin kuutioluku, eli jonkin kokonaisluvun kolmas potenssi. Esimerkiksi $120=8\cdot15$ kelpaa, sillä $8=2^3$. Tällöin $\sqrt[3]{120}=\sqrt[3]{8\cdot 15}=\sqrt[3]{2^3\cdot 15}=\sqrt[3]{2^3}\sqrt[3]{15}=2\sqrt[3]{15}$. (Luvun $15$ kuutiojuurta ei enää sievennettyä.)
+§ Luvun $10$ alkulukukehitelmä on $10=2\cdot 5$, ja siinä ei ole yhtäkään toista potenssia, josta voisi päästä neliöjuurella eroon. $\sqrt{10}$ on siis jo mahdollisimman sievässä muodossa.
 	}
 	\end{esimratk}
-
+	\begin{esimvast}
+	\alakohdat{§ $2\sqrt{5}$ § $\frac{3}{4}$ § $2\sqrt[3]{15}$ § $\sqrt{10}$ (valmiiksi sievin muoto)}
+	\end{esimvast}
+	
+	%+aitojen desimaalilukujen juuren sieventäminen
 \end{esimerkki}
