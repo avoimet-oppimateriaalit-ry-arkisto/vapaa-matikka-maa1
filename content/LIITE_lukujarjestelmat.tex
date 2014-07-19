@@ -5,7 +5,7 @@ Merkitsemme lukuja yleensä \termi{kymmenjärjestelmä}{kymmenjärjestelmässä}
 Kymmenjärjestelmä on \termi{paikkajärjestelmä}{paikkajärjestelmä}, eli merkin paikka määrittää sen merkityksen.
 Esimerkiksi luvussa $80$ merkin 8 merkitys on $8 \cdot 10^1$, mutta luvussa $820$ sen merkitys on $8 \cdot 10^2$.
 
-Nykyään yleisimmät desimaalijärjestelmästä poikkeavat lukujärjestelmät ovat \termi{binäärijärjestelmä}{binääri}-, \termi{oktaalijärjestelmä}{oktaali}- ja \termi{heksadesimaalijärjestelmä}{heksadesimaalijärjestelmät}, joissa on 2, 8 ja 16 numeromerkkiä. Tietokoneet käsittelevät lukuja sisäisesti binäärijärjestelmässä, kun taas oktaali- ja heksadesimaalijärjestelmät ovat muutoin käteviä tietojenkäsittelytieteessä.
+Nykyään yleisimmät desimaalijärjestelmästä poikkeavat lukujärjestelmät ovat \termi{binäärijärjestelmä}{binääri}-, \termi{oktaalijärjestelmä}{oktaali}- ja \termi{heksadesimaalijärjestelmä}{heksadesimaalijärjestelmät}, joissa on vastaavasti $2$, $8$ ja $16$ numeromerkkiä. Tietokoneet käsittelevät lukuja sisäisesti binäärijärjestelmässä, kun taas oktaali- ja heksadesimaalijärjestelmät ovat muutoin käteviä tietojenkäsittelytieteessä.
 
 Binäärijärjestelmässä luvun muodostavia numeromerkkejä kutsutaan \termi{bitti}{biteiksi}. Bitti voi olla joko päällä (1) tai pois päältä (0), ja toteutus tietokoneessa vastaa esimerkiksi sitä, että johtimessa kulkee virta (1) tai ei (0).
 
@@ -15,10 +15,13 @@ Binäärijärjestelmässä luvun muodostavia numeromerkkejä kutsutaan \termi{bi
 
 Kuusitoistajärjestelmässä tarvitaan numeroiden $0 \ldots \, 9$ lisäksi kuusi uutta numeromerkkiä. Tavaksi on vakiintunut käyttää kirjainmerkkejä $\mathrm{A, B, C, D, E, F}$. Ne vastaavat desimaalilukuja $10 \ldots \, 15$.
 
-Useampaa järjestelmää käytettäessä, erityisesti muunnettaessa lukuja järjestelmästä toiseen, merkitään kantaluku luvun jälkeen alaindeksinä. Voimme esimerkiksi merkitä (desimaalijärjestelmän) lukua yhdeksäntoista $10011_{2}$, $23_{8}$, $19_{10}$ tai $13_{16}$.
+Useampaa järjestelmää käytettäessä, erityisesti muunnettaessa lukuja järjestelmästä toiseen, merkitään kantaluku luvun jälkeen alaindeksinä. Voimme esimerkiksi merkitä (desimaalijärjestelmän) lukua yhdeksäntoista $10011_{2}$, $23_{8}$, $19_{10}$ tai $13_{16}$. Huomaa, että binäärijärjestelmän luvuissa ei ole mielekästä käyttää tuhaterotinta, koska sana tuhat itsessään viittaa kymmenjärjestelmälle ominaiseen kolmanteen kymmenen potenssiin. Biinäriluvuille ei ole vakiintunut vastaavia ilmaisuja kuten sata tai miljoona, vaan luvut luetaan numero kerrallaan.
 
-Lukujärjestelmiä voidaan vaihtoehtoisesti merkitä kirjoittamalla niiden tunnus (Bin, Oct, Dec, Hex) luvun jälkeen.
-Klassinen vitsi ''Miksi tietojenkäsittelytieteilijä sekoittaa halloweenin ja joulun? Koska 31 Oct = 25 Dec!'' perustuu siihen, että
+\begin{esimerkki}
+Luku $11001_2$ luetaan "yksi yksi nolla nolla yksi".
+\end{esimerkki}
+
+Lukujärjestelmiä voidaan vaihtoehtoisesti merkitä kirjoittamalla niiden tunnus (Bin, Oct, Dec, Hex) luvun jälkeen. Klassinen vitsi ''Miksi tietojenkäsittelytieteilijä sekoittaa halloweenin ja joulun? Koska 31 Oct = 25 Dec!'' perustuu siihen, että
 
 \begin{align*}
 	\text{halloween} \; = \; \text{31. lokakuuta} \; &= \; \text{31 Oct} \; = 31_8 = 3_{10} \cdot 8_{10} + 1_{10} \cdot 1_{10} \\
@@ -35,11 +38,9 @@ Yleisesti tunnetaan myös joitakin lukujärjestelmiä, jotka eivät ole paikkaj�
 	\includegraphics{pictures/Kuva1-1-tukkimiehenkirjanpito.pdf}
 \end{center}
 
-Hienostuneempi versio tukkimiehen kirjanpidosta ovat \termi{roomalaiset luvut}{roomalaiset luvut}, jotka nimensä mukaisesti olivat yleisin lukujärjestelmä antiikin Roomassa. Ne perustuvat havaintoon, että kun käytettävissä olevien merkkien määrää lisää, suuria lukuja voi kirjoittaa lyhyempään muotoon. Tilanne on verrattavissa vaikkapa kiinan kieleen, jossa on käytössä satoja erilaisia kirjoitusmerkkejä. Merkeissä on paljon muistettavaa, mutta toisaalta kokonaisen lauseen voi kirjoittaa vain parilla kirjoitusmerkillä.
+Hienostuneempi versio tukkimiehen kirjanpidosta ovat \termi{roomalaiset luvut}{roomalaiset luvut}, jotka nimensä mukaisesti olivat yleisin lukujärjestelmä antiikin Roomassa. Ne perustuvat yleiseen havaintoon, että kun käytettävissä olevien merkkien määrää lisää, suuria lukuja voi kirjoittaa lyhyempään muotoon. Tilanne on verrattavissa vaikkapa kiinan kieleen, jossa on käytössä satoja erilaisia kirjoitusmerkkejä. Merkeissä on paljon muistettavaa, mutta toisaalta kokonaisen lauseen voi kirjoittaa vain parilla kirjoitusmerkillä.
 
-Roomalaisia lukuja käytetään yhä nykyäänkin erityisesti järjestyksen merkitsemisessä.
-
-Roomalaisten lukujen numeromerkit ovat I, V, X, L, C, D ja M. Ne vastaavat desimaalijärjestelmän lukuja seuraavalla tavalla:
+Roomalaisia lukuja käytetään yhä nykyäänkin erityisesti järjestyksen merkitsemisessä. Roomalaisten lukujen numeromerkit ovat I, V, X, L, C, D ja M. Ne vastaavat desimaalijärjestelmän lukuja seuraavalla tavalla:
 
 \begin{equation*}
 	\rm I=1\quad
@@ -51,9 +52,7 @@ Roomalaisten lukujen numeromerkit ovat I, V, X, L, C, D ja M. Ne vastaavat desim
 	M=1\,000
 \end{equation*}
 
-Roomalaiset luvut merkitään kirjoittamalla merkkejä laskevassa järjestyksessä, poikkeuksena vähennyssääntö. Merkkien kokonaisarvo määrää luvun.
-
-Vähennyssääntö tarkoittaa kuutta kaksimerkkistä ilmaisua:
+Roomalaiset luvut merkitään kirjoittamalla merkkejä laskevassa järjestyksessä, poikkeuksena vähennyssääntö. Merkkien kokonaisarvo määrää luvun. Vähennyssääntö tarkoittaa kuutta kaksimerkkistä ilmaisua:
 
 \begin{equation*} %EI KURSIIVILLA ROOMALAISIA!
 	\rm IV=4\quad
@@ -64,10 +63,9 @@ Vähennyssääntö tarkoittaa kuutta kaksimerkkistä ilmaisua:
 	CM=900
 \end{equation*}
 
-Luvussa voi olla vain kerran IV tai IX, vain kerran XL tai XC ja vain kerran CD tai CM.
-Kaksimerkkisiin ilmaisuihin pätevät samat säännöt kuin numeromerkkeihinkin: I = $1$ ei voi edeltää numeroa IV = $4$, eikä IV = $4$ numeroa V = $5$. Lisäksi merkinnät IXV, XCL ja CMD eivät ole sallittuja. Oikea roomalainen luku minimoi käytettyjen merkkien määrän. Esimerkiksi VIV ei ole roomalainen luku, sillä IX on lyhyempi.
+Luvussa voi olla vain kerran IV tai IX, vain kerran XL tai XC ja vain kerran CD tai CM. Kaksimerkkisiin ilmaisuihin pätevät samat säännöt kuin numeromerkkeihinkin: I = $1$ ei voi edeltää numeroa IV = $4$, eikä IV = $4$ numeroa V = $5$. Lisäksi merkinnät IXV, XCL ja CMD eivät ole sallittuja. Oikea roomalainen luku minimoi käytettyjen merkkien määrän. Esimerkiksi VIV ei ole roomalainen luku, sillä IX on lyhyempi.
 
-\termi{nolla}{Nollaa} roomalaisissa numeroissa ei ole; nolla nykyisessä merkityksessään kehitettiin Intiassa 800-luvulla jaa.
+\termi{nolla}{Nollaa} roomalaisissa numeroissa ei ole; nolla nykyisessä merkityksessään kehitettiin vasta Intiassa 800-luvulla jaa.
 
 \begin{esimerkki}
 	Roomalaisia lukuja:
