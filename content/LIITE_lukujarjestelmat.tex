@@ -15,13 +15,13 @@ Binäärijärjestelmässä luvun muodostavia numeromerkkejä kutsutaan \termi{bi
 
 Kuusitoistajärjestelmässä tarvitaan numeroiden $0 \ldots \, 9$ lisäksi kuusi uutta numeromerkkiä. Tavaksi on vakiintunut käyttää kirjainmerkkejä $\mathrm{A, B, C, D, E, F}$. Ne vastaavat desimaalilukuja $10 \ldots \, 15$.
 
-Useampaa järjestelmää käytettäessä, erityisesti muunnettaessa lukuja järjestelmästä toiseen, merkitään kantaluku luvun jälkeen alaindeksinä. Voimme esimerkiksi merkitä (desimaalijärjestelmän) lukua yhdeksäntoista $10011_{2}$, $23_{8}$, $19_{10}$ tai $13_{16}$. Huomaa, että binäärijärjestelmän luvuissa ei ole mielekästä käyttää tuhaterotinta, koska sana tuhat itsessään viittaa kymmenjärjestelmälle ominaiseen kolmanteen kymmenen potenssiin. Biinäriluvuille ei ole vakiintunut vastaavia ilmaisuja kuten sata tai miljoona, vaan luvut luetaan numero kerrallaan.
+Useampaa järjestelmää käytettäessä, erityisesti muunnettaessa lukuja järjestelmästä toiseen, merkitään kantaluku luvun jälkeen alaindeksinä. Voimme esimerkiksi merkitä (desimaalijärjestelmän) lukua yhdeksäntoista $10011_2$, $23_8$, $19_{10}$ tai $13_{16}$. Huomaa, että binäärijärjestelmän luvuissa ei ole mielekästä käyttää tuhaterotinta, koska sana tuhat itsessään viittaa kymmenjärjestelmälle ominaiseen kolmanteen kymmenen potenssiin. Biinäriluvuille ei ole vakiintunut vastaavia ilmaisuja kuten sata tai miljoona, vaan luvut luetaan numero kerrallaan.
 
 \begin{esimerkki}
 Luku $11001_2$ luetaan "yksi yksi nolla nolla yksi".
 \end{esimerkki}
 
-Lukujärjestelmiä voidaan vaihtoehtoisesti merkitä kirjoittamalla niiden tunnus (Bin, Oct, Dec, Hex) luvun jälkeen. Klassinen vitsi ''Miksi tietojenkäsittelytieteilijä sekoittaa halloweenin ja joulun? Koska 31 Oct = 25 Dec!'' perustuu siihen, että
+Lukujärjestelmiä voidaan vaihtoehtoisesti merkitä kirjoittamalla niiden tunnus (Bin, Oct, Dec, Hex) luvun jälkeen. Klassinen vitsi ''Miksi tietojenkäsittelytieteilijä sekoittaa halloweenin ja joulun? Koska $31$ Oct $= 25$ Dec!'' perustuu siihen, että
 
 \begin{align*}
 	\text{halloween} \; = \; \text{31. lokakuuta} \; &= \; \text{31 Oct} \; = 31_8 = 3_{10} \cdot 8_{10} + 1_{10} \cdot 1_{10} \\
@@ -43,27 +43,27 @@ Hienostuneempi versio tukkimiehen kirjanpidosta ovat \termi{roomalaiset luvut}{r
 Roomalaisia lukuja käytetään yhä nykyäänkin erityisesti järjestyksen merkitsemisessä. Roomalaisten lukujen numeromerkit ovat I, V, X, L, C, D ja M. Ne vastaavat desimaalijärjestelmän lukuja seuraavalla tavalla:
 
 \begin{equation*}
-	\rm I=1\quad
-	V=5\quad
-	X=10\quad
-	L=50\quad
-	C=100\quad
-	D=500\quad
-	M=1\,000
+	\textrm{I}=1\quad
+	\textrm{V}=5\quad
+	\textrm{X}=10\quad
+	\textrm{L}=50\quad
+	\textrm{C}=100\quad
+	\textrm{D}=500\quad
+	\textrm{M}=1\,000
 \end{equation*}
 
 Roomalaiset luvut merkitään kirjoittamalla merkkejä laskevassa järjestyksessä, poikkeuksena vähennyssääntö. Merkkien kokonaisarvo määrää luvun. Vähennyssääntö tarkoittaa kuutta kaksimerkkistä ilmaisua:
 
-\begin{equation*} %EI KURSIIVILLA ROOMALAISIA!
-	\rm IV=4\quad
-	IX=9\quad
-	XL=40\quad
-	XC=90\quad
-	CD=400\quad
-	CM=900
+\begin{equation*}
+	\textrm{IV}=4\quad
+	\textrm{IX}=9\quad
+	\textrm{XL}=40\quad
+	\textrm{XC}=90\quad
+	\textrm{CD}=400\quad
+	\textrm{CM}=900
 \end{equation*}
 
-Luvussa voi olla vain kerran IV tai IX, vain kerran XL tai XC ja vain kerran CD tai CM. Kaksimerkkisiin ilmaisuihin pätevät samat säännöt kuin numeromerkkeihinkin: I = $1$ ei voi edeltää numeroa IV = $4$, eikä IV = $4$ numeroa V = $5$. Lisäksi merkinnät IXV, XCL ja CMD eivät ole sallittuja. Oikea roomalainen luku minimoi käytettyjen merkkien määrän. Esimerkiksi VIV ei ole roomalainen luku, sillä IX on lyhyempi.
+Luvussa voi olla vain kerran IV tai IX, vain kerran XL tai XC ja vain kerran CD tai CM. Kaksimerkkisiin ilmaisuihin pätevät samat säännöt kuin numeromerkkeihinkin: I$=1$ ei voi edeltää numeroa IV$=4$, eikä IV$=4$ numeroa V$=5$. Lisäksi merkinnät IXV, XCL ja CMD eivät ole sallittuja. Oikea roomalainen luku minimoi käytettyjen merkkien määrän. Esimerkiksi VIV ei ole roomalainen luku, sillä IX on lyhyempi.
 
 \termi{nolla}{Nollaa} roomalaisissa numeroissa ei ole; nolla nykyisessä merkityksessään kehitettiin vasta Intiassa 800-luvulla jaa.
 
@@ -112,18 +112,17 @@ Muunna seuraavat luvut binäärijärjestelmään.
 	}
 \end{vastaus}
 \end{tehtava}
-%%Siirretty 1. kertauskokeesta tänne. Aleksi Sipola 15.12.2013
+
 \begin{tehtava}
-Muuta seuraavat kymmenjärjestelmän luvut heksadesimaaliluvuiksi. \\
-	(a) $175$ \qquad
-	(b) $384$.
+Muuta seuraavat kymmenjärjestelmän luvut heksadesimaaliluvuiksi.
+\alakohdat{§ $175$ § $384$}
 
 \end{tehtava}
 
 \begin{tehtava}
 	Laske
 	\alakohdat{
-		§ $1101_2 \cdot 100_2$
+		§ $1101_2 \cdot 100_2$ %joskus tulevaisuudessa meillä on esimerkkejä jakokulmasta binääriluvuille ;_;
 		§ $1101001_2 \cdot 100000_2$
 		§ $10110_2 \cdot 0,01_2$.
 	}
@@ -133,13 +132,6 @@ Muuta seuraavat kymmenjärjestelmän luvut heksadesimaaliluvuiksi. \\
 			§ $110100100000_2$
 			§ $101,1_2$
 		}
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-	$\star$ Mikä on suuruusjärjestyksessä 148. positiivinen kokonaisluku, jonka kymmenjärjestelmäesityksessä on vain nollia ja ykkösiä?
-	\begin{vastaus}
-		$10010100$
 	\end{vastaus}
 \end{tehtava}
 
@@ -176,17 +168,24 @@ Muuta seuraavat kymmenjärjestelmän luvut roomalaisiksi luvuiksi. Kuinka monta 
 \alakohdat{
 § $278$
 § $712$
-§ $1478$
-§ $3999$
+§ $1\,478$
+§ $3\,999$
 }
 \begin{vastaus}
 \alakohdat{
-§ CCLXXVIII, 9 merkkiä 
-§ DCCXII, 6 merkkiä
-§ MCDLXXVIII, 10 merkkiä
-§ MMMCMXCIX, 9 merkkiä
+§ CCLXXVIII, $9$ merkkiä 
+§ DCCXII, $6$ merkkiä
+§ MCDLXXVIII, $10$ merkkiä
+§ MMMCMXCIX, $9$ merkkiä
 }
 \end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+	$\star$ Mikä on suuruusjärjestyksessä $148$. positiivinen kokonaisluku, jonka kymmenjärjestelmäesityksessä on vain nollia ja ykkösiä?
+	\begin{vastaus}
+		$10\,010\,100$
+	\end{vastaus}
 \end{tehtava}
 
 \end{tehtavasivu}
