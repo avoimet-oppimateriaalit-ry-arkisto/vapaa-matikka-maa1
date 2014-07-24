@@ -88,11 +88,9 @@ Eivät saa.
 
 \begin{tehtava}
 Yhdistä funktioiden kuvaajat oikeaan funktion lausekkeeseen.
-
 \alakohdat{
-
 	§ $g(x)=x$
-		§ $c(x)=x^{10}$
+	§ $c(x)=x^{10}$
 	§ $a(x)=\sqrt[3]{x}$
 	§ $b(x)=x^{\frac{1}{10}}$
 	§ $f(x)=x^{\frac{3}{2}}$
@@ -104,11 +102,9 @@ Yhdistä funktioiden kuvaajat oikeaan funktion lausekkeeseen.
 	\begin{kuvaajapohja}{0.9}{-3.5}{3.5}{-3.5}{3.5}
 	
 	\newcommand{\kuvaajaneg}[3]{
-\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
-}
+\draw[smooth,color=#3,thick,domain=\kuvaajaminx:-0.01,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};}
 \newcommand{\kuvaajapos}[3]{
-\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};
-}
+\draw[smooth,color=#3,thick,domain=0.01:\kuvaajamaxx,scale=\kuvaajascale,samples=300] plot function{(#1) < \kuvaajamaxy ? ((#1) > \kuvaajaminy ? (#1) : NaN) : NaN} node[right] {#2};}
 	 \kuvaaja{x**10}{2}{red}
 	 \kuvaaja{x**1.5}{1}{green}
 	 \kuvaaja{x}{3}{black}
@@ -124,7 +120,6 @@ Yhdistä funktioiden kuvaajat oikeaan funktion lausekkeeseen.
 
 \begin{vastaus}
 	\alakohdat{
-
 		§ 3
 		§ 2
 		§ 7
@@ -159,15 +154,15 @@ Olkoon $f(x)=x^2$. Millä $x$:n arvoilla
 \begin{tehtava}
 Minkä kahden peräkkäisen kokonaisluvun välissä yhtälön $x^2 = 12$ positiivinen ratkaisu on?
 \begin{vastaus}
-Ratkaisu on lukujen $3$ ja $4$ välissä.
+Ratkaisu on kokonaislukujen $3$ ja $4$ välissä.
 \end{vastaus}
 \end{tehtava}
 
 %Laatinut V-P Kilpi 2013-11-10
 \begin{tehtava}
-Vapaassa pudotuksessa olevan kappaleen etäisyydelle metreinä pudotuskorkeudesta antaa hyvän arvion funktio $ s(t)=4,9t^{2}$, missä $t$ on putoamisaika sekunteina. Kuinka monen sekunnin päästä pudotettu kappale on pudonnut 100 metriä?
+Vapaassa pudotuksessa olevan kappaleen etäisyydelle metreinä pudotuskorkeudesta antaa hyvän arvion funktio $ s(t)=4,9t^{2}$, missä $t$ on putoamisaika sekunteina. Kuinka monen sekunnin päästä pudotettu kappale on pudonnut $100$ metriä?
 \begin{vastaus}
-Noin $4,5$ sekunnin päästä.
+Noin $4,5$ sekunnin päästä
 \end{vastaus}
 \end{tehtava}
 
@@ -197,7 +192,6 @@ Kolmion pinta-ala on $25\sqrt{3}\approx43,3$.
 \end{vastaus}
 \end{tehtava}
 
-
 %Laatinut V-P Kilpi 2013-11-10
 \begin{tehtava}
 Asta kehitti funktion $t(p)=\frac{1}{10}p^{\frac{6}{5}}$, joka ennustaa palapelin kokoamiseen kuluvaa aikaa minuutteina palojen määrän $p$ funktiona. Kuinka kauan mallin mukaan kuluu aikaa
@@ -215,20 +209,19 @@ Asta kehitti funktion $t(p)=\frac{1}{10}p^{\frac{6}{5}}$, joka ennustaa palapeli
 \end{vastaus}
 \end{tehtava}
 
-
 %Laatinut V-P Kilpi 2013-11-10
 \begin{tehtava}
-Säteilyn intensiteetti säteilylähteen etäisyyden $r$ funktiona on $ I(r)=\frac{I_0}{r^{2}}$, missä $I_0$ on vakio, joka kuvaa säteilyn intensiteettiä etäisyydellä $0$. Arvioi funktion avulla kuinka monta prosenttia Auringon säteilyn intensiteetti Maan pinnalla vähenee, jos Maan ja Auringon välinen etäisyys kasvaa $20$ prosenttia?
+Stefanin--Boltzmannin lain mukaan kappaleen säteilyteho tiettyä pinta-alaa kohden on suoraan verrannollinen sen absoluuttisen lämpötilan neljänteen potenssiin. Lakia kuvaa funktio $ P(T)=A\varepsilon\sigma T^4 $, missä $A$, $\varepsilon$ ja $\sigma $ ovat vakioita. Jos absoluuttinen lämpötila kaksinkertaistuu, kuinka moninkertaiseksi säteilyteho kasvaa?
 \begin{vastaus}
-Säteilyn intensiteetti Maan pinnalla vähenee noin $30$ prosenttia.
+$16$-kertaiseksi
 \end{vastaus}
 \end{tehtava}
 
 %Laatinut V-P Kilpi 2013-11-10
 \begin{tehtava}
-Stefanin--Boltzmannin lain mukaan kappaleen säteilyteho tiettyä pinta-alaa kohden on suoraan verrannollinen sen absoluuttisen lämpötilan neljänteen potenssiin. Lakia kuvaa funktio $ P(T)=A\varepsilon\sigma T^4 $, missä $A$ , $\varepsilon$ ja $\sigma $ ovat vakioita. Jos absoluuttinen lämpötila kaksinkertaistuu, kuinka moninkertaiseksi säteilyteho kasvaa?
+Säteilyn intensiteetti säteilylähteen etäisyyden $r$ funktiona on $ I(r)=\frac{I_0}{r^{2}}$, missä $I_0$ on vakio, joka kuvaa säteilyn intensiteettiä etäisyydellä $0$. Arvioi funktion avulla kuinka monta prosenttia Auringon säteilyn intensiteetti Maan pinnalla vähenee, jos Maan ja Auringon välinen etäisyys kasvaa $20$ prosenttia?
 \begin{vastaus}
-$16$-kertaiseksi
+Säteilyn intensiteetti Maan pinnalla vähenee noin $31$ prosenttia.
 \end{vastaus}
 \end{tehtava}
 

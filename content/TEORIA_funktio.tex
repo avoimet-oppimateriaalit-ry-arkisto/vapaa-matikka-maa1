@@ -1,8 +1,7 @@
-Usein ollaan kiinnostuneita siitä, millainen yhteys on kahden asian välillä.
-Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
+Usein ollaan kiinnostuneita siitä, millainen yhteys on kahden asian välillä. Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 
 \begin{comment}
-\laatikko[Funktio]{ % tästä on jaksettu riidellä
+\laatikko[Funktio]{
 	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää jokaiseen \termi{muuttuja}{muuttujaan} $x$ täsmälleen yhden arvon $f(x)$.
 
 	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
@@ -16,20 +15,14 @@ Funktio on matemaattinen työkalu näiden yhteyksien tarkastelemiseen.
 \end{comment}
 
 \laatikko[Funktio]{
-  \termi{funktio}{Funktio} eli \termi{kuvaus}{kuvaus} $f$ joukosta $A$ joukkoon $B$ liittää jokaiseen joukon $A$ alkioon täsmälleen yhden joukon $B$ alkion. Funktion $f$ alkioon $x$ liittämää arvoa merkitään $f(x)$. 
-  %voisi sanoa myös 'yhden ja vain yhden' tai vain 'yhden'; 'täsmälleen yhden' on mielestäni sekä riittävän selkeä ettäsujuva ilmaus -Jouni
-  }
-  %Tähän väliin voisi laittaa havainnollisen kuvan: toisaalla kenttänä määrittelyjoukko, toisaalta maalijoukko, ja nuoli liittää jonkin määrittelyjoukon alkion maalijoukon alkioon.
- % Funktiokone! Paras havainnollistus ikinä! - Joel
-  
+  \termi{funktio}{Funktio} eli \termi{kuvaus}{kuvaus} $f$ joukosta $A$ joukkoon $B$ liittää jokaiseen joukon $A$ alkioon täsmälleen yhden joukon $B$ alkion. Funktion $f$ alkioon $x$ liittämää arvoa merkitään $f(x)$.
+  }  
 Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukoksi} ja joukkoa $B$ puolestaan $f$:n \termi{maalijoukko}{maalijoukoksi}. Tällöin voidaan merkitä lyhyesti $f\colon A \to B$. Funktion $f$ \termi{arvojoukko}{arvojoukon} muodostavat $f$:n kaikki maalijoukkoon $B$ kuuluvat arvot $f(x)$.
-   
-  
-Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi voidaan ajatella kassakone. Kun siihen luetaan sisään viivakoodi, antaa kassakone ulos hinnan.
+
+%Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi voidaan ajatella kassakone. Kun siihen luetaan sisään viivakoodi, antaa kassakone ulos hinnan.
 
 \begin{esimerkki}
-	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla.
-	Valitaan funktion määrittelyjoukoksi tiettyjen hyödykkeiden joukko
+	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla. Valitaan funktion määrittelyjoukoksi tiettyjen hyödykkeiden joukko
 		\[ A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja},
 		\text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\}, \]
 	ja arvojoukoksi reaaliluvut. Merkitään tätä funktiota kirjaimella $f$, jolloin
@@ -42,8 +35,6 @@ Funktion käsitettä voi verrata esimerkiksi kassakoneen toimintaan. Funktioksi 
 	\end{center}
 \end{esimerkki}
 
-
-
 \begin{esimerkki}
 Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä vuonna 2012.
 
@@ -51,31 +42,30 @@ Seuraavaan taulukkoon on koottu kuukausittaiset keskilämpötilat Sodankylässä
 	\hline
 	tam & hel & maa & huh & tou & kes & hei & elo & syys & loka & mar & jou\\
 	\hline
-	-12 & -16 & -6 & -3 & 6 & 11 & 13 & 12 & 7 & 0 & -4 & -15\\
-	\hline %vaihdoin kuukausien lyhenteet alkamaan pienillä alkukirjaimilla -Jouni
+	$-12$ & $-16$ & $-6$ & $-3$ & $6$ & $11$ & $13$ & $12$ & $7$ & $0$ & $-4$ & $-15$\\
+	\hline
 	\end{tabular}
 %	\caption*{Lähde: Ilmatieteen laitos}
 
-Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Määrittelyjoukko ovat vuoden kaikki kuukaudet, maalijoukkoon kuuluvat kaikki mahdolliset lämpötilat, ja arvojoukko koostuu funktion kaikista arvoista, siis eri kuukausien keskilämpötiloista. %Nyt esimerkiksi \(f($tam$)=-12\) ja \(f($tou$) = 6\). (tämä on edellinen versio) Käyttäisin mieluummin matematiikkamoodia ympärillä ja sisälllä \text{} -Jouni 9.2.2014
-Nyt esimerkiksi $f(\text{tam}) = -12$ ja $f(\text{tou}) = 6$.
+Taulukon perusteella voidaan määritellä funktio $f$, joka kuvaa kuukaudet keskilämpötiloiksi. Määrittelyjoukko ovat vuoden kaikki kuukaudet, maalijoukkoon kuuluvat kaikki mahdolliset lämpötilat, ja arvojoukko koostuu funktion kaikista arvoista, siis eri kuukausien keskilämpötiloista. Nyt esimerkiksi $f(\text{tam}) = -12$ ja $f(\text{tou}) = 6$.
 
 %TÄHÄN VOISI LAITTAA KUVAN KUVAAJASTA
 \end{esimerkki}
 
 \begin{esimerkki}
-Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan \(t\) funktiona $m$.
+Seuraava kuva esittää erään suotuisissa oloissa kehittyvän bakteerikannan massaa ajan $t$ funktiona $m$.
 
 \begin{kuva}
     kuvaaja.pohja(0, 8, 0, 8)
     kuvaaja.piirra("1.4**x", nimi = "$y=m(t)$")
 \end{kuva}
 
-Alkutilanteessa eli ajanhetkellä \(t=0\) bakteerikannan massa \(m(t)\) on \(m(0)=1\) gramma. Kahden tunnin kuluttua bakteerikannan massa on \(m(2)\approx 2,0\) grammaa ja kuuden tunnin kuluttua vastaavasti \(m(6)\approx 7,5\) grammaa. 
+Alkutilanteessa eli ajanhetkellä $t=0$ bakteerikannan massa $m(t)$ on $m(0)=1$ gramma. Kahden tunnin kuluttua bakteerikannan massa on $m(2)\approx 2,0$ grammaa ja kuuden tunnin kuluttua vastaavasti $m(6)\approx 7,5$ grammaa. 
 \end{esimerkki}
 
 Funktioiden merkitsemiseen liittyy joitakin vakiintuneita tapoja:
 \begin{description}
-	\item[1)] Merkintä $f(x) = y$ luetaan esimerkiksi: ''funktio \(f\) saa arvon $y$ pisteessä $x$'' tai lyhyemmin: ''\(f\) arvolla \(x\) on \(y\).''
+	\item[1)] Merkintä $f(x) = y$ luetaan esimerkiksi: ''funktio $f$ saa arvon $y$ pisteessä $x$'' tai lyhyemmin: ''$f$ arvolla $x$ on $y$.''
 	\item[2)] Funktion määrittely- ja maalijoukot jätetään usein merkitsemättä, jos ne voidaan päätellä asiayhteydestä.
 		Tällä kurssilla funktiot ovat yleensä reaaliluvuilta reaaliluvuille.
 	\item[3)] Usein kirjoitetaan esimerkiksi ''funktio $f(x) = x^2+3x$'', vaikka tarkkaan ottaen funktio on $f$ ja
