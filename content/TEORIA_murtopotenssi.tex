@@ -24,7 +24,7 @@ a^\frac{1}{n} = \sqrt[n]{a},\textrm{ kun }a\geq 0.
 \]
 Erityisesti $a^\frac{1}{2}=\sqrt{a}$.
 \[
-a^\frac{m}{n} =  (\sqrt[n]{a})^m,\textrm{ kun }a > 0. % Issue 68 fiksattu.
+a^\frac{m}{n} =  (\sqrt[n]{a})^m,\textrm{ kun }a > 0.
 \]
 }
 
@@ -32,9 +32,7 @@ Kun murtolukueksponentit määritellään näin, kaikki aikaisemmat potenssien l
 \[ a^q\cdot a^q = a^{p+q}, \quad (a^p)^q = a^{pq}, \quad (ab)^q=a^qb^q \]
 pätevät kaikille rationaaliluvuille $p$ ja $q$.
 
-%Näiden kaavojen todistukset on esitetty liitteessä \ref{pot_todistukset}.
-
-{\bf Huomautus määrittelyjoukosta}. Murtopotenssimerkintää käytettäessä vaaditaan, että $a\geq 0$ myös silloin, kun $n$ on pariton. Syy tähän on seuraava. Esimerkiksi $\sqrt[3]{-1}=-1$, koska $(-1)^3=-1$, mutta lauseketta $(-1)^\frac{1}{3}$ ei ole tällöin määritelty. Murtopotenssimerkinnän määrittelystä voi tällöin seurata yllättäviä ongelmia:
+\laatikko[Huomautus määrittelyjoukosta]{Murtopotenssimerkintää käytettäessä vaaditaan, että $a\geq 0$ myös silloin, kun $n$ (eli juuren kertaluku) on pariton. Syy tähän on seuraava. Esimerkiksi $\sqrt[3]{-1}=-1$, koska $(-1)^3=-1$, mutta lauseketta $(-1)^\frac{1}{3}$ ei ole tällöin määritelty. Murtopotenssimerkinnän määrittelystä voi tällöin seurata yllättäviä ongelmia:
 \[
  -1 = \sqrt[3]{-1} = (-1)^\frac{1}{3} = (-1)^\frac{2}{6}
 = ((-1)^2)^\frac{1}{6} = 1^\frac{1}{6} = \sqrt[6]{1} = 1. 
@@ -45,20 +43,26 @@ Nolla kantalukuna taas aiheuttaa ongelmia, jos eksponentti on negatiivinen. Esim
 \[
  0^{-\tfrac{1}{2}}=\frac{1}{0^\frac{1}{2}}=\frac{1}{0},
 \]
-jota ei ole määritelty.
+jota ei ole määritelty.}
 
 \begin{esimerkki}
-Muuta lausekkeet $\sqrt[5]{3}$ ja $(\sqrt[4]{a})^7, a > 0$ murtopotenssimuotoon.
+Muuta lausekkeet murtopotenssimuotoon.\alakohdat{
+§ $\sqrt[5]{3}$
+§ ${\sqrt[4]{a}}^7, a > 0$
+}
 
-{\bf Ratkaisu.}
-
-$\sqrt[5]{3} = 3^\frac{1}{5}$, \\
-$(\sqrt[4]{a})^7 = (a^\frac{1}{4})^7=a^\frac{7}{4}$
+\begin{esimratk}
+\alakohdat{
+§ $\sqrt[5]{3} = 3^\frac{1}{5}$
+§ $(\sqrt[4]{a})^7 = (a^\frac{1}{4})^7=a^\frac{7}{4}$
+}
+\end{esimratk}
 \end{esimerkki}
 
 \begin{esimerkki}
 Sievennä lauseke $8^\frac{2}{3}$.
 
-{\bf Ratkaisu.}
- $8^\frac{2}{3} = (\sqrt[3]{8})^2 = 2^2 = 4.$
+\begin{esimratk}
+ $8^\frac{2}{3} = (\sqrt[3]{8})^2 = 2^2 = 4$
+ \end{esimratk}
 \end{esimerkki}
