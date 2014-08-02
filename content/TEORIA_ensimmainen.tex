@@ -2,17 +2,21 @@ Siirrymme nyt tarkastelemaan tärkeää yhtälöiden erikoistapausta, ensimmäis
 
 \laatikko[Ensimmäisen asteen yhtälö]{Ensimmäisen asteen yhtälöksi kutsutaan yhtälöä, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.}
 
-Yhtälötyypin nimi tulee siitä, että korkein potenssi, johon tuntematon $x$
-yhtälössä korotetaan, on $1$. (Sillä $x^{1}=x$.)
+Yhtälötyypin nimi tulee siitä, että korkein potenssi, johon tuntematon $x$ yhtälössä korotetaan, on $1$. (Sillä $x^1=x$.)
 
 \begin{esimerkki}
-Muun muassa seuraavat yhtälöt ovat ensimmäisen asteen yhtälöitä:
+Seuraavat yhtälöt ovat kaikki ensimmäisen asteen yhtälöitä:
 \alakohdat{
 § $2x = 4$
 § $5x+3 = 0$
 § $x+2 = 3x-4$
+§ $\frac{2}{x}=5$
+§ $v=\frac{s}{t}$
+§ $\mathrm{tiheys}=\frac{\mathrm{massa}}{\mathrm{tilavuus}}$
 }
 \end{esimerkki}
+
+%useista kirjaimista
 
 %pitää työstää tätä selitystä\ldots
 %\laatikko[Yhtälöiden muokkaaminen]{
@@ -32,8 +36,7 @@ Muun muassa seuraavat yhtälöt ovat ensimmäisen asteen yhtälöitä:
 %		tuntemattoman $x$ ratkaisemiseksi. Yhtälön ratkaisu on $x=-18$.
 %	\end{description}
 
-Ensimmäisen asteen yhtälöt ratkaistaan kuten edellisessä kappaleessa esitettiin, eli tekemällä yhtälön molemmille puolille 
-samoja toimenpiteitä, kunnes $x$ saadaan selvitettyä. 
+Ensimmäisen asteen yhtälöt ratkaistaan kuten edellisessä kappaleessa esitettiin, eli tekemällä yhtälön molemmille puolille  samoja toimenpiteitä, kunnes $x$ saadaan selvitettyä. 
 
 \begin{esimerkki}
 Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
@@ -44,8 +47,11 @@ Yhtälön $7x+4=4x+7$ ratkaisu saadaan seuraavasti:
 x &= 1 & & \\
 \end{align*}
 
-\textbf{Vastaus.} $x=1$
+\begin{esimvast} $x=1$
+\end{esimvast}
 \end{esimerkki}
+
+%esim. 2/x=4 ja 0,9/(x+1)=3 eli huomautus, että nimittäjästä pois, niin saattaa ollakin ensimmäisen asteen yhtälö + (2x+1)/(x^2+3)=0
 
 Ensimmäisen asteen yhtälöllä on aina täsmälleen yksi ratkaisu.
 
@@ -61,22 +67,20 @@ ax - cx + b - d &= 0 & &| \, \text{Otetaan yhteinen tekijä.} \\
 Tämä on määritelmän mukainen ensimmäisen asteen yhtälö, koska $a \neq c$, eli $a-c \neq 0$.
 
 \begin{esimerkki}
-Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun: \\
-(1) Vähennetään molemmilta puolilta $cx$ ja otetaan $x$ yhteiseksi tekijäksi. Saadaan yhtälö $(a-c)x + b = d$. \\
-(2) Vähennetään molemmilta puolilta $b$. Saadaan yhtälö $(a-c)x = d-b$. \\
-(3) Jaetaan molemmat puolet lausekkeella $(a-c)$. Saadaan yhtälö ratkaistuun muotoon $x = \frac{d-b}{a-c}$. 
+Yleinen lähestymistapa muotoa $ax+b = cx+d$ olevien yhtälöiden ratkaisuun:
+\alakohdat{
+§ Vähennetään molemmilta puolilta $cx$ ja otetaan $x$ yhteiseksi tekijäksi. Saadaan yhtälö $(a-c)x + b = d$.
+§ Vähennetään molemmilta puolilta $b$. Saadaan yhtälö $(a-c)x = d-b$.
+§ Jaetaan molemmat puolet lausekkeella $(a-c)$. Saadaan yhtälö ratkaistuun muotoon $x = \frac{d-b}{a-c}$.
+}
 \end{esimerkki}
 
 Ensimmäisen asteen yhtälöllä voidaan mallintaa joitakin yksinkertaisia käytännön tilanteita. 
 
 \begin{esimerkki} 
-Matti ja Teppo ovat veljeksiä. Teppo on 525 päivää vanhempi kuin Matti. Muodostetaan ensimmäisen asteen yhtälö, 
-josta voidaan ratkaista Matin ikä sijoittamalla $x$:n paikalle Tepon ikä. Lasketaan saadulla yhtälöllä Matin ikä sinä päivänä, kun 
-Teppo täyttää 50 vuotta. Oletetaan nyt, että vuodessa on 365 päivää.
+Matti ja Teppo ovat veljeksiä. Teppo on $525$ päivää vanhempi kuin Matti. Muodostetaan ensimmäisen asteen yhtälö, josta voidaan ratkaista Matin ikä sijoittamalla $x$:n paikalle Tepon ikä. Lasketaan saadulla yhtälöllä Matin ikä sinä päivänä, kun Teppo täyttää $50$ vuotta. Oletetaan nyt, että vuodessa on $365$ päivää.
 
-Merkitään Tepon ikää päivissä $x$:llä ja Matin ikää päivissä $y$:llä. Tiedetään, että koska Teppo on 525 päivää vanhempi kuin 
-Matti, niin $x=y+525$. Koska tehtävässä pyydettiin yhtälöä, josta voidaan ratkaista Matin ikä, muokataan saatua ensimmäisen asteen 
-yhtälöä hieman:
+Merkitään Tepon ikää päivissä $x$:llä ja Matin ikää päivissä $y$:llä. Tiedetään, että koska Teppo on 525 päivää vanhempi kuin Matti, niin $x=y+525$. Koska tehtävässä pyydettiin yhtälöä, josta voidaan ratkaista Matin ikä, muokataan saatua ensimmäisen asteen yhtälöä hieman:
 
       \begin{align*}
 	   x &= y+525 & &| \, \text{Vähennetään puolittain 525.} \\
@@ -84,8 +88,7 @@ yhtälöä hieman:
 	   y &= x-525 & &
       \end{align*}
       
-Nyt on saatu ensimmäisen asteen yhtälö, josta saadaan ratkaistua Matin ikä, kunhan vain tiedetään Tepon ikä. Koska $x$ ja $y$ ovat 
-veljesten iät päivinä, muunnetaan hieman yksiköitä. 50 vuotta päivissä on $50 \cdot 365 = 18\,250$. Nyt saadaan
+Nyt on saatu ensimmäisen asteen yhtälö, josta saadaan ratkaistua Matin ikä, kunhan vain tiedetään Tepon ikä. Koska $x$ ja $y$ ovat veljesten iät päivinä, muunnetaan hieman yksiköitä. $50$ vuotta päivissä on $50 \cdot 365 = 18\,250$. Nyt saadaan
 
       \begin{align*}
 	  y &= x-525 & &| \, \text{Sijoitetaan $x$:n paikalle Tepon ikä $18\,250$ päivää.} \\
@@ -95,7 +98,46 @@ veljesten iät päivinä, muunnetaan hieman yksiköitä. 50 vuotta päivissä on
 	  y &= 48 \cdot 365 +205 & &
       \end{align*}
       
-  Siis kysytty Matin ikä on 48 vuotta ja 205 päivää.
+      Siis kysytty Matin ikä on $48$ vuotta ja $205$ päivää.
   
 \end{esimerkki}
 %räpelsi jaakko viertiö 23.3.2014 
+
+\begin{esimerkki}
+Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunnissa ja $23$ minuutissa tasaista vauhtia. $10$ minuuttia junan lähdön jälkeen auto lähtee Helsingistä Jyväskylään kulkien tasaista $100$ kilometrin tuntivauhtia. Jyväskylään on Helsingistä maanteitse $272$ kilometriä. Kuinka kauan auton lähdöstä on kulunut, kun juna ja auto ovat kulkeneet yhtä suuren osan omista matkoistaan?
+	\begin{esimratk}
+		Lasketaan aluksi junan nopeus
+		\[3\,\text{h} \; 23\,\text{min} \; = 12\,180\,\text{s} \]
+		\[\frac{342\,000\,\text{m}}{12\,180\,\text{s}} \approx  28,0788\,\frac{\text{m}}{\text{s}} \]
+		%SIEVENNETYT MURTOLUVUT + HUOMAUTUS LIKIARVOISTA!
+		Muunnetaan lisäksi auton nopeus yksikköön $\frac{\text{m}}{\text{s}}$ (muuntokerroin $3,6$).
+		\[100\,\frac{\text{km}}{\text{h}} \approx 27,7778 \frac{\text{m}}{\text{s}} \]
+		
+		$10$ minuuttia on $600$ sekuntia.
+		
+		Voidaan nyt muotoilla yhtälö käyttäen yksiköitä metri ja sekunti. Tuntemattomaksi valitaan $t$, joka kuvaa aikaa sekunteina auton lähdöstä.
+		\[ \frac{28,0788(t+600)}{342\,000} = \frac{27,7778t}{272\,000} \]
+		
+		Ratkaistaan yhtälö
+		\begin{align*}
+			\frac{27,7778t}{272\,000} &= \frac{28,0788(t+600)}{342\,000} &&\text{| $\cdot{272\,000}$} &&\text{| $\cdot{342\,000}$}  \\
+			342\,000 \cdot 27,7778t &= 272\,000 \cdot 28,0788(t+600) \\
+			9\,500\,007,6t &= 7\,637\,433,6(t+600) \\
+			9\,500\,007,6t &= 7\,637\,433,6t + 4\,582\,460\,160 &&\text{| $-7\,637\,433,6t$} \\ 
+			1\,862\,574t &= 4\,582\,460\,160 &&\text{| $:{1\,862\,574}$} \\
+			t &\approx 2\,460,28 \approx 2\,460
+		\end{align*}
+		
+		Muutetaan yksiköksi minuutit:
+		\[2\,460\,\text{s}=41\,\text{min}.\]
+	\end{esimratk}
+	\begin{esimvast}
+		$41$ minuuttia
+	\end{esimvast}
+\end{esimerkki}
+
+\begin{esimerkki} %nopeustutkaesimerkki by JoonasD6
+Poliisin nopeustutka ei suoraan mittaa nopeutta, vaan aikaa, mikä infrapunasäteeltä kestää kulkea laitteesta ajoneuvon pinnalle ja sieltä takaisin tutkaan.
+
+\end{esimerkki}
+%myöhemmin prosenttilaskentaan kysymys, kuinka monen prosentin virhe tulee, kun nopeustutka heilahtaa etulaidasta ikkunan yläosaan
