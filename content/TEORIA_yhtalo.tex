@@ -7,8 +7,8 @@
 	}
 \end{esimerkki}
 
-\laatikko[Yhtälön päteminen]s{
-	Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan että \termi{yhtälön päteminen}{yhtälö pätee} tai että yhtälö on tosi.
+\laatikko[Yhtälön päteminen]{
+	Jos yhtälön kummankin puolen lausekkeen arvo on sama, sanotaan, että \termi{yhtälön päteminen}{yhtälö pätee} tai että yhtälö on tosi.
 }
 
 \begin{esimerkki}
@@ -26,7 +26,7 @@
 %Virkerakenne ja yhtälöiden luokittelulaatikon otsikointi\ldots
 \laatikko[Yhtälöiden luokittelu]{
 	\begin{description}
-		\item[Aina tosi yhtälö] Esimerkiksi yhtälöt $8=8$ ja $x=x$
+		\item[Aina tosi yhtälö] Esimerkiksi yhtälöt $8=8$ ja $x=x$. Tilanteesta kytetään myös termiä \termi{identtisesti tosi}{identtisesti tosi}.
 		\item[Joskus tosi yhtälö] Esimerkiksi yhtälö $x+4=7$ on tosi, kun $x=3$, ja epätosi muulloin.
 		\item[Ei koskaan tosi yhtälö] Esimerkiksi yhtälö $0=1$
 	\end{description}
@@ -142,39 +142,6 @@ Ratkaistaan yhtälö.
 	\end{esimratk}
 	\begin{esimvast}
 		Lakritsia on $1,5$ kg.
-	\end{esimvast}
-\end{esimerkki}
-
-\begin{esimerkki}
-Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunnissa ja $23$ minuutissa tasaista vauhtia. $10$ minuuttia junan lähdön jälkeen auto lähtee Helsingistä Jyväskylään kulkien tasaista $100$ kilometrin tuntivauhtia. Jyväskylään on Helsingistä maanteitse $272$ kilometriä. Kuinka kauan auton lähdöstä on kulunut, kun juna ja auto ovat kulkeneet yhtä suuren osan omista matkoistaan?
-	\begin{esimratk}
-		Lasketaan aluksi junan nopeus
-		\[3\,\text{h} \; 23\,\text{min} \; = 12\,180\,\text{s} \]
-		\[\frac{342\,000\,\text{m}}{12\,180\,\text{s}} \approx  28,0788\,\frac{\text{m}}{\text{s}} \]
-		%SIEVENNETYT MURTOLUVUT + HUOMAUTUS LIKIARVOISTA!
-		Muunnetaan lisäksi auton nopeus yksikköön $\frac{\text{m}}{\text{s}}$ (muuntokerroin $3,6$).
-		\[100\,\frac{\text{km}}{\text{h}} \approx 27,7778 \frac{\text{m}}{\text{s}} \]
-		
-		$10$ minuuttia on $600$ sekuntia.
-		
-		Voidaan nyt muotoilla yhtälö käyttäen yksiköitä metri ja sekunti. Tuntemattomaksi valitaan $t$, joka kuvaa aikaa sekunteina auton lähdöstä.
-		\[ \frac{28,0788(t+600)}{342\,000} = \frac{27,7778t}{272\,000} \]
-		
-		Ratkaistaan yhtälö
-		\begin{align*}
-			\frac{27,7778t}{272\,000} &= \frac{28,0788(t+600)}{342\,000} &&\text{| $\cdot{272\,000}$} &&\text{| $\cdot{342\,000}$}  \\
-			342\,000 \cdot 27,7778t &= 272\,000 \cdot 28,0788(t+600) \\
-			9\,500\,007,6t &= 7\,637\,433,6(t+600) \\
-			9\,500\,007,6t &= 7\,637\,433,6t + 4\,582\,460\,160 &&\text{| $-7\,637\,433,6t$} \\ 
-			1\,862\,574t &= 4\,582\,460\,160 &&\text{| $:{1\,862\,574}$} \\
-			t &\approx 2\,460,28 \approx 2\,460
-		\end{align*}
-		
-		Muutetaan yksiköksi minuutit
-		\[2\,460\,\text{s}=41\,\text{min}\]
-	\end{esimratk}
-	\begin{esimvast}
-		$41$ minuuttia
 	\end{esimvast}
 \end{esimerkki}
 
