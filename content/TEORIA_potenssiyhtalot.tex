@@ -125,6 +125,33 @@ Eli molemmin tavoin saatiin sama tulos, vaikka yhtälöä muokattiin eri keinoin
 
 \end{esimerkki}
 
+Joskus potenssiyhtälössä potenssiin on korotettu jokin laajempi lauseke kuin pelkästään ratkaistava tuntematon. Tällöin sulkeita ei välttämättä kannata avata kertomalla potenssi auki, vaan potenssiin korotus kumotaan suoraan sopivalla juurenotolla.
+
+\begin{esimerkki}
+Ratkaistaan yhtälö $(2x+1)^3=27$:
+	\begin{align*}
+	(2x+1)^3&=27 &&|\sqrt[3]{} \\
+	\sqrt[3]{(2x+1)^3}&=\sqrt[3]{27} \\
+	2x+1&=3 \\
+	\end{align*}
+Nyt alkuperäinen yhtälö on palautunut (eli ns. redusoitu) aivan tavalliseksi ensimmäisen asteen yhtälöksi, joka on helppo ratkaista.
+\end{esimerkki}
+
+\begin{esimerkki}
+Ratkaistaan yhtälö $1+x=\frac{1}{1+x}$, missä nollalla jakamisen välttämiseksi $x\neq-1$:
+	\begin{align*}
+	1+x&=\frac{1}{1+x} &&| \cdot(1+x) \\
+	(1+x)\cdot(1+x)&=\frac{1}{1+x}\cdot(1+x) \\
+	(1+x)^2&=1 && |\sqrt{ } \\
+	\sqrt{(1+x)^2}&=\sqrt{1} &&\\
+	\pm (1+x)&=1&& \\
+	1+x &= \pm 1 &&|-1 \\
+	x &=\pm 1 -1	 && \\
+	\end{align*}
+
+Eli $x=-2$ tai $x=0$.
+\end{esimerkki}
+
 \section*{Pythagoraan lause}
 
 Yksi tärkeimmistä potenssiyhtälöistä on geometrian kolmioihin liittyvissä perustehtävissä tarvittava \termi{Pythagoraan lause}{Pythagoraan lause}. %FIXME: kuvitusta, kesken
