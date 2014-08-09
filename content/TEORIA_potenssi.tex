@@ -10,46 +10,86 @@ Lukua $a$ kutsutaan potenssin \termi{kantaluku}{kantaluvuksi} ja lukua $n$ \term
         \]
 Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \termi{neliö}{neliöksi} ja kolmatta potenssia $a^3$ sen \termi{kuutio}{kuutioksi}. Nimitysten taustalla on, että luvun $a>0$ neliö on sellaisen neliön pinta-ala, jonka sivun pituus on $a$. Vastaavasti, jos kuution särmän pituus on $a$, on $a^3$ kyseisen kuution tilavuus. Luvun ensimmäinen potenssi on luku itse eli $a^1 = a$.
 
-\subsubsection*{Laskujärjestys}
+\begin{esimerkki}
+Sievennä lausekkeet.
+\alakohdat{
+§ $3^4$
+§ $xxx\cdot x$
+§ $x(x+1)$
+§ $x^3(2x-1)$
+}
+	\begin{esimratk}
+	
+\alakohdat{
+§ $3^4=3\cdot3\cdot3\cdot3=9\cdot9=81$ (potenssin määritelmä)
+§ $xxx\cdot x=x\cdot x \cdot x \cdot x =x^4$ (potenssin määritelmä)
+§ $x(x+1)=x\cdot x+x\cdot 1=x^2+x$ (osittelulaki ja potenssin määritelmä)
+§ $x^3(2x-1)=x^3\cdot 2x - x^3\cdot 1=x\cdot x\cdot x\cdot 2x - x^3 =2\cdot x\cdot x\cdot x\cdot x - x^3 =2x^4-x^3$ (osittelulaki ja potenssin määritelmä)
+}
+	\end{esimratk}
+	
+	\begin{esimvast}
+	\alakohdat{
+§ $81$
+§ $x^4$
+§ $x^2+x$
+§ $2x^4-x^3$
+}
+	\end{esimvast}	
 
-Sopimus on, että potenssit lasketaan ennen kerto- ja jakolaskuja. Sulut lasketaan ensin tavalliseen tapaan.
+\end{esimerkki}
+
+
+\subsubsection*{Laskujärjestys} %ei ole "sopimusta" läskujärjestyksestä, potenssin määritelmästä seuraa laskujärejstys
+
+Potenssi on määritelmänsä perusteella toistuvaa kertolaskua. Potenssin arvo tulee kuitenkin laskea ennen yhdistämistä mahdollisiin lausekkeen muihin kerto- ja jakolaskuihin. (Sulut lasketaan kuitenkin aina ensimmäisenä.)
 
     \begin{esimerkki}
       Tarkkaile laskujärjestystä
         \alakohdat{
-            § $1+2\cdot 5^2 = 1+2\cdot 25 = 51$
+            § $1+2\cdot 5^2 = 1+2\cdot (5\cdot5)=1+2\cdot 25 = 51$
+            § $2\cdot 4^3=2\cdot(4\cdot4\cdot4)=2\cdot64=128$
             § $1+3^2 = 1+3\cdot 3 = 10$
             § $(1+3)^2=4^2=16$.
         }
     \end{esimerkki}  
 
-Mikäli potensseja on monta päällekkäin (eli eksponenttina on potenssilauseke), laskeminen aloitetaan ylimmästä potenssista. Esimerkiksi
-\[2^{3^2}= 2^9 = 512, \]
-mutta
-\[(2^3)^2=8^2=64. \]
+Mikäli potensseja on monta päällekkäin (eli eksponenttina on potenssilauseke), laskeminen aloitetaan ylimmästä, "uloimmasta" potenssista. 
+\begin{esimerkki}
+$2^{3^2}= 2^9 = 512$
+$(2^3)^2=8^2=64$
+\end{esimerkki}
 
-   
-%    \numerointilaatikko{Laskujärjestys}{
-%            § Sulut
-%            § Potenssilaskut
-%            § Kerto- ja jakolaskut vasemmalta oikealle
-%            § Yhteen- ja jakolaskut vasemmalta oikealle
-%        }
-%  
+Monesti tulee tarpeeseen sieventää yksittäisiä lukuja monimutkaisempien lausekkeiden potensseja. Tämä tapahtuu potenssin määritelmällä ja osittelulailla.
+\begin{esimerkki}
+ Avataan sulut lausekkeesta $(x+2)^2$:
+	\begin{align*}
+	(x+2)^2
+	&=(x+2)(x+2) && \text{potenssin määritelmä} \\
+	&=(x+2)x+(x+2)2 && \text{osittelulaki} \\
+	&=x(x+2)+2(x+2) && \text{vaihdantalaki} \\
+	&=xx+x2+2x+2\cdot2 && \text{osittelulaki} \\
+	&=x^2+2x+2x+4 && \text{potenssin määritelmä ja vaihdatalaki} \\
+	&=x^2+4x+4 && \text{osittelulaki ja summa}
+	\end{align*}
+	
+\end{esimerkki} %toinen esimerkki jonneki + vastaavia tehtäviä
 
-\subsubsection*{Negativinen kantaluku}
+\subsection*{Negativinen kantaluku}
 
-Jos kantaluku on negatiivinen, sen ympärille merkitään selkeyden vuoksi aina sulkeet. Esimerkiksi
+Jos kantaluku on negatiivinen, sen ympärille merkitään selkeyden vuoksi aina sulkeet.
 
-\[ (-2)^4 = -2 \cdot (-2)\cdot(-2)\cdot(-2) = 16. \]
+\begin{esimerkki}
+$(-2)^4 = -2 \cdot (-2)\cdot(-2)\cdot(-2) = 16$
 
-Merkinnässä $-2^4$ puolestaan potenssin kantaluku on 2. Koska $2^4 = 16$,
-$-2^4=-16$. Kerralla laskettuna:     
+Merkinnässä $-2^4$ puolestaan potenssin kantaluku on $2$. Koska $2^4 = 16$,
+$-2^4=-16$. Kerralla laskettuna: $-2^4 =-(2^4)= -(2 \cdot 2\cdot 2 \cdot 2) = -16$
+\end{esimerkki}
 
-\[ -2^4 =-(2^4)= -(2 \cdot 2\cdot 2 \cdot 2) = -16. \]          
-            
+Negatiivisella kantaluvulla laskettaessa ei ole mitään erityistä.
+ 
     \begin{esimerkki}
-        Negatiivisella kantaluvulla lasketaan seuraavasti
+
         \alakohdat{
             § $(-5)^2 = -5\cdot (-5)= 25$
             § $-5^2 = -(5\cdot 5)= -25$
@@ -57,7 +97,6 @@ $-2^4=-16$. Kerralla laskettuna:
             § $10+(-5)^2 = 10 + 25 = 35$.
          }
     \end{esimerkki}
-    
     
 Huomaa seuraavat potenssien etumerkkeihin liittyvät ominaisuudet.
 
@@ -75,21 +114,32 @@ Parillinen potenssi on negatiivisellakin kantaluvulla positiivinen siksi koska t
 
 Kun negatiivinen kantaluku korotetaan parittomaan potenssiin, tulee kertoimia pariton määrä, jolloin tulos on negatiivinen. 
 Esimerkiksi $(-2)^5=(-2) \cdot (-2) \cdot (-2) \cdot (-2) \cdot (-2)=4\cdot4\cdot(-2)=16\cdot(-2)= -32$
-    
+
 \begin{esimerkki}
-Monesti tulee tarpeeseen sieventää lausekkeiden potensseja kuten $(x+2)^2$. Tämä tapahtuu potenssin määritelmällä ja osittelulailla:
+
+Koska parilliseen potenssin korottamisessa saadaan lopputulos sekä luvulla että sen vastaluvulla, lausekkeiden $(x-y)^2$ ja $(y-x)^2$ tulisi olla samat. Todetaan tämä avaamalla ensin ensimmäisestä lausekkeesta sulkeet potenssin määritelmän ja osittelulain avulla:
+
 	\begin{align*}
-	(x+2)^2
-	&=(x+2)(x+2) & \text{potenssin määritelmä}
-	&=(x+2)x+(x+2)2 & \text{osittelulaki}
-	&=x(x+2)+2(x+2) & \text{vaihdantalaki}
-	&=xx+x2+2x+2\cdot2 & \text{osittelulaki}
-	&=x^2+2x+2x+4 & \text{potenssin määritelmä ja vaihdatalaki}
-	&=x^2+4x+4
-	\end{align*}	
+	(x-y)^2
+	&=(x-y)(x-y) && \text{potenssin määritelmä} \\
+	&=(x-y)x-(x-y)y && \text{osittelulaki} \\
+	&=x(x-y)-y(x-y) && \text{vaihdantalaki} \\
+	&=xx-xy-yx+y\cdot y && \text{osittelulaki} \\
+	&=x^2-xy-xy+y^2 && \text{potenssin määritelmä ja vaihdatalaki} \\
+	&=x^2-4xy+y^2 && \text{osittelulaki ja summa}
+	\end{align*}
 	
-\end{esimerkki} %toinen esimerkki jonneki + vastaavia tehtäviä
-    
+	Huomataan, että avatussa muodossa $x$ ja $y$ esiintyvät symmetrisesti, ts. niiden paikkoja voi vaihtaa vaikuttamatta lausekkeen arvoon:
+	
+	\begin{align*}
+	x^2-4xy+y^2
+	&=y^2-4xy+x^2 && \text{yhteenlaskun vaihdannaisuus} \\
+	&=y^2-4yx+x^2  && \text{kertolaskun vaihdannaisuus} \\
+	\end{align*}
+	
+Tämä on täsmälleen myös se muoto, johon päädytään, jos avattaisiin sulut ja sievennettäisiin lauskee $(y-x)^2$. Siis $(x-y)^2=(y-x)^2$.
+\end{esimerkki} %niin joo ton olis voinut tehdä helpomminkin, mutta hyvä harjoitus nevertheless :P
+
 \subsection*{Potenssien laskusäännöt}
 
 Potenssilausekkeita voi usein sieventää paljonkin, vaikka kantaluku olisi tuntematon. Tässä esimerkkejä.    
@@ -205,7 +255,7 @@ Erityisesti $a^{-1}=\frac{1}{a}$ kaikilla $a \neq 0$, eli miinus yksi eksponentt
 \alakohdat{
 § $4^{-1}=\frac{1}{4^1}=\frac{1}{4}$
 § $8^{-1}=\frac{1}{8^1}=\frac{1}{8}$
-§ $(\frac{2}{3})^{-1}=\frac{1}{(\frac{2}{3})^{1}}=\frac{1}{\frac{2}{3}}=1:\frac{2}{3}=1\cdot \frac{3}{2}=\frac{3}{2}$ §
+§ $(\frac{2}{3})^{-1}=\frac{1}{(\frac{2}{3})^{1}}=\frac{1}{\frac{2}{3}}=1:\frac{2}{3}=1\cdot \frac{3}{2}=\frac{3}{2}$
 § $(\frac{5}{7})^{-1}=\frac{7}{5}$
 § $3^{-2}=\frac{1}{3^2}=\frac{1}{9}$
 § $(\frac{4}{5})^{-2}=(\frac{5}{4})^2=\frac{5^2}{4^2}=\frac{25}{16}$

@@ -136,7 +136,7 @@ Yhteen- ja kertolaskua sisältävälle lausekkeelle pätee seuraava sääntö:
 \laatikko[Osittelulaki]{
 $a(b+c)=ab+ac$
 
-Vasemmalta oikealle luettaessa puhutaan \termi{sulkeiden avaaminen}{sulkujen avaamisesta}. Oikealta vasemmalle päin mentäessä puhutaan \termi{yhteinen tekijä}{yhteisen tekijän ottamisesta}.
+Luettaessa annettua kaavaa vasemmalta oikealle puhutaan \termi{sulkeiden avaaminen}{sulkujen avaamisesta}. Oikealta vasemmalle päin luettaessa puhutaan \termi{yhteinen tekijä}{yhteisen tekijän ottamisesta}.
 }
 
 Osittelulakia voidaan käyttää muiden laskutoimituksiin liittyvien lakien rinnalla. Kun vähennyslasku ajatellaan vastaluvun lisäämisenä ja jakolasku ajatellaan käänteisluvulla kertomisena, voidaan osittelulaki laajentaa koskemaan myös jakolaskua. Seuraavassa on esimerkkejä tällaisista osittelulain sovelluksista:
@@ -154,7 +154,35 @@ Osittelulakia voidaan käyttää muiden laskutoimituksiin liittyvien lakien rinn
 \end{align*}
 \end{esimerkki}
 
-Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa. Esim. $2(x+5)=2x+10$. Sievennyksen lisäksi osittelulaki on kätevä työkalu luvuilla laskemisessa ja päässälaskussa, kuten seuraavat esimerkit osoittavat:
+Osittelulakia voidaan käyttää myös tuntemattomia lukuja sisältävien lausekkeiden muokkaamisessa.
+\begin{esimerkki}
+$2(x+5)=2x+2\cdot5=2x+10$.
+\end{esimerkki}
+
+Tärkeää on huomata osittelulain toimivan myös, vaikka sulkeissa olisi vähennyslasku, eli osittelulaki voidaan yleistää muotoon $a(b\pm c)=ab \pm c$, missä lausekkeiden molemmille puolille valitaan aina sama merkki -- plus tai miinus.
+
+Tämä voidaan johtaa vastaluvun ominaisuuksia käyttämällä:
+\begin{align*}
+	a(b-c)
+	&=a(b+(-c)) && \text{vähennyslaskun määritelmä} \\
+	&=ab+a\cdot (-c) && \text{osittelulaki} \\
+	&=ab+ (-c)a && \text{vaihdantalaki} \\
+	&=ab+ (-1)ca && \text{tulkitaan miinusmerkki $-1$:llä kertomiseksi} \\
+	&=ab+ (-ca)&& \text{} \\
+	&=ab-ca && \text{vähennyslaskun määritelmä} \\
+	\end{align*}	
+	
+Tilanteessa $a(-b-c)$ toimitaan seuraavasti:
+
+\begin{align*}
+	a(-b-c)
+	&=a((-1)b+(-1)c) && \text{tulkitaan miinusmerkkit $-1$:llä kertomiseksi} \\
+	&=a((-1)(b+c)) && \text{osittelulaki} \\
+	&=(a(-1))(b+c) && \text{kertolaskun liitännäisyys} \\
+	&=-a(b+c) && \text{} \\
+	\end{align*}	
+
+Sievennyksen lisäksi osittelulaki on kätevä työkalu luvuilla laskemisessa ja päässälaskussa, kuten seuraavat esimerkit osoittavat:
 
 \begin{esimerkki}
      \begin{align*}
