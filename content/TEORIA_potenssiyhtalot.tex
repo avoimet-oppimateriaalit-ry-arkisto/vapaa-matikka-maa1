@@ -3,15 +3,24 @@ Eräs tärkeä yhtälöiden tyyppi on \termi{potenssiyhtälö}{potenssiyhtälöt
 
 Huomaa miinus- ja murtopotenssiyhtälöissä tarkistaa, millä kantaluvuilla $x$ potenssit on määritelty. Murtopotenssia määriteltäessä vaadittiin, että kantaluku $x\geq0$ ja negatiivisen potenssin tapauksessa on huomioitava, että kantaluku $x\neq0$, sillä $x^{-a}=\frac{1}{x^a}$, eikä nimittäjässä sallita olevan lukua $0$.
 
-Eksponentin $n$ ollessa kokonaisluku sen arvoa kutsutaan potenssiyhtälön \termi{aste (potenssiyhtälö)}{asteeksi}. Esimerkiksi potenssiyhtälön $x^2=0$ aste on $2$. Potenssiyhtälöitä tarvitaan esimerkiksi tilanteissa, joissa lasketaan korolle korkoa. Myös pinta-ala- ja tilavuuslaskuissa esiintyy potenssiyhtälöitä.
+Eksponentin $n$ ollessa kokonaisluku sen arvoa kutsutaan potenssiyhtälön \termi{aste (potenssiyhtälö)}{asteeksi}.
+\begin{esimerkki}
+\alakohdat{
+§ Potenssiyhtälön $x^2=0$ aste on $2$.
+§ Potenssiyhtälön $x^9=-34,5$ aste on $9$.
+§ Yhtälö $27x^3=7$ on potenssiyhtälö, sillä jakamalla se puolittain luvulla $27$ saadaan $x^3 = \frac{7}{27}$. Tämän potenssiyhtälön aste on $3$.
+§ Yhtälö $2x^{4}-7=3$ on potenssiyhtälö, sillä se voidaan muokata muotoon $x^n = a$, ja sen aste on $4$. 
+§ Yhtälö $\frac{1}{x^2}=3$ on potenssiyhtälö, sillä se voidaan kirjoittaa muodossa $x^n=a$, ja sen aste on $-1$.
+}
+\end{esimerkki}
+Potenssiyhtälöitä tarvitaan esimerkiksi tilanteissa, joissa lasketaan korolle korkoa. Myös pinta-ala- ja tilavuuslaskuissa esiintyy potenssiyhtälöitä.
 
 \luettelolaatikko{Potenssiyhtälön ratkaiseminen}{
-	§ Jos potenssiyhtälön aste $n$ on parillinen ja $a \ge 0$, yhtälöllä on kaksi ratkaisua, $$ x = \pm \sqrt[n]{a} \textrm{.} $$ ($\pm$ tarkoittaa, että sekä positiivinen että negatiivinen arvo käyvät: $\pm 5$ tarkoittaa sekä lukuja $5$ että $-5$.)
+	§ Jos potenssiyhtälön aste $n$ on parillinen ja $a \ge 0$, yhtälöllä on kaksi ratkaisua: $$ x = \pm \sqrt[n]{a} \textrm{.} $$
 	§ Jos aste on parillinen, sillä on yksi ratkaisu vain kun $a = 0$, sillä $ x = \pm \sqrt[n]{0} = \pm 0 = 0$
 	§ Jos aste on parillinen ja $a < 0$, potenssiyhtälöllä ei ole yhtään ratkaisua.
 	§ Siis parillisen asteen potenssifunktiolla voi olla yksi, kaksi tai ei yhtään ratkaisua.
 	§ Jos aste on pariton, ja $a \neq 0$  yhtälöllä on aina täsmälleen yksi ratkaisu, $x = \sqrt[n]{a}.$
-	§ Jos aste on pariton, ja $a = 0$, yhtälöllä ei ole yhtään ratkaisua.
 }
 
 \begin{esimerkki}
@@ -46,25 +55,30 @@ Ratkaise yhtälöt a) $x^2 = 0$, b) $x^2 - 9 = 0$ ja c) $x^2 + 9 = 0$
 \laatikko[Paritonasteisen potenssiyhtälön ratkaisut]{Mikäli potenssiyhtälön asteluku $n$ on pariton, yhtälöllä on aina tasan yksi reaalilukuratkaisu (kun $a \neq 0$).}
 
 \begin{esimerkki}
-Ratkaise yhtälö $2x^3 + 16 = 0$
+Ratkaise yhtälö
+\alakohdat{
+§ $2x^3 + 16 = 0$
+§ $2x^4 -7 = 3$
+}
 
-	\begin{align*}
+	\begin{esimratk}
+	\alakohdat{
+§	\begin{align*}
 	2x^3 + 16 &= 0 \\
 	2x^3 &= -16 \\
 	x^3 &= -8  \\
 	x = \sqrt[3]{-8} &= -2
 	\end{align*}
-\end{esimerkki}
-
-\begin{esimerkki}
-	\alakohdat{
-		§ Yhtälö $27x^3=7$ on potenssiyhtälö, sillä jakamalla se puolittain luvulla $27$ saadaan $x^3 = \frac{7}{27}$. Tämän potenssiyhtälön aste on 3.
-		§ Yhtälö $2x^{4}-7=3$ on potenssiyhtälö, sillä se voidaan muokata muotoon $x^n = a$, ja sen aste on 4. \\
-				\[2x^{4} -7 = 3\]
-				\[2x^{4} = 3+7\]
-				\[x^{4} = \frac{10}{2}\]
-				\[x^{4} = 5.\]
-	}
+	
+	§		\begin{align*}
+	2x^4 -7 &= 3 \\
+			2x^4 &= 3+7 \\
+				x^4 &= \frac{10}{2} \\
+				x^4 &= 5
+				\end{align*}
+				}
+	\end{esimratk}	
+	
 \end{esimerkki}
 
 \begin{luoKuva}{potenssiyhtaloratk}
@@ -89,7 +103,7 @@ Ratkaise yhtälö $2x^3 + 16 = 0$
 \begin{esimerkki}
 	\alakohdat{
 		§ Potenssiyhtälön $x^3 = 100$ ratkaisu on $x=\sqrt[3]{100}$.
-		§ Potenssiyhtälöllä $x^6 = -1$ ei ole ratkaisua, sillä $x^6 = (x^3)^2 \ge 0$ kaikilla $x$.
+		§ Potenssiyhtälöllä $x^6 = -1$ ei ole ratkaisua, sillä $x^6 = (x^3)^2 \ge 0$ kaikilla $x\in \mathbb{R}$.
 		§ Potenssiyhtälöllä $x^4=50$ on kaksi ratkaisua $x=\sqrt[4]{50}=2,6591\ldots$ ja $x=-\sqrt[4]{50}=-2,6591\ldots$.
 	}
 	\begin{center}
@@ -157,6 +171,28 @@ Eli $x=-2$ tai $x=0$.
 Yksi tärkeimmistä potenssiyhtälöistä on geometrian kolmioihin liittyvissä perustehtävissä tarvittava \termi{Pythagoraan lause}{Pythagoraan lause}. %FIXME: kuvitusta, kesken
 
 \laatikko{Pythagoraan lause}{Suorakulmaiselle kolmiolle pätee: kateettien neliöiden summa on yhtä suuri kuin hypotenuusan neliö}%<KUVITUS>
+
+
+\begin{center}
+\begin{kuva}
+	skaalaa(4)
+
+	A=(0,0)
+	B=(0,2)
+	C=(1,0)
+	D=(0.1,0.1)
+	E=(0,0.1)
+	F=(0.1,0)
+
+	geom.jana(B,A,"$a$")
+	geom.jana(C,B,r"$c$")
+	geom.jana(A,C,"$b$")
+	geom.jana(E,D)
+	geom.jana(D,F)
+\end{kuva}
+\end{center}
+
+Geometrian sovelluksissa emme hyväksy yhtälön negatiivisia juuria, koska pituudet, pinta-alat ja tilavuudet ovat positiivisia.
 
 \begin{esimerkki}
 Taulutelevision kooksi (lävistäjäksi) on ilmoitettu mainoksessa $46,0$ tuumaa ($116,8$ cm) ja kuvasuhteeksi $16:9$. Kuinka leveä televisio on senttimetreinä?
