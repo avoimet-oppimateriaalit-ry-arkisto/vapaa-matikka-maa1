@@ -1,7 +1,6 @@
  \subsection*{Suureet ja yksiköt}
 
 Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matemaattista lukuarvoa, vaan niitä käytetään yhdessä jonkin \termi{yksikkö}{yksikön} kanssa. Tällöin luku ja yksikkö yhdessä esittävät tietoa \termi{suure}{suureesta} eli jostakin mitattavasta ominaisuudesta.
-
 %selitä vielä, mitä yksikkö tekee?
 
 \begin{esimerkki}
@@ -16,17 +15,13 @@ Energia on suure, jota mitataan esimerkiksi yksiköissä joule tai kalori.
 Jotkin suureet ovat \termi{skalaarisuure}{skalaarisuureita} ja toiset \termi{vektorisuure}{vektorisuureita}. Skalaarisuureet ovat sellaisia mitattavia ominaisuuksia, joiden kuvaamiseen riittää yksi luku. Vektorisuureet ovat ominaisuuksia, joilla on sekä suuruus että suunta, eikä yksi luku riitä kertomaan kaikkea. (Vektorilaskentaan tutustutaan tarkemmin MAA5-kurssilla sekä fysiikan mekaniikan kursseilla.)
 
 \begin{esimerkki}
-
 Lämpötilan esittämiseen riittää yksi luku, eli lämpötila on skalaarisuure. Käytetystä yksiköstä riippuen kyseinen luku saattaa olla joko negatiivinen, nolla tai positiivinen.
 
 Nopeus on vektorisuure, koska nopeuteen liittyy sen suuruuden lisäksi myös suunta. Esimerkiksi puhuttaessa tuulen nopeudesta kerrotaan myös, mistä suunnasta tuuli puhaltaa.
-
 %kuva nopeusvektorinuolesta (tuulennopeus)
-
 \end{esimerkki}
 
 Matemaattisesti suureita käsitellään aivan kuin luku ja yksikkö olisivat kerrotut keskenään:
-
 \laatikko[Suure]{luku $\cdot$ yksikkö}
 
 Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön väliin tyhjää (tämä on ISO-standardin mukainen merkintätapa). %Ehkä myös Kotuksen ja Jukka Korpelan suosittelema. Aiemmin tätä perusteltiin tässä Suomen kieliopilla. Suomen kielioppi ei ole kuitenkaan mikään yksittäinen monoliittinen virallisesti olemassa oleva standardi vaan pikemminkin (normatiivisessakin muodossaan) kokoelma eri tavoin perusteltuja näkemyksiä ja suosituksia. -Jouni
@@ -34,10 +29,9 @@ Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sek
 
 %Sivunlaitahuomio:: jos yksikkö on nimetty henkilön nimen mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella, esim. N, J tai Hz. Auki kirjoitettuna kuitenkin "kolme newtonia", kymmenen kilojoulea" ja "5,7 hertziä".
 
-%tuuman merkki on korjattu jeesusteipillä oikeanlaiseksi -Jouni
 
+\begin{esimerkki}
 Seuraava taulukko selventää oikeinkirjoitusta:
-
 \begin{center}
 \begin{tabular}{c|c}
 Oikein & Väärin \\
@@ -50,9 +44,9 @@ $3,16\textdegree$ $5$'\,$13$'' & $3,16$ $\textdegree$ $5$\,' $13$\,'' 	\\
 $6$\,$\textdegree$C & $6\textdegree$C 	\\
 \end{tabular}
 \end{center}
+\end{esimerkki}
 
-%Hienosti ladottuna luvun ja yksikön väliin EI tule (sitovaa) whitespacea, vaan (sitova) ohuke (thin space), jonka latexissa saa komennolla \,
-
+\newpage
 \subsection*{SI-järjestelmä}
 
 SI-järjestelmä eli kansainvälinen yksikköjärjestelmä (ransk. \textit{Système international d'unités}) on maailman käytetyin mittayksikköjärjestelmä. Siihen kuuluvat seuraavat \termi{perussuure}{perussuureet} ja vastaavat perusyksiköt:
@@ -85,9 +79,11 @@ Näitä suureita käsitellään tarkemmin fysiikassa ja kemiassa, mutta matemati
 
 § Tilavuus (tunnus $V$, engl. \textit{volume}) on edelleen johdettavissa kolmen pituuden tulona. Jos pituutta on mitattu metreissä, niin vastaava tilavuuden yksikkö on $\text{m}\cdot \text{m} \cdot \text{m}=\text{m}^3$ eli kuutiometri.
 
-§ Tiheys (tunnus $\rho$, kreikkalainen pieni \textit{roo}) on johdannaissuure, joka määritellään massan ja tilavuuden osamääränä: $\text{tiheys}=\frac{\text{massa}}{\text{tilavuus}}$. Vastaavasti tiheyden yksiköt saadaan samalla jakolaskulla massan ja tilavuuden yksiköistä: jos kappaleen tilavuus on mitattu kuutiometreissä ja massa kilogrammoina, voidaan kappaleen tiheys esittää yksiköissä $\frac{\text{kg}}{\text{m}^3}$. Erityisesti kannattaa muistaa, että veden tiheys on noin yksi kilogramma per litra.
+§ Tiheys (tunnus $\rho$, kreikkalainen pieni \textit{roo}) on johdannaissuure, joka määritellään massan ja tilavuuden osamääränä: $\text{tiheys}=\frac{\text{massa}}{\text{tilavuus}}$. Vastaavasti tiheyden yksiköt saadaan samalla jakolaskulla massan ja tilavuuden yksiköistä: jos kappaleen tilavuus on mitattu kuutiometreissä ja massa kilogrammoina, voidaan kappaleen tiheys esittää yksiköissä $\frac{\text{kg}}{\text{m}^3}$.
 }
 }
+
+Tiheydestä kannattaa muistaa nyrkkisääntönä, että veden tiheys on noin yksi kilogramma per litra.
 
 Kun johdannaisyksiköissä esiintyy jakolaskua, yksikön voi kirjoittaa useassa eri muodossa potenssisääntöjen avulla.
 
@@ -141,6 +137,8 @@ Vetymolekyylissä H$_2$ ytimien välinen etäisyys on noin $0,000000000074$\,m e
 \begin{esimerkki}
 Jos juoksuradan pituudeksi ilmoitetaan $1\,000$\,m, ei lukija voi tietää, millä tarkkuudella mittaus on tehty. Mittaustarkkuus välittyy kymmenpotenssin avulla: jos etäisyys ilmoitetaan muodossa $1,00\cdot10^{3}$\,m, on mitattu kymmenen metrin tarkkuudella, ja jos muodossa $1,0\cdot10^{3}$\,m, on mitattu sadan metrin tarkkuudella jne.
 \end{esimerkki}
+
+\newpage
 
 \subsection*{Etuliitteet}
 
@@ -197,56 +195,6 @@ Tietokoneiden rakenteen kaksikantaisuuden (ks. liite lukujärjestelmistä) johdo
 
 %esimerkki
 
-\subsection*{Yksiköiden yhdistäminen}
-
-Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin väli kertolaskun asemesta. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon tai murtolausekkeiksi.
-
-\begin{esimerkki}
-$2$ metriä kertaa $3$ metriä = $2\,\text{m} \cdot 3\,\text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\,\text{m}^2$ eli kuusi neliömetriä.
-\end{esimerkki}
-
-%\begin{esimerkki}
-%
-%Vetyatomin halkaisija on noin 0,1 nanometriä. Kuinka monta vetyatomia tarvitaan peräkkäin, jotta saataisiin yhden senttimetrin pituinen atomijono?
-%
-%	\begin{esimratk}
-%	
-%	\end{esimratk}
-%
-%\end{esimerkki}
-
-%\begin{esimerkki}
-%
-%Paperiarkkipinossa, jonka korkeus on 10 senttimetriä, on yksi riisi eli\ldots arkkia. Mikä on yhden paperiarkin paksuus? Kuinka monta arkkia on pinossa, jonka korkeus on metri? Tehtävässä ei huomioida paperiarkkien puristumista muiden papereiden painon vuoksi.
-%
-%	\begin{esimratk}
-%	
-%	\end{esimratk}
-%\end{esimerkki}
-
-
-\begin{esimerkki}
-Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea matkan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. Lasketaan, kuinka kauan kestää $300$ metrin matka nopeudella $7$\,m/s.
-
-Sijoitetaan kaavaan yksikköineen $s=300$\,m ja $v= 7$\,m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
-\[t=\frac{100\,\textrm{m}}{7\,\textrm{m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
-= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
-= \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
-=\frac{100}{7}\,\textrm{s} \approx 14\,\textrm{s}.\]
-\end{esimerkki}
-
-%Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut\ldots olisi hyvä. Saisi vielä kerran kerrattua sanallisesti, mitä rationaalilukujen ominaisuuksia käytettiin ja mitä potenssisääntöjä käytettiin\ldots :) T: Joonas Mäkinen
-
-%tiheysesimerkki
-
-%jokin esimerkki, missä potensseja\ldots
-
-%\begin{esimerkki}
-%Maapallon massa noin 
-%\end{esimerkki}
-
-Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
-
 \subsection*{Yksikkömuunnokset}
 
 Kerrannaisyksiköiden tapauksessa tulee vain huomata, että etuliitteet ovat matemaattisesti vain kertoimia. Kaikki ilmaisut voidaan aina halutessa esittää luvun ja yksikön tulona ilman etuliitteitä. %''ajatellaan olevan matemaattisesti vain kertoimia -> ovat matemaattisesti vain kertoimia. -Jouni
@@ -256,14 +204,17 @@ $270\,\text{mm}=270\cdot\text{mm}=270\cdot10^{-3}\,\text{m}=\frac{270}{1\,000}\,
 \end{esimerkki}
 
 \begin{esimerkki}
-Erään punaisen verisolun tilavuus on $9,0 \cdot 10^{-12}\,\textrm{l}$. Ilmoita tilavuus
-
-a) pikolitroina
-
-b) nanolitroina
+Erään punaisen verisolun tilavuus on $9,0 \cdot 10^{-12}$\,l. Ilmoita tilavuus
+\alakohdat{
+§ pikolitroina
+§ nanolitroina
+}
 
 \begin{esimratk}
-$9,0 \cdot 10^{-12}\,\textrm{l} = 9,0\,\textrm{pl} = 0,009\,\textrm{nl}$.
+\alakohdat{
+§ $9,0 \cdot 10^{-12}\,\textrm{l} = 9,0\,\textrm{pl} = 0,009\,\textrm{nl}$.
+§ $9,0\,\textrm{pl} = 0,009\,\textrm{nl}$ %parempi johto!
+}
 \end{esimratk}
 \end{esimerkki}
 
@@ -275,8 +226,6 @@ Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
 dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$!
 \end{center}
 
-%erittäin hyvä pointti! -Jouni
-
 Potenssisääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
 
 \begin{esimerkki}
@@ -285,14 +234,18 @@ Kuinka mones osa kuutiodesimetri on kuutiometristä?
 
 	\begin{esimratk}
 	Puretaan auki käyttäen mainittua kirjoituskonventiota, potenssisääntöjä ja desi-etuliitteen määritelmää:
-	%\begin{align*}
-	$1\,\text{dm}^3=1\,(\text{dm})^3=1\,\text{d}^3\,\text{m}^3=1\,(10^{-1})^3\,\text{m}^3=10^{-1\cdot3}\,\text{m}^3=10^{-3}\,\text{m}^3=\frac{1}{1\,000}\,\text{m}^3$
-	%\end{align*}
+	\begin{align*}
+	1\,\text{dm}^3&=1\,(\text{dm})^3\\
+	&=1\,\text{d}^3\,\text{m}^3 \\
+	&=1\,(10^{-1})^3\,\text{m}^3 \\
+	&=10^{-1\cdot3}\,\text{m}^3 \\
+	&=10^{-3}\,\text{m}^3 \\
+	&=\frac{1}{1\,000}\,\text{m}^3
+	\end{align*}
 	Nähdään, että yksi kuutiodesimetri on tuhannesosa kuutiometristä.
 	\end{esimratk}
 
 \end{esimerkki}
-
 
 %\begin{esimerkki}
 
@@ -309,12 +262,9 @@ Matkan (pituuden), pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään ta
 Ajan yksiköissä on jäänteitä $60$-järjestelmästä. Yksikköjä ei jaetakaan kymmeneen pienempään osaan vaan kuuteenkymmeneen:
 
 \luettelolaatikko{Ajan yksiköt}{
-  § Yksi tunti on $60$ minuuttia.
-  §§ $1\,\text{h} = 60\,\text{min}$
-  § Yksi minuutti on $60$ sekuntia.
-  §§ $1\,\text{min} = 60\,\text{s}$
-  § Yksi tunti on $3\,600$ sekuntia.
-  §§ $1\,\text{h} = 60\,\text{min} = 60 \cdot 60\,\text{s} = 3\,600\,\text{s}$ 
+  § Yksi tunti on $60$ minuuttia: $1\,\text{h} = 60\,\text{min}$
+  § Yksi minuutti on $60$ sekuntia: $1\,\text{min} = 60\,\text{s}$
+  § Yksi tunti on $3\,600$ sekuntia: $1\,\text{h} = 60\,\text{min} = 60 \cdot 60\,\text{s} = 3\,600\,\text{s}$ 
 }
 
 %millisekunnit
@@ -376,336 +326,52 @@ Tuumat saadaan siis senttimetreiksi kertomalla luvulla $2,54$. Näin ollen $3,5^
 	\end{esimratk}
 \end{esimerkki}
 
-\begin{tehtavasivu}
+\subsection*{Yksiköiden yhdistäminen}
 
-\begin{tehtava}
-Muuta
-      \alakohdat{
-    § $1$\,h $36$\,min tunneiksi
-    § $2$\,h $45$\,min minuuteiksi
-    § $1,5$\,h sekunneiksi.
-      }
-  \begin{vastaus}
-    \alakohdat{
-    § $1,6$\,h
-    § $165$\,min
-    § $5\,400$\,h
-      }
-  \end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muuta seuraavat ajat tunneiksi
-	\alakohdat{
-		§ $73$ minuuttia
-		§ $649$ sekuntia
-		§ $15$ minuuttia ja $50$ sekuntia
-		§ $42$ minuuttia ja $54$ sekuntia
-	}
-	\begin{vastaus}
-		\alakohdat{
-			§ $1,21666\ldots$ tuntia
-			§ $0,1802777\ldots$ tuntia
-			§ $0,263888\ldots$ tuntia
-			§ $0,715$ tuntia
-		}
-	\end{vastaus}
-\end{tehtava}
-
-
-\begin{tehtava}
-Elektroniikkayhtiö on ilmoittanut, että laitteen täyteen ladattu akku kestää käyttöä $450$ minuuttia. Laitetta on käytetty lataamisen jälkeen $3$\,h $30$\,min. Kuinka monta tuntia akun voi olettaa vielä kestävän?
-\begin{vastaus}
-$4$ tuntia
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Esitä luku ilman kymmenpotenssia
-\alakohdat{
-§ $3,2 \cdot 10^4$
-§ $-7,03 \cdot 10^{-5}$
-§ $10,005 \cdot 10^{-2}$.
-}
-\begin{vastaus}
-\alakohdat{
-§ $32\,000$
-§ $-0,0000703$
-§ $0,10005$
-}
-\end{vastaus}
-\end{tehtava}
-
-% FIXME \todo{TEHTÄVÄ: sanallinen tehtävä, jossa pitää laskea esim. km ja m yhteen}
-
-\begin{tehtava}
-Esitä luku ilman etuliitettä tai kymmenpotenssimuotoa
-\alakohdat{
-§ $0,5$\,dl
-§ $233$\,mm
-§ $33$ senttimetriä
-§ $16$\,kg
-§ $2$\,MJ
-§ $4$ kilotavua
-§ $0,125$\,Mt.
-}
-\begin{vastaus}
-\alakohdat{
-§ $0,05$\,l
-§ $0,233$\,m
-§ $0,33$ metriä
-§ $16\,000$\,g
-§ $2\,000\,000$\,J
-§ $4\,096$ tavua
-§ $131\,072$\,t
-}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Laske
-\alakohdat{
-§ $3,0\,\textrm{ml} \cdot 25\,\textrm{mg/ml}$
-§ $150\,\textrm{m} : 3\,\textrm{m/s}$
-§ $3,0\,\textrm{g} : 2,0\,\textrm{dm}^2$.
-}
-\begin{vastaus}
-\alakohdat{
-§ $75$\,mg
-§ $50$\,s
-§ $1,5$\,g/dm$^2$
-}
-\end{vastaus}
-\end{tehtava}
-
-%\begin{tehtava}
-%Muuta \emph{järkevimpään} yksikköön %en taida ymmärtää tätä tehtävää :S T: JoonasD6
-%\alakohdat{
-%§ $0,3$\,km$ +200$\,m
-%§ $0,04$\,m$ + 10$\,mm
-%§ $0,4$\,km$ + 7\,000$\,m$ + 1\,000\,000$\,mm
-%§ $0,2$\,cm$ + 4$\,cm.
-%}
-%\begin{vastaus}
-%\alakohdat{
-%§ $500$\,m
-%§ $5$\,cm
-%§ $8,4$\,km
-%§ $4,2$\,cm
-%}
-%\end{vastaus}
-%\end{tehtava}
-
-\begin{tehtava}
-Laske
-\alakohdat{
-§ $3,0\,\textrm{cm} \cdot 2,5\,\textrm{\,cm} \cdot 6,0\,\textrm{cm}$
-§ $0,4\,\textrm{km} : 8\,\textrm{m/s}$
-§ $2\,\textrm{g} : 50\,\textrm{mg/ml}$.
-}
-\begin{vastaus}
-\alakohdat{
-§ $45$\,cm$^3$
-§ $50$\,s
-§ $40$\,ml
-}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Liuoksen pitoisuus voidaan laskea kaavalla $c=m/V$, missä $c$ on pitoisuus, $m$ on liuenneen aineen määrä ja $V$ on liuoksen tilavuus. Laske suolaliuoksen pitoisuus (yksikkönä mg/ml), kun $4,5$ grammaa suolaa on liuotettu $500$ millilitraan liuosta. %tarkennus pitoisuuksista (massapitoisuus, ei molaarinen)
-\begin{vastaus}
-$9$\,mg/ml
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muuta seuraavat pituudet SI-muotoon ($1$ tuuma$ = 2,54$\,cm, $1$ jaardi$ = 0,914$\,m, $1$ jalka$ = 0,305$\,m, $1$ maili$ = 1,609$\,km).
-\alakohdat{
-§ $5$ tuumaa senttimetreiksi
-§ $0,3$ tuumaa millimetreiksi
-§ $79$ jaardia metreiksi
-§ $80$ mailia kilometreiksi
-§ $5$ jalkaa ja $7$ tuumaa senttimetreiksi
-§ $330$ jalkaa kilometreiksi
-}
-\begin{vastaus}
-\alakohdat{
-§ $12,7$\,cm
-§ $7,62$\,mm
-§ $72,206$\,m
-§ $128,72$\,km
-§ $170,28$\,cm
-§ $100,65$\,m
-}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Laske oma pituutesi ja painosi tuumissa ja paunoissa. %vai laitetaanko "yhdysvaltalaisten keskipituus on..." ja sitten vertaa itseesi :)
-%\begin{vastaus}
-%Esimerkiksi $168$\,cm...
-%\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Jasper-Korianteri ja Kotivalo vertailivat keppejään. Jasper-Korianteri mittasi oman keppinsä $5,9$ tuumaa pitkäksi ja Kotivalo omansa $14,8$ senttimetriä pitkäksi. Kummalla on pidempi keppi?
-\begin{vastaus}
-Jasper-Korianterilla, sillä $5,9$ tuumaa = $14,986$\,cm
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Kuinka monta litraa maitoa mahtuu $1$\,m$\times 1$\,m$\times 1$\,m -laatikkoon? (Jos kuution särmän pituus on $a$, on kuution tilavuus $a^3$.)
-	\begin{vastaus}
-	$1\,000$\,l
-	\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muuta minuuteiksi
-\alakohdat{
-§ $1$\,h $17$\,min
-§ $2$\,h $45$\,min
-§ $1,5$\,h
-§ $1,75$\,h
-}
-\begin{vastaus}
-\alakohdat{
-§ $77$\,min
-§ $165$\,min
-§ $90$\,min
-§ $105$\,min
-}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muuta sekunneiksi
-\alakohdat{
-§ $1$\,h $42$\,min
-§ $3$\,h $32$\,min
-§ $1,25$\,h
-§ $4,5$\,h.
-}
-\begin{vastaus}
-\alakohdat{
-§ $6\,120$\,s
-§ $12\,720$\,s
-§ $4\,500$\,s
-§ $16\,200$\,s
-}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Muuta tunneiksi ja minuuteiksi
-\alakohdat{
-§ $125$\,min
-§ $667$\,min
-§ $120$\,min
-§ $194$\,min.
-}
-\begin{vastaus}
-\alakohdat{
-§ $2$\,h $5$\,min
-§ $11$\,h $7$\,min
-§ $2$\,h
-§ $3$\,h $14$\,min
-}
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-Liisa ohjelmoi tietokoneensa sammumaan $14\,400$ sekunnin kuluttua. Kuinka monen tunnin kuluttua Liisan tietokone sammuu?
-\begin{vastaus}
-$4$ tunnin kuluttua
-\end{vastaus}
-\end{tehtava}
-
-\begin{tehtava}
-$\star$ (Muunnelma fyysikko Enrico Fermin esittämästä ongelmasta.) Chicagossa asuu osapuilleen $5\,000\,000$ asukasta. Kussakin kotitaloudessa asuu keskimäärin kaksi asukasta. Karkeasti joka kahdennessakymmenennessä kotitaloudessa on säännöllisesti viritettävä piano. Säännöllisesti viritettävät pianot viritetään keskimäärin kerran vuodessa. Pianonvirittäjällä kestää noin kaksi tuntia virittää piano, kun matkustusajat huomioidaan. Kukin pianonvirittäjä työskentelee kahdeksan tuntia päivässä, viisi päivää viikossa ja $50$ viikkoa vuodessa. Mikä arvio Chicagon pianonvirittäjien lukumäärälle saadaan näillä luvuarvoilla?
-\begin{vastaus}
-$125$ pianonvirittäjää
-\end{vastaus}
-\end{tehtava}
-
-\end{tehtavasivu}
-
-\subsection*{Pyöristäminen}
-
-Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen $167,9337$\,cm, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo $168$\,cm antaa kaiken oleellisen informaation ja on mukavampi lukea. Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on yksinkertaisempi. Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
-
-%luettelo pyöristysmetodeista
-
-%Pyöristys tehdään aina lähimpään oikeaa tarkkuutta olevaan lukuun.
-
-Siis esimerkiksi kokonaisluvuksi pyöristettäessä $2,8 \approx 3$, koska $3$ on lähin kokonaisluku. Lisäksi on sovittu, että puolikkaat (kuten $2,5$) pyöristetään ylöspäin. Se, pyöristetäänkö ylös vai alaspäin (eli suurempaan vai pienempään lukuun), riippuu siis haluttua tarkkuutta seuraavasta numerosta: pienet 0, 1, 2, 3, 4 pyöristetään alaspäin, suuret 5, 6, 7, 8, 9 ylöspäin.
-
-Ellei muuta mainita, tehtävissä käytetään kaikkein yleisintä pyöristysmenetelmää, jossa viimeisen numeron perusteella pyöristetään lähimpään, ja numeroon $5$ päättyvät poispäin nollasta.
+Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin väli kertolaskun asemesta. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon tai murtolausekkeiksi.
 
 \begin{esimerkki}
-Pyöristetään luku $15,0768$ sadasosien tarkkuuteen. Katkaistaan luku sadasosien jälkeen ja katsotaan seuraavaa desimaalia:\\
-$15,0768 = 15,07|68 \approx 15,08$.\\
-Pyöristettiin ylöspäin, koska seuraava desimaali oli 6.
+$2$ metriä kertaa $3$ metriä = $2\,\text{m} \cdot 3\,\text{m} = 2 \cdot \text{m} \cdot 3 \cdot \text{m}= 2 \cdot 3 \cdot \text{m} \cdot \text{m} =6\,\text{m}^2$ eli kuusi neliömetriä.
 \end{esimerkki}
 
-%+1, hinta viiden sentin tarkkuudella
+%\begin{esimerkki}
+%
+%Vetyatomin halkaisija on noin 0,1 nanometriä. Kuinka monta vetyatomia tarvitaan peräkkäin, jotta saataisiin yhden senttimetrin pituinen atomijono?
+%
+%	\begin{esimratk}
+%	
+%	\end{esimratk}
+%
+%\end{esimerkki}
 
-\subsubsection*{Merkitsevät numerot}
+%\begin{esimerkki}
+%
+%Paperiarkkipinossa, jonka korkeus on 10 senttimetriä, on yksi riisi eli\ldots arkkia. Mikä on yhden paperiarkin paksuus? Kuinka monta arkkia on pinossa, jonka korkeus on metri? Tehtävässä ei huomioida paperiarkkien puristumista muiden papereiden painon vuoksi.
+%
+%	\begin{esimratk}
+%	
+%	\end{esimratk}
+%\end{esimerkki}
 
-Mikä on tarkin mittaus, $23$\,cm, $230$\,mm vai $0,00023$\,km? Kaikki kolme tarkoittavat täsmälleen samaa, joten niitä tulisi pitää yhtä tarkkoina. Luvun esityksessä esiintyvät kokoluokkaa ilmaisevat nollat eivät ole \emph{merkitseviä numeroita}, vain $2$ ja $3$ ovat.
-
-\laatikko[Merkitsevät numerot]{\termi{merkitsevät numerot}{Merkitseviä numeroita} ovat kaikki luvussa esiintyvät numerot, paitsi nollat kokonaislukujen lopussa ja desimaalilukujen alussa.}
-
-%lisää esimerkkejä!
-\begin{center}
-\begin{tabular}{r|l}
-Luku & Merkitseviä numeroita \\
-\hline
-$123$ & $3$ \\
-$12\,000$ & $2$ (tai enemmän)\\
-$12,34$ & $4$ \\
-$0,00123$ & $3$
-\end{tabular}
-\end{center} %lisää esimerkkejä!
-
-%vvvmiten tämä liittyy merkitseviin numeroihin? vvvv
-%Jos esimerkiksi pöydän paksuudeksi on mitattu millin tuhannesosien tarkkuudella 2\,cm, voidaan pituus ilmoittaa muodossa 2,0000\,cm, jolloin tarkkuus tulee näkyviin.
-%Samasta syystä kellonaikoja ilmoitettaessa klo 19 käsitetään siten, että kyse on tasatunnista. Klo 19.00 ei lisäinformaatiota?
-
-Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden määrässä. Kasvimaalla asuvaa $100$ citykania on tuskin laskettu ihan tarkasti, mutta $100$\,m juoksuradan todellinen pituus ei varmasti ole todellisuudessa esimerkiksi $113$\,m.
-
-\subsubsection*{Vastausten pyöristäminen sovelluksissa}
-
-Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan desimaalien lukumäärällä.
-
-\begin{esimerkki} Jos $175$\,cm pituinen ihminen nousee seisomaan $2,15$\,cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi $177,15$\,cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen $174,5$\,cm ja $175,5$\,cm väliltä. Lasketaan siis $175$\,cm$+2,15$\,cm$=177,15$\,cm$\approx 177$\,cm. 
-Epätarkempi lähtöarvo oli mitattu senttien tarkkuudella, joten pyöristettiin tasasentteihin.
-\end{esimerkki}
-
-Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan. Jos esimerkiksi pitkän pöydän pituus karkeasti mitattuna on $5,9$\,m ja pöydän leveydeksi saadaan tarkalla mittauksella $1,7861$\,m, ei ole perusteltua olettaa pöydän pinta-alan olevan todella
-\[ 5,9\,\textrm{m} \cdot 1,7861\,\textrm{m} = 10,53799\,\textrm{m}^2. \] 
-Pyöristys tehdään epätarkimman lähtöarvon mukaisesti kahteen merkitsevään numeroon:
-\[ 5,9\,\textrm{m} \cdot 1,7861\,\textrm{m} = 10,53799\,\textrm{m}^2 \approx 11\,\textrm{m}^2.\] 
-
-Tarkkuus ei ole aina hyvästä lukujen esittämisessä. Esimerkiksi
-\[\pi = 3,141592653589793238462643383279 \ldots \]
-mutta käytännön laskuihin riittää usein $3,14$.
-
-Muista, että kolmen pisteen käyttö desimaaliesityksen lopussa on suotavaa vain, jos on yksikäsitteisen selvää, miten desimaalit tulevat jatkumaan. Piin tapauksessa niitä voi käyttää, koska luvun desimaalikehitelmä on hyvin tunnettu ja mielivaltaisen tarkasti laskettavissa.
-
-\subsubsection*{Tarkka arvo}
-
-Matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä pyöristettyinä desimaaleina. %(Irrationaaliluvuille ei ole edes olemassa desimaaliesitystä, ne voi esittää vain likiarvoisena.)
-
-Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
 
 \begin{esimerkki}
-Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluku $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837\ldots$, mutta tuloksena on vain likiarvo, lasketaanpa desimaalilukua mihin tahansa tarkkuuteen hyvänsä.
+Keskinopeus $v$ voidaan laskea kaavasta $\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea matkan kulkemiseen kulunut aika: $t=s/v$, missä $s$ on kuljettu matka ja $v$ on nopeus. Lasketaan, kuinka kauan kestää $300$ metrin matka nopeudella $7$\,m/s.
+
+Sijoitetaan kaavaan yksikköineen $s=300$\,m ja $v= 7$\,m/s ja käytetään rationaalilukujen laskusääntöjä, jolloin saadaan:
+\[t=\frac{100\,\textrm{m}}{7\,\textrm{m/s}} = \frac{100}{7} \cdot \frac{\textrm{m}}{\frac{\textrm{m}}{\textrm{s}}} 
+= \frac{100}{7} \cdot \frac{\textrm{m}}{1} \cdot \frac{\textrm{s}}{\textrm{m}}
+= \frac{100}{7} \cdot \frac{\cancel{m}\textrm{s}}{\cancel{m}}
+=\frac{100}{7}\,\textrm{s} \approx 14\,\textrm{s}.\]
 \end{esimerkki}
 
-%MIKSI sieventäminen ei enää onnistunut?
-%tehtäviin metriä sekunnissa vs kilometriä tunnissa!
-%Lisää kymmenpotenssimuodoista! ja niiden avulla sieventämisestä :) valonnopeus yms.!
-%yksikkötarkastelutehtäviä? esimerkkejä, harjoitustehtäviä! kerrotaanko [nopeus]=m/s -notaatiosta?
+%Oisko pitänyt laittaa vaiheittain tuo vielä, että voi merkata välivaiheissa tehdyt jutut\ldots olisi hyvä. Saisi vielä kerran kerrattua sanallisesti, mitä rationaalilukujen ominaisuuksia käytettiin ja mitä potenssisääntöjä käytettiin\ldots :) T: Joonas Mäkinen
+
+%tiheysesimerkki
+
+%jokin esimerkki, missä potensseja\ldots
+
+%\begin{esimerkki}
+%Maapallon massa noin 
+%\end{esimerkki}
+
+Huomaa, että eri suureita voi kertoa ja jakaa keskenään, mutta yhteen- ja vähennyslasku ei ole määritelty. (Mitä tarkoittaisikaan "kolme metriä plus kaksi grammaa"?)
