@@ -189,7 +189,7 @@ Hyvin pienistä massoista puhuttaessa voidaan puhua esimerkiksi nanogrammoista. 
 \end{esimerkki}
 
 \laatikko[Huomautus tietotekniikasta]{
-Datan tai informaation määrää mitataan bitteinä ja tavuina – yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on suureena dikstreetti eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Yhteen kahdeksan bitin mittaiseen tavuun voidaan tallettaa kokonaisluku väliltä 0--255. Tavun sisällön merkitys voidan tulkita usealla tavalla, esimerkiksi yhtenä kirjaimena jossain merkistössä. Suomen kielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. bit) ja tavulle (engl. byte) ovat vastaavasti b ja B.
+Datan tai informaation määrää mitataan bitteinä ja tavuina -- yksi tavu on kahdeksan bittiä. Tietotekniikassa datan määrä on suureena dikstreetti eli bittejä voi olla vain jokin luonnollisen luvun osoittama määrä. Bittejä ei siis voi jakaa mielivaltaisen pieniin palasiin toisin kuin esimerkiksi sekunteja ja metrejä. Yhteen kahdeksan bitin mittaiseen tavuun voidaan tallettaa kokonaisluku väliltä 0--255. Tavun sisällön merkitys voidan tulkita usealla tavalla, esimerkiksi yhtenä kirjaimena jossain merkistössä. Suomen kielessä bitin lyhenne on b ja tavun t. Usein käytettävät englanninkieliset lyhenteet bitille (engl. \textit{bit}) ja tavulle (engl. \textit{byte}) ovat vastaavasti b ja B.
 
 Tietokoneiden rakenteen kaksikantaisuuden (ks. liite lukujärjestelmistä) johdosta tavujen kerrannaisyksiköllä tarkoitetaan usein lähimpiä kahden potensseja: kilotavu (kt) ei tarkoita tasan $1\,000$ tavua vaan $1\,024$ tavua ($2^{10}$), yksi megatavu (Mt) on $1024$\,kt (eli $1\,048\,576 = 2^{20}$ tavua), yksi gigatavu $1\,024$\,Mt ja niin edelleen.} % SI-järjestelmä ei tue tätä, vaan sen mukaan kt on tasan 1000 t ja niin edelleen. Binäärikerrannaisyksiköt sisältyvät IEC-standardiin ja merkitään KiB, MiB nje. mutta eivät ole levinneet laajalle. Usein esim. keskusmuistien koosta puhuttaessa käytetään binäärikerrannaisyksikköjä mutta kiintolevyjen koosta puhuttaessa kymmenen potensseja. Puututaanko tähän skismaan? Olen käyttänyt edellä sanamuotoa ``tarkoitetaan usein lähimpiä kahden potensseja''. -Jouni
 
@@ -307,7 +307,6 @@ Tuumien tai paunojen avulla ilmaistut suureet voidaan muuntaa SI-järjestelmää
 
 \begin{esimerkki}
 Kuinka monta senttimetriä on $3,5$ tuumaa? Entä kuinka monta tuumaa on $7,2$ senttimetriä?
-
 	\begin{esimratk}
 Yksi tuuma vastaa $2,54$ senttimetriä, joten kaksi tuumaa vastaa $5,08$ senttimetriä jne.
 	
@@ -326,7 +325,7 @@ Tuumat saadaan siis senttimetreiksi kertomalla luvulla $2,54$. Näin ollen $3,5^
 	\end{esimratk}
 \end{esimerkki}
 
-\subsection*{Yksiköiden yhdistäminen}
+\subsection*{Yksiköiden yhdistäminen laskuissa}
 
 Jos lausekkeessa on useita samanlaisia yksiköitä, näitä voidaan usein yhdistää. Suureen määritelmän luvun ja yksikön kertolaskukäsityksestä seuraa, että sovelluksissa ja sievennystehtävissä yksiköillä voidaan laskea kuin luvuilla. Käytännössä yksiköitä kohdellaan kuin lukuja, ja niitä voi kertoa ja jakaa keskenään. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät –- lopullisessa sievennetyssä muodossa vain merkitään luvun ja yksikön väliin väli kertolaskun asemesta. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon tai murtolausekkeiksi.
 

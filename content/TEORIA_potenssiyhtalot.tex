@@ -170,9 +170,9 @@ Eli $x=-2$ tai $x=0$.
 
 \section*{Pythagoraan lause}
 
-Yksi tärkeimmistä potenssiyhtälöistä on geometrian kolmioihin liittyvissä perustehtävissä tarvittava \termi{Pythagoraan lause}{Pythagoraan lause}.
+Yksi tärkeimmistä potenssiyhtälöistä on geometrian kolmioihin liittyvissä perustehtävissä tarvittava \termi{Pythagoraan lause}{Pythagoraan lause}. Suorakulmaisen kolmion kahta toisiinsa nähden kohtisuorassa olevaa lyhyttä sivua kutsutaan kateeteiksi ja pisintä sivua hypotenuusaksi.
 
-\laatikko{Pythagoraan lause}{Suorakulmaiselle kolmiolle pätee: kateettien neliöiden summa on yhtä suuri kuin hypotenuusan neliö
+\laatikko{Pythagoraan lause}{Suorakulmaiselle kolmiolle pätee: kateettien neliöiden summa on yhtä suuri kuin hypotenuusan neliö:
 
 $$a^2+b^2=c^2$$}
 
@@ -195,7 +195,51 @@ $$a^2+b^2=c^2$$}
 \end{kuva}
 \end{center}
 
+Sama pätee myös kääntäen: jos kateettien neliöiden summa on hypotenuusan neliö, kolmio on varmasti suorakulmainen.
+
 Tavallisesti kahta lyhyempää sivua, kateettia (niiden pituutta) merkataan $a$:lla ja $b$:llä, ja hypotenuusan pituutta $c$:llä kuten kuvassa. Yhtälön ratkaisun kannalta olennaista on, että geometrian sovelluksissa emme hyväksy yhtälön negatiivisia juuria, koska pituudet, pinta-alat ja tilavuudet ovat positiivisia.
+
+\begin{esimerkki}
+
+Määritä oheisen suorakulmaisen kolmion hypotenuusan pituus.
+\begin{center}
+\begin{kuva}
+	skaalaa(1)
+
+	A=(0,0)
+	B=(0,1)
+	C=(2,0)
+	D=(0.1,0.1)
+	E=(0,0.1)
+	F=(0.1,0)
+
+	geom.jana(B,A,"$3$")
+	geom.jana(C,B,"$c$")
+	geom.jana(A,C,"$4$")
+	geom.jana(E,D)
+	geom.jana(D,F)
+\end{kuva}
+\end{center}
+
+\begin{esimratk}
+Kateettien pituudet ovat $a=3$ ja $b=4$, ja tuntematonta hypotenuusaa on merkitty $c$:llä. (Sinänsä ei ole väliä, kumpaa kateettia merkataan milläkin kirjaimella.) Pythagoraan lauseesta saadaan:
+
+\begin{align*}
+a^2+b^2 &= c^2  && || \text{sijoitetaan tehtävänannon arvot kaavaan} \\
+3^2+4^2 &= c^2 && || \text{sievennetään yhtälön vasenta puolta} \\
+9+16 &= c^2 && \\
+25 &= c^2 && || \sqrt{} \\
+5 &= c &&
+\end{align*}
+
+Hyväksymme vain positiivisen juuren.
+
+\end{esimratk}
+\begin{esimvast}
+Kolmion hypotenuusan pituus on $5$ (pituusyksikköä).
+\end{esimvast}
+
+\end{esimerkki}
 
 \begin{esimerkki}
 Taulutelevision kooksi (lävistäjäksi) on ilmoitettu mainoksessa $46,0$ tuumaa ($116,8$ cm) ja kuvasuhteeksi $16:9$. Kuinka leveä televisio on senttimetreinä?
@@ -203,7 +247,7 @@ Taulutelevision kooksi (lävistäjäksi) on ilmoitettu mainoksessa $46,0$ tuumaa
 %FIXME: KIMMON KUVITUSKUVA!
 
 \begin{esimratk}
-Taulutelevision halkaisija, alareuna ja toinen sivu muodostavat suorakulmaisen kolmion. Kolmion hypotenuusa ($c$) on television halkaisija ja kateetit ($a$ ja $b$) alareuna ja toinen sivu. Kuvasuhteen perusteella kateettien pituuksia voidaan merkitä $16x$ ja $9x$. Pythagoraan lauseesta ($c^2 = a^2 + b^2$) saadaan
+Taulutelevision halkaisija, alareuna ja toinen sivu muodostavat suorakulmaisen kolmion. Kolmion hypotenuusa ($c$) on television halkaisija ja kateetit ($a$ ja $b$) alareuna ja toinen sivu. Kuvasuhteen perusteella kateettien pituuksia voidaan merkitä $16x$ ja $9x$, missä $x$ esittää pienintä sivujen yhteistä mittaa. Sivuja ei voida merkitä suoraan $16$ ja $9$, koska nämä eivät ole oikeita pituuksia vaan vain suhteita. Pythagoraan lauseesta ($c^2 = a^2 + b^2$) saadaan
 \[
 116,8^2 = (16x)^2 + (9x)^2
 \]
