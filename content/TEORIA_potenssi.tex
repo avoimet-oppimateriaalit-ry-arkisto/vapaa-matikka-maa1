@@ -59,8 +59,10 @@ Potenssi on määritelmänsä perusteella toistuvaa kertolaskua. Potenssin arvo 
 Mikäli potensseja on monta päällekkäin (eli eksponenttina on potenssilauseke), laskeminen aloitetaan ylimmästä, ''uloimmasta'' potenssista.
 
 \begin{esimerkki}
-$2^{3^2}= 2^9 = 512$
-$(2^3)^2=8^2=64$
+\alakohdat{
+§ $2^{3^2}= 2^9 = 512$
+§ $(2^3)^2=8^2=64$
+}
 \end{esimerkki}
 
 Monesti tulee tarpeeseen sieventää yksittäisiä lukuja monimutkaisempien lausekkeiden potensseja. Tämä tapahtuu potenssin määritelmällä ja osittelulailla.
@@ -78,9 +80,9 @@ Monesti tulee tarpeeseen sieventää yksittäisiä lukuja monimutkaisempien laus
 	
 \end{esimerkki} %toinen esimerkki jonneki + vastaavia tehtäviä
 
-\subsection*{Negativinen kantaluku}
+\subsection*{Negatiivinen kantaluku}
 
-Jos kantaluku on negatiivinen, sen ympärille merkitään selkeyden vuoksi aina sulkeet.
+Jos kantaluku on negatiivinen, sen ympärille merkitään aina sulkeet.
 
 \begin{esimerkki}
 $(-2)^4 = -2 \cdot (-2)\cdot(-2)\cdot(-2) = 16$
@@ -115,8 +117,11 @@ Huomaa seuraavat potenssien etumerkkeihin liittyvät ominaisuudet.
 
 Parillinen potenssi on negatiivisellakin kantaluvulla positiivinen siksi koska tulossa on negatiivisia kertoimia parillinen määrä. Tällöin miinukset kumoavat toisensa, olipa kantaluku mikä tahansa.  Esimerkiksi $(-1)^4=(-1) \cdot (-1) \cdot (-1) \cdot (-1)= 1\cdot 1=1$
 
-Kun negatiivinen kantaluku korotetaan parittomaan potenssiin, tulee kertoimia pariton määrä, jolloin tulos on negatiivinen. 
-Esimerkiksi $(-2)^5=(-2) \cdot (-2) \cdot (-2) \cdot (-2) \cdot (-2)=4\cdot4\cdot(-2)=16\cdot(-2)= -32$
+Kun negatiivinen kantaluku korotetaan parittomaan potenssiin, tulee kertoimia pariton määrä, jolloin tulos on negatiivinen.
+\begin{esimerkki}
+
+$(-2)^5=(-2) \cdot (-2) \cdot (-2) \cdot (-2) \cdot (-2)=4\cdot4\cdot(-2)=16\cdot(-2)= -32$
+\end{esimerkki}
 
 \begin{esimerkki}
 
@@ -129,15 +134,15 @@ Koska parilliseen potenssin korottamisessa saadaan lopputulos sekä luvulla ett�
 	&=x(x-y)-y(x-y) && \text{vaihdantalaki} \\
 	&=xx-xy-yx+y\cdot y && \text{osittelulaki} \\
 	&=x^2-xy-xy+y^2 && \text{potenssin määritelmä ja vaihdatalaki} \\
-	&=x^2-4xy+y^2 && \text{osittelulaki ja summa}
+	&=x^2-2xy+y^2 && \text{osittelulaki ja summa}
 	\end{align*}
 	
 	Huomataan, että avatussa muodossa $x$ ja $y$ esiintyvät symmetrisesti, ts. niiden paikkoja voi vaihtaa vaikuttamatta lausekkeen arvoon:
 	
 	\begin{align*}
-	x^2-4xy+y^2
-	&=y^2-4xy+x^2 && \text{yhteenlaskun vaihdannaisuus} \\
-	&=y^2-4yx+x^2  && \text{kertolaskun vaihdannaisuus} \\
+	x^2-2xy+y^2
+	&=y^2-2xy+x^2 && \text{yhteenlaskun vaihdannaisuus} \\
+	&=y^2-2yx+x^2  && \text{kertolaskun vaihdannaisuus} \\
 	\end{align*}
 	
 Tämä on täsmälleen myös se muoto, johon päädytään, jos avattaisiin sulut ja sievennettäisiin lauskee $(y-x)^2$. Siis $(x-y)^2=(y-x)^2$.
