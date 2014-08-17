@@ -8,7 +8,7 @@ Luvulla on suuruus, ja niitä esitetään numeroiden eli numeromerkkien avulla. 
 \end{tehtava}
 
 \begin{tehtava}
-Miten vähennyslasku sekä jakolasku määritellään?
+Miten vähennyslasku ja jakolasku määritellään?
 \begin{vastaus}
 Kahden luvun $a$ ja $b$ vähennyslasku (erotus) $a-b$ määritellään summana $a+(-b)$, eli $a$:han on lisätty $b$:n vastaluku. Jakolasku (osamäärä) $\frac{a}{b}$ määritellään tulona $a\cdot \frac1b$, eli $a$ on kerrottu $b$:n käänteisluvulla.
 \end{vastaus}
@@ -84,6 +84,7 @@ Mikä yhteys murtopotensseilla ja juurilla on?
 Positiivisilla reaaliluvuilla $x$ pätee $\sqrt[n]{x^m} = x^{\frac{m}{n}}$. Tämä mahdollistaa potenssisääntöjen käyttämisen juurilausekkeille.
 \end{vastaus}
 \end{tehtava}
+%tehtäviä liitännäisyydestä, vaihdannaisuudesta, refleksiivisyydestä, transitiivisuudesta ja symmetrisyydestä
 
 Valitse monivalintatehtävissä yksi paras vastaus.
 
@@ -152,7 +153,7 @@ Kuinka monta nollaa on miljardissa?
 § $6$
 § $9$
 § $12$
-§ $15$
+§ ei mikään annetuista vaihtoehdoista
 }
 \begin{vastaus}
 c) $9$
@@ -269,7 +270,12 @@ $x$ ja $z$ ovat kääntäen verrannolliset.
 \end{vastaus}
 \end{tehtava}
 
-% prosentti: miksi +10 % - 10 % ei alkuperäinen?
+\begin{tehtava}
+Jos lukua kasvatetaan $p$:llä prosentilla ja sen jälkeen pienennetään $p$:llä prosentilla, miksi ei päädytä takaisin alkuperäiseen lukuun?
+	\begin{vastaus}
+	Kyse on absoluuttisista, ei suhteellisista muutoksista. Jos lisätään jokin luku ja sitten vähennetään sama luku, laskutoimitukset kumoavat aina toisensa. Sen sijaan jos mielivaltaista lukua kasvatetaan suhtellisella osuudella, kasvun suuruus riippuu alkuperäisestä luvusta. Kun kasvatetusta luvusta otetaan sama suhteellinen osa pois, kyseinen osa onkin nyt suurempi, joten päädytään alkuperäistä pienempään lukuun.
+	\end{vastaus}
+\end{tehtava}
 
 Valitse monivalintatehtävissä yksi paras vastaus.
 
@@ -309,8 +315,106 @@ a) aina tosi
 \end{vastaus}
 \end{tehtava}
 
-%verrannollisusmonivalintoja
-%prosenttilaskentaa
+\begin{tehtava} %FIXME: virkekoherenssi
+Yhtälön $a^2+a^{-2}=0$ (eräs) juuri on
+\alakohdat{
+§ $-1$
+§ $0$
+§ $1$
+§ $\pi$
+§ ei mikään mainituista vaihtoehdoista.
+}
+	\begin{vastaus}
+e) ei mikään mainituista vaihtoehdoista
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Kuinka monta eri reaaliratkaisua yhtälöllä $x^{10}=-2$ on?
+\alakohdat{
+§ nolla
+§ yksi
+§ kaksi
+§ kymmenen
+§ ei mikään mainituista vaihtoehdoista
+}
+	\begin{vastaus}
+a) nolla
+	\end{vastaus}
+\end{tehtava}
+
+\begin{tehtava}
+Yhtälönratkaisun vaiheessa
+\begin{align*}
+2x+x&=4 \\
+3x&=4
+\end{align*}
+käytettiin avuksi
+\alakohdat{
+§ reaalilukujen vaihdantalakia
+§ reaalilukujen liitäntälakia
+§ reaalilukujen osittelulakia
+§ kaikkia edellä mainittuja
+§ ei mitään edellä mainituista.
+}
+	\begin{vastaus}
+	c) reaalilukujen osittelulakia
+	\end{vastaus}
+\end{tehtava}
+
+%\begin{tehtava} %verrannollisuus
+%
+%\alakohdat{
+%§
+%§
+%§
+%§
+%}
+%	\begin{vastaus}
+%	
+%	\end{vastaus}
+%\end{tehtava}
+%
+%\begin{tehtava}%verrannollisusmonivalintoja
+%
+%\alakohdat{
+%§
+%§
+%§
+%§
+%}
+%	\begin{vastaus}
+%	
+%	\end{vastaus}
+%\end{tehtava}
+%
+%\begin{tehtava}%verrannollisusmonivalintoja
+%
+%\alakohdat{
+%§
+%§
+%§
+%§
+%}
+%	\begin{vastaus}
+%	
+%	\end{vastaus}
+%\end{tehtava}
+
+\begin{tehtava}
+Jos lukua $a$ vähennetään $3$\,\%, laskutoimitusta vastaava lauseke on
+\alakohdat{
+§ $0,03a$
+§ $0,97a$
+§ $a-0,03$
+§ $a-0,97$
+§ $\frac{a}{0,03}$
+§ $\frac{a}{1,03}$
+}
+	\begin{vastaus}
+b) $0,97a$
+	\end{vastaus}
+\end{tehtava}
 
 \subsection*{Funktiot}
 
@@ -336,12 +440,12 @@ Funktio $f$ määritellään lausekkeella $f(x)=\frac{1}{x-1}$. Funktion määri
 § $\mathbb{R}$
 § $\mathbb{R}_+$
 § $\mathbb{R}_-$
-§ $\mathbb{R}\setminus {0}$
-§ $\mathbb{R}\setminus {1}$
-§ $\mathbb{R}\setminus {-1}$.
+§ $\mathbb{R}\setminus \lbrace 0 \rbrace$
+§ $\mathbb{R}\setminus \lbrace 1 \rbrace$
+§ $\mathbb{R}\setminus \lbrace -1 \rbrace$.
 }
     \begin{vastaus}
-	 e) $\mathbb{R}\setminus {1}$
+	 e) $\mathbb{R}\setminus \lbrace 1 \rbrace$
     \end{vastaus}
 \end{tehtava}
 
