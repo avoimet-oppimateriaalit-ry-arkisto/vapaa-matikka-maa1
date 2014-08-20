@@ -1,6 +1,28 @@
-Sana \termi{prosentti}{prosentti} tulee latinan kielen ilmaisusta \termi{pro centum}{pro centum}, joka tarkoittaa kirjaimellisesti sataa kohden. Prosentit ovat siis sadasosia. Prosentteja käytetään ilmaisemaan suhteellista osuutta. Prosentin symboli on \%.
+Sana \termi{prosentti}{prosentti} tulee latinan kielen ilmaisusta \termi{pro centum}{pro centum}, joka tarkoittaa kirjaimellisesti sataa kohden tai sadasta. Prosentit ovat siis sadasosia, ja kyseessä on rationaalilukujen sovellus -- prosentteja käytetään ilmaisemaan suhteellista osuutta. Prosentin symboli on \%.
 
-\laatikko[Prosentti]{$1\,\textnormal{prosentti} \; = 1\,\% = \frac{1}{100} = 0,01$}
+Prosentin sukulaiskäsite on \termi{promille}{promille}, joka tulee vastaavasta latinan ilmaisusta \termi{pro mille}{pro mille}. Promillen symboli on \permil.
+
+\laatikko[Prosentti ja promille]{$1 \text{prosentti} \; = 1\,\% = \frac{1}{100} = 0,01$\\
+$1 \text{promille}=1\,\permil=\frac{1}{1\,000}=0,001$}
+
+
+%suhteellinen/absoluuttinen-tarkastelu tähän vai rationaalilukujen sovelluksiin??
+
+Prosenttilaskennan käytännön kysymyksenasettelut jakaantuvat karkeasti neljään ryhmään:
+\numerointilaatikko{Prosenttilaskennan tehtävätyypit}{
+§ ''Kuinka monta prosenttia $a$ on $b$:stä?''
+§ ''Kuinka paljon on $p$\,\% luvusta $a$?''
+§ ''$a$ kasvaa/vähenee $p$ prosenttia.''
+§ ''Kuinka monta prosenttia $a$ on suurempi/pienempi kuin $b$?''
+}
+
+Teoria käsitellään tässä järjestyksessä. Erilaisten tilanteiden suhteellisille tarkasteluille on vakiintunut monia erilaisia omia nimiä, jotka kannattaa opetella.
+
+\laatikko[Vertailuprosentti]{
+    \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin, mihin verrataan.
+
+Vertailuprosentilla vastataan siis kysymykseen ''kuinka monta prosenttia luku $a$ on luvusta $b$?'', ja vertailuprosentti saadaan tässä tapauksessa laskutoimituksesta $\frac{a}{b}$, joka tulkitaan lopullista vastausta varten prosentteina eli sadaosina.
+}
 
 \begin{esimerkki}
 \alakohdat{
@@ -10,13 +32,50 @@ Tarmo leikkaa pizzan neljään osaan ja syö näistä kolme.
 § Kuinka monta prosenttia pizzasta jää jäljelle?
 }
 
-\begin{esimratk}
+	\begin{esimratk}
 \alakohdat{
-§ Tarmo syö $3$ palaa neljästä eli $\frac{3}{4} = 0,75$. Tämä voidaan muuttaa prosenttiluvuksi ilmaisemalla luku sadasosina. Jos sadaosien lukeminen suoraan desimaaleista on haastavaa, saadaanprosentitnäkyviin kertomalla luku sadalla: $0,75 \cdot 100 = 75$. Siis $0,75=75\,\%$, ja tarmo söi $75\,\%$ pizzasta.
-§ Koko pizzasta otetaan pois Tarmon syömä osa jolloin jäljelle jää $100\,\% - 75\,\% = 25\,\%$.
+§ Tarmo syö $3$ palaa neljästä eli $\frac{3}{4} = 0,75$. Tämä voidaan muuttaa prosenttiluvuksi ilmaisemalla luku sadasosina. Jos sadaosien lukeminen suoraan desimaaleista on haastavaa, saadaan prosentit ''näkyviin'' kertomalla luku sadalla: $0,75 \cdot 100 = 75$. Siis $0,75=75\,\%$, ja Tarmo söi $75\,\%$ pizzasta.
+§ Koko pizzasta otetaan pois Tarmon syömä osa jolloin jäljelle jää $100\,\% - 75\,\% = 25\,\%$. Samaan vastaukseen olisi päädytty, jos olisi muuntamalla pitsapalojen määrien suhdetta esittävä rationaaliluku $\frac{1}{4}$ prosenteiksi.
 }
-\end{esimratk}
+	\end{esimratk}
+	\begin{esimvast}
+	\alakohdat{
+	§ $75$\,\%
+	§$25$\,\%
+	}
+	\end{esimvast}
 \end{esimerkki}
+
+\begin{esimerkki}
+Vesa ansaitsee kuukaudessa $3\,200$ euroa ja Antero $2\,300$ euroa.
+\alakohdat{
+§ Kuinka monta prosenttia Anteron tulot ovat Vesan tuloista?
+§ Kuinka monta prosenttia Vesan tulot ovat Anteron tuloista?
+}
+ 
+	\begin{esimratk}
+	\alakohdat{
+	§ Lasketaan vertailuprosentti. Perusarvo on tehtävänannon mukaisesti Vesan palkka eli $3\,200$ euroa.
+    §
+    }
+    \[
+        \frac{2\,300}{3\,200}
+        =0,71875
+        \approx 0,72
+        = 72\,\%.
+    \]
+    \end{esimratk}
+    
+  \begin{esimvast}
+Anteron tulot ovat $72\,\%$ Vesan tuloista.
+  \end{esimvast}
+\end{esimerkki}
+
+\laatikko[Perusarvo]{Lukua, josta suhde lasketaan, kutsutaan \termi{perusarvo}{perusarvoksi}.}
+
+Usein perusarvoa ei tunneta, vaan se joudutaan ratkaisemaan yhtälöstä.
+
+%\esimerkki{}
 
 \begin{esimerkki}
 Eräs kauppa myy tuotteensa $5$ prosentin alennuksella. Tämä tarkoittaa, että jokaisesta hinnasta vähennetään $\frac{5}{100}$ kertaa tuotteen hinta. Jos tuotteen alkuperäinen hinta on esimerkiksi $100$\,euroa, saadaan $5\,\%$ alennus laskettua $100$\,eurosta kertomalla $100$\,euroa $5\,\%$:lla eli viidellä sadasosalla 
@@ -45,32 +104,6 @@ Samaan tulokseen pääsee vielä kätevämmin, kun ajattelee alennuksen määrä
         § $140\,\% = \frac{140}{100} = 1,40$ 
     }
 \end{esimerkki}
-
-\laatikko[Vertailuprosentti]{
-    \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin.
-
-Vertailuprosentilla vastataan siis kysymykseen ''kuinka monta prosenttia luku $a$ on luvusta $b$?'' Vertailuprosentti on tässä tapauksessa $\frac{a}{b} $.
-}
-
-\begin{esimerkki}
-Vesa ansaitsee kuukaudessa $3\,200$ euroa ja Antero $2\,300$ euroa. Kuinka monta prosenttia Anteron tulot ovat Vesan tuloista? 
-    
-	\begin{esimratk}
-    Lasketaan vertailuprosentti. Perusarvo on tehtävänannon mukaisesti Vesan palkka eli $3\,200$ euroa.
-    
-    \[
-        \frac{2\,300}{3\,200} 
-        \approx 0,72
-        = 72\,\%.
-    \]
-    \end{esimratk}
-    
-  \begin{esimvast}
-Anteron tulot ovat $72\,\%$ Vesan tuloista.
-  \end{esimvast}
-\end{esimerkki}
-
-\laatikko[Perusarvo]{Lukua, josta suhde lasketaan, kutsutaan \termi{perusarvo}{perusarvoksi}.}
 
 \begin{esimerkki}
 Jos sadan euron hintaisen tuotteen hintaa on alennettu $25$\,prosenttia, niin alennettu hinta on $75$\,euroa. Jos sen sijaan alkuperäinen hinta nousee $15$\,prosenttia, niin tuotteen uusi hinta on $115$\,euroa. Perusarvo on molemmissa tapauksissa $100$\,euroa.
