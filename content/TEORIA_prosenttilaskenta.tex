@@ -1,15 +1,15 @@
 Sana \termi{prosentti}{prosentti} tulee latinan kielen ilmaisusta \termi{pro centum}{pro centum}, joka tarkoittaa kirjaimellisesti sataa kohden tai sadasta. Prosentit ovat siis sadasosia, ja kyseessä on rationaalilukujen sovellus -- prosentteja käytetään ilmaisemaan suhteellista osuutta. Prosentin symboli on \%. Prosentin sukulaiskäsite on \termi{promille}{promille}, joka tulee vastaavasta latinan ilmaisusta \termi{pro mille}{pro mille}. Promillen symboli on \permil.
 
-\laatikko[Prosentti ja promille]{$1 \text{prosentti}= 1\,\% = \frac{1}{100} = 0,01$\\
-$1 \text{promille}=1\,\permil=\frac{1}{1\,000}=0,001$}
+\laatikko[Prosentti ja promille]{$1$ \text{prosentti}$=1\,\% = \frac{1}{100} = 0,01$\\
+$1$ \text{promille}$=1\,\permil=\frac{1}{1\,000}=0,001$}
 
 \begin{esimerkki}
 \alakohdat{
-§ $0,03=3\,\%=30\,\permil$
-§ $0,00478=0,478\,\%=4,78\,\permil$
-§ $0,76=76\,\%=760\,\permil$
-§ $1,23=123\,\%=1\,230\,\permil$
-§ $2,10=210\,\%=2\,100\,\permil$
+§ $0,03=\frac{3}{100}=3\,\%=30\,\permil$
+§ $0,00478=\frac{0,478}{100}=0,478\,\%=4,78\,\permil$
+§ $0,76=\frac{76}{100}=76\,\%=760\,\permil$
+§ $1,23=\frac{123}{100}=123\,\%=1\,230\,\permil$
+§ $2,10=\frac{210}{100}=210\,\%=2\,100\,\permil$
 }
 \end{esimerkki}
 
@@ -17,21 +17,56 @@ Erityisesti kannattaa huomata, että $100\,\%=1$.
 
 %suhteellinen/absoluuttinen-tarkastelu tähän vai rationaalilukujen sovelluksiin??
 
-Prosenttilaskennan käytännön kysymyksenasettelut jakaantuvat karkeasti neljään ryhmään: %FIXME: JÄREJSTYS
-\numerointilaatikko{Prosenttilaskennan tehtävätyypit}{
-§ ''Kuinka monta prosenttia $a$ on $b$:stä?''
-§ ''Kuinka paljon on $p$\,\% luvusta $a$?''
-§ ''$a$ kasvaa/vähenee $p$ prosenttia.''
-§ ''Kuinka monta prosenttia $a$ on suurempi/pienempi kuin $b$?''
+Prosenttilaskennan käytännön kysymyksenasettelut ja tehtävät voidaan jakaa karkeasti neljään ryhmään, joissa liittyvät toisiinsa alla olevan kaavion mukaisesti, missä $a$, $b$ ja $p$ ovat (mielivaltaisia) lukuja.
+
+\laatikko[Prosenttilaskennan tehtävätyypit]{
+\begin{tabular}{|ccc|}
+\hline 
+\vtop{\hbox{\strut ''Kuinka monta prosenttia}\hbox{\strut $a$ on $b$:stä?''}}  & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka paljon on}\hbox{\strut $p$\,\% luvusta $a$?''}}\\ 
+$\downarrow$ &  & $\downarrow$ \\ 
+\vtop{\hbox{\strut ''Mitä saadaan, kun $a$}\hbox{\strut kasvaa/vähenee $p$ prosenttia?''}} & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka monta prosenttia}\hbox{\strut $a$ on suurempi/pienempi kuin $b$?''}}\\ 
+\hline 
+\end{tabular}
 }
 
-Tehtävät saattavat vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä. Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
+Käsittelemme ensin ylärivin perustapaukset, joiden tekniikat tarvitaan alarivin kysymysten ja tehtävänantojen hallintaan. (Kaavion jäsentely tukee myös kuitenkin sitä, että ensin voitaisiin opetella vasemmalla puolella olevat ja sen jälkeen oikealla puolella olevat -- toisistaan erillään.) Tehtävät saattavat vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä.
+
+Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
+
+%\numerointilaatikko{Prosenttilaskennan tehtävätyypit}{
+%§ ''Kuinka monta prosenttia $a$ on $b$:stä?''
+%§§ ''Kuinka monta prosenttia $a$ on suurempi/pienempi kuin $b$?''
+%§ ''Kuinka paljon on $p$\,\% luvusta $a$?''
+%§§ ''Mitä saadaan, kun $a$ kasvaa/vähenee $p$ prosenttia?''
+%}
 
 \laatikko[Vertailuprosentti]{
-    \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin, mihin verrataan.
+    \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin, mihin verrataan.}
 
 Vertailuprosentilla vastataan siis kysymykseen ''kuinka monta prosenttia luku $a$ on luvusta $b$?'', ja vertailuprosentti saadaan laskutoimituksesta $\frac{a}{b}$, joka tulkitaan lopullista vastausta varten prosentteina eli sadaosina. Jos sadaosien lukeminen suoraan desimaaleista on haastavaa, saadaan prosentit ''näkyviin'' kertomalla desimaaliluku sadalla $100\cdot \frac{a}{b}=p\,\%$. Tämä on kuitenkin vain matemaattinen kikka vastauksen ulkoasun muuttamiseksi -- ei välttämätöntä tehtävän ratkaisun kannalta.
+
+Koska jakolasku ei ole vaihdannainen, on tärkeää varmistaa, että tehtävässä suhde muodostetaan oikein päin. Suhdetta muodostettaessa se, mihin verrataan, toimii jakajana.
+
+\laatikko[Perusarvo]{Lukua, johon verrataan tai jota muutetaan, kutsutaan \termi{perusarvo}{perusarvoksi}.} %FIXME, \todo: epätarkka, epäselvä määritelmä?
+
+\begin{esimerkki}
+Kuinka monta prosenttia
+\alakohdat{
+§ luku $20$ on luvusta $80$?
+§ luku $80$ on luvusta $20$?
 }
+	\begin{esimratk}
+	\alakohdat{
+	§ Perusarvo on tässä tapauksessa $80$ -- siihen verrataan. Lasketaan osamäärä $\frac{20}{80}$ ja esitetään vastaus prosentteina:
+	$$\frac{20}{80}=\frac{2}{8}=\frac{1}{4}=0,25=25\,\%$$
+	§ Nyt perusarvo on $20$, ja siihen verrataan. Lasketaan osamäärä $\frac{80}{20}$ ja esitetään vastaus prosentteina:
+	$$\frac{80}{20}=\frac{8}{2}=4=400\,\%$$
+	}
+	\end{esimratk}
+\end{esimerkki}
+
+%esimerkkiin negatiivisia lukuja
+%pointtina nyt se, että yhtälöt ja sitten, että voidaan käsitelläkummalla tavalla tahansa
 
 \begin{esimerkki}
 \alakohdat{
@@ -50,14 +85,10 @@ Tarmo leikkaa pizzan neljään osaan ja syö näistä kolme.
 	\begin{esimvast}
 	\alakohdat{
 	§ $75$\,\%
-	§$25$\,\%
+	§ $25$\,\%
 	}
 	\end{esimvast}
 \end{esimerkki}
-
-Koska jakolasku ei ole vaihdannainen, on tärkeää varmistaa, että tehtävässä suhde muodostetaan oikein päin. Suhdetta muodostettaessa se, mihin verrataan, toimii jakajana.
-
-\laatikko[Perusarvo]{Lukua, johon verrataan tai jota muutetaan, kutsutaan \termi{perusarvo}{perusarvoksi}.} %FIXME, \todo: epätarkka, epäselvä määritelmä?
 
 \begin{esimerkki}
 Alex ansaitsee kuukaudessa $3\,200$ euroa ja Antero $2\,300$ euroa.
@@ -69,12 +100,12 @@ Alex ansaitsee kuukaudessa $3\,200$ euroa ja Antero $2\,300$ euroa.
 	\begin{esimratk}
 	\alakohdat{
 	§ Lasketaan vertailuprosentti. Perusarvo on tehtävänannon mukaisesti Alexin palkka eli $3\,200$ euroa.
-    }
     $$\frac{2\,300}{3\,200}=0,71875\approx 0,72= 72\,\%$$
     § Lasketaan vertailuprosentti, mutta nyt perusarvona toimiikin Anteron palkka:
     $$\frac{3\,200}{2\,300}\approx1,39=139\,\%$$
+    }
     \end{esimratk}
-    	\begin{esimvast}
+    \begin{esimvast}
     	\alakohdat{
     	§ Anteron tulot ovat $72\,\%$ Alexin tuloista.
     	§ Alexin tulot ovat $139\,\%$ Anteron tuloista.
@@ -83,6 +114,22 @@ Alex ansaitsee kuukaudessa $3\,200$ euroa ja Antero $2\,300$ euroa.
 \end{esimerkki}
 
 Usein perusarvoa ei tunneta, vaan se joudutaan ratkaisemaan yhtälöstä.
+
+\begin{esimerkki}
+Lennonjohtajakoulutukseen Suomessa syksllä 2014 pääsi vain kahdeksan henkilöä. Lehtiotsikoiden mukaan sisäänpääsyprosentti oli $0,67\,\%$. Kuinka monta hakijaa koulutukseen pyrki kaiken kaikkiaan? Huomio vastaustarkkuus. %Kuinka monta hakijaa koulutukseen korkeintaan pystyi olemaan, kun otetaan huomioon lähtötietojen tarkkuus?
+	\begin{esimratk}
+	Sisäänpääsyprosentti tarkoittaa koulutukseen päässeiden määrän suhdetta kaikkien hakijoiden määrään. Merkataan kaikkien hakijoiden määrää $y$:llä. Saadaan yhtälö $\frac{8}{y}=0,67\,\%$.
+	\begin{align*}
+	\frac{8}{y}&=0,67\,\% &&|\cdot y\text{ ja } (y\neq 0) \\
+	8&=0,67\,\%\cdot y && \\
+	8&= 0,0067y && |:0,0067 \\
+	\frac{8}{0,0067}&=y && \\
+	y&=\frac{8}{0,0067} && \\
+	y&\approx 1\,194 \approx 1\,200
+	\end{align*}
+	Koska lähtötiedoilla ei tarkaksi vastaukseksi saatu luonnollista lukua (joka voisi olla hakijoiden lukumäärä), on mainostettu sisäänpääsyprosentti luultavasti pyöristetty. Koska se annetaan merkitsevän numeron tarkkuudella, annetaan myös vastaus kahden merkitsevän numeron tarkkuudella. %Hakijoita saattoi olla jotain väliltä $1\,150 -- 1\,249$.
+	\end{esimratk}
+\end{esimerkki}
 
 \begin{esimerkki}
 Arvonlisävero on on valtiolle perittävä vero, jota maksetaan tuotteista ja palveluista. Arvonlisäverokanta määräytyy tuotteen tyypin mukaan, ja itse veron suuruus (euroina) lasketaan osuutena tuotteen verottomasta hinnasta. Vuonna 2012 yleinen arvonlisävero oli $23$\,\% tuotteen verottomasta hinnasta.
@@ -107,86 +154,6 @@ Arvonlisävero on on valtiolle perittävä vero, jota maksetaan tuotteista ja pa
 	\end{esimvast}
 \end{esimerkki}
 
-Tapaus ''kuinka paljon on $p$\,\% luvusta $a$'' lasketaan kertolaskuna aivan niin kuin aiemmin on tehty kaikilla rationaaliluvuill muutenkin.
-
-\begin{esimerkki}
-\alakohdat{
-§ Jos luku $a$ halutaan kaksinkertaistaa, kerrotaan se kahdella: $2a$.
-§ Jos käsitellään luvusta $x$ vain kolmasosaa, kerrotaan se $\frac{1}{3}$:lla: $\frac{1}{3}x$.
-§ Jos halutaan tietää, mitä on kymmenen prosenttia luvusta $120$, kerrotaan se $10\,\%$:lla: $10\,\%\cdot 120=0,10\cdot 120=12$.
-§ Mitä on $2\,\permil$ luvusta $h$? Se on $2\,\permil h=0,002h$.
-}
-\end{esimerkki}
-
-Kun jokin luku $a$ kasvaa $p\,\%$, täytyy laskea ensin, kuinka paljon on $p\,\%$ kyseisestä luvusta $a$ ja sitten lisätä saatu luku alkuperäiseen $a$:han. Kyseinen lauseke sievenee merkittävästi:
-
-$$a+ p\,\% \cdot a=a+ \frac{p}{100} \cdot a = (1+\frac{p}{100})a $$
-
-Perusarvon $a$ edessä olevaa kerrointa $1+\frac{p}{100}$ sanotaan \termi{prosenttikerroin}{prosenttikertoimeksi}.
-
-Jonkin suureen tai luvun vähentyessä tietyllä prosenttimäärällä toimitaan samoin, mutta suoritetaan vähennyslasku:
-
-$$a \mapsto (1-\frac{p}{100})a$$
-
-
-\begin{esimerkki}
-Tuotteen hintaa korotettiin $15$\,\%, jolloin hinnaksi muodostui $175$\,euroa. Kuinka suuri oli alkuperäinen korottamaton hinta?
-	\begin{esimratk}
-Olkoon alkuperäinen hinta $x$\,euroa. Koska hintaa on korotettu $15$\,\%, on uusi hinta $115$\,\% alkuperäisestä eli alkuperäinen hinta $x$ on kerrottu $1,15$:llä:
-\begin{align*}
-	1,15x	&= 175	&	&|\, \text{Jaetaan} 1,15\text{:llä}.\\
-	x	&= \frac{175}{1,15} \approx 152,17
-\end{align*}
-	\end{esimratk}
-    \begin{esimvast}
-    Tuotteen alkuperäinen hinta oli $152,17$\,euroa.
-    \end{esimvast}
-\end{esimerkki}
-
-Huomaa, että edellisessä esimerkissä saatuun kertoimeen $1,15 = 115\,\%$ oltaisiin päädytty myös laskemalla $x + 0,15x = (1 + 0,15)x = 1,15x$.
-
-%\begin{esimerkki}
-%
-%\end{esimerkki}
-
-\begin{esimerkki}
-Eräs kauppa myy tuotteensa $5$ prosentin alennuksella. Tämä tarkoittaa, että jokaisesta hinnasta vähennetään $\frac{5}{100}$ kertaa tuotteen hinta. Jos tuotteen alkuperäinen hinta on esimerkiksi $100$\,euroa, saadaan $5\,\%$ alennus laskettua $100$\,eurosta kertomalla $100$\,euroa $5\,\%$:lla eli viidellä sadasosalla 
-\[
-\frac{5}{100} \cdot 100\,\text{euroa} = 5\,\text{euroa}
-\]
-Alennettu hinta saadaan vähentämällä alkuperäisestä hinnasta alennus eli $100\,\text{euroa} - 5\,\text{euroa} = 95\,\text{euroa}$.
-
-Jos tuotteen alkuperäinen hinta on $14,50$\,euroa, on alennuksen määrä
-\[
-	\frac{5}{100} \cdot 14,50\,\text{euroa} = 0,725\,\text{euroa}.
-\]
-Alennettu hinta on tällöin $(14,50 - 0,725)\,\text{euroa} \approx 13,78\,\text{euroa}$.
-
-Samaan tulokseen pääsee vielä kätevämmin, kun ajattelee alennuksen määrän sijaan sitä, kuinka suuri osa hinnasta jää jäljelle. Jos alennus on $5\,\%$, jää hinnasta jäljelle $100\,\% - 5\,\% = 95\,\%$. Jos alkuperäinen hinta on $14,50$\,euroa, on alennettu hinta 
-\[
-	\frac{95}{100} \cdot 14,50\,\text{euroa} \approx 13,78\,\text{euroa}.
-\]
-\end{esimerkki}
-
-%\begin{esimerkki}
-%    Prosenttiluvut voidaan esittää myös muilla tavoin.
-%    \alakohdat{
-%        § $6\,\% = \frac{6}{100} = 0,06$
-%        § $48,2\,\% = \frac{48,2}{100} = 0,482$
-%        § $140\,\% = \frac{140}{100} = 1,40$ 
-%    }
-%\end{esimerkki}
-
-\begin{esimerkki}
-Jos sadan euron hintaisen tuotteen hintaa on alennettu $25$\,prosenttia, niin alennettu hinta on $75$\,euroa. Jos sen sijaan alkuperäinen hinta nousee $15$\,prosenttia, niin tuotteen uusi hinta on $115$\,euroa. Perusarvo on molemmissa tapauksissa $100$\,euroa.
-    
-    \begin{center}
-        \includegraphics[scale=.25]{pictures/Kuva13-1-100.pdf}
-        \includegraphics[scale=.25]{pictures/Kuva13-2-75.pdf}
-        \includegraphics[scale=.25]{pictures/Kuva13-3-115.pdf}
-    \end{center}
-\end{esimerkki}
-
 \laatikko[Muutosprosentti]{
 Prosentteja käytetään usein ilmaisemaan suureiden muutoksia, esimerkiksi luku $a$ kasvaa luvuksi $b$. \termi{muutosprosentti}{Muutosprosenttia} laskettaessa muutoksen suuruutta verrataan alkuperäiseen lukuun. Perusarvona on siis alkuperäinen arvo, johon nähden muutos on tapahtunut. Muutosta merkitään yleensä symbolilla $\Delta$ (kreikan kielen suuri \textit{delta}).
     
@@ -203,7 +170,7 @@ Muutosprosentti saadaan suhteellisesta muutoksesta muuttamalla se prosenttiluvuk
 Vesan paino on tammikuussa $68$\,kg ja kesäkuussa $64$\,kg.
     \alakohdat{
 § Mikä on Vesan painon \textit{absoluuttinen muutos}?
-§ Mikä on Vesan painon \textit{muutosprosentti}?
+§ Mikä on Vesan painon \textit{muutosprosentti} (eli suhteellinen muutos)?
 }
     
 	\begin{esimratk}
@@ -236,10 +203,12 @@ Vesan paino on muuttunut $-4$ kiloa, eli Vesa on laihtunut $4$ kiloa.
     \end{esimvast}
 \end{esimerkki}
 
+%virheprosentti (vaaka + jotain muuta, labra?)
+
 \laatikko[Erotusprosentti]{
-    Muutosprosentille läheinen käsite on \termi{erotusprosentti}{erotusprosentti}. Erotusprosentti ilmaisee kuinka monta prosenttia jokin on suurempi tai pienempi kuin joku toinen. Suhteellinen erotus saadaan laskemalla lukujen absoluuttinen erotus $|b-a|$ ja vertaamalla sitä perusarvoon, joka on aina ``kuin''-sanan jälkeinen arvo.
+    Muutosprosentille läheinen käsite on \termi{erotusprosentti}{erotusprosentti}. Erotusprosentti ilmaisee kuinka monta prosenttia jokin on suurempi tai pienempi kuin joku toinen. Suhteellinen erotus saadaan laskemalla lukujen absoluuttinen erotus $|b-a|$ ja vertaamalla sitä perusarvoon, joka on aina kuin-sanan jälkeinen arvo.
     
-Jos luku $a$ on $p\,\%$ pienempi tai suurempi kuin luku $b$, pätee
+Jos luku $a$ on $p\,\%$ pienempi tai suurempi luku $b$, pätee
     \[ p = \frac{|b-a|}{b}. \]
 }
     
@@ -277,16 +246,6 @@ Huomataan, että se mihin verrataan, on merkittävää ja vaikuttaa tulokseen.
 
 Lauseella ''kaksi kertaa enemmän'' tarkoitetaan usein yleiskielessä kaksinkertaista. Matemaattisesti nämä ovat kuitenkin eri asioita. Sekaannuksen vuoksi on syytä olla käyttämättä tällaista ilmaisua. %parempaan paikkaan
 
-\begin{esimerkki}
-Psykoosilääke olantsapiinin yleinen haittavaikutus on painonnousu: yhdellä kolmasosalla käyttäjistä paino nousee kuuden ensimmäisen viikon aikana noin seitsemän prosenttia, keskimäärin $5,5$ kilogrammaa. Mikä on tällaisen kolmannekseen kuuluvan keskimääräisen henkilön massa painonnousun jälkeen?
-	\begin{esimratk}
-Voimme merkata alkuperäistä painoa (massaa) kilogrammoissa $x$:llä. Tehtävänannon perusteella $5,5$ kilogramman absoluuttinen kasvu vastaa $7$\,\%:n suhteellista kasvua. Tästä saadaan yhtälö $5,5\,$kg$=0,07x$, jonka ratkaisuna saadaan $x=\frac{5,5\,\textrm{kg}}{0,07}\approx78,57$\,kg. Lopullinen vastaus saadaan, kun tähän alkuperäiseen massaan lisätään tuo mainittu $5,5$ kilogrammaa: $\frac{5,5\,\textrm{kg}}{0,07}+5,5$\,kg$\approx84,1$. (Huomaa, että tehtävänannon tietoa "yhdellä kolmasosalla" ei tarvittu ratkaisuun.)
-	\end{esimratk}
-    \begin{esimvast}
-    Keskimääräisen henkilön massa painonnousun jälkeen on $84,1$ kilogrammaa.
-    \end{esimvast}
-\end{esimerkki}
-
 \laatikko[Prosenttiyksikkö]{
 \termi{prosenttiyksikkö}{Prosenttiyksikköä} käytetään mittaamaan prosenttilukujen absoluuttista muutosta. Esimerkiksi $3\,\%$ on yhden prosenttiyksikön suurempi kuin $2\,\%$, mutta $50\,\%$ suurempi kuin $2\,\%$. Jos prosenttiluku muuttuu, muutos voidaan ilmaista joko prosentteina (suhteellinen muutos) tai prosenttiyksikköinä (absoluuttinen muutos).
 }
@@ -317,3 +276,97 @@ Prosentin ja prosenttiyksikön merkitysero on keskeinen esimerkiksi talousuutist
 }
 \end{esimvast}
 \end{esimerkki}
+
+Tapaus ''kuinka paljon on $p$\,\% luvusta $a$'' lasketaan kertolaskuna aivan niin kuin aiemmin on tehty kaikilla rationaaliluvuilla muutenkin.
+
+\begin{esimerkki}
+\alakohdat{
+§ Jos luku $a$ halutaan kaksinkertaistaa, kerrotaan se kahdella: $2a$.
+§ Jos käsitellään luvusta $x$ vain kolmasosaa, kerrotaan se $\frac{1}{3}$:lla: $\frac{1}{3}x$.
+§ Jos halutaan tietää, mitä on kymmenen prosenttia luvusta $120$, kerrotaan se $10\,\%$:lla: $10\,\%\cdot 120=0,10\cdot 120=12$.
+§ Mitä on $2\,\permil$ luvusta $h$? Se on $2\,\permil h=0,002h$.
+}
+\end{esimerkki}
+
+\begin{esimerkki}
+ALV
+\end{esimerkki}
+
+\begin{esimerkki}
+Psykoosilääke olantsapiinin yleinen haittavaikutus on painonnousu: yhdellä kolmasosalla käyttäjistä paino (massa) nousee kuuden ensimmäisen viikon aikana noin seitsemän prosenttia, yhteensä keskimäärin $5,5$ kilogrammaa. Mikä on tällaisen kolmannekseen kuuluvan keskimääräisen henkilön massa painonnousun jälkeen?
+	\begin{esimratk}
+Voimme merkata alkuperäistä painoa (massaa) kilogrammoissa $x$:llä. Tehtävänannon perusteella $5,5$ kilogramman absoluuttinen kasvu vastaa $7$\,\%:n suhteellista kasvua. Tästä saadaan yhtälö $5,5\,$kg$=0,07x$, jonka ratkaisuna saadaan $x=\frac{5,5\,\textrm{kg}}{0,07}\approx78,57$\,kg. Lopullinen vastaus saadaan, kun tähän alkuperäiseen massaan lisätään tuo mainittu $5,5$ kilogrammaa: $\frac{5,5\,\textrm{kg}}{0,07}+5,5$\,kg$\approx84,1$. (Huomaa, että tehtävänannon tietoa "yhdellä kolmasosalla" ei tarvittu ratkaisuun.)
+	\end{esimratk}
+    \begin{esimvast}
+    Keskimääräisen henkilön massa painonnousun jälkeen on $84,1$ kilogrammaa.
+    \end{esimvast}
+\end{esimerkki}
+
+Joskus useita kertolaskuja täytyy ketjuttaa.
+
+%esim. Ohut pilvipeite päästää läpi 90 % UV-säteilystä, ja varjossa oleskelu vain puolittaa aurinkoannoksen. laske kokonaisosuus
+% kuinka suuri osa väestöstä... jotainsellaiast.
+
+
+
+Kun jokin luku $a$ kasvaa $p\,\%$, täytyy laskea ensin, kuinka paljon on $p\,\%$ kyseisestä luvusta $a$ ja sitten lisätä saatu luku alkuperäiseen $a$:han. Kyseinen lauseke sievenee erittäin käyttökelpoiseen tulomuotoon:
+
+$$a+ p\,\% \cdot a=a+ \frac{p}{100} \cdot a = (1+\frac{p}{100})a $$
+
+Perusarvon $a$ edessä olevaa kerrointa $1+\frac{p}{100}$ sanotaan \termi{prosenttikerroin}{prosenttikertoimeksi}. Jonkin suureen tai luvun vähentyessä tietyllä prosenttimäärällä toimitaan samoin, mutta suoritetaan vähennyslasku:
+$$a \mapsto (1-\frac{p}{100})a$$
+On tärkeä taito, että prosenttikertoimesta osaa lukea heti, mitä perusarvolle on tehty.
+%laatikko: jos prosenttikerroin on 0<x<1, niin perusarvo on pienentynyt, jos prosenttikerroin on >1, perusarvo on kasvanut
+
+%esim., taulukoi prosentuaalisia muutoksia ja prosentitkertoimia :)
+
+\begin{esimerkki}
+Jos sadan euron hintaisen tuotteen hintaa on alennettu $25$ prosenttia, niin alennettu hinta on $75$ euroa. Jos sen sijaan alkuperäinen hinta nousee $15$ prosenttia, niin tuotteen uusi hinta on $115$ euroa. Perusarvo on molemmissa tapauksissa $100$ euroa.
+    
+    \begin{center}
+        \includegraphics[scale=.25]{pictures/Kuva13-1-100.pdf}
+        \includegraphics[scale=.25]{pictures/Kuva13-2-75.pdf}
+        \includegraphics[scale=.25]{pictures/Kuva13-3-115.pdf}
+    \end{center}
+\end{esimerkki}
+
+\begin{esimerkki}
+Tuotteen hintaa korotettiin $15$\,\%, jolloin hinnaksi muodostui $175$\,euroa. Kuinka suuri oli alkuperäinen korottamaton hinta?
+	\begin{esimratk}
+Olkoon alkuperäinen hinta $x$\,euroa. Koska hintaa on korotettu $15$\,\%, on uusi hinta $115$\,\% alkuperäisestä eli alkuperäinen hinta $x$ on kerrottu $1,15$:llä:
+\begin{align*}
+	1,15x	&= 175	&	&|\, \text{Jaetaan } 1,15\text{:llä}.\\
+	x	&= \frac{175}{1,15} \approx 152,17
+\end{align*}
+	\end{esimratk}
+    \begin{esimvast}
+    Tuotteen alkuperäinen hinta oli $152,17$\,euroa.
+    \end{esimvast}
+\end{esimerkki}
+
+Huomaa, että edellisessä esimerkissä saatuun kertoimeen $1,15 = 115\,\%$ oltaisiin päädytty myös laskemalla $x + 0,15x = (1 + 0,15)x = 1,15x$.
+
+%\begin{esimerkki}
+%
+%\end{esimerkki}
+
+\begin{esimerkki}
+Eräs kauppa myy tuotteensa $5$ prosentin alennuksella. Tämä tarkoittaa, että jokaisesta hinnasta vähennetään $\frac{5}{100}$ kertaa tuotteen hinta. Jos tuotteen alkuperäinen hinta on esimerkiksi $100$\,euroa, saadaan $5\,\%$ alennus laskettua $100$\,eurosta kertomalla $100$\,euroa $5\,\%$:lla eli viidellä sadasosalla 
+\[
+\frac{5}{100} \cdot 100\,\text{euroa} = 5\,\text{euroa}
+\]
+Alennettu hinta saadaan vähentämällä alkuperäisestä hinnasta alennus eli $100\,\text{euroa} - 5\,\text{euroa} = 95\,\text{euroa}$.
+
+Jos tuotteen alkuperäinen hinta on $14,50$\,euroa, on alennuksen määrä
+\[
+	\frac{5}{100} \cdot 14,50\,\text{euroa} = 0,725\,\text{euroa}.
+\]
+Alennettu hinta on tällöin $(14,50 - 0,725)\,\text{euroa} \approx 13,78\,\text{euroa}$.
+
+Samaan tulokseen pääsee vielä kätevämmin, kun ajattelee alennuksen määrän sijaan sitä, kuinka suuri osa hinnasta jää jäljelle. Jos alennus on $5\,\%$, jää hinnasta jäljelle $100\,\% - 5\,\% = 95\,\%$. Jos alkuperäinen hinta on $14,50$\,euroa, on alennettu hinta 
+\[
+	\frac{95}{100} \cdot 14,50\,\text{euroa} \approx 13,78\,\text{euroa}.
+\]
+\end{esimerkki}
+
+%laske esimerkkinä yhteys kahden sovellustyypin välille. a-> 1,34a & (1,34a-a)/a)=0,34
