@@ -22,21 +22,29 @@ Erityisesti kannattaa huomata, että $100\,\%=1$.
 %\end{esimerkki}
 %suhteellinen/absoluuttinen-tarkastelu tähän vai rationaalilukujen sovelluksiin??
 
-Prosenttilaskennan käytännön kysymyksenasettelut ja tehtävät voidaan jakaa karkeasti neljään ryhmään, jotka liittyvät toisiinsa seuraavalla sivulla olevan kaavion mukaisesti, missä $a$, $b$ ja $p$ ovat (mielivaltaisia) lukuja.
+Prosenttilaskennan käytännön kysymyksenasettelut ja tehtävät voidaan jakaa karkeasti neljään ryhmään. Tehtävänantojen peruskysymykset liittyvät toisiinsa seuraavalla sivulla olevan kaavion mukaisesti, missä $a$, $b$ ja $p$ ovat (mielivaltaisia) lukuja. Toisessa kaaviossa on esitetty samat kysymykset formalisoituina.
 \newpage
 \laatikko[Prosenttilaskennan tehtävätyypit]{
 \begin{tabular}{|ccc|}
 \hline 
-\vtop{\hbox{\strut ''Kuinka monta prosenttia}\hbox{\strut $a$ on $b$:stä?''}}  & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka paljon on}\hbox{\strut $p$\,\% luvusta $a$?''}}\\ 
+ & & \\
+\vtop{\hbox{\strut ''Kuinka monta prosenttia}\hbox{\strut $a$ on $b$:stä?''}}  & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka paljon ($a$) on}\hbox{\strut $p$\,\% luvusta $b$?''}}\\ 
 $\downarrow$ &  & $\downarrow$ \\ 
-\vtop{\hbox{\strut ''Mitä saadaan, kun $a$}\hbox{\strut kasvaa/vähenee $p$ prosenttia?''}} & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka monta prosenttia}\hbox{\strut $a$ on suurempi/pienempi kuin $b$?''}}\\ 
+\vtop{\hbox{\strut ''Mitä ($b$) saadaan, kun $a$}\hbox{\strut kasvaa/vähenee $p$ prosenttia?''}} & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka monta prosenttia}\hbox{\strut $a$ on suurempi/pienempi kuin $b$?''}}\\ 
+& & \\
+\hline
+ & & \\
+\vtop{\hbox{\strut $\dfrac{a}{b}=p\,\%$}}  & $\rightleftarrows$ & \vtop{\hbox{\strut $p\,\%\cdot b=a $}}\\ 
+$\downarrow$ &  & $\downarrow$ \\ 
+\vtop{\hbox{\strut $\left(1\pm \dfrac{p}{100}\right)a=b$}} & $\rightleftarrows$ & \vtop{\hbox{\strut $\dfrac{|a-b|}{b}=p\,\%$}}\\ 
+ & &\\
 \hline 
 \end{tabular}
 }
-%nuolten merkitys
-Käsittelemme ensin ylärivin perustapaukset, joiden tekniikat tarvitaan alarivin kysymysten ja tehtävänantojen hallintaan. (Kaavion jäsentely tukee myös kuitenkin sitä, että ensin voitaisiin opetella vasemmalla puolella olevat ja sen jälkeen oikealla puolella olevat -- toisistaan erillään.) Tehtävät saattavat vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä.
 
-Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
+Ongelmat, joiden välillä on nuoli molempiin suuntiin, voidaan esittää ja käsitellä molemmin tavoin -- tehtävänasettelu voidaan esittää toisenlaisena, vaikka ratkotaankin edelleen samaaongelmaa. Ylärivin kaksi tapausta ovat yksinkertaisimmat tehtävänannot, ja ne käsitellään ensin. Alarivin kysymyksenasettelun formalisointi (lausekkeiksi ja yhtälöksi kirjoittaminen) vaatii ylärivin kysymysten tekniikkaa. (Kaavion jäsentely tukee myös kuitenkin sitä, että ensin voitaisiin opetella vasemmalla puolella olevat ja sen jälkeen erillisesti oikealla puolella olevat -- tai toisinpäin.)
+
+Tehtävän ratakisu saattaa vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä. Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
 
 \laatikko[Vertailuprosentti]{
     \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin, mihin verrataan.}
@@ -116,7 +124,29 @@ Alex ansaitsee kuukaudessa $3\,200$ euroa ja Antero $2\,300$ euroa.
   \end{esimvast}
 \end{esimerkki}
 
-Usein perusarvoa ei tunneta, vaan se joudutaan ratkaisemaan yhtälöstä. %pidä aina selvänä, ''p prosenttia... MISTÄ? Prosentteja ei käytetät yksinään, vaan ne ovat aina riippuvaisia jostain absoluuttisesta suureesta''
+Tapaus ''kuinka paljon on $p$\,\% luvusta $a$'' lasketaan kertolaskuna aivan niin kuin aiemmin on tehty kaikilla rationaaliluvuilla muutenkin.
+
+\begin{esimerkki}
+\alakohdat{
+§ Jos luku $a$ halutaan kaksinkertaistaa, kerrotaan se kahdella: $2a$.
+§ Jos käsitellään luvusta $x$ vain kolmasosaa, kerrotaan se $\frac{1}{3}$:lla: $\frac{1}{3}x$.
+§ Jos halutaan tietää, mitä on kymmenen prosenttia luvusta $120$, kerrotaan se $10\,\%$:lla: $10\,\%\cdot 120=0,10\cdot 120=12$.
+§ $2\,\permil$ luvusta $h$ on $2\,\permil h=0,002h$.
+}
+\end{esimerkki}
+
+\begin{esimerkki}
+alennetaan prosentuaalisesti.... kuinka monta euroa tjsp. aleni? Mikä on uusi?
+\end{esimerkki}
+
+Joskus useita kertolaskuja täytyy ketjuttaa.
+
+%esim. Ohut pilvipeite päästää läpi 90 % UV-säteilystä, ja varjossa oleskelu vain puolittaa aurinkoannoksen. laske kokonaisosuus
+% kuinka suuri osa väestöstä... jotainsellaiast.
+
+Usein perusarvoa ei tunneta, vaan se joudutaan ratkaisemaan yhtälöstä.
+
+%pidä aina selvänä, ''p prosenttia... MISTÄ? Prosentteja ei käytetät yksinään, vaan ne ovat aina riippuvaisia jostain absoluuttisesta suureesta''
 
 \begin{esimerkki}
 Lennonjohtajakoulutukseen Suomessa syksllä 2014 pääsi vain kahdeksan henkilöä. Lehtiotsikoiden mukaan sisäänpääsyprosentti oli $0,67\,\%$. Kuinka monta hakijaa koulutukseen pyrki kaiken kaikkiaan? Huomio vastaustarkkuus. %Kuinka monta hakijaa koulutukseen korkeintaan pystyi olemaan, kun otetaan huomioon lähtötietojen tarkkuus?
@@ -166,6 +196,20 @@ Arvonlisävero on on valtiolle perittävä vero, jota maksetaan tuotteista ja pa
 %		$4,5$\,\% aikuisista.
 %		\end{esimvast}
 %\end{esimerkki}
+
+%TAPA 1, TAPA 2 jne.
+
+%esimerkki pulssioksimetrista prosenttiyksikköön, happisaturaatio, rajat
+
+\begin{esimerkki}
+Psykoosilääke olantsapiinin yleinen haittavaikutus on painonnousu: yhdellä kolmasosalla käyttäjistä paino (massa) nousee kuuden ensimmäisen viikon aikana noin seitsemän prosenttia, yhteensä keskimäärin $5,5$ kilogrammaa. Mikä on tällaisen kolmannekseen kuuluvan keskimääräisen henkilön massa painonnousun jälkeen?
+	\begin{esimratk}
+Voimme merkata alkuperäistä painoa (massaa) kilogrammoissa $x$:llä. Tehtävänannon perusteella $5,5$ kilogramman absoluuttinen kasvu vastaa $7$\,\%:n suhteellista kasvua. Tästä saadaan yhtälö $5,5\,$kg$=0,07x$, jonka ratkaisuna saadaan $x=\frac{5,5\,\textrm{kg}}{0,07}\approx78,57$\,kg. Lopullinen vastaus saadaan, kun tähän alkuperäiseen massaan lisätään tuo mainittu $5,5$ kilogrammaa: $\frac{5,5\,\textrm{kg}}{0,07}+5,5$\,kg$\approx84,1$. (Huomaa, että tehtävänannon tietoa "yhdellä kolmasosalla" ei tarvittu ratkaisuun.)
+	\end{esimratk}
+    \begin{esimvast}
+    Keskimääräisen henkilön massa painonnousun jälkeen on $84,1$ kilogrammaa.
+    \end{esimvast}
+\end{esimerkki}
 
 %--------------- sovellukset vvvv ----------------------
 
@@ -291,37 +335,6 @@ Prosentin ja prosenttiyksikön merkitysero on keskeinen esimerkiksi talousuutist
 }
 \end{esimvast}
 \end{esimerkki}
-
-Tapaus ''kuinka paljon on $p$\,\% luvusta $a$'' lasketaan kertolaskuna aivan niin kuin aiemmin on tehty kaikilla rationaaliluvuilla muutenkin.
-
-\begin{esimerkki}
-\alakohdat{
-§ Jos luku $a$ halutaan kaksinkertaistaa, kerrotaan se kahdella: $2a$.
-§ Jos käsitellään luvusta $x$ vain kolmasosaa, kerrotaan se $\frac{1}{3}$:lla: $\frac{1}{3}x$.
-§ Jos halutaan tietää, mitä on kymmenen prosenttia luvusta $120$, kerrotaan se $10\,\%$:lla: $10\,\%\cdot 120=0,10\cdot 120=12$.
-§ Mitä on $2\,\permil$ luvusta $h$? Se on $2\,\permil h=0,002h$.
-}
-\end{esimerkki}
-
-%\begin{esimerkki}
-%ALV
-%\end{esimerkki}
-
-\begin{esimerkki}
-Psykoosilääke olantsapiinin yleinen haittavaikutus on painonnousu: yhdellä kolmasosalla käyttäjistä paino (massa) nousee kuuden ensimmäisen viikon aikana noin seitsemän prosenttia, yhteensä keskimäärin $5,5$ kilogrammaa. Mikä on tällaisen kolmannekseen kuuluvan keskimääräisen henkilön massa painonnousun jälkeen?
-	\begin{esimratk}
-Voimme merkata alkuperäistä painoa (massaa) kilogrammoissa $x$:llä. Tehtävänannon perusteella $5,5$ kilogramman absoluuttinen kasvu vastaa $7$\,\%:n suhteellista kasvua. Tästä saadaan yhtälö $5,5\,$kg$=0,07x$, jonka ratkaisuna saadaan $x=\frac{5,5\,\textrm{kg}}{0,07}\approx78,57$\,kg. Lopullinen vastaus saadaan, kun tähän alkuperäiseen massaan lisätään tuo mainittu $5,5$ kilogrammaa: $\frac{5,5\,\textrm{kg}}{0,07}+5,5$\,kg$\approx84,1$. (Huomaa, että tehtävänannon tietoa "yhdellä kolmasosalla" ei tarvittu ratkaisuun.)
-	\end{esimratk}
-    \begin{esimvast}
-    Keskimääräisen henkilön massa painonnousun jälkeen on $84,1$ kilogrammaa.
-    \end{esimvast}
-\end{esimerkki}
-
-Joskus useita kertolaskuja täytyy ketjuttaa.
-
-%esim. Ohut pilvipeite päästää läpi 90 % UV-säteilystä, ja varjossa oleskelu vain puolittaa aurinkoannoksen. laske kokonaisosuus
-% kuinka suuri osa väestöstä... jotainsellaiast.
-
 
 
 Kun jokin luku $a$ kasvaa $p\,\%$, täytyy laskea ensin, kuinka paljon on $p\,\%$ kyseisestä luvusta $a$ ja sitten lisätä saatu luku alkuperäiseen $a$:han. Kyseinen lauseke sievenee erittäin käyttökelpoiseen tulomuotoon:
