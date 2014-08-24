@@ -33,7 +33,6 @@ Seuraavat yhtälöt ovat kaikki ensimmäisen asteen yhtälöitä:
 %		tuntemattoman $x$ ratkaisemiseksi. Yhtälön ratkaisu on $x=-18$.
 %	\end{description}
 
-
 Kaikki muotoa $ax+b=cx+d$ olevat yhtälöt, joissa $a \neq c$, ovat ensimmäisen asteen yhtälöitä. Tämä voidaan todistaa seuraavasti:
 
 \begin{align*}
@@ -197,55 +196,55 @@ Jos siis käydään kuudessa laitteessa (eli ostetaan kuusi laitelippua), on sam
 
 %esim. millä parametrin $a$ arvolla yhtlöllä on ratkaisuja
 
-\section*{$\star$ Yhtälöpari}
-
-Joissakin tilanteissa ratkaistavana on useampi tuntematon. Kuitenkin yhdestä yhtälöstä voi ratkaista korkeintaan yhden tuntemattoman kerrallaan, joten ratkaistaessa kahta tuntematonta tarvitaan kaksi yhtälöä. Yleisesti:
-
-\laatikko[Useita tuntemattomia ja yhtälöitä]{Jos ratkaistaan $n$ tuntematonta, tähän tarvitaan vähintään $n$ toisistaan riippumatonta yhtälöä.} % onko riippumattomuuden käsite esitelty? -NVI 6.7.14
-
-Jos halutaan esimerkiksi selvittää, mitkä luvut $x$ ja $y$ toteuttavat sekä yhtälön $2x=y+5$ ja toisaalta 
-myös yhtälön $x-10=4y+2$, ratkaistaan nämä molemmat niin sanottuna \termi{yhtälöpari}{yhtälöparina}. Yleensä samanaikaisesti ratkottavat yhtälöt merkitään allekain seuraavasti:
-$$\left\{    
-    \begin{array}{rcl}
-        2x&=&y+5 \\
-        x-10&=&4y+2 \\
-    \end{array}
-    \right.$$
-
-Yleinen, aina toimiva ratkaisumenetelmä yhtälöpareille on ratkaista jommasta kummasta yhtälöstä erikseen toinen tuntematon ja sijoitetaan saatu ratkaisu toiseen yhtälöön, jolloin yksi \termi{tuntemattoman eliminointi}{tuntematon eliminoituu} eli poistuu, jolloin ongelma yksinkertaistuu yhden tuntemattoman ratkaisuksi.
-
-\begin{esimerkki}
-Ratkaise yhtälöpari $2x=y+5$; $x-10=4y+2$. Ratkaistaan molemmista yhtälöistä muuttuja $x$. 
-	
-	\begin{align*}
-	    2x &= y+5 \\
-	    x &= \frac{y+5}{2}
-	\end{align*}
-	\begin{align*}
-	    x-10 &= 4y+2 \\
-	    x &= 4y+12
-	\end{align*}
-	
-Nyt yhtäsuuruusrelaation transitiivisuuden perusteella, koska $\frac{y+5}{2}=x$ ja toisaalta $x=4y+12$, saadaan yhtälö $\frac{y+5}{2}=4y+12$, joka osataan ratkaista.
-
-\begin{align*}
-	\frac{y+5}{2} &= 4y+12 \\
-	y+5 &= 2(4y+12)\\
-	y+5 &= 8y+24 \\
-	y -8y&= 24-5 \\
-	-7y &= 19 \\
-	y=-\frac{19}{7}
-\end{align*}
-
-Nyt saatu $y$:n arvo voidaan sijoittaa jompaan kumpaan alkuperäiseen yhtälöön, esimerkiksi yhtälöön $2x=y+5$, ja tästä saadaan ratkaistua myös $x$.
-
-\begin{align*}
-      2x &= -\frac{19}{7}+5\\
-      2x &= \frac{16}{7} \\
-      x &= -\frac{8}{7}
-\end{align*}
-
-Siis yhtälöparin ratkaisu on $x=\frac{8}{7}$ ja $y=-\frac{19}{7}$. Sijoittamalla voidaan tarkistaa, että luvut todellakin toteuttavat molemmat alkuperäiset yhtälö..
-\end{esimerkki} %TEHTÄVIÄ JA SOVELLUKSIA!
-
-Yhtälöparien ja yhtälöryhmien ratkaisuun ja geometriseen merkitykseen tutustutaan tarkemmin MAA4-kurssilla.
+%\section*{$\star$ Yhtälöpari}
+%
+%Joissakin tilanteissa ratkaistavana on useampi tuntematon. Kuitenkin yhdestä yhtälöstä voi ratkaista korkeintaan yhden tuntemattoman kerrallaan, joten ratkaistaessa kahta tuntematonta tarvitaan kaksi yhtälöä. Yleisesti:
+%
+%\laatikko[Useita tuntemattomia ja yhtälöitä]{Jos ratkaistaan $n$ tuntematonta, tähän tarvitaan vähintään $n$ toisistaan riippumatonta yhtälöä.} % onko riippumattomuuden käsite esitelty? -NVI 6.7.14
+%
+%Jos halutaan esimerkiksi selvittää, mitkä luvut $x$ ja $y$ toteuttavat sekä yhtälön $2x=y+5$ ja toisaalta 
+%myös yhtälön $x-10=4y+2$, ratkaistaan nämä molemmat niin sanottuna \termi{yhtälöpari}{yhtälöparina}. Yleensä samanaikaisesti ratkottavat yhtälöt merkitään allekain seuraavasti:
+%$$\left\{    
+%    \begin{array}{rcl}
+%        2x&=&y+5 \\
+%        x-10&=&4y+2 \\
+%    \end{array}
+%    \right.$$
+%
+%Yleinen, aina toimiva ratkaisumenetelmä yhtälöpareille on ratkaista jommasta kummasta yhtälöstä erikseen toinen tuntematon ja sijoitetaan saatu ratkaisu toiseen yhtälöön, jolloin yksi \termi{tuntemattoman eliminointi}{tuntematon eliminoituu} eli poistuu, jolloin ongelma yksinkertaistuu yhden tuntemattoman ratkaisuksi.
+%
+%\begin{esimerkki}
+%Ratkaise yhtälöpari $2x=y+5$; $x-10=4y+2$. Ratkaistaan molemmista yhtälöistä muuttuja $x$. 
+%	
+%	\begin{align*}
+%	    2x &= y+5 \\
+%	    x &= \frac{y+5}{2}
+%	\end{align*}
+%	\begin{align*}
+%	    x-10 &= 4y+2 \\
+%	    x &= 4y+12
+%	\end{align*}
+%	
+%Nyt yhtäsuuruusrelaation transitiivisuuden perusteella, koska $\frac{y+5}{2}=x$ ja toisaalta $x=4y+12$, saadaan yhtälö $\frac{y+5}{2}=4y+12$, joka osataan ratkaista.
+%
+%\begin{align*}
+%	\frac{y+5}{2} &= 4y+12 \\
+%	y+5 &= 2(4y+12)\\
+%	y+5 &= 8y+24 \\
+%	y -8y&= 24-5 \\
+%	-7y &= 19 \\
+%	y=-\frac{19}{7}
+%\end{align*}
+%
+%Nyt saatu $y$:n arvo voidaan sijoittaa jompaan kumpaan alkuperäiseen yhtälöön, esimerkiksi yhtälöön $2x=y+5$, ja tästä saadaan ratkaistua myös $x$.
+%
+%\begin{align*}
+%      2x &= -\frac{19}{7}+5\\
+%      2x &= \frac{16}{7} \\
+%      x &= -\frac{8}{7}
+%\end{align*}
+%
+%Siis yhtälöparin ratkaisu on $x=\frac{8}{7}$ ja $y=-\frac{19}{7}$. Sijoittamalla voidaan tarkistaa, että luvut todellakin toteuttavat molemmat alkuperäiset yhtälö..
+%\end{esimerkki} %TEHTÄVIÄ JA SOVELLUKSIA!
+%
+%Yhtälöparien ja yhtälöryhmien ratkaisuun ja geometriseen merkitykseen tutustutaan tarkemmin MAA4-kurssilla.
