@@ -30,28 +30,27 @@ Prosenttilaskennan käytännön kysymyksenasettelut ja tehtävät voidaan jakaa 
  & & \\
 \vtop{\hbox{\strut ''Kuinka monta prosenttia ($p$)}\hbox{\strut luku $a$ on $b$:stä?''}}  & $\rightleftarrows$ & \vtop{\hbox{\strut ''Kuinka paljon ($a$) on}\hbox{\strut $p$\,\% luvusta $b$?''}}\\ 
 $\downarrow$ &  & $\downarrow$ \\ 
-\vtop{\hbox{\strut ''Kuinka monta prosenttia ($p$)}\hbox{\strut luku $a$ on suurempi/pienempi kuin $b$?''}} & $\rightleftarrows$ & \vtop{\hbox{\strut ''Mitä ($b$) saadaan, kun $a$}\hbox{\strut kasvaa/vähenee $p$ prosenttia?''}}  \\ 
+\vtop{\hbox{\strut ''Kuinka monta prosenttia ($p$)}\hbox{\strut luku $a$ on suurempi/pienempi kuin $b$?''}} & $\rightleftarrows$ & \vtop{\hbox{\strut ''Mitä ($a$) saadaan, kun $b$}\hbox{\strut kasvaa/vähenee $p$ prosenttia?''}}  \\ 
 & & \\
 \hline
  & & \\
 \vtop{\hbox{\strut $\dfrac{a}{b}=p\,\%$}}  & $\rightleftarrows$ & \vtop{\hbox{\strut $p\,\%\cdot b=a $}}\\ 
 $\downarrow$ &  & $\downarrow$ \\ 
-\vtop{\hbox{\strut $\dfrac{|a-b|}{b}=p\,\%$}} & $\rightleftarrows$ & \vtop{\hbox{\strut $\left(1\pm \dfrac{p}{100}\right)a=b$}}\\ 
+\vtop{\hbox{\strut $\dfrac{a-b}{b}=p\,\%$}} & $\rightleftarrows$ & \vtop{\hbox{\strut $\left(1\pm p\,\% \right)b=a$}}\\ 
  & &\\
 \hline 
 \end{tabular}
 }
 
-Ongelmat, joiden välillä on nuoli molempiin suuntiin, voidaan esittää ja käsitellä molemmin tavoin -- tehtävänasettelu voidaan esittää toisenlaisena, vaikka ratkotaankin edelleen samaa ongelmaa. Ylärivin kaksi tapausta ovat yksinkertaisimmat tehtävänannot, ja ne käsitellään ensin. Alarivin kysymyksenasettelun formalisointi (lausekkeiksi ja yhtälöksi kirjoittaminen) vaatii ylärivin kysymysten tekniikkaa. (Kaavion jäsentely tukee myös kuitenkin sitä, että ensin voitaisiin opetella vasemmalla puolella olevat ja sen jälkeen erillisesti oikealla puolella olevat -- tai toisinpäin.)
+Ongelmat, joiden välillä on nuoli molempiin suuntiin, ovat matemaattisesti yhtäläisiä eli ekvivalentteja. Ne voidaan esittää ja käsitellä molemmin tavoin, vaikka ratkotaankin edelleen samaa ongelmaa. Ylärivin kaksi tapausta ovat yksinkertaisimmat tehtävänannot, ja ne käsitellään ensin. Alarivin kysymyksenasetteluiden formalisointi (lausekkeiksi ja yhtälöksi kirjoittaminen) vaatii ylärivin kysymysten tekniikkaa. (Kaavion jäsentely tukee myös kuitenkin sitä, että ensin voitaisiin opetella vasemmalla puolella olevat ja sen jälkeen erillisesti oikealla puolella olevat tehtävätyypit -- tai toisinpäin.)
 
-Tehtävän ratkaisu saattaa vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä. Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
+Tehtävien ratkaisu saattaa vaatia edellä mainittujen tilanteiden yhdistelemistä ja tuntemattoman ratkaisemista yhtälöstä. Erilaisten suhteiden prosentuaalisille ilmaisuille on vakiintunut omat nimensä, jotka kannattaa opetella.
 
-\laatikko[Vertailuprosentti]{
-    \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin, mihin verrataan.}
+\laatikko[Vertailuprosentti ja perusarvo]{
+    \termi{vertailuprosentti}{Vertailuprosentilla} tarkoitetaan sitä, kuinka paljon jokin on jostakin, mihin verrataan.
+    Lukua, johon verrataan tai jota muutetaan, kutsutaan \termi{perusarvo}{perusarvoksi}.}
 
 Vertailuprosentilla vastataan siis kysymykseen ''kuinka monta prosenttia luku $a$ on luvusta $b$?'', ja vertailuprosentti saadaan laskutoimituksesta $\frac{a}{b}$, joka tulkitaan lopullista vastausta varten prosentteina eli sadaosina. Koska jakolasku ei ole vaihdannainen, on tärkeää varmistaa, että tehtävässä suhde muodostetaan oikein päin. Suhdetta muodostettaessa se, mihin verrataan, toimii jakajana.
-
-\laatikko[Perusarvo]{Lukua, johon verrataan tai jota muutetaan, kutsutaan \termi{perusarvo}{perusarvoksi}.} %FIXME, \todo: epätarkka, epäselvä määritelmä?
 
 \begin{esimerkki}
 Kuinka monta prosenttia
@@ -80,13 +79,11 @@ Kuinka monta prosenttia
 % kaksi esimerkkiä liuossekoituksista, kuivauksesta yms.
 
 \begin{esimerkki}
-\alakohdat{
 Tarmo leikkaa pizzan neljään osaan ja syö näistä kolme.
-
+\alakohdat{
 § Kuinka monta prosenttia pizzasta Tarmo syö?
 § Kuinka monta prosenttia pizzasta jää jäljelle?
 }
-
 	\begin{esimratk}
 \alakohdat{
 § Tarmo syö $3$ palaa neljästä eli $\frac{3}{4} = 0,75$. Tämä voidaan muuttaa prosenttiluvuksi ilmaisemalla luku sadasosina.  $0,75 \cdot 100 = 75$. Siis $0,75=75\,\%$, ja Tarmo söi $75\,\%$ pizzasta.
@@ -135,9 +132,9 @@ Tapaus ''kuinka paljon on $p$\,\% luvusta $a$'' lasketaan kertolaskuna aivan nii
 }
 \end{esimerkki}
 
-\begin{esimerkki}
-alennetaan prosentuaalisesti.... kuinka monta euroa tjsp. aleni? Mikä on uusi?
-\end{esimerkki}
+%\begin{esimerkki}
+%alennetaan prosentuaalisesti.... kuinka monta euroa tjsp. aleni? Mikä on uusi?
+%\end{esimerkki}
 
 Joskus useita kertolaskuja täytyy ketjuttaa.
 
@@ -199,8 +196,6 @@ Arvonlisävero on on valtiolle perittävä vero, jota maksetaan tuotteista ja pa
 
 %TAPA 1, TAPA 2 jne.
 
-%esimerkki pulssioksimetrista prosenttiyksikköön, happisaturaatio, rajat
-
 \begin{esimerkki}
 Psykoosilääke olantsapiinin yleinen haittavaikutus on painonnousu: yhdellä kolmasosalla käyttäjistä paino (massa) nousee kuuden ensimmäisen viikon aikana noin seitsemän prosenttia, yhteensä keskimäärin $5,5$ kilogrammaa. Mikä on tällaisen kolmannekseen kuuluvan keskimääräisen henkilön massa painonnousun jälkeen?
 	\begin{esimratk}
@@ -212,6 +207,8 @@ Voimme merkata alkuperäistä painoa (massaa) kilogrammoissa $x$:llä. Tehtävä
 \end{esimerkki}
 
 %--------------- sovellukset vvvv ----------------------
+
+%esimerkki,että jos laittaa väärinpäin, tulee negatiivista, MUTTA SE EI HAITTAA :))
 
 \laatikko[Muutosprosentti]{
 Prosentteja käytetään usein ilmaisemaan suureiden muutoksia, esimerkiksi luku $a$ kasvaa luvuksi $b$. \termi{muutosprosentti}{Muutosprosenttia} laskettaessa muutoksen suuruutta verrataan alkuperäiseen lukuun. Perusarvona on siis alkuperäinen arvo, johon nähden muutos on tapahtunut. Muutosta merkitään yleensä symbolilla $\Delta$ (kreikan kielen suuri \textit{delta}).
@@ -300,8 +297,7 @@ Miniluumutomaatit maksavat normaalisti $4,80$ euroa kilolta. Nyt ne ovat kuitenk
      
 Huomataan, että se mihin verrataan, on merkittävää ja vaikuttaa tulokseen.
       \end{esimvast}
-     \end{esimerkki}
-
+\end{esimerkki}
 
 Lauseella ''kaksi kertaa enemmän'' tarkoitetaan usein yleiskielessä kaksinkertaista. Matemaattisesti nämä ovat kuitenkin eri asioita. Sekaannuksen vuoksi on syytä olla käyttämättä tällaista ilmaisua. %parempaan paikkaan
 
@@ -327,14 +323,15 @@ Prosentin ja prosenttiyksikön merkitysero on keskeinen esimerkiksi talousuutist
 	§ Tuotteen markkinaosuuden muutos prosenttiyksiköinä $15\,\%-10\,\%=5\,\%$
 	}
     \end{esimratk}
-
-\begin{esimvast}
+	\begin{esimvast}
 \alakohdat{
 § $50$ prosenttia
 § $5$ prosenttiyksikköä
 }
-\end{esimvast}
+	\end{esimvast}
 \end{esimerkki}
+
+%esimerkki pulssioksimetrista prosenttiyksikköön, happisaturaatio, rajat
 
 
 Kun jokin luku $a$ kasvaa $p\,\%$, täytyy laskea ensin, kuinka paljon on $p\,\%$ kyseisestä luvusta $a$ ja sitten lisätä saatu luku alkuperäiseen $a$:han. Kyseinen lauseke sievenee erittäin käyttökelpoiseen tulomuotoon:
