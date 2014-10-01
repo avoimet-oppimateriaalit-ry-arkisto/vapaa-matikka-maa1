@@ -1,24 +1,53 @@
-Mitä tahansa lukua tai kirjoitettua laskutoimitusta (kuten $9$ tai $\frac{x}{3}-9$) kutsutaan \termi{lauseke}{lausekkeeksi}. Lausekkeen \termi{arvo}{arvoksi} kutsutaan sitä lukua, joka saadaan, kun lausekkeen laskutoimitukset lasketaan. Esimerkiksi lausekkeen $5-3$ arvo on $2$. Samoin lausekkeen $2$ arvo on myös $2$.
+Tässä luvussa tutustumme lisää laskutoimitusten terminologiaan ja siihen, miten laskutoimituksia ja muuta työskentelyä voidaan usein helpottaa kirjoittamalla lasku eri tavalla.
 
-Lausekkeiden sanotaan olevan yhtäsuuria, kun niiden arvot ovat yhtä suuria. Tällöin voidaan merkitä esimerkiksi $2+3=10:2$, koska lausekkeen $2+3$ arvo on $5$ ja lausekkeen $10:2$ arvo on myös $5$.
+Mitä tahansa lukua tai kirjoitettua laskutoimitusta kutsutaan \termi{lauseke}{lausekkeeksi}. Lausekkeen \termi{arvo}{arvoksi} kutsutaan sitä lukua, joka saadaan, kun lausekkeen laskutoimitukset lasketaan.
 
-Usein matematikkassa on tapana, että luku ilmaistaan kirjoittamalla lauseke, jonka arvo kyseinen luku on. Tällöin tietyn luvun voi itse asiassa ilmaista hyvin monella eri tavalla. Esimerkiksi seuraavat merkinnät tarkoittavat kaikki samaa lukua:
+\begin{esimerkki}
+\alakohdat{
+§ Lausekkeen $2$ arvo on $2$.
+§ Lausekkeen $5-3$ arvo on $2$.
+§ Lausekkeen $\frac{x}{3}-9$ arvo ei ole vakio, vaan sen arvo riippuu muuttujasta $x$.
+}
+\end{esimerkki}
 
+Lausekkeiden sanotaan olevan yhtäsuuria, kun niiden arvot ovat yhtä suuria.
+
+\begin{esimerkki}
+Koska lausekkeen $2+4$ arvo on $6$ ja myös lausekkeen $12:2$ arvo on myös $6$, voidaan merkitä $2+4=12:2$. (Tämä vastaa yhtäsuuruusrelaation transitiivisuutta: Jos $2+4=6$ ja $12:2=6$, niin $2+4=12:2$ seuraa.)
+\end{esimerkki}
+
+On erittäin hyödyllistä huomata, että tietyn luvun voi itse asiassa ilmaista erilaisten lausekkeiden avulla äärettömän monella eri tavalla. Koska eri lausekkeiden välillä, joilla on sama arvo, on vain kosmeettista eroa, voidaan tilanteesta riippumatta mikä tahansa samanarvoinen lauseke \termi{sijoitus}{sijoittaa} toisen paikalle.
+
+\begin{esimerkki}
+%\alakohdat{
+%§ Seuraavat merkinnät tarkoittavat kaikki samaa lukua:
 \begin{align*}
-                & 42 \\ & -(-42) \\ & 6 \cdot 7 \\ & (50-29) \cdot 2
+                &42 \\ &-(-42) \\ &6 \cdot 7 \\ &(50-29) \cdot 2
 \end{align*}
 
-Niinpä matematiikassa voi luvun $42$ paikalle kirjoittaa merkinnän $(50-29)\cdot 2$, sillä se tarkoittaa samaa lukua kuin merkintä $42$.
+Niinpä luvun $42$ paikalle voi aina, poikkeuksetta ja kaikissa tilanteissa kirjoittaa esimerkiksi merkinnän $(50-29)\cdot 2$, sillä se tarkoittaa samaa lukua kuin merkintä $42$.
+%§ Koska luku $12$ voidaan kirjoittaa tekijöidensä avulla kertolaskuna $3\cdot 4$, voidaan jakolaskussa $\frac{12}{4}$ tehdä sijoitus $12=3 \cdot 4$ ja kirjoittaa se uudelleen muodossa $\frac{3\cdot 4}{4}$. Tämä 
+%yhtälöiden yksinkertaistaminen, supistettavuuden osoittaminen
+%}
+\end{esimerkki}
 
-Kun lauseke muodostuu yhteenlaskusta, käytetään nimitystä \termi{termi}{termi} tarkoittamaan yhtä yhteenlaskettavaa osaa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona tai se voi myös olla vain yksittäinen luku. Esimerkiksi lausekkeen $-4\sqrt{2}ax^2+ax+1$ termit ovat $-4\sqrt{2}ax^2$, $ax$ ja $1$.
+Kun lauseke muodostuu yhteenlaskusta, käytetään nimitystä \termi{termi}{termi} tarkoittamaan yhtä yhteenlaskettavaa osaa lausekkeesta. Termissä voi olla yhdistelmä luvuista, vakioista ja muuttujista tulona tai se voi myös olla vain yksittäinen luku. Muista, että kaikki vähennyslaskut voi kirjoittaa yhteenlaskuina.
 
-Usein lausekkeessa esiintyy myös kirjaimia. Niillä merkitään lukuja, joiden arvoa ei tiedetä tai joiden arvo voi vaihdella tilanteesta riippuen ja niitä kutsutaan muuttujiksi, tuntemattomiksi tai vakioiksi (ks. luku \ref{muuttuja}). Yleensä lausekkeella on myös tällöin lukuarvo, mutta tätä lukuarvoa ei välttämättä voi laskea, jos muuttujan, tuntemattoman tai vakion lukuarvoa ei tiedetä.
+\begin{esimerkki}
+Lausekkeen $-4\sqrt{2}ax^2+ax+1$ termit ovat $-4\sqrt{2}ax^2$, $ax$ ja $1$.
+\end{esimerkki}
 
-Kun lausekkeissa esiintyy tuntemattomia lukuja, on tapana sanoa, että kaksi lauseketta ovat yhtä suuria silloin, kun ne ovat yhtä suuria riippumatta siitä, mikä lukuarvo tuntemattomilla on. Esimerkiksi lausekkeet $x+y+2$ ja $y+2+x$ ovat yhtä suuria, koska riippumatta siitä, mitä $x$:n ja $y$:n lukuarvot ovat, kummastakin lausekkeesta saadaan sama tulos.
+Usein lausekkeessa esiintyy myös kirjaimia. Niillä merkitään lukuja, joiden arvoa ei tiedetä tai joiden arvo voi vaihdella tilanteesta riippuen ja niitä kutsutaan muuttujiksi, tuntemattomiksi tai vakioiksi. Yleensä lausekkeella on myös tällöin lukuarvo, mutta tätä lukuarvoa ei välttämättä voi laskea, jos muuttujan, tuntemattoman tai vakion lukuarvoa ei tiedetä.
+
+Kun lausekkeissa esiintyy tuntemattomia lukuja, on tapana sanoa, että kaksi lauseketta ovat yhtä suuria silloin, kun ne ovat yhtä suuria riippumatta siitä, mikä lukuarvo tuntemattomilla on.
+
+\begin{esimerkki}
+Lausekkeet $x+y+2$ ja $y+2+x$ ovat yhtä suuria, koska riippumatta siitä, mitä $x$:n ja $y$:n lukuarvot ovat, kummastakin lausekkeesta saadaan sama tulos.
+\end{esimerkki}
 
 \subsection{Laskujärjestys}
 
-Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusjärjestyksellä usein vaikutusta lausekkeen arvoon. Tällöin käytetään sulkumerkkejä ilmaisemaan haluttua laskujärjestystä. %Tämän lisäksi on olemassa yleinen sopimus siitä, missä järjestyksessä laskutoimitukset lasketaan silloin, kun suluilla ei ole muuta ilmaistu.
+Kun lauseke sisältää monta eri laskutoimitusta, on laskutoimitusten suoritusjärjestyksellä usein vaikutusta lausekkeen arvoon. Aritmeettisten operaatioiden laskujärjestys on luonnostaan yksikäsitteinen -- jos tähän halutaan tehdä muutoksia, käytetään sulkumerkkejä ilmaisemaan haluttua laskujärjestystä.
 
 Jos lausekkeessa on useita eri laskutoimituksia, ne suoritetaan seuraavassa järjestyksessä:
 
@@ -89,8 +118,7 @@ Esimerkiksi laskemalla voidaan tarkistaa, että $5+7=7+5$ ja että $(2+3)+5=2+(3
 
 Nämä säännöt voidaan yhdistää yleiseksi säännöksi, jonka mukaan yhteenlaskun sisällä laskujärjestystä voi vaihtaa miten tahansa.
 
-Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan vastaluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu.
-Tästä seuraa seuraava sääntö:
+Tämä sääntö voidaan yleistää koskemaan myös vähennyslaskua, kun muistetaan, että vähennyslasku tarkoittaa oikeastaan vastaluvun lisäämistä. $5-8$ tarkoittaa siis samaa kuin $5+(-8)$, joka voidaan nyt kirjoittaa yhteenlaskun vaihdantalain perusteella muotoon $(-8)+5$ eli $-8+5$ ilman, että laskun lopputulos muuttuu. Tästä seuraa seuraava sääntö:
 
 \laatikko[Yhteen- ja vähennyslaskujen järjestys]{
 Pelkästään yhteen- ja vähennyslaskua sisältävässä lausekkeessa laskujärjestystä voi vaihtaa vapaasti, kun ajattelee miinusmerkin kuuluvan sitä seuraavaan lukuun ja liikkuvan sen mukana.
@@ -244,4 +272,3 @@ Nämä säännöt ovat sieventämisen työkaluja. Voimme poistaa niiden avulla y
 %    § Esimerkki kerto- ja jakolaskun keskinäisestä kumoamisvaikutuksesta
 %    § Esimerkki sekasupistuksesta. Vaikkapa $8+((x-x)+z)/z=8$. 
 \end{esimerkki}
-
