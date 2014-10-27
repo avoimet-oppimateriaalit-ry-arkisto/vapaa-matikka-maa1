@@ -1,6 +1,11 @@
+Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on usein yksinkertaisempi. Pyöristäminen voidaan suorittaa eri tarkkuuksiin ja myös tilanteesta riippuen erilaisin käytännöin.% Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
+
 \subsection{Pyöristämistapoja}
 
-Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen $167,9337$\,cm, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo $168$\,cm antaa kaiken oleellisen informaation ja on mukavampi lukea. Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on yksinkertaisempi. Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
+
+\begin{esimerkki}
+Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen $167,9337$\,cm, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo $168$\,cm antaa kaiken oleellisen informaation ja on mukavampi lukea.
+\end{esimerkki}
 
 %luettelo pyöristysmetodeista
 
@@ -40,30 +45,35 @@ $0,00123$ & $3$
 %Jos esimerkiksi pöydän paksuudeksi on mitattu millin tuhannesosien tarkkuudella 2\,cm, voidaan pituus ilmoittaa muodossa 2,0000\,cm, jolloin tarkkuus tulee näkyviin.
 %Samasta syystä kellonaikoja ilmoitettaessa klo 19 käsitetään siten, että kyse on tasatunnista. Klo 19.00 ei lisäinformaatiota?
 
-Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden määrässä. Kasvimaalla asuvaa $100$ citykania on tuskin laskettu ihan tarkasti, mutta $100$\,m juoksuradan todellinen pituus ei varmasti ole todellisuudessa esimerkiksi $113$\,m.
+Kokonaislukujen kohdalla on toisinaan epäselvyyttä merkitsevien numeroiden määrässä.
+
+\begin{esimerkki}
+Kasvimaalla asuvaa $100$ citykania on tuskin laskettu ihan tarkasti, mutta $100$\,m juoksuradan todellinen pituus ei varmasti ole todellisuudessa esimerkiksi $113$\,m.
+\end{esimerkki}
 
 \subsection*{Vastausten pyöristäminen sovelluksissa}
 
-Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan desimaalien lukumäärällä.
+Pääsääntö on, että vastaukset pyöristetään aina epätarkimman lähtöarvon mukaan. Yhteen- ja vähennyslaskuissa epätarkkuutta mitataan yleensä desimaalien lukumäärällä.
 
 \begin{esimerkki} Jos $175$\,cm pituinen ihminen nousee seisomaan $2,15$\,cm korkuisen laudan päälle, olisi varsin optimistista ilmoittaa kokonaiskorkeudeksi $177,15$\,cm. Kyseisen ihmisen pituus kun todellisuudessa on mitä tahansa arvojen $174,5$\,cm ja $175,5$\,cm väliltä. Lasketaan siis $175$\,cm$+2,15$\,cm$=177,15$\,cm$\approx 177$\,cm. 
 Epätarkempi lähtöarvo oli mitattu senttien tarkkuudella, joten pyöristettiin tasasentteihin.
 \end{esimerkki}
 
-Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan. Jos esimerkiksi pitkän pöydän pituus karkeasti mitattuna on $5,9$\,m ja pöydän leveydeksi saadaan tarkalla mittauksella $1,7861$\,m, ei ole perusteltua olettaa pöydän pinta-alan olevan todella
-\[ 5,9\,\textrm{m} \cdot 1,7861\,\textrm{m} = 10,53799\,\textrm{m}^2. \] 
-Pyöristys tehdään epätarkimman lähtöarvon mukaisesti kahteen merkitsevään numeroon:
-\[ 5,9\,\textrm{m} \cdot 1,7861\,\textrm{m} = 10,53799\,\textrm{m}^2 \approx 11\,\textrm{m}^2.\] 
+Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan.
+
+%\begin{esimerkki}
+%Luustolihakset koostuvan lihassyistä eli pitkistä lihassoluista, jotka ovat ryhmittyneet kimpuiksi. Kutakin lihasta säätelee keskimäärin noin $100$ motorista hermosolua, ja jokainen motorinen hermosolu voi liittyä kymmenestä tuhanteen lihassyyhyn. Kuinka monta lihassyytä lihaksissa on tämän perusteella?
+%\end{esimerkki}
 
 Tarkkuus ei ole aina hyvästä lukujen esittämisessä. Esimerkiksi
-\[\pi = 3,141592653589793238462643383279 \ldots \]
+\[\pi = 3,141592653589793238462643383279 \ldots, \]
 mutta käytännön laskuihin riittää usein $3,14$.
 
 Muista, että kolmen pisteen käyttö desimaaliesityksen lopussa on suotavaa vain, jos on yksikäsitteisen selvää, miten desimaalit tulevat jatkumaan. Piin tapauksessa niitä voi käyttää, koska luvun desimaalikehitelmä on hyvin tunnettu ja mielivaltaisen tarkasti laskettavissa.
 
 \subsection{Tarkka arvo}
 
-Matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä pyöristettyinä desimaaleina. %(Irrationaaliluvuille ei ole edes olemassa desimaaliesitystä, ne voi esittää vain likiarvoisena.)
+Matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä pyöristettyinä desimaaleina.
 
 Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
 
@@ -72,5 +82,3 @@ Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt
 \end{esimerkki}
 
 %MIKSI sieventäminen ei enää onnistunut?
-%tehtäviin metriä sekunnissa vs kilometriä tunnissa!
-%yksikkötarkastelutehtäviä? esimerkkejä, harjoitustehtäviä! kerrotaanko [nopeus]=m/s -notaatiosta?

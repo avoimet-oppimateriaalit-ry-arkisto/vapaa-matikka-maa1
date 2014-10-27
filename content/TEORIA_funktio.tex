@@ -4,9 +4,7 @@ Usein ollaan kiinnostuneita siitä, millainen yhteys on kahden asian välillä. 
 \laatikko[Funktio]{
 	\termi{funktio}{Funktio} $f$ on sääntö, joka liittää jokaiseen \termi{muuttuja}{muuttujaan} $x$ täsmälleen yhden arvon $f(x)$.
 
-	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu,
-	ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat. Merkintä
-	$f\colon A \to B$ tarkoittaa, että funktion $f$ määrittelyjoukko on $A$ ja maalijoukko
+	Funktiolla on \termi{määrittelyjoukko}{määrittelyjoukko} $A$, johon muuttuja $x$ kuuluu, ja \termi{maalijoukko}{maalijoukko} $B$, johon funktion arvot $f(x)$ kuuluvat. Merkintä $f\colon A \to B$ tarkoittaa, että funktion $f$ määrittelyjoukko on $A$ ja maalijoukko
 	on $B$.
 }
 %Muokannut Jaakko Viertiö 14.12.2013
@@ -25,9 +23,7 @@ Joukkoa $A$ sanotaan tässä $f$:n \termi{määrittelyjoukko}{määrittelyjoukok
 	Hyödykkeen ja siitä maksettavan arvonlisäveron välistä yhteyttä voidaan kuvata funktiolla. Valitaan funktion määrittelyjoukoksi tiettyjen hyödykkeiden joukko
 		\[ A = \{\text{ahvenfilee}, \text{AIV-rehu}, \text{auto}, \text{runokirja},
 		\text{ravintola-ateria}, \text{särkylääke}, \text{televisio}\}, \]
-	ja arvojoukoksi reaaliluvut. Merkitään tätä funktiota kirjaimella $f$, jolloin
-	$f\colon A \to \mathbb{R}$.
-	Funktio voi liittää kuhunkin hyödykkeeseen esimerkiksi siitä maksettavan arvonlisäveroprosentin:
+	ja arvojoukoksi reaaliluvut. Merkitään tätä funktiota kirjaimella $f$, jolloin $f\colon A \to \mathbb{R}$. Funktio voi liittää kuhunkin hyödykkeeseen esimerkiksi siitä maksettavan arvonlisäveroprosentin:
 	$f(\text{särkylääke}) = 10$ ja $f(\text{televisio}) = 24$.
 
 	\begin{center}
@@ -243,7 +239,7 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 %Kuva tähän esimerkkiin? Näkisi miten lähtö- ja arvojoukkojen "puuttuvat" alkiot näkyvät kuvaajassa.
 
 \begin{esimerkki}
-	Tarkastellaan reaalifunktiota $f(x)=x^2$. Funktion $f$ \textit{määrittelyjoukko} on selkeästi koko reaalilukujen joukko, sillä toinen potenssi $x^2$ on määritelty, olipa muuttuja $x$ mikä reaaliluku tahansa. Funktio $f$ on reaalifunktio, joten sen arvot ovat reaalilukuja. Sen \textit{maalijoukko} on siis koko reaalilukujen joukko. Kuitenkin, koska parillisena potenssina $x^{2}\geq0$, olipa $x$ mikä luku hyvänsä, funktion $f$ \textit{arvojoukko} on kaikki positiiviset reaaliluvut.
+	Tarkastellaan reaalifunktiota $f(x)=x^2$. Funktion $f$ määrittelyjoukko on selkeästi koko reaalilukujen joukko, sillä toinen potenssi $x^2$ on määritelty, olipa muuttuja $x$ mikä reaaliluku tahansa. Funktio $f$ on reaalifunktio, joten sen arvot ovat reaalilukuja. Sen maalijoukko on siis koko reaalilukujen joukko. Kuitenkin, koska parillisena potenssina $x^{2}\geq0$, olipa $x$ mikä luku hyvänsä, funktion $f$ \textit{arvojoukko} on kaikki positiiviset reaaliluvut.
 	
 \begin{center}
 \begin{kuva}
@@ -251,26 +247,24 @@ jotka funktio saa arvokseen ainakin yhdessä pisteessä.
 	with vari("red"): kuvaaja.piirra(lambda x: x**2, kohta=2.5, nimi="$y=x^2$")
 \end{kuva}
 \end{center}
-	
-	
+
 \end{esimerkki}
 	
 \subsection*{Paloittain määritelty funktio}
 
-Kappaleessa \ref{neliojuuri} sivuttiin itseisarvon määritelmää. Itseisarvofunktio $f: f(x) = \lvert x \rvert$ voidaan määritellä seuraavasti. \\ 
-$$
-f\colon \mathbb{R} \to \mathbb{R_+}, \\ \lvert x \rvert = \begin{cases}
-                 x & \text{jos } x \geq 0 \\
-                 -x & \text{jos } x < 0
-              
+Käsiteltäessä aiemmin neliojuurta sivuttiin itseisarvon määritelmää. Itseisarvofunktio $f: f(x) = \lvert x \rvert$ voidaan määritellä seuraavasti:
+$$f\colon \mathbb{R} \to \mathbb{R}_+,$$
+$$ \lvert x \rvert =
+				\begin{cases}
+                 x, & \text{jos } x \geq 0 \\
+                 -x, & \text{jos } x < 0
                 \end{cases}
 $$
 
 Funktio siis jättää ei-negatiiviset luvut ennalleen, mutta vaihtaa negatiivisen luvun vastaluvukseen, ja arvojoukko koostuu pelkästään ei-negatiivisista luvuista. Funktio on määritelty kahdessa eri osassa: lähtöjoukon alkion arvosta riippuen valitaan sille sovellettava lauseke.
 
 \begin{esimerkki}
- 
- Määritellään funktio $g\colon \mathbb{R} \to \mathbb{R}$ lausekkeilla
+Määritellään funktio $g\colon \mathbb{R} \to \mathbb{R}$ lausekkeilla
  $$
  g(x) = \begin{cases}
          \frac{x}{x} & \text{jos } x \neq 0 \\

@@ -1,3 +1,5 @@
+Tässä luvussa käsitellään puhtaasti murtolukujen laskutekniikkaa, ja seuraavassa luvussa harjoitellaan, miten nämä laskutoimitukset liittyvät sovelluksiin.
+
 \subsection{Murtolukuesitys}
 Rationaaliluvun esitystä kokonaislukujen osamääränä $\frac{a}{b}$ kutsutaan \termi{murtoluku}{murtoluvuksi}. Luku $a$ on murtoluvun \termi{osoittaja}{osoittaja} ja luku $b$ on \termi{nimittäjä}{nimittäjä}. Nimittäjä on aina erisuuri kuin nolla ($b\neq0 $). Määritelmän mukaan kaikki rationaaliluvut voidaan esittää murtolukuina. Usein rationaaliluvut voidaan esittää myös desimaaliesityksen avulla. %LAUSUMINEN! ``kolme kahdesosaa''
 
@@ -6,7 +8,7 @@ Rationaalilukuja esitetään toisinaan myös \termi{sekamurtoluku}{sekamurtoluku
 \begin{esimerkki}
         Rationaaliluvulla $\frac{5}{4}$ on kolme erilaista esitystapaa: murtolukuesitys, sekalukuesitys ja desimaaliesitys.
         \[\frac{5}{4} = 1\frac{1}{4}=1,25 \]
-    \end{esimerkki} %nimityksen esittely pois esimerkistä!
+\end{esimerkki} %nimityksen esittely pois esimerkistä!
 
 Murtolukujen laskutoimituksia varten sekaluvut kannattaa usein muuttaa murtolukuesitykseksi. 
 \newpage
@@ -143,7 +145,9 @@ Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlask
             &=2\frac{5}{21}\\
         \end{align*}
         
-        (Koska vastaus pyydettiin sekamurtolukuna, ei kokonaisosaa llopulta olisi tarvinnutkaan muuttaa murtolukumuotoon.) \end{esimratk}
+        (Koska vastaus pyydettiin sekamurtolukuna, ei kokonaisosaa lopulta olisi tarvinnutkaan muuttaa murtolukumuotoon.)
+        Tässä oli nyt merkittynä ''jokainen'' välivaihe. Rutiinin ja ymmärryksen kehittyessä vaiheita voi jättää pois, ja käytännössä lukujen yhdistämisen voi tehdä laskimella, kunhan osaa näpytellä sen oikein ja lukea tuloksen oikeassa muodossa.        
+        \end{esimratk}
         \begin{esimvast}
 $$2\frac{5}{21}$$
         \end{esimvast}
@@ -215,6 +219,7 @@ $$2\frac{5}{21}$$
 
 
 %esimerkkejä\ldots
+% erityisesti esimerkki siitä, miten yhteiset supistettavat tekijät voi nähdä jo etukäteen, ja vältetään turhaa laskutyötä
 
 \subsection{Murtolukujen jakolasku}
 
@@ -238,7 +243,7 @@ $$2\frac{5}{21}$$
  %  \]
  }
 
- \begin{esimerkki}
+\begin{esimerkki}
 	Luvun $5$ käänteisluku on $\frac{1}{5}$, koska
 	\[
 	 5\cdot \frac{1}{5}=1.
@@ -247,34 +252,34 @@ $$2\frac{5}{21}$$
 	\[
 	 -\frac{2}{3}\cdot (-\frac{3}{2})=1.
 	\]
-  \end{esimerkki}
+\end{esimerkki}
   
 Käänteislukua tarvitaan muun muassa murtolukujen jakolaskuissa.
  
-\begin{esimerkki}
-Murtolukujen jakolasku. Laske $\frac 3 5 : \frac 2 7$.
+%\begin{esimerkki}
+%Laske $\frac{3}{5}:\frac{2}{7}$.
 
-	\begin{esimratk}
-Jakolaskun määritelmän mukaan osamäärän tulisi olla sellainen luku, joka kerrottuna jakajalla antaa tulokseksi jaettavan. Jos merkitään laskun $\frac 3 5 : \frac 2 7$ vastausta kirjaimella $x$, pitää siis olla $x \cdot \frac 2 7 = \frac 3 5$.  Tätä yhtälöä kutsutaan jakolaskun $\frac 3 5 : \frac 2 7$ \termi{jakoyhtälö}{jakoyhtälöksi.}
-
-% Jakoyhtälö-termin käyttö on tässä ongelmallista, koska yhtälöt käsitellään kirjassa vasta myöhemmin.
-
-Kerrotaan jakoyhtälön molemmat puolet luvun $\frac 2 7$ käänteisluvulla $\frac 7 2$. Koska käänteislukujen tulo on $1$, saadaan
-\[
-	\text{vasen puoli} = x \cdot \underbrace{\frac 2 7 \cdot \frac 7 2}_{= 1} = x \quad \text{ja} \quad \text{oikea puoli} = \frac 3 5 \cdot \frac 7 2.
-\]
-
-% Voisi olla selkeyden vuoksi hyvä, jos käytettäisiin tässä esim. värikoodia konkretisoimaan sitä, mistä tulee x (vasen puoli) ja mistä tulee murtolukujen tulo (oikea puoli).
-Kun yhtälön molemmat puolet kerrotaan samalla luvulla, ovat myös näin saadut luvut yhtä suuria. Siis on saatu
-\[
-	x = \frac 3 5 \cdot \frac 7 2.
-\]
-Koska $x$:llä merkittiin alkuperäistä jakolaskua, on nyt onnistuttu muuttamaan jakolasku kertolaskuksi:
-\[
-	\frac 3 5 : \frac 2 7 = \frac 3 5 \cdot \frac 7 2 = \frac{3 \cdot 7}{5 \cdot 2} = \frac{21}{10} = 2 \frac{1}{10}.
-\]
-	\end{esimratk}
-\end{esimerkki}
+%	\begin{esimratk}
+%Jakolaskun määritelmän mukaan osamäärän tulisi olla sellainen luku, joka kerrottuna jakajalla antaa tulokseksi jaettavan. Jos merkitään laskun $\frac{3}{5}:\frac{2}{7}$ vastausta kirjaimella $x$, pitää siis olla $x \cdot \frac 2 7 = \frac 3 5$.  Tätä yhtälöä kutsutaan jakolaskun $\frac 3 5 : \frac 2 7$ \termi{jakoyhtälö}{jakoyhtälöksi.}
+%
+%% Jakoyhtälö-termin käyttö on tässä ongelmallista, koska yhtälöt käsitellään kirjassa vasta myöhemmin.
+%
+%Kerrotaan jakoyhtälön molemmat puolet luvun $\frac 2 7$ käänteisluvulla $\frac 7 2$. Koska käänteislukujen tulo on $1$, saadaan
+%\[
+%	\text{vasen puoli} = x \cdot \underbrace{\frac 2 7 \cdot \frac 7 2}_{= 1} = x \quad \text{ja} \quad \text{oikea puoli} = \frac 3 5 \cdot \frac 7 2.
+%\]
+%
+%% Voisi olla selkeyden vuoksi hyvä, jos käytettäisiin tässä esim. värikoodia konkretisoimaan sitä, mistä tulee x (vasen puoli) ja mistä tulee murtolukujen tulo (oikea puoli).
+%Kun yhtälön molemmat puolet kerrotaan samalla luvulla, ovat myös näin saadut luvut yhtä suuria. Siis on saatu
+%\[
+%	x = \frac 3 5 \cdot \frac 7 2.
+%\]
+%Koska $x$:llä merkittiin alkuperäistä jakolaskua, on nyt onnistuttu muuttamaan jakolasku kertolaskuksi:
+%\[
+%	\frac 3 5 : \frac 2 7 = \frac 3 5 \cdot \frac 7 2 = \frac{3 \cdot 7}{5 \cdot 2} = \frac{21}{10} = 2 \frac{1}{10}.
+%\]
+%	\end{esimratk}
+%\end{esimerkki}
  
 \laatikko[Murtolukujen jakolasku]{
 Olkoon $b \neq 0$, $c \neq 0$ ja $d \neq 0$. Murtolukujen osamäärä $\frac a b : \frac c d$ lasketaan kertomalla jaettava jakajan käänteisluvulla:
@@ -292,7 +297,7 @@ $$x:5=x:\frac{10}{2}=x\cdot \frac{2}{10}=\frac{2x}{10}$$
 Viidellä tulee siis jaettua, jos kertoo kahdella ja jakaa tmän jälkeen tulon kymmenellä. (Toki myös laskujärjestys $\frac{x}{10}\cdot 2$ on mahdollinen, eli että ensin jakaa kymmenellä ja sitten vasta kertoo kahdella.) Näin esimerkiksi lasku $1\,340:5$ muuttuu muotoon $\frac{1\,340\cdot 2}{10}=\frac{2\,680}{10}=268$.
 \end{esimerkki}
 
-    \subsection{Murtolausekkeiden sieventäminen}
+\subsection{Murtolausekkeiden sieventäminen}
 
 \laatikko[Yhteiseksi tekijäksi ottaminen]{
 Jos murtoluvun osoittajassa tai nimittäjässä on summa, jonka osilla on yhteinen tekijä, sen voi ottaa \emph{yhteiseksi tekijäksi} sulkujen eteen. Jos osoittajassa ja nimittäjässä on sen jälkeen sama kerroin, sen voi jakaa pois molemmista eli \emph{supistaa} pois.
