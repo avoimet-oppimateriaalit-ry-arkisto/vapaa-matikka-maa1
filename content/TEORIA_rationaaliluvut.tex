@@ -1,4 +1,4 @@
-Tässä luvussa käsitellään puhtaasti murtolukujen laskutekniikkaa, ja seuraavassa luvussa harjoitellaan, miten nämä laskutoimitukset liittyvät sovelluksiin.
+Tässä luvussa käsitellään murtolukujen laskutekniikkaa, ja seuraavassa luvussa harjoitellaan, miten käsitellyt laskutoimitukset liittyvät sovelluksiin.
 
 \subsection{Murtolukuesitys}
 Rationaaliluvun esitystä kokonaislukujen osamääränä $\frac{a}{b}$ kutsutaan \termi{murtoluku}{murtoluvuksi}. Luku $a$ on murtoluvun \termi{osoittaja}{osoittaja} ja luku $b$ on \termi{nimittäjä}{nimittäjä}. Nimittäjä on aina erisuuri kuin nolla ($b\neq0 $). Määritelmän mukaan kaikki rationaaliluvut voidaan esittää murtolukuina. Usein rationaaliluvut voidaan esittää myös desimaaliesityksen avulla. %LAUSUMINEN! ``kolme kahdesosaa''
@@ -114,72 +114,31 @@ $ \frac{1}{6} + \frac{3}{2} = \frac{1}{2\cdot 3} + \frac{3}{2} = \frac{1}{2 \cdo
     
 Murtolukujen vähennyslasku toimii periaatteessa samalla tavalla kuin yhteenlaskukin (vähennyslasku määriteltiin vastaluvun lisäämisenä). Ensin lavennetaan samannimisiksi, sitten suoritetaan vähennyslasku osoittajassa.
 
-%         Murtolukujen nimittäjillä ei ole yhteisiä tekijöitä. Luvut voisi lavetaan kerralla samannimisiksi, mutta voimme käsitellä myös kahta murtolukua kerrallaan. TÄMÄKIN PUUTTUU!
-
-
+%Murtolukujen nimittäjillä ei ole yhteisiä tekijöitä. Luvut voisi lavetaan kerralla samannimisiksi, mutta voimme käsitellä myös kahta murtolukua kerrallaan. TÄMÄKIN PUUTTUU!
 %ei-niin-pitkälle menevä esimerkki vähennyslaskusta
  %selitä, miksi tuo toimii: koska kertolaskun vaihdannaisuus %SEKALUKU PITÄÄ SELITTÄÄ PAREMMIN! ja antaa esimerkkejä!!!
 %lisätäänkö lavennusmerkki sievennystehtäviin?
-\newpage
-\begin{esimerkki}
+\begin{esimerkki} %lisää esimerkkejä murtolukujen muuttamisesta sekaluvuiksi!!!!11
         Laske \[2\frac{2}{3} - \frac{3}{7}\] ja anna vastaus sekamurtolukuna.
-        
         \begin{esimratk}
 %tarkista, ovatko nämä selitykset oikeilla riveillä
         \begin{align*}
             2\frac{2}{3} - \frac{3}{7}&=2+\frac{2}{3} - \frac{3}{7} & \text{sekalukuesitys murtoluvuksi}\\
-            &=\frac{2}{1}+\frac{2}{3} - \frac{3}{7}\\
-            &=\frac{2\cdot3}{1\cdot3}+\frac{2}{3}-\frac{3}{7}\\
-            &=\frac{6}{3}+\frac{2}{3}-\frac{3}{7}\\
-            &=\frac{6+2}{3} - \frac{3}{7} \\
-            &=\frac{8}{3} - \frac{3}{7}\\
-            &=\frac{8\cdot7}{3\cdot7} - \frac{3\cdot3}{7\cdot3}\\
-            &=\frac{56}{21} - \frac{9}{21}\\
-            &=\frac{56-9}{21}\\
-            &=\frac{47}{21}\\
-            &=\frac{42+5}{21}\\ 
-            &=\frac{2\cdot21+5}{21}\\ %selitys
-            &=\frac{2\cdot21}{21}+\frac{5}{21}\\ %selitys
-            &=\frac{2}{1}+\frac{5}{21}\\
+            &=2+\frac{2}{3} - \frac{3}{7}\\
+            &=2+\frac{7\cdot 2}{7\cdot3}-\frac{3\cdot3}{3\cdot 7}\\
+            &=2+\frac{14}{21}-\frac{9}{21}\\
+            &=2+\frac{14-9}{21}\\
             &=2+\frac{5}{21}\\
             &=2\frac{5}{21}\\
         \end{align*}
-        
-        (Koska vastaus pyydettiin sekamurtolukuna, ei kokonaisosaa lopulta olisi tarvinnutkaan muuttaa murtolukumuotoon.)
-        Tässä oli nyt merkittynä ''jokainen'' välivaihe. Rutiinin ja ymmärryksen kehittyessä vaiheita voi jättää pois, ja käytännössä lukujen yhdistämisen voi tehdä laskimella, kunhan osaa näpytellä sen oikein ja lukea tuloksen oikeassa muodossa.        
+
+        Koska vastaus pyydettiin sekamurtolukuna, ei alkuperäisessä lausekkeessa olevaan kokonaisosaan tarvittu koskea. Huomaa, että esimerkissä esitettiin ''jokainen'' välivaihe. Rutiinin ja ymmärryksen kehittyessä vaiheita voi jättää pois, ja käytännössä lukujen yhdistämisen voi tehdä laskimella, kunhan osaa näppäillä sen oikein ja esittää tuloksen oikeassa muodossa.     
         \end{esimratk}
         \begin{esimvast}
 $$2\frac{5}{21}$$
         \end{esimvast}
     \end{esimerkki}
 %laskinhuomautus frac-toiminnosta, voi antaa myös sekamurtolukuna
-
- \begin{esimerkki}
-        Mozzarellapizza jaetaan kuuteen ja salamipizza neljään yhtä suureen siivuun. Minttu saa kaksi siivua mozzarellapizzaa ja yhden siivun salamipizzaa. Vesa saa kaksi siivua salamipizzaa. Kumpi saa enemmän pizzaa, jos molemmat pizzat ovat saman kokoisia?
-        \begin{center}        
-          \includegraphics[scale=1.0]{pictures/Kuva3-1-6-pizzat.pdf}
-        \end{center}
-
-\begin{esimratk}
-        Pizzan kokonaismäärän vertailua varten luvut on lavennettava samannimisiksi. Yhteiseksi nimittäjäksi tarvitaan luku, joka on jaollinen sekä kuudella että neljällä. Huomataan, että $12 = 3\cdot 4 = 2\cdot 6$. Murtolukujen nimittäjään tarvitaan siis luku $12$.
-        Mintun saama määrä pizzaa on
-        \begin{align*}
-           \frac{2}{6} + \frac{1}{4} &= \frac{2\cdot 2}{2\cdot 6} + \frac{3\cdot 1}{3\cdot 4} \\ 
-	       							 &= \frac{4}{12}+\frac{3}{12} \\ 
-	       							 &= \frac{7}{12}.
-        \end{align*}
-        
-        Vesan saama määrä pizzaa on
-        \[
-            \frac{2}{4} =
-            \frac{3\cdot 2}{3\cdot 4} =
-            \frac{6}{12}.
-        \]
-\end{esimratk}        
-        \begin{esimvast}
-        Koska $6/12 < 7/12$, Minttu saa enemmän.
-        \end{esimvast}
-    \end{esimerkki}
 
 %Muista, että mikä tahansa luku jaettuna itsellään on yksi.
     

@@ -1,6 +1,6 @@
 Siirrymme nyt tarkastelemaan tärkeää yhtälöiden erikoistapausta, ensimmäisen asteen yhtälöitä.
 
-\laatikko[Ensimmäisen asteen yhtälö]{Ensimmäisen asteen yhtälöksi kutsutaan yhtälöä, joka on esitettävissä muodossa $ax+b=0$, jossa $a \neq 0$.}
+\laatikko[Ensimmäisen asteen yhtälö]{Ensimmäisen asteen yhtälöksi kutsutaan yhtälöä, joka on esitettävissä muodossa $ax+b=0$, missä $a \neq 0$.}
 
 Yhtälötyypin nimi tulee siitä, että korkein potenssi, johon tuntematon $x$ yhtälössä korotetaan, on $1$. ($x^1=x$)
 
@@ -106,31 +106,26 @@ Ensimmäisen asteen yhtälöllä voidaan mallintaa monia yksinkertaisia käytän
 %	\end{esimvast}
 %\end{esimerkki}
 
-\begin{esimerkki} 
-Matti ja Teppo ovat veljeksiä. Teppo on $525$ päivää vanhempi kuin Matti. Muodostetaan ensimmäisen asteen yhtälö, josta voidaan ratkaista Matin ikä sijoittamalla $x$:n paikalle Tepon ikä. Lasketaan saadulla yhtälöllä Matin ikä sinä päivänä, kun Teppo täyttää $50$ vuotta. Oletetaan nyt, että vuodessa on $365$ päivää.
+\begin{esimerkki}
+Huvipuiston aluemaksu on neljä euroa, ja laitelippu maksaa myös viisi euroa. Ranneke, jolla pääsee rajatta laitteisiin ja joka sisältää aluemaksun, maksaa $34$ euroa. Kuinka monessa laitteessa olisi käytävä, jotta ranneke olisi edullisempi ostos kuin yksittäiset laiteliput ja aluemaksu erikseen? Oletetaan,että jokaiseen laitteeseen tarvitaan vain yksi laitelippu.
+	\begin{esimratk}
+	Kyseessä on kaksi toisistaan poikkeavaa maksusuunnitelmaa. Selvitämme yhtälön avulla, millä laitekäyntien lukumäärällä (merkitään tätä esimerkiksi kirjaimella $n$) molemmat tavat ovat yhtä kalliita. Mallinnamme sopivalla lausekkeella molempia: Jos käytetään vain yksittäisiä laitelippuja, jolloin täytyy maksaa myös aluemaksu, kokonaishinnaksi tulee $4+5n$, missä $n$ on ostettujen laitelippujen määrä. Jos ostaa rannekkeen, kävijän maksama rahamäärä ei riipu laitekäyntien määrästä, vaan se on aina mainittu $34$ euroa. Merkitään nämä maksusuunnitelmat yhtäsuuriksi, jolloin saadaan ensimmäisen asteen yhtälö $4+5n=34$.
+	
+Ratkaistaan tästä $n$:
+\begin{align*}
+4+5n&=34 &&|-4\\
+4+5n-4&=34-4 && \\
+5n&=30 &&|:5 \\
+\frac{5n}{5}&=\frac{30}{5} && \\
+n&=6 &&
+\end{align*}
 
-Merkitään Tepon ikää päivissä $x$:llä ja Matin ikää päivissä $y$:llä. Tiedetään, että koska Teppo on $525$ päivää vanhempi kuin Matti, niin $x=y+525$. Koska tehtävässä pyydettiin yhtälöä, josta voidaan ratkaista Matin ikä, muokataan saatua ensimmäisen asteen yhtälöä hieman:
-
-      \begin{align*}
-	   x &= y+525 & &| \, \text{Vähennetään puolittain 525.} \\
-	   x-525 &= y & &| \, \text{Tiedetään, että jos $a=b$, niin $b=a$.} \\
-	   y &= x-525 & &
-      \end{align*}
-      
-Nyt on saatu ensimmäisen asteen yhtälö, josta saadaan ratkaistua Matin ikä, kunhan vain tiedetään Tepon ikä. Koska $x$ ja $y$ ovat veljesten iät päivinä, muunnetaan hieman yksiköitä. $50$ vuotta päivissä on $50 \cdot 365 = 18\,250$. Nyt saadaan
-
-      \begin{align*}
-	  y &= x-525 & &| \, \text{Sijoitetaan $x$:n paikalle Tepon ikä $18\,250$ päivää.} \\
-	  y &= 18\,250-525 & & \\
-	  y &= 17\,725 & &| \, \text{Muokataan vastausta informatiivisempaan muotoon.} \\
-	  y &= 17\,520+205 & & \\
-	  y &= 48 \cdot 365 +205 & &
-      \end{align*}
-      
-      Siis kysytty Matin ikä on $48$ vuotta ja $205$ päivää.
-  
+Jos siis käydään kuudessa laitteessa (eli ostetaan kuusi laitelippua), on samantekevää, ostetaanko ranneke vai yksittäisiä lippuja (ja maksetaan aluemaksu). Jos käytäisiin laitteissa enemmän kuin kuusi kertaa, rannekkeen hinta ei kasva, mutta lippujen yhteishinta kasvaa. Kävijän tulisi siis käydä laitteissa vähintään seitseän kertaa, jotta ranneke olisi edullisempi.
+	\end{esimratk}
+	\begin{esimvast}
+	Vähintään seitsemän kertaa
+	\end{esimvast}
 \end{esimerkki}
-%räpelsi jaakko viertiö 23.3.2014 
 
 \begin{esimerkki}
 Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunnissa ja $23$ minuutissa tasaista vauhtia. $10$ minuuttia junan lähdön jälkeen auto lähtee Helsingistä Jyväskylään kulkien tasaista $100$ kilometrin tuntivauhtia. Jyväskylään on Helsingistä maanteitse $272$ kilometriä. Kuinka kauan auton lähdöstä on kulunut, kun juna ja auto ovat kulkeneet yhtä suuren osan omista matkoistaan?
@@ -173,25 +168,31 @@ Juna Helsingistä Jyväskylään kulkee $342$ kilometrin matkan kolmessa tunniss
 
 % hinnoitteluesimerkki,kumpi maksutapa halvempi jne.
 
-\begin{esimerkki}
-Huvipuiston aluemaksu on neljä euroa, ja laitelippu maksaa myös viisi euroa. Ranneke, jolla pääsee rajatta laitteisiin ja joka sisältää aluemaksun, maksaa $34$ euroa. Kuinka monessa laitteessa olisi käytävä, jotta ranneke olisi edullisempi ostos kuin yksittäiset laiteliput ja aluemaksu erikseen? Oletetaan,että jokaiseen laitteeseen tarvitaan vain yksi laitelippu.
-	\begin{esimratk}
-	Kyseessä on kaksi toisistaan poikkeavaa maksusuunnitelmaa. Selvitämme yhtälön avulla, millä laitekäyntien lukumäärällä (merkitään tätä esimerkiksi kirjaimella $n$) molemmat tavat ovat yhtä kalliita. Mallinnamme sopivalla lausekkeella molempia: Jos käytetään vain yksittäisiä laitelippuja, jolloin täytyy maksaa myös aluemaksu, kokonaishinnaksi tulee $4+5n$, missä $n$ on ostettujen laitelippujen määrä. Jos ostaa rannekkeen, kävijän maksama rahamäärä ei riipu laitekäyntien määrästä, vaan se on aina mainittu $34$ euroa. Merkitään nämä maksusuunnitelmat yhtäsuuriksi, jolloin saadaan ensimmäisen asteen yhtälö $4+5n=34$.
-	
-Ratkaistaan tästä $n$:
-\begin{align*}
-4+5n&=34 &&|-4\\
-4+5n-4&=34-4 && \\
-5n&=30 &&|:5 \\
-\frac{5n}{5}&=\frac{30}{5} && \\
-n&=6 &&
-\end{align*}
+\begin{esimerkki} 
+Matti ja Teppo ovat veljeksiä. Teppo on $525$ päivää vanhempi kuin Matti. Muodostetaan ensimmäisen asteen yhtälö, josta voidaan ratkaista Matin ikä sijoittamalla $x$:n paikalle Tepon ikä. Lasketaan saadulla yhtälöllä Matin ikä sinä päivänä, kun Teppo täyttää $50$ vuotta. Oletetaan nyt, että vuodessa on $365$ päivää.
 
-Jos siis käydään kuudessa laitteessa (eli ostetaan kuusi laitelippua), on samantekevää, ostetaanko ranneke vai yksittäisiä lippuja (ja maksetaan aluemaksu). Jos käytäisiin laitteissa enemmän kuin kuusi kertaa, rannekkeen hinta ei kasva, mutta lippujen yhteishinta kasvaa. Kävijän tulisi siis käydä laitteissa vähintään seitseän kertaa, jotta ranneke olisi edullisempi.
-	\end{esimratk}
-	\begin{esimvast}
-	Vähintään seitsemän kertaa
-	\end{esimvast}
+Merkitään Tepon ikää päivissä $x$:llä ja Matin ikää päivissä $y$:llä. Tiedetään, että koska Teppo on $525$ päivää vanhempi kuin Matti, niin $x=y+525$. Koska tehtävässä pyydettiin yhtälöä, josta voidaan ratkaista Matin ikä, muokataan saatua ensimmäisen asteen yhtälöä hieman:
+
+      \begin{align*}
+	   x &= y+525 & &| \, \text{Vähennetään puolittain 525.} \\
+	   x-525 &= y & &| \, \text{Tiedetään, että jos $a=b$, niin $b=a$.} \\
+	   y &= x-525 & &
+      \end{align*}
+      
+Nyt on saatu ensimmäisen asteen yhtälö, josta saadaan ratkaistua Matin ikä, kunhan vain tiedetään Tepon ikä. Koska $x$ ja $y$ ovat veljesten iät päivinä, muunnetaan hieman yksiköitä. $50$ vuotta päivissä on $50 \cdot 365 = 18\,250$. Nyt saadaan
+
+      \begin{align*}
+	  y &= x-525 & &| \, \text{Sijoitetaan $x$:n paikalle Tepon ikä $18\,250$ päivää.} \\
+	  y &= 18\,250-525 & & \\
+	  y &= 17\,725 & &| \, \text{Muokataan vastausta informatiivisempaan muotoon.} \\
+	  y &= 17\,520+205 & & \\
+	  y &= 48 \cdot 365 +205 & &
+      \end{align*}
+      
+      Siis kysytty Matin ikä on $48$ vuotta ja $205$ päivää.
+  
 \end{esimerkki}
+%räpelsi jaakko viertiö 23.3.2014 
+
 
 %esim. millä parametrin $a$ arvolla yhtälöllä on ratkaisuja

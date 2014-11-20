@@ -6,7 +6,7 @@ Monissa sovelluksissa (ja erityisesti fysiikassa) luvut eivät esitä vain matem
 
 \begin{esimerkki}
 \alakohdat{
-§ Aika on suure, jota voidaan mitata käyttämällä yksikkönä esimerkiksi sekunteja tai vuosia. Sovelluksissa suuresta saatetaan käyttää myös nimeä kesto tai jopa pituus: ''Meneekö vielä pitkään?''
+§ Aika on suure, jota voidaan mitata käyttämällä yksikkönä esimerkiksi sekunteja tai vuosia. Sovelluksissa suuresta saatetaan joskus käyttää myös nimeä kesto tai jopa pituus: ''Meneekö vielä pitkään?''
 § Pituus on suure, ja sen arvo voidaan mitata ja esittää käyttäen yksikkönä esimerkiksi metrejä ja tuumia. Myös matkaa ja etäisyyttä mitataan samoissa yksiköissä; näillä on sovellusriippuvainen, erityisesti geometriassa ja fysiikassa esille tuleva nyanssiero.
 § Energia on suure, jota mitataan esimerkiksi yksiköissä joule tai kalori. Myös työtä mitataan fysiikassa jouleissa.
 § Massa on suure, jota mitataan esimerkiksi grammoissa tai paunoissa. (Hiukkasfysiikassa massa ja energia kuitenkin usein rinnastetaan.)
@@ -24,7 +24,10 @@ Jotkin suureet ovat \termi{skalaarisuure}{skalaarisuureita} ja toiset \termi{vek
 }
 \end{esimerkki}
 
-%Kaikkia lukuja ei seuraa sovelluksissakaan yksikkö. Suhteet ja monet kertoimet voivat olla yksiköttömiä, ''paljaita lukuja''.%dimension käsite ja dimensiottomuus (''paljas luku'')? lukumäärät, vakiot... http://www.wikiwand.com/en/Dimensionless_quantity
+%Kaikkia lukuja ei seuraa sovelluksissakaan yksikkö. Suhteet ja monet kertoimet voivat olla yksiköttömiä, ''paljaita lukuja''.%dimension käsite ja dimensiottomuus (''paljas luku'')? lukumäärät, vakiot... http://www.wikiwand.com/en/Dimensionless_quantity Joskus laskuissa voi esiintyä sama suure monessa yhteydessä, ja on olennaista tietää, mihin kulloinkin viitataan.
+%\begin{esimerkki}
+%pitoisuudet, %ppm, ppb, hiilimonoksidin tapaava konsentraatia
+%\end{esimerkki}
 
 Tehtävissä yksiköistä käytetään standardilyhenteitä, eikä yksiköiden (metri, kilogramma, joule) nimiä tarvitse kirjoittaa kokonaan. Käytäntö on jättää kertolaskun sijasta luvun ja yksikön lyhenteen väliin lyhyt väli. \footnote{Tämä on ISO-standardin (International Organisation for Standardization) ja Kotimaisten kielten tutkimuskeskuksen (Kotus) suosituksen mukainen merkintätapa.} Tähän on muutama poikkeus: kulman suuruutta ilmaisevat asteet, minuutit ja sekunnit, joita merkitään symboleilla $\textdegree$, ' ja '', sekä jotkin pituusyksiköt kuten tuuma, jota merkitään ${\verb+"+}$, kirjoitetaan kiinni lukuun. Yksiköt kirjoitetaan konekirjoitetussa tekstissä pystyyn, ei \textit{kursiivilla}. Jos yksikkö on nimetty henkilön mukaan, niin yksikkö kirjoitettuna lyhenteellään alkaa isolla kirjaimella mutta aukikirjoitettuna yksikkö kirjoitetaan pienellä. %tarkista toi tuuman lyhenne
 
@@ -62,7 +65,16 @@ Jos lausekkeessa on useita termejä, joissa on samoja yksiköitä, nämä voidaa
 %ja jonnekin, miten yksiköitä on muitakin kuin fysikaaliset, eli 3 banaania jne.
 
 \begin{esimerkki}
-Täysin aukikirjoitettuna kahden mielivaltaisen massan summa olisi $1,2\,\text{g}+2,6\,\text{g}=1,2\cdot \text{g}+2,6\cdot \text{g}=(1,2+2,6)\cdot \text{g}=(1,2+2,6)\,\text{g}=3,8\,\text{g}$. (Kertolaskun vaihdannaisuuteen ei erikseen vedottu.) Yleensä näitä merkitsemiskäytäntöjä esille tuovia välivaiheita ei kirjoiteta, vaan käytännössä lasku on lyhyempi: $1,2\,\text{g}+2,6\,\text{g}=3,8\,\text{g}$.
+Täysin perusteltuna ja aukikirjoitettuna kahden mielivaltaisen massan, $1,2$ grammaa ja $2,6$ grammaa, summa olisi:
+\begin{align*}
+&1,2\,\text{g}+2,6\,\text{g} && \\
+&=1,2\cdot \text{g}+2,6\cdot \text{g} && \text{merkattu yksiköt selvästi tuloina} \\
+&=(1,2+2,6)\cdot \text{g} && \text{osittelulaki (ja vaihdantalaki, koska osittelulaki yksinään toimii ''vasemmalta puolelta'')} \\
+&=(1,2+2,6)\,\text{g} && \text{merkitty yksikkö taas vain lyhyen välin avulla} \\
+&=3,8\,\text{g} && \text{laskettiin summa} \\
+\end{align*}
+
+Näiden useiden vaiheiden tarkoitus oli vain perustella, miten laskut suureilla toimivat. Yleensä näitä tarkkoja merkitsemiskäytäntöjä esille tuovia välivaiheita ei kirjoiteta, vaan käytännössä lyhyt lasku riittää: $1,2\,\text{g}+2,6\,\text{g}=3,8\,\text{g}$.
 \end{esimerkki}
 
 Suureita voi tarvittaessa vapaasti kertoa ja jakaa keskenään, jolloin luvut ja yksiköt ryhmitellään erilleen lopullista vastausta varten. Potenssia voi käyttää uuden muodostuvan yksikön sieventämiseen. Pituuden yksiköiden toisen ja kolmannen potenssin tapauksessa käytetään etuliitteitä neliö- ja kuutio-. %oikeinkirjoitus?
@@ -111,7 +123,7 @@ Suureiden tunnuksia käytetään yleensä muuttujan tai tuntemattoman symbolina 
 \begin{esimerkki}
 %\alakohdat{
 %§
-Tiheyden kaava on $\rho=\frac{m}{V}$.
+Tiheyden kaava on suureiden symbolein kirjoitettuna $\rho=\frac{m}{V}$.
 %§
 %§
 %}
@@ -171,9 +183,9 @@ mega & $10^{6}$ & M & miljoona 	\\
 giga & $10^{9}$ & G & miljardi		\\
 tera & $10^{12}$ & T & biljoona \\
 peta & $10^{15}$ & P & tuhat biljoonaa \\
-\end{tabular}
 
-\begin{tabular}{c|c|c|c}
+\hline
+
 Nimi & Kerroin & Tunnus & Arvo suomeksi \\
 \hline
 desi & $10^{-1}$ & d & kymmenesosa	\\
@@ -186,8 +198,6 @@ femto & $10^{-15}$ & f & tuhatbiljoonasosa
 \end{tabular}
 \end{center}
 }
-
-%toi taulukko pitää tasata! 
 
 Etuliitteitä käytetään siis muuttamaan yksikköä pienemmäksi tai suuremmaksi. Tarkoituksena on yleensä valita sovelluskohtaisesti sopivan kokoinen yksikkö niin, että käytetyn luvun ei tarvitse olla valtavan suuri tai pieni. Mitä suuremman yksikön valitsee, sitä pienemmäksi sen kanssa käytettävä luku tulee -- ja toisinpäin.
 
@@ -231,7 +241,7 @@ Lasketaan SI-etuliiteiden ja binääristen eli kaksikantaisten etuliitteiden ero
 \alakohdat{
 § $1$\,kit$-1$\,kt$=1\,024$\,t$-1\,000$\,t$=24$\,t
 § $1$\,Mit$-1$\,Mt$=2^{20}-10^6=48\,576$\,t
-§ $1$\,Git$-1$\,Gt$=2^{30}-10^9=73\,741\,824$\,t
+§ $1$\,Git$-1$\,Gt$=2^{30}-10^9=73\,741\,824$\,t %merkitse myös kerrannaisyksiköiden avulla
 }
 Huomataan, että suuruusluokkien kasvaessa esitystapojen välinen virhe kasvaa merkittävästi.
 \end{esimerkki}
@@ -258,7 +268,6 @@ Erään solun tilavuus on $9,0 \cdot 10^{-12}$\,l. Ilmoita tilavuus
 § pikolitroina
 § nanolitroina
 }
-
 	\begin{esimratk}
 \alakohdat{
 § $9,0 \cdot 10^{-12}\,\textrm{l} = 9,0\,\textrm{pl}$.
@@ -271,20 +280,21 @@ Erään solun tilavuus on $9,0 \cdot 10^{-12}$\,l. Ilmoita tilavuus
 Kun ääntä (esimerkiksi musiikkia) pakataan MP3-muotoon, keskiverron ääneenlaadun saavuttamiseksi bittivirta (engl. \textit{bitrate}) voi olla $128$\,kb/s. Tämä tarkoittaa oikeasti tasan $128\,000$ bitin siirtoa sekuntia kohden. Koska tavu on kahdeksan bittiä, vastaa tämä tavuissa tiedonsiirtonopeutta $\frac{128}{8}$\,kb/s$=16$\,kt/s.
 \end{esimerkki}
 
-\laatikko[Erittäin tärkeää kerrannaisyksiköiden potensseista!]{Aiemmin esitetty taulukko etuliitteistä pätee vain ensimmäisen asteen yksiköihin! Desimetri on kymmenesosa metristä, mutta neliödesimetri \emph{ei} ole kymmenesosa neliömetristä. (Vrt. neliödesimetri ja desineliömetri)
-
-Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
+\laatikko[Erittäin tärkeää kerrannaisyksiköiden potensseista!]{
+Aiemmin esitetty taulukko etuliitteistä pätee vain ensimmäisen asteen yksiköihin! Desimetri on kymmenesosa metristä, mutta neliödesimetri \emph{ei} ole kymmenesosa neliömetristä. (Vrt. neliödesimetri ja desineliömetri) Avain tämän ymmärtämiseen on tietää seuraava kirjoitustavan sopimus:
 
 \begin{center}
 dm$^2$ tarkoittaa oikeasti $(\text{dm})^2$!
 \end{center}
+}
 
-Potenssisääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!}
+\begin{esimerkki}
+Potenssisääntöjä käyttämällä huomataan: $(\text{dm})^2=\text{d}^2\text{m}^2=(10^{-1})^2\, \text{m}^2=10^{-2}\,\text{m}^2=\frac{1}{100}\, \text{m}^2$. Eli yksi neliödesimetri onkin \textit{sadaosa} neliömetristä!
+\end{esimerkki}
 
 \begin{esimerkki}
 %yksiköiden käyttö yksikseen ilman lukua?
 Kuinka mones osa kuutiodesimetri on kuutiometristä?
-
 	\begin{esimratk}
 	Puretaan auki käyttäen mainittua kirjoituskonventiota, potenssisääntöjä ja desi-etuliitteen määritelmää:
 	\begin{align*}
@@ -293,13 +303,11 @@ Kuinka mones osa kuutiodesimetri on kuutiometristä?
 	&=1\,(10^{-1})^3\,\text{m}^3 \\
 	&=10^{-1\cdot3}\,\text{m}^3 \\
 	&=(10^{-1})^3\,\text{m}^3 \\
-	&=(\frac{1}{10})^3\,\text{m}^3
-	&=\frac{1}{10^3}\,\text{m}^3
+	&=10^{-3}\,\text{m}^3 \\
 	&=\frac{1}{1\,000}\,\text{m}^3
 	\end{align*}
 	Nähdään, että yksi kuutiodesimetri on tuhannesosa kuutiometristä.
 	\end{esimratk}
-
 \end{esimerkki}
 
 %\begin{esimerkki}
@@ -309,49 +317,86 @@ Kuinka mones osa kuutiodesimetri on kuutiometristä?
 %\end{esimerkki}
 
 %toine ja ehkä kolmaskin esimerkki
+%esimerkki suhdeyksikön muutoksista
+
+Joskus suureen johdannaisyksikössä on suhde, ja tämä halutaan ilmaista käänteisenä suhteena. Tällöin voidaan ottaa käänteisluku.
 
 %ESIMERKKI! Vertailu: Jenkeissä autoista kerrotaan, kuinka monta mailia gallonalla – Suomessa, kuinka monta litraa satasella
 
-Matkan (pituuden), pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään tarkemmin ja lisää geometrian MAA3-kurssilla. 
+Matkan (pituuden), pinta-alan ja tilavuuden yksikkömuunnoksia käsitellään lisää geometrian MAA3-kurssilla. 
 
-Ajan yksiköissä on jäänteitä $60$-järjestelmästä. Yksikköjä ei jaetakaan kymmeneen pienempään osaan vaan kuuteenkymmeneen:
+\subsubsection*{Ajan yksiköt}
 
-\luettelolaatikko{Ajan yksiköt}{
-  § Yksi tunti on $60$ minuuttia: $1\,\text{h} = 60\,\text{min}$
-  § Yksi minuutti on $60$ sekuntia: $1\,\text{min} = 60\,\text{s}$
-  § Yksi tunti on $3\,600$ sekuntia: $1\,\text{h} = 60\,\text{min} = 60 \cdot 60\,\text{s} = 3\,600\,\text{s}$ 
+Ajan yksiköissä on jäänteitä $60$-järjestelmästä. Tavallisimpia yksikköjä ei jaetakaan kymmeneen pienempään osaan vaan kuuteenkymmeneen:
+
+\luettelolaatikko{Tunti, minuutti ja sekunti}{
+  § Yksi tunti (lyhenne yleiskielessä t, SI-järjestelmässä h, engl. \textit{hour}) on $60$ minuuttia (lyhenne min): $1\,\text{h} = 60\,\text{min}$
+  § Yksi minuutti on $60$ sekuntia (lyhenne s): $1\,\text{min} = 60\,\text{s}$
 }
 
-%millisekunnit
+\begin{esimerkki}
+\alakohdat{
+§ Kuinka monta sekuntia on yhdessä tunnissa?
+§ Leffamaratonissa katsotaan \textit{Taru sormusten herrasta} -elokuvatrilogian ''Special extended Blu-ray edition'' -versio, jonka kokonaiskesto on $726$ minuuttia. Kuinka monta tuntia tähän täytyy varata aikaa?
+§ Kuinka monta minuuttia on $1,25$\,h?
+}
+	\begin{esimratk}
+	\alakohdat{
+	§ Yksiköiden määritelmien mukaan $1\,\text{h} = 60\,\text{min} = 60 \cdot 60\,\text{s} = 3\,600\,\text{s}$. %selvennä vielä, miten pelkkä min korvataan, vai pitääkö olla 1 min, jotta voidaan muuttaa.
+	§ Minuutin ja tunnin suhdeluku on $60$. Koska haluamme siirtyä pienemmästä yksiköstä (minuutit) suurempaan yksikköön (tunnit), suureen lukuarvon täytyy pienentyä -- suoritamme siis jakolaskun: $\frac{726\,\text{min}}{60}=\frac{726}{60}\,\text{h}=12,1\,\text{h}$. Elokuvamaratonissa esitetään siis elokuvia reilut $12$ tuntia putkeen. (Ylitse jää tunnin kymmenesosa eli $\frac{60\,\text{min}}{10}=6$ minuuttia.)
+	§ $1,25\,\text{h} = 1,25 \cdot 60\,\text{min} = 75\,\text{min}$. $1,25$ tuntia on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ sekamurtolukuna $1\frac{25}{100}$ eli $1\frac{1}{4}$, mikä saattaa helpottaa laskemista.
+}
+	\end{esimratk}
+\end{esimerkki}
+
+On huomattavaa, että laskutehtävissä käytetään joistakin ajan yksiköistä idealisoituja määritelmiä.
+
+\luettelolaatikko{Vuorokausi, viikko, kuukausi ja vuosi}{
+§ Todellinen astronominen vuorokausi on aika, joka Maalta kestää pyörähtää kerran oman akselinsa ympäri, on $23$ tuntia, $56$ minuuttia ja $4,1$ sekuntia. Laskutehtävissä käytetään kuitenkin tavallisesti yksinkertaistettua määritelmää, jonka mukaan vuorokausi on tasan $24$ tuntia. Vuorokausiyksikön lyhenne yleiskielessä vrk ja SI-järjestelmässä d, engl. \textit{day}.
+§ Vuoden pituus määritellään aikana, jona Maa kiertää kerran Auringon ympäri, ja tämä on noin $365,24$ vuorokautta. Vuosi on siis oikeasti noin neljännesvuorokauden pidempi kuin tasan $365$, jota arkisissa laskutehtävissä käytetään nimellisenä vuoden pituutena. Vuoden lyhenne on yleiskielessä v ja kansainvälisesti a -- latinan sanasta \textit{annus}.
+§ Kuukausi (suomen kielen lyhenne kk) määritellään ajaksi, jona Kuu kiertää Maan yhden kerran, ja tämä on noin $29,53$ vuorokautta. Jotta kalenterivuoteen saataisiin täsmälleen $12$ kuukautta ja $365$ vuorokautta, kuukausien pituudet on määritelty erilaisiksi. $31$-päiväisiä kuukausia ovat tammi-, maalis-, touko-, heinä-, elo-, loka- sekä joulukuu, $30$-päiväisiä ovat huhti-, kesä-, syys- sekä marraskuu, ja helmikuussa on tavallisesti $28$ vuorokautta.
+§ Koska vuorokausi on oikeasti lyhyempi kuin nimellinen $24$ tuntia, on otettu käyttöön karkausvuosi, jolla kompensoidaan vuorokausien ''väärää'' kestoa gregoriaanisessa kalenterissa. Karkausvuosina helmikuussa on ylimääräinen päivä, eli helmikuu kestääkin $29$ vuorokautta ja koko vuosi $366$ vuorokautta. Jos päivien tarkka määrä on hyvin olennaista -- esimerkiksi korkolaskuissa -- karkausvuodet ja kuukausien vaihtelevat pituudet otetaan huomioon myös lukiomatematiikan tehtävissä.
+§ Viikon pituus on vaihdellut niin ajan kuin paikankin mukaan. Tämän hetkinen yleisin viikon pituus (seitsemän päivää) on sekin mielivaltainen yhteiskunnallinen päätös, eikä se perustu taivaankappaleiden liikkeisiin kuten vuorokauden, kuukauden ja vuoden tapaukset. Yhteen kalenterikuukauteen mahtuu hieman yli neljä kokonaista viikkoa ja vuoteen hieman yli $52$ kokonaista viikkoa. Suomen kielessä viikko voidaan lyhentää vk.
+}
+
+\begin{esimerkki}
+\alakohdat{
+§ Kuinka monta tuntia maaliskuu kestää (nimellisten kestojen mukaan)?
+§ Naisten keski-ikä Suomessa vuoden 2008 tilastoista laskettuna oli $83,01$ vuotta. Kuinka monta kokonaista viikkoa ''keskivertonainen'' elää tämän perusteella?
+§ Kuinka monta vuorokautta pitkä on puolen kalenterivuoden ajanjakso 5.3.--5.9.? Oletamme, että vuosi ei ole karkausvuosi.
+§ Kuinka monta päivää kestää kymmenen vuoden ajanjakso, joka alkaa vuoden 2000 alusta?
+}
+	\begin{esimratk}
+	\alakohdat{
+	§ Lasketaan suoraan auki yksiköiden määritelmien avulla: $1\,\text{kk}=31\,\text{d}=31\cdot24\,\text{h}=744\,\text{h}$. (Huomaa, että maaliskuussa on $31$ päivää.)
+	§ Koska kyseessä on keskimääräinen arvo, emme voi tarkastella erikseen karkausvuosia tai kuukausien vaihtelevia pituuksia. Oletetaan vuoden pituudeksi $365$ päivää, jolloin päiviä on yhteensä $83,01\,\text{a}=83,01\cdot365\,\text{d}=30\,298,65\,\text{d}$. Koska määritelmällisesti nykyviikossa on seitsemän päivää, viikkojen määräksi saadaan $\frac{30\,298,65\,\text{d}}{7}\approx 4\,328,38\,\text{vk}$. Koska kysyttiin vain kokonaisia viikkoja, vastaus on $4\,328$ viikkoa.
+	§ Jaksolla on kaksi epätäyttä kuukautta ja viisi kokonaista kuukautta. Kokonaiset kuukaudet ovat huhtikuu ($30$ päivää), toukokuu ($31$ päivää), kesäkuu ($30$ päivää), heinäkuu ($31$ päivää) ja elokuu ($31$ päivää) -- yhteensä $153$ päivää. Ei-kokonaiset kuukaudet ovat maaliskuu ($31$ päivää) ja syyskuu ($30$ päivää), joista maaliskuun osaan kuuluu $31-5+1=27$ päivää. (Plus yksi sen vuoksi, että myös aloituspäivä lasketaan.) Huomaa, että voi olla epäselvää, lasketaanko päivämäärähaarukan viimeinen päivämäärä laskuihin. Jos puolivuosijakso päättyy $5.9.$, mutta viimeinen kokonainen päivä on $4.9.$, niin syyskuun puolelle mahtuu neljä vuorokautta. Tällöin vuorokausien kokonaismäärä on $153+27+4=184$.
+	§ Kyseiseen kymmenen vuoden ajanjaksoon lasketaan kokonaisuudessaan vuodet 2000--2009. Karkausvuosia ajanjaksolle mahtuu kolme: 2000, 2004 ja 2008, ja loput seitsemän vuotta ovat $365$ päivän pituisia. Päiviä on siis yhteensä $7\cdot 365+3\cdot 366=3\,653$.
+	}
+	\end{esimratk}
+\end{esimerkki}
+
+Sekunteja ei enää jaeta pienempiin osiin $60$-järjestelmän mukaan vaan käytetään tavallisia kymmenjärjestelmän jakoja ja kerrannaisyksiköiden etuliitteitä.
+
 %\begin{esimerkki}
-%
-%Kuinka monta sekuntia on vuodessa?
-%
-%	\begin{esimratk}
-%
-%	\end{esimratk}
-%
+%\alakohdat{
+%§ Ajanottoon tarkoitettu sekuntikello saattaa näyttää tuloksen muodossa $34.56.78$, eli $34$ minuuttia, $56$ sekuntia ja $78$ sadasosasekuntia.
+%§ 
+%}
 %\end{esimerkki}
 
 \begin{esimerkki}
-Kuinka monta minuuttia on $1,25$\,h?
-
-\begin{esimratk}
-$1,25\,\text{h} = 1,25 \cdot 60\,\text{min} = 75\,\text{min}$. $1,25$ tuntia on siis $75$ minuuttia. Huomaa, että voit laskuissasi esittää desimaaliluvun $1,25$ sekamurtolukuna $1\frac{25}{100}$ eli $1\frac{1}{4}$, mikä saattaa helpottaa laskemista.
-\end{esimratk}
-\end{esimerkki}
-
-\begin{esimerkki}
-Pikajuoksija Usain Boltin huippunopeudeksi $100$ metrin juoksukilpailussa mitattiin $12,2$\,m/s. Janin polkupyörän huippunopeus alamäessä oli $42,5$\, km/h. Kumman huippunopeus oli suurempi?
-
-\begin{esimratk}
-Muunnetaan yksiköt vastaamaan toisiaan, jolloin luvuista tulee keskenään vertailukelpoisia. Janin polkupyörän huippunopeus oli $42,5\,\textrm{km/h} =42,5\cdot \textrm{(1\,000\,m)/h} = 42\,500\,\textrm{m/h} = 42\,500\,\textrm{m/(3\,600\,s)}= \frac{42\,500}{3\,600}\,\textrm{m/s} \approx 11,8\,\textrm{m/s}$. Bolt oli siis pyöräilevää Jania nopeampi.
-\end{esimratk}
+Pikajuoksija Usain Boltin huippunopeudeksi $100$ metrin juoksukilpailussa mitattiin $12,2$\,m/s. Janin polkupyörän huippunopeus alamäessä oli $42,5$\,km/h. Kumman huippunopeus oli suurempi?
+	\begin{esimratk}
+Muunnetaan yksiköt vastaamaan toisiaan, jolloin luvuista tulee keskenään vertailukelpoisia. Janin polkupyörän huippunopeus oli $42,5\,\textrm{km/h} =42,5\cdot \textrm{(1\,000\,m)/h} = 42\,500\,\textrm{m/h} = 42\,500\,\textrm{m/(3\,600\,s)}= \frac{42\,500}{3\,600}\,\textrm{m/s} \approx 11,8\,\textrm{m/s}$. Bolt oli siis pyöräilevää Jania nopeampi. Samaan tulokseen olisi päädytty, jos olisi muutettu Boltin juoksunopeus yksikköön km/h ja verrattu sitä Janin pyöräilynopeuteen.
+	\end{esimratk}
 \end{esimerkki}
 
 %Lasketaan, kuinka nopeasti $100$/$10$-yhteydellä ...
 
-SI-järjestelmä ei ole ainoa käytetty mittayksikköjärjestelmä. Esimerkiksi niin kutsutussa brittiläisessä mittayksikköjärjestelmässä (imperial) pituutta voidaan mitata esimerkiksi tuumissa. Yksi tuuma (merkitään $1^{\prime \prime}$) vastaa $2,54$ senttimetriä. Massan perusyksikkönä brittiläisessä mittayksikköjärjestelmässä käytetään paunaa. %mihin pauna perustuu?
+\subsubsection*{SI:n ulkopuolisia yksiköitä}
+
+SI-järjestelmä ei ole ainoa käytetty mittayksikköjärjestelmä. Esimerkiksi niin kutsutussa brittiläisessä mittayksikköjärjestelmässä (\textit{imperial}) pituutta voidaan mitata esimerkiksi tuumissa. Yksi tuuma (merkitään $1^{\prime \prime}$) vastaa $2,54$ senttimetriä. Massan perusyksikkönä brittiläisessä mittayksikköjärjestelmässä käytetään paunaa. %mihin pauna perustuu?
 %+jaardi
 \begin{tabular}{c|c|c|c}
 Suure & Yksikkö & Yksikön tunnus & SI-järjestelmässä\\
@@ -361,7 +406,7 @@ massa & pauna & lb & $453,59237$\,g \\
 tilavuus & gallona (neste, USA) & gal &  $3,785441784$\,l
 \end{tabular}
 
-%Tuumien tai paunojen avulla ilmaistut suureet voidaan muuntaa SI-järjestelmään yllä olevassa taulukossa näkyvien suhdelukujen avulla.
+Tuumien tai paunojen avulla ilmaistut suureet voidaan muuntaa SI-järjestelmään yllä olevassa taulukossa näkyvien suhdelukujen avulla.
 
 \begin{esimerkki}
 Kuinka monta senttimetriä on $3,5$ tuumaa? Entä kuinka monta tuumaa on $7,2$ senttimetriä?
@@ -383,13 +428,19 @@ Tuumat saadaan siis senttimetreiksi kertomalla luvulla $2,54$. Näin ollen $3,5^
 	\end{esimratk}
 \end{esimerkki}
 
+%parempaan paikkaan Muunnokset tapahtuvat kerto- ja jakolaskulla. Jos ei ole varma, kumpaa pitäisi käyttää, kannattaa vertailla yksiköitä: kumpi niistä on suurempi? Jos muunnat jonkin suureen esitettäväksi suuremmalla yksiköllä, niin tällöin luvun tarvitsee pienentyä, ja toisinpäin.
+
 %tehtäviin metriä sekunnissa vs kilometriä tunnissa!
 %hemoglobiiniviitearvot g/dl -> g/l
 %yksikkötarkastelutehtäviä? esimerkkejä, harjoitustehtäviä! kerrotaanko [nopeus]=m/s -notaatiosta
 
-\subsection{Eri yksiköiden yhdistäminen laskuissa}
+%+valuutat
 
-Koska yksiköitä voidaan kohdella laskuteknisesti kuin lukuja, niin niitä voi kertoa ja jakaa keskenään. Tutut potenssisäännöt, rationaalilukujen laskusäännöt ja kertolaskun vaihdannaisuuslaki pätevät. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon tai murtolausekkeiksi.
+%TÄHÄN BREIKKI JA JAKO TOISEEN LUKUUN?!
+
+\subsection{Yksiköiden yhdistäminen laskuissa}
+
+Koska yksiköitä voidaan kohdella laskuteknisesti kuin lukuja, niin niitä voi kertoa ja jakaa keskenään. Tutut potenssisäännöt, rationaalilukujen murtolukuesityksen laskusäännöt sekä kertolaskun vaihdanta- ja liitäntälaki pätevät. Kerrannaisyksiköiden etuliitteet voi aina muuttaa tarvittaessa kymmenpotenssimuotoon tai murtolausekkeiksi.
 
 %\begin{esimerkki}
 %
@@ -410,7 +461,14 @@ Koska yksiköitä voidaan kohdella laskuteknisesti kuin lukuja, niin niitä voi 
 %	\end{esimratk}
 %\end{esimerkki}
 
-%selitetään Delta tässä luvussa, eikä vasta prosenttilaskennassa
+\begin{esimerkki}
+Koska kaikilla eliöillä ei ole samanlaista aineenvaihduntaa, jotkin ravintoaineet, jotka toiselle ovat välttämättömiä, voivat olla toiselle hyvin myrkyllistä. Myrkyllisyys ei ole koskaan vain aineen tai yhdisteen ominaisuus, vaan myrkyllisyys on aina riippuvaista annoksesta. Siinä, missä ihminen sietää suklaata hyvin, on se verrattain pieninäkin annoksina haitallista esimerkiksi kissoille ja koirille. Suklaan olennaisin koirille haitallinen yhdiste on kofeiinille sukua oleva teobromiini (kaakaopavun sisältävän kasvisuvun \textit{Theobroma}, ''jumalten ruoka'', mukaan), jota saattaa yhdessä kilogrammassa tummaa suklaata olla enemän kuin $14$ grammaa. Teobromiinipitoisuutta voidaan siis merkitä $14\,\frac{\text{g}}{\text{kg}}$, missä johdannaissuureen yksikön nimittäjä viittaa teobromiinin massaan ja osoittajan yksikkö tumman suklaan massaan. (Tarvittaessa tämä tietenkin sievenee dimensiottomaan muotoon $14\,\frac{\text{g}}{\text{kg}}=14\,\frac{\text{g}}{1\,000\,\text{g}}=\frac{14}{1\,000}\,\frac{\text{g}}{\text{g}}=\frac{14}{1\,000}\cdot 1=\frac{14}{1\,000}=0,014$.)
+
+Eri aineiden myrkyllisyyttä kuvataan yleensä niin sanottulla $LD_{50}$
+MAA1 prosenttilaskentasovellus, tummassa suklaassa voi olla enemmän kuin 14 g/kg teobtomiinia, anna suklaan annoskoko, koiran ld50, koiran massa ja laske
+\end{esimerkki}
+
+%FIXME, \todo selitetään Delta tässä luvussa, eikä vasta prosenttilaskennassa?
 
 \begin{esimerkki}
 Keskinopeus $v_k$ voidaan laskea kaavasta $v_k=\frac{\text{s}}{\text{t}}$, missä $s$ on kuljettu matka ja $t$ matkaan käytetty aika. Tästä voidaan johtaa (ks. luku Yhtälöt) kaava, jolla voidaan laskea matkan kulkemiseen kulunut tai kuluva aika: $t=s/v_k$, missä $s$ on matkan pituus ja $v_k$ on nopeus. Lasketaan, kuinka kauan kestää $300$ metrin matka nopeudella $7$\,m/s.
@@ -463,7 +521,8 @@ Joskus kahdesta suureesta pitää saada kolmas, vaikka käytössä ei ole tunnet
 %	
 %	\end{esimvast}
 %\end{esimerkki}
-%
+
+Joskus tehtävissä saatetaan vaatia yksiköiden pyörittelyä, vaikka tilanteen fysiikalinen tausta olisi uusi ja suureet ennestään tuntemattomia.
 %\begin{esimerkki}
 %Nestekaasupulloa käytettäessä säiliöön varastoitu neste höyrystyy, ja pullo jäähtyy. höyrystymislämpö 400 J/g, ja jäähdytysteho J/s (eli watteja). Kuinka monta kilogrammaa kaasua tunnissa voidaan pullosta saada?
 %
