@@ -1,6 +1,6 @@
 Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka esitysmuoto on usein yksinkertaisempi. Pyöristäminen voidaan suorittaa eri tarkkuuksiin ja myös tilanteesta riippuen erilaisin käytännöin.% Voidaan pyöristää esimerkiksi tasakymmenien, kokonaisten tai vaikkapa tuhannesosien tarkkuuteen.
 
-\subsection{Pyöristämistapoja}
+%\subsection{Pyöristämistapoja}
 
 %\begin{tabular}{c|c|c}
 %\hline
@@ -14,11 +14,10 @@ Pyöristämisen ajatus on korvata luku sitä lähellä olevalla luvulla, jonka e
 %luettelo pyöristysmetodeista
 
 \begin{esimerkki}
-Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen $167,9337$\,cm, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo $168$\,cm antaa kaiken oleellisen informaation ja on mukavampi lukea.
+Mikäli urheiluliikkeessä lumilaudan pituudeksi ilmoitetaan tarkan mittauksen jälkeen $167,9337$ senttimetriä, on tämä asiakkaalle tarpeettoman tarkka tieto. Epätarkempi arvo $168$ senttimetriä antaa kaiken oleellisen informaation ja on mukavampi lukea.
 \end{esimerkki}
 
-
-Jos sellainen on tiedossa, pyöristys tehdään aina lähimpään oikeaa tarkkuutta olevaan lukuun. Siis esimerkiksi kokonaisluvuksi pyöristettäessä $2,8 \approx 3$, koska $3$ on lähin kokonaisluku. Lisäksi on sovittu, että puolikkaat (kuten $2,5$) pyöristetään ylöspäin. Se, pyöristetäänkö ylös vai alaspäin (eli suurempaan vai pienempään lukuun), riippuu siis haluttua tarkkuutta seuraavasta numerosta: pienet 0, 1, 2, 3, 4 pyöristetään alaspäin, suuret 5, 6, 7, 8, 9 ylöspäin.
+Jos sellainen on tiedossa, pyöristys tehdään aina lähimpään oikeaa tarkkuutta olevaan lukuun. Siis esimerkiksi kokonaisluvuksi pyöristettäessä $2,8 \approx 3$, koska $3$ on lähin kokonaisluku. Lisäksi on usein sovitaan, että puolikkaat (kuten $2,5$) pyöristetään ylöspäin. Se, pyöristetäänkö ylös vai alaspäin (eli suurempaan vai pienempään lukuun), riippuu siis haluttua tarkkuutta seuraavasta numerosta: pienet 0, 1, 2, 3, 4 pyöristetään alaspäin, suuret 5, 6, 7, 8, 9 ylöspäin.
 
 Ellei muuta mainita, tehtävissä käytetään kaikkein yleisintä pyöristysmenetelmää, jossa viimeisen numeron perusteella pyöristetään lähimpään, ja numeroon $5$ päättyvät poispäin nollasta.
 
@@ -75,19 +74,25 @@ Kerto- ja jakolaskussa tarkkuutta arvioidaan merkitsevien numeroiden mukaan.
 
 %\begin{esimerkki}
 %Luustolihakset koostuvan lihassyistä eli pitkistä lihassoluista, jotka ovat ryhmittyneet kimpuiksi. Kutakin lihasta säätelee keskimäärin noin $100$ motorista hermosolua, ja jokainen motorinen hermosolu voi liittyä kymmenestä tuhanteen lihassyyhyn. Kuinka monta lihassyytä lihaksissa on tämän perusteella?
-%\end{esimerkki}
+%\end{esimerkki} %Muista, että vahingossa merkkaa pyöristyksiin on yhtä kuin -merkkiä, vaan \approx
 
-Tarkkuus ei ole aina hyvästä lukujen esittämisessä. Esimerkiksi
-\[\pi = 3,141592653589793238462643383279 \ldots, \]
-mutta käytännön laskuihin riittää usein $3,14$.
+Tarkkuus ei ole aina hyvästä lukujen esittämisessä.
+
+\begin{esimerkki}
+$\pi = 3,141592653589793238462643383279 \ldots$, mutta käytännön laskuihin riittää usein $3,14$ riittävän vastaustarkkuuden saavuttamiseksi.
+\end{esimerkki}
 
 Muista, että kolmen pisteen käyttö desimaaliesityksen lopussa on suotavaa vain, jos on yksikäsitteisen selvää, miten desimaalit tulevat jatkumaan. Piin tapauksessa niitä voi käyttää, koska luvun desimaalikehitelmä on hyvin tunnettu ja mielivaltaisen tarkasti laskettavissa.
 
 \subsection{Tarkka arvo}
 
-Matematiikassa ei ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä pyöristettyinä desimaaleina.
+Matematiikassa ei kuitenkaan ilman erityistä tarkoitusta käytetä likiarvoja vaan niin sanottuja tarkkoja arvoja. Käytännössä tämä tarkoittaa arvojen esittämistä mahdollisimman yksinkertaisessa ja sievennetyssä muodossa niin, että irrationaalilukuja kuten $\pi$ ja $\sqrt{2}$ ei esitetä pyöristettyinä desimaaleina. Oletusarvoisesti tehtävien vastaus annetaan \textit{aina} tarkkana arvona.
 
-Käyttämällä tarkkoja arvoja ei menetetä tietoa arvosta kuten likiarvoilla, joilla joudutaan tyytymään tiettyyn tarkkuuteen luvun esityksessä.
+Käyttämällä tarkkoja arvoja ei menetetä tietoa. Jos pyöristyksiä tehdään, niin se tehdään vasta aivan lopussa. Välivaiheissa ei saa pyöristää!
+
+\begin{esimerkki}
+Sievennetään lauseke $\frac{6\pi^2}{3\pi^3}$. Supistamalla kolmella saadaan $\frac{2\pi^2}{\pi^3}$ ja supistamalla sen jälkeen $\pi^2$:lla (tämä vastaa osamäärän potenssisääntöä) saadaan $\frac{2}{pi}$. Tämä on vastaus, ja likimääräisen desimaalimuodon ilmoittaminen on ylimääräistä.
+\end{esimerkki}
 
 %\begin{esimerkki}
 %Lasku $3\sqrt{8}\pi \cdot \frac{1}{9}$ voidaan sieventää muotoon $\frac{2\sqrt{2}\pi}{3}$, joka on tarkka arvo, sillä tästä sieventäminen ei enää onnistu. Voidaan kyllä laskea vastaukseksi desimaaliluku $\frac{2\sqrt{2}\pi}{3}=2,9619219587722441646772539933737957990764144595837\ldots$, mutta tuloksena on vain likiarvo, lasketaanpa desimaalilukua mihin tahansa tarkkuuteen hyvänsä.
