@@ -77,18 +77,20 @@ Koska yhtälön puolet ovat yhtä suuret, eli tarkoittavat täsmälleen samaa as
 Yhtälöitä käyttämällä voidaan mallintaa monia käytännön tilanteita.
 
 \begin{esimerkki}
-	Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluvan ajan ratkaiseminen matkan pituuden ja nopeuden avulla, mitä teimme jo yksikköluvussa perustuen siihen, että saamme tulokseksi sopivan yksikön. Kuljettu matka on nopeus kerrottuna kuljetulla ajalla. Jos matka on $15$ kilometriä ja nopeus $5$\,km/h, voimme merkitä $5\cdot t=15$, jossa $t$ on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}.
+Yksinkertainen esimerkki yhtälön käyttämisestä on matkaan kuluvan ajan ratkaiseminen matkan pituuden ja nopeuden avulla, mitä teimme jo yksikköluvussa perustuen siihen, että saamme tulokseksi sopivan yksikön. Kuljettu matka on nopeus kerrottuna kuljetulla ajalla. Jos matka on $15$ kilometriä ja nopeus $5$\,km/h, voimme merkitä $5\cdot t=15$, jossa $t$ on matkaan kuluvaa aikaa kuvaava \termi{muuttuja}{muuttuja}.
 \end{esimerkki}
 
 Toisaalta yhtälöjä voidaan käyttää myös abstraktimpien pulmien ratkaisuun.
 
 \begin{esimerkki}
-	Halutaan tietää, onko olemassa lukua, jonka kolmas potenssi jaettuna kolmella on yhtä suuri kuin sen toinen potenssi jaettuna kahdella. Tällöin merkitään $\frac{x^3}{3}=\frac{x^2}{2}$. 
+\alakohdat{
+§ Halutaan tietää, onko olemassa lukua, jonka kolmas potenssi jaettuna kolmella on yhtä suuri kuin sen toinen potenssi jaettuna kahdella. Tällöin merkitään $\frac{x^3}{3}=\frac{x^2}{2}$. $x$:n valitseminen tuntemattoman luvun symboliksi oli mielivaltaista.
+§ Minkä kahden peräkkäisen kokonaisluvun tulo on $70$? Ongelmaa lähdetään ratkaisemaan kirjoittamalla tilanteen ehto yhtälönä. Merkitään kahdesta kokonaisluvusta pienempää $n$:llä. Tällöin seuraava kokonaisluku on $n+1$. Yhtälöksi saadaan $n(n+1)=70$.
+}
 \end{esimerkki}
 	%%\begin{esimerkki}
 %%	Merkitään lausekkeet $5x+\sqrt{x}$ ja $7x+7$ yhtäsuuriksi, jolloin saadaan yhtälö $5x+\sqrt{x} = 7x+7$.
 %%\end{esimerkki}
-
 
 %Lisännyt Jaakko Viertiö 2013-11-10
 \begin{esimerkki}
@@ -97,31 +99,18 @@ Tarkastellaan yhtälöä $x^3-2x^2-x+2=0$. Yhtälössä on yksi muuttuja $x$ ja 
 
 \subsection{Yhtälön ratkaiseminen}
 
-Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla. Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut. Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäpitävyyden toisella puolella on vain haluttu muuttuja ilman kertoimia ja toisella puolella kaikki muu.  Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
+Tyypillinen tapa ratkaista yhtälöitä on kirjoittaa ne ilmaistuna toisella tavalla. Käytännössä tämä tarkoittaa niiden muokkaamista siten, ettei alkuperäisen yhtälön paikkansapitävyys muutu. Tällä tavalla saadaan eri yhtälö, jolla on kuitenkin samat ratkaisut. Yleensä tavoitteena on saada yhtälö muotoon, jossa yhtäsuuruusrelaation toisella puolella on vain haluttu tuntematon ja toisella puolella kaikki muu. % Yhtälön ratkaisemiseksi näitä muunnoksia toistetaan, kunnes yhtälön ratkaisu on helposti luettavissa.
 
 \begin{esimerkki} %TARKENNUS JA KOVENTIO-OPPIA! + laatikko: mihin pyritään yhdistä tuntemattomat, omalle puolelleyhtälöä, yksin omalla puolellaan
 Ratkaistaan aiemman esimerkin matkan kesto. Yhtälö on siis $5t=15$, jossa $t$ on aika, nopeus on $5$\,km/h ja matkan pituus $15$\,km. Jakamalla laskusääntöjen mukaan yhtälön molemmat puolet viidellä, saadaan yhtälö muotoon $t=3$, joka on samalla kyseisen yhtälön ratkaisu.
 \end{esimerkki}
 
-%HELPOMPI ESIMERKKI, JA TÄÄ MUUTENKIN TURHAN VAIKEA AINEEN JA PIINEEN :)
-\begin{esimerkki}
-Ratkaistaan yhtälö $\frac{4\sqrt{x}a}{3}=8a$, jossa $a$ on vakio $\pi$ eli yhtälö voidaan kirjoittaa muotoon $\frac{4\pi\sqrt{x}}{3}=8\pi$.
-
-		\begin{align*}
-			\frac{4 \pi \sqrt{x}}{3} &= 8 {\pi} && \text{| Jaetaan molemmat puolet luvulla $\frac{4}{3}$.} \\
-			{\pi}\sqrt{x} &= \frac{8\cdot 3\cdot {\pi}}{4} && \text{| Jaetaan molemmat puolet luvulla $\pi$.} \\
-			\sqrt{x} &= \frac{24}{4} && \text{| Sievennellään.} \\
-			\sqrt{x} &= 6 && \text{| Tässä huomataan, että $\sqrt{36}=6$.} \\
-\end{align*}
-
-Joten yhtälöllä on ratkaisu $x=36$.
-
-\end{esimerkki}
+%yksiköiden kirjoittaminen yhtälöihin
 
 Yhtälön ratkaisemista voidaan ajatella havainnollisemmin kuvittelemalla orsivaaka, joka on tasapainossa. Vasemmalla ja oikealla puolella on eripainoisia esineitä, mutta ne painavat yhteensä yhtä paljon. Jos molemmille puolille lisätään nyt saman verran painoa, vaaka on yhä tasapainossa. Samalla tavalla yhtälön molemmille puolille on sallittua lisätä sama luku.
 
 \begin{esimerkki}
-Kuvassa oleva vaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia.	Kuinka paljon vaakakupissa on lakritsia?
+Kuvassa oleva vaaka on tasapainossa. Toisessa vaakakupissa on kahden kilon siika ja toisessa puolen kilon ahven sekä tuntematon määrä lakritsia. Kuinka paljon vaakakupissa on lakritsia?
 	\begin{center}
 		\includegraphics[scale=0.6]{pictures/Kuva10-1-vaaka.pdf} % CC-BY Lilja Tamminen
 		%\includegraphics{unused/kala-vaaka.png} % CC-BY Hannu Köngäs
@@ -133,16 +122,40 @@ Merkitään lakritsin määrää tuntemattomalla $x$. Tilannetta kuvaa yhtälö 
 
 Ratkaistaan yhtälö.
 		\begin{align*}
-			2 &= 0,5 + x &&\text{| $-0,5$} \\
-			2 - 0,5 &= x && \\
-			1,5 &= x && \\
+			2 &= 0,5 + x &&\text{|| $-0,5$} \\
+			2-0,5 &= 0,5 + x -0,5 &&\text{|| sievennetään} \\
+			1,5 &= x && \text{|| yhtälön voi halutessaan kääntää}\\
 			x &= 1,5 &&
 		\end{align*}
 	\end{esimratk}
 	\begin{esimvast}
-		Lakritsia on $1,5$ kg.
+		Lakritsia on $1,5$\,kg.
 	\end{esimvast}
 \end{esimerkki}
+
+Huomioi aina, asettaako yhtälön alkuperäinen muotoilu joitakin rajoituksia tuntemattoman mahdollisille arvoille.
+
+\begin{esimerkki}
+Ratkaistaan tuntematon $a$ yhtälöstä $\frac{1}{a}=\frac{1}{a-1}$. Huomioidaan, että yhtälössä jaetaan $a$:lla -- $a$ ei voi olla nolla. Koska yhtälössä jaetaan myös $a-1$:llä, $a$ ei voi saada myöskään arvoa yksi.
+		\begin{align*}
+			\frac{1}{a}&=\frac{2}{a-1} && \text{|| kerrotaan $a$:lla}\\
+			\frac{1}{a}\cdot a&=\frac{2}{a-1}\cdot a && \text{|| sievennetään}\\	
+			1&=\frac{2a}{a-1} && \text{|| kerrotaan $a-1$:llä}\\
+			1\cdot (a-1)&=\frac{2a}{a-1}\cdot (a-1) && \text{|| sievennetään}\\
+			a-1&=2a && \text{|| $-2a$}\\
+			a-1-2a&=2a-2a && \text{|| sievennetään}\\
+			-a-1&=0 && \text{|| $+1$}\\
+			-a-1+1&=0+1 && \text{|| $+1$}\\
+			-a&=1 && \text{||  sievennetään}\\
+			-a&=1 && \text{||  $\cdot (-1)$}\\
+			-a\cdot (-1)&=1\cdot(-1) && \text{|| sievennetään}\\
+			a&=-1 && \text{|| sievennetään}\\
+\end{align*}
+
+Yhtälöllä on siis ratkaisu $a=-1$. Tämä ei ole ristiriidassa alkuperäisten rajoitusten kanssa, joten se hyväksytään sellaisenaan.
+\end{esimerkki}
+
+Yhtälönratkaisun sievennysvaiheita voi hypätä yli sitä mukaa, kun varmuus kehittyy.
 
 Mitään varsinaista ei virhettä yhtälönratkaisussa ei ole tehty niin kauan kuin sama operaatio tehdään aina yhtälön molemmille puolille, mutta vaatii rutiinia, jotta oppii, mitä laskutoimituksia kannattaa tehdä ja missä järjestyksessä. Seuraavassa joitakin yleisiä toimenpiteitä yhtälöiden ratkaisuun, joita voi soveltaa päästäkseen eteenpäin. Kyseessä ei ole mikään aina toimiva ratkaisuohje, vaan yleisiä vinkkejä.
 

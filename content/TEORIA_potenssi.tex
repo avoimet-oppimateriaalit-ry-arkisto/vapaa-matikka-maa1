@@ -15,6 +15,15 @@ Merkinnällä $2^4$ tarkoitetaan tuloa
         \]
 \end{esimerkki}
 
+Joskus potenssimerkintä on lausekkeen laskettua arvoa sievempi ilmaisutapa. Raja on kuitenkin häilyvä.
+
+\begin{esimerkki}
+\alakohdat{
+§ $10^{15}$ on selvästi sievempi ja helpommin käsiteltävä ilmaisu kuin $10\cdot10\cdot \ldots \cdot 10=1\,000\,000\,000\,000\,000$, mutta jos tehtävän lopullinen vastaus on $2^8$, lienee selvempää laskea tämä auki: $2\cdot2\cdot \ldots \cdot 2 = 256$.
+§ Tuntemattomien ja muuttujien tapauksessa on lähes yksiselitteisesti parempi vaihtoehto kirjoittaa ne aina potensseina, jos vain mahdollista: $yyyyy=y\cdot y\cdot y\cdot y\cdot y= y^5$.
+}
+\end{esimerkki}
+
 \begin{esimerkki}
 Sievennä lausekkeet.
 \alakohdat{
@@ -55,10 +64,10 @@ Luvun toista potenssia $a^2$ kutsutaan myös luvun $a$ \termi{neliö}{neliöksi}
 
 Laskimissa ja tietokoneohjelmissa potenssiinkorottamisen symbolina käytetään usein sirkumfleksimerkkiä \^{}. %esimerkki
 
-Laskujärjestys potensseja sisältävissä lausekkeissa seuraa potenssin määritelmästä -- potenssi on toistuvaa kertolaskua. Potenssin arvo tulee laskea ennen yhdistämistä ausekkeen muihin kerto- ja jakolaskuihin, eikä pelkällä potenssin kantaluvulla voi suorittaa laskutoimituksia muiden lausekkeen osien kanssa.
+Laskujärjestys potensseja sisältävissä lausekkeissa seuraa potenssin määritelmästä -- potenssi on toistuvaa kertolaskua. Potenssin arvo tulee laskea ennen yhdistämistä lausekkeen muihin kerto- ja jakolaskuihin, eikä pelkällä potenssin kantaluvulla voi suorittaa laskutoimituksia muiden lausekkeen osien kanssa.
 
 \begin{esimerkki}
-Väärin: $2\cdot 3^5 =(2\cdot 3)^5$. Oikein: $2\cdot 3^5=2\cdot 3\cdot 3\cdot 3\cdot 3\cdot 3$, jolloin tilanne on palautettu kertolaskuun, joka on vaihdannaisuuden ja liitännäisyyden vuoksi helppo laskea: $2\cdot 3^5=2\cdot 243=486$.
+Väärin: $2\cdot 3^5 = (2\cdot 3)^5$. Oikein: $2\cdot 3^5=2\cdot 3\cdot 3\cdot 3\cdot 3\cdot 3$, jolloin tilanne on palautettu kertolaskuun, joka on vaihdannaisuuden ja liitännäisyyden vuoksi helppo laskea: $2\cdot 3^5=2\cdot 243=486$.
 \end{esimerkki}
 
 \begin{esimerkki}
@@ -71,7 +80,7 @@ Tarkkaile laskujärjestystä
         }
 \end{esimerkki}  
 
-Mikäli potensseja on monta sisäkkäin eli eksponenttina on uusi potenssilauseke, laskeminen aloitetaan uloimmasta, ''ylimmästä'' potenssista. %potenssin potenssi
+Mikäli potensseja on monta sisäkkäin eli eksponenttina on uusi potenssilauseke, laskeminen aloitetaan uloimmasta, ''ylimmästä'' potenssista. Laskujärjestyksen poikkeudet merkataan tuttuun tapaan sulkeilla. %potenssin potenssi
 
 \begin{esimerkki}
 \alakohdat{
@@ -94,7 +103,7 @@ Monesti tulee tarpeeseen sieventää yksittäisiä lukuja monimutkaisempien laus
 	\end{align*}
 \end{esimerkki} %toinen esimerkki jonneki + vastaavia tehtäviä
 
-%esimerkki: kolmiluvut, neliöluvut, esitä yleinen muoto/jäsen :)
+%esimerkki: kolmioluvut, neliöluvut, esitä yleinen muoto/jäsen :)
 
 \subsection{Negatiivinen kantaluku}
 
@@ -129,38 +138,55 @@ Huomaa seuraavat potenssien etumerkkeihin liittyvät ominaisuudet.
 			 }
 }
 
-Parillinen potenssi on negatiivisellakin kantaluvulla positiivinen siksi koska tulossa on negatiivisia kertoimia parillinen määrä. Tällöin miinukset kumoavat toisensa, olipa kantaluku mikä tahansa.  Esimerkiksi $(-1)^4=(-1) \cdot (-1) \cdot (-1) \cdot (-1)= 1\cdot 1=1$
+Parillinen potenssi on negatiivisellakin kantaluvulla positiivinen, koska tulossa on negatiivisia kertoimia parillinen määrä. Tällöin miinukset kumoavat toisensa, olipa kantaluku mikä tahansa.
+
+\begin{esimerkki}
+$(-1)^4=(-1) \cdot (-1) \cdot (-1) \cdot (-1)= 1\cdot 1=1$
+\end{esimerkki}
 
 Kun negatiivinen kantaluku korotetaan parittomaan potenssiin, tulee kertoimia pariton määrä, jolloin tulos on negatiivinen.
-\begin{esimerkki}
 
+\begin{esimerkki}
 $(-2)^5=(-2) \cdot (-2) \cdot (-2) \cdot (-2) \cdot (-2)=4\cdot4\cdot(-2)=16\cdot(-2)= -32$
 \end{esimerkki}
 
 \begin{esimerkki}
+Aiemmin todettiin, että lausekkeet $x-y$ ja $y-x$ ovat toistensa vastaluvut. Koska parilliseen potenssin korottamisessa saadaan sama lopputulos sekä luvulla että sen vastaluvulla, lausekkeiden $(x-y)^2$ ja $(y-x)^2$ tulisi olla yhtä suuret. Todetaan tämä peruslaskutoimitusten ominaisuuksilla:
 
-Koska parilliseen potenssin korottamisessa saadaan lopputulos sekä luvulla että sen vastaluvulla, lausekkeiden $(x-y)^2$ ja $(y-x)^2$ tulisi olla samat. Todetaan tämä avaamalla ensin ensimmäisestä lausekkeesta sulkeet potenssin määritelmän ja osittelulain avulla:
+\begin{align*}
+(x-y)^2&=(-y+x)^2 && \text{vastaluku \& vaihdannaisuus} \\
+&=\left((-1)\cdot(y-x) \right)^2 && \text{yhteinen tekijä} \\
+&=(-1)(y-x)(-1)(y-x) && \text{potenssin purku} \\
+&=(-1)(-1)(y-x)(y-x) && \text{vaihdannaisuus} \\
+&=(y-x)^2 && \text{kertolaskut ja potenssin määritelmä} \\
+\end{align*}
 
-	\begin{align*}
-	(x-y)^2
-	&=(x-y)(x-y) && \text{potenssin määritelmä} \\
-	&=(x-y)x-(x-y)y && \text{osittelulaki} \\
-	&=x(x-y)-y(x-y) && \text{vaihdantalaki} \\
-	&=xx-xy-yx+y\cdot y && \text{osittelulaki} \\
-	&=x^2-xy-xy+y^2 && \text{potenssin määritelmä ja vaihdatalaki} \\
-	&=x^2-2xy+y^2 && \text{osittelulaki ja summa}
-	\end{align*}
-	
-	Huomataan, että avatussa muodossa $x$ ja $y$ esiintyvät symmetrisesti, ts. niiden paikkoja voi vaihtaa vaikuttamatta lausekkeen arvoon:
-	
-	\begin{align*}
-	x^2-2xy+y^2
-	&=y^2-2xy+x^2 && \text{yhteenlaskun vaihdannaisuus} \\
-	&=y^2-2yx+x^2  && \text{kertolaskun vaihdannaisuus} \\
-	\end{align*}
-	
-Tämä on täsmälleen myös se muoto, johon päädytään, jos avattaisiin sulut ja sievennettäisiin lauskee $(y-x)^2$. Siis $(x-y)^2=(y-x)^2$.
-\end{esimerkki} %niin joo ton olis voinut tehdä helpomminkin, mutta hyvä harjoitus nevertheless :P
+Ei siis ole väliä, kummin päin toiseen korottamisen sisällä oleva vähennyslasku on.
+
+\end{esimerkki}
+%\begin{esimerkki}
+%Koska parilliseen potenssin korottamisessa saadaan lopputulos sekä luvulla että sen vastaluvulla, lausekkeiden $(x-y)^2$ ja $(y-x)^2$ tulisi olla samat. Todetaan tämä avaamalla ensin ensimmäisestä lausekkeesta sulkeet potenssin määritelmän ja osittelulain avulla:
+%
+%	\begin{align*}
+%	(x-y)^2
+%	&=(x-y)(x-y) && \text{potenssin määritelmä} \\
+%	&=(x-y)x-(x-y)y && \text{osittelulaki} \\
+%	&=x(x-y)-y(x-y) && \text{vaihdantalaki} \\
+%	&=xx-xy-yx+y\cdot y && \text{osittelulaki} \\
+%	&=x^2-xy-xy+y^2 && \text{potenssin määritelmä ja vaihdatalaki} \\
+%	&=x^2-2xy+y^2 && \text{osittelulaki ja summa}
+%	\end{align*}
+%	
+%	Huomataan, että avatussa muodossa $x$ ja $y$ esiintyvät symmetrisesti, ts. niiden paikkoja voi vaihtaa vaikuttamatta lausekkeen arvoon:
+%	
+%	\begin{align*}
+%	x^2-2xy+y^2
+%	&=y^2-2xy+x^2 && \text{yhteenlaskun vaihdannaisuus} \\
+%	&=y^2-2yx+x^2  && \text{kertolaskun vaihdannaisuus} \\
+%	\end{align*}
+%	
+%Tämä on täsmälleen myös se muoto, johon päädytään, jos avattaisiin sulut ja sievennettäisiin lauskee $(y-x)^2$. Siis $(x-y)^2=(y-x)^2$.
+%\end{esimerkki} %niin joo ton olis voinut tehdä helpomminkin, mutta hyvä harjoitus nevertheless :P
 
 \subsection{Potenssien laskusäännöt}
 
@@ -231,7 +257,7 @@ Potenssin $a^0$ voi määritellä vain yhdellä tavalla, jos halutaan potenssien
 	toisaalta
  \[ \frac{a^3}{a^3}=a^{3-3}=a^0. \]
 
-Siis $a^0=1$, kunhan $a\neq 0$.  Laskua $0^0$ ei ole määritelty, koska nollalla ei voi jakaa. 
+Siis $a^0=1$, kunhan $a\neq 0$. Laskua $0^0$ ei ole määritelty, koska nollalla ei voi jakaa. 
  
   
     \laatikko[Eksponenttina nolla]{
@@ -242,7 +268,6 @@ Siis $a^0=1$, kunhan $a\neq 0$.  Laskua $0^0$ ei ole määritelty, koska nollall
     }
     
     \begin{esimerkki}
-        Laske
         \alakohdat{
             § $7^0=1$
             § $(-556)^0=1$
@@ -261,7 +286,7 @@ Sievennetään sitten osamäärä $\frac{a^3}{a^5}$ kahdella eri tavalla. Supist
 Potenssien laskusääntöjä käyttämällä saataisiin
     
     \begin{equation*}
-        \frac{a^3}{a^5} = a^{3-5}= a^{-2}{.}
+        \frac{a^3}{a^5} = a^{3-5}= a^{-2}.
     \end{equation*}
     
 Samasta laskusta saatiin kaksi eri tulosta, joten on johdonmukaista määritellä
@@ -270,7 +295,7 @@ Samasta laskusta saatiin kaksi eri tulosta, joten on johdonmukaista määritell�
         a^{-2} = \frac{1}{a^2}.
     \end{equation*}
 
-Sama ajatus yleistyy: koska potenssien laskusääntöjen halutaan pätevän myös negatiivisille eksponenteille, ne voidaan määritellä vain yhdellä tavalla:
+Sama ajatus yleistyy: koska potenssien laskusääntöjen halutaan pätevän yleisesti (myös negatiivisille eksponenteille), ne voidaan määritellä vain yhdellä tavalla:
   
     \laatikko[Negatiivinen eksponentti]{
         Kun $a\neq 0$,
@@ -286,7 +311,7 @@ Erityisesti $a^{-1}=\frac{1}{a}$ kaikilla $a \neq 0$, eli miinus yksi eksponentt
 § $4^{-1}=\frac{1}{4^1}=\frac{1}{4}$
 § $8^{-1}=\frac{1}{8^1}=\frac{1}{8}$
 § $(\frac{2}{3})^{-1}=\frac{1}{(\frac{2}{3})^{1}}=\frac{1}{\frac{2}{3}}=1:\frac{2}{3}=1\cdot \frac{3}{2}=\frac{3}{2}$
-§ $(\frac{5}{7})^{-1}=\frac{7}{5}$
+§ $\left(\frac{5}{7}\right)^{-1}=\frac{7}{5}$
 § $3^{-2}=\frac{1}{3^2}=\frac{1}{9}$
 § $(\frac{4}{5})^{-2}=(\frac{5}{4})^2=\frac{5^2}{4^2}=\frac{25}{16}$
 § $(-2)^{-2}=\frac{1}{(-2)^{2}}=\frac{1}{4}$.
@@ -308,4 +333,5 @@ $-2$ & $-\frac{1}{8}$ & $\frac{1}{4}$ & $-\frac{1}{2}$ & $1$ & $-2$ & $4$ & $-8$
 \end{tabular}
 \end{esimerkki}
 
-Ilmiötä, jossa alunperin intuitiivinen merkintätapa yleistetään mahdollisimman laajakäyttöiseksi, kutsutaan \termi{analyyttinen jatkaminen}{analyyttiseksi jatkamiseksi}. Tämä on matematiikassa hyvin yleistä ja vastaa pyrkimyksiä esittää asiat mahdollisimman yleisesti. Potenssimerkintää laajennetaan vieläkin yleisemmäksi luvussa Murtopotenssi. %VIITE
+%Ilmiötä, jossa alunperin intuitiivinen merkintätapa yleistetään mahdollisimman laajakäyttöiseksi, kutsutaan \termi{analyyttinen jatkaminen}{analyyttiseksi jatkamiseksi}.
+Alunperin intuitiivisen merkintätavan yleistäminen mahdollisimman laajakäyttöiseksi on matematiikassa hyvin yleistä ja vastaa pyrkimyksiä esittää asiat mahdollisimman yleisesti. Potenssimerkintää laajennetaan vieläkin yleisemmäksi luvussa Murtopotenssi ja myös myöhemmillä kursseilla ja jatko-opinnoissa. %VIITE
